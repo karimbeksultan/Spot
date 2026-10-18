@@ -26,6 +26,15 @@ function routed() {
       seconds: 60, metres: 80, geometry: { type: "LineString", coordinates: [[71.43, 51.13], [71.4301, 51.1301]] } }));
   });
 }
+function mealAndPark() {
+  const meal = fixture("meal");
+  meal.name = "Synthetic meal venue (not a real place)";
+  meal.category = "other";
+  meal.evidence[0].value = "other";
+  meal.sourceFacts = { venueType: "restaurant", cuisines: [] };
+  meal.evidence.push({ ...meal.evidence[0], id: "meal:venue", field: "venue_type", value: "restaurant" });
+  return [meal, fixture("park")];
+}
 beforeEach(() => {
   vi.stubEnv("APP_MODE", "live");
   vi.stubEnv("RETRIEVAL_PROVIDER", "supabase");
@@ -39,6 +48,42 @@ beforeEach(() => {
 afterEach(() => vi.unstubAllEnvs());
 
 describe("provider-mocked end-to-end search pipeline", () => {
+  it("builds a complete meal and walk without named venues, retaining source evidence", async () => {
+    vi.mocked(nearby).mockResolvedValue({ mode: "snapshot", items: mealAndPark(), warnings: [] });
+    routed();
+    const result = await searchPlaces(request({ query: "Хочу поесть и погулять" }));
+    expect(result.context.journeyStages.map((stage) => stage.kind)).toEqual(["restaurant", "park"]);
+    expect(result.items.map((poi) => poi.id)).toEqual(["meal", "park"]);
+    expect(result.items[0].evidenceIds).toContain("meal:venue");
+    expect(result.journey?.status).toBe("complete");
+    expect(result.resultKind).toBe("itinerary");
+    expect(result.mode).toBe("degraded"); // The local model is explicitly mocked unavailable.
+    expect(result.plan.totalMinutes).toBe(42);
+  });
+  it("does not return a walk-only success when a meal has no source-confirmed venue", async () => {
+    const [unverifiedMeal, park] = mealAndPark();
+    unverifiedMeal.evidence = unverifiedMeal.evidence.filter((evidence) => evidence.field !== "venue_type");
+    vi.mocked(nearby).mockResolvedValue({ mode: "snapshot", items: [unverifiedMeal, park], warnings: [] });
+    const result = await searchPlaces(request({ query: "поесть и погулять" }));
+    expect(result.kind).toBe("no_match"); expect(result.items).toEqual([]);
+    expect(result.context.journeyStages.map((stage) => stage.kind)).toEqual(["restaurant", "park"]);
+    expect(generateChoices).not.toHaveBeenCalled(); expect(walkingRoute).not.toHaveBeenCalled();
+  });
+  it("rejects a meal and walk that cannot fit even before routing", async () => {
+    const result = await searchPlaces(request({ query: "поесть и погулять", availableMinutes: 30 }));
+    expect(result.kind).toBe("no_match"); expect(result.items).toEqual([]);
+    expect(result.context.journeyStages.map((stage) => stage.kind)).toEqual(["restaurant", "park"]);
+    expect(nearby).not.toHaveBeenCalled(); expect(embedQuery).not.toHaveBeenCalled();
+    expect(generateChoices).not.toHaveBeenCalled(); expect(walkingRoute).not.toHaveBeenCalled();
+  });
+  it("keeps mandatory feature constraints when inferring a meal and walk", async () => {
+    vi.mocked(nearby).mockResolvedValue({ mode: "snapshot", items: mealAndPark(), warnings: [] });
+    const result = await searchPlaces(request({ query: "поесть и погулять", requiredFeatures: ["outlets"] }));
+    expect(result.kind).toBe("no_match"); expect(result.items).toEqual([]);
+    expect(result.context.requiredFeatures).toEqual(["outlets"]);
+    expect(result.context.journeyStages.map((stage) => stage.kind)).toEqual(["restaurant", "park"]);
+    expect(generateChoices).not.toHaveBeenCalled(); expect(walkingRoute).not.toHaveBeenCalled();
+  });
   it("uses a labelled snapshot and never invents walking time", async () => {
     const result = await searchPlaces(request());
     expect(result.mode).toBe("degraded"); expect(result.provenance.dataSource).toBe("real_snapshot"); expect(result.items).toHaveLength(3);

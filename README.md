@@ -95,6 +95,8 @@ npm run local
 
 Models are separate downloads. The Windows portable starter manages an already prepared runtime and downloads nothing. [Model setup](docs/local-model-audit.md).
 
+For a separate server deployment or access from a phone on your LAN, configure the bind address and explicit browser origins as described in [self-hosted deployment](docs/deployment.md). Local startup keeps its loopback defaults.
+
 The compatible local vector index is included. To inspect an indexing plan without embedding calls:
 
 ```bash

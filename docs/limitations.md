@@ -13,6 +13,7 @@ The opening-hours parser supports a subset of OSM syntax. Holidays, appointments
 ## Planning constraints
 
 - Compound plans support up to three stages of type cafe, park and restaurant. Explicit sequence is preserved; required stages and requested cuisines must all match source evidence. The text parser takes the first mention of each type: repeated stops of the same type and arbitrary dish names without a restaurant request are not validated general-purpose scenarios.
+- Venue names are optional. Affirmative Russian meal-and-walk requests such as `поесть и погулять` infer a restaurant and park; an explicit cafe keeps the food stop as a cafe. This bounded grammar is not unrestricted natural-language understanding, and the meal venue does not confirm its menu or service time.
 - Proposed stage visits are eight minutes for a cafe, ten for a park and 25 for a restaurant. These are planning assumptions, not measured queues or service times. The server checks walking legs, complete visits, opening coverage, a five-minute reserve and a requested return.
 - A plan that lacks a required stage or exceeds its budget is not returned as a successful subset. Candidate combinations and route attempts are bounded; failure does not prove that no suitable plan exists anywhere in the city or that the chosen route is optimal.
 - A strict monetary budget cannot be confirmed without source prices. Unknown price is not treated as free. Restaurant and cuisine tags do not confirm current menus, dishes, tables or booking availability.
