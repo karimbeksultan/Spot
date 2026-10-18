@@ -1,0 +1,48 @@
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - ESM syntax in a file loaded as CommonJS (vitest.config.ts:1:1). Use a `.mjs` extension or set `"type": "module"` in the closest package.json
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+
+ RUN  v5.0.5 C:/Users/Beks/Documents/Codex/2026-10-16/project-name-spot-work-in-my/work/Spot
+
+ ✓ tests/unit/harness.test.ts (6 tests) 3503ms
+   ✓ verification evidence and no-spend boundary (6)
+     ✓ still hashes real source inputs in a submitted archive without Git metadata 3036ms
+     ✓ records a failing subprocess as failed and writes only scrubbed output 387ms
+ ✓ tests/unit/local-index.test.ts (5 tests) 1422ms
+   ✓ combines local vectors and lexical ranks using known source IDs 1105ms
+ ✓ tests/unit/compound-quality.test.ts (26 tests) 2148ms
+   ✓ fixed compound development and acceptance cases over the actual POI corpus (14)
+     ✓ CP-DEV-01: Both coffee AND park are mandatory, not an OR shortlist 639ms
+ ✓ tests/unit/api-contract.test.ts (4 tests) 1083ms
+   ✓ rejects exact coordinates in GET URL and accepts a bounded POST area 773ms
+ ✓ tests/unit/import-contract.test.ts (12 tests) 13039ms
+   ✓ non-destructive import plan and provenance (8)
+     ✓ snapshot dry-runs do not fetch, write files, require keys or call embedding models 12653ms
+ ✓ tests/unit/provider-contract.test.ts (12 tests) 1706ms
+   ✓ repairs malformed JSON once and binds IDs/evidence without exact coordinates 1096ms
+ ✓ tests/unit/city-import.test.ts (13 tests) 376ms
+ ✓ tests/unit/http.test.ts (6 tests) 185ms
+ ✓ tests/unit/ui-copy.test.ts (30 tests) 150ms
+ ✓ tests/unit/ui-time.test.ts (15 tests) 122ms
+ ✓ tests/unit/routing.test.ts (4 tests) 138ms
+ ✓ tests/unit/model.test.ts (10 tests) 262ms
+ ✓ tests/unit/data-limits.test.ts (4 tests) 107ms
+ ✓ tests/unit/journey-routing.test.ts (9 tests) 155ms
+ ✓ tests/unit/domain.test.ts (36 tests) 252ms
+ ✓ tests/unit/search.integration.test.ts (13 tests) 536ms
+   ✓ provider-mocked end-to-end search pipeline (13)
+     ✓ uses a labelled snapshot and never invents walking time 329ms
+ ✓ tests/unit/source-facts.test.ts (14 tests) 205ms
+ ✓ tests/unit/ingestion.test.ts (8 tests) 183ms
+ ✓ tests/unit/photos.test.ts (7 tests) 50ms
+ ✓ tests/unit/scenarios.test.ts (24 tests) 127ms
+ ✓ tests/unit/place-scope.test.ts (7 tests) 39ms
+
+ Test Files  21 passed (21)
+      Tests  265 passed (265)
+   Start at  23:13:02
+   Duration  29.23s (tests 63%, import 31%, transform 5%, worker 1%)
+
+    Isolate  21 workers spawned · ~768ms startup each (spawn + environment, per file)
+             at least ~7.30s faster with isolate: false — reuses workers across files instead of one per file
+

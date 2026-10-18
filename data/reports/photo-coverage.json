@@ -1,0 +1,2013 @@
+{
+  "updatedAt": "2026-10-16T15:48:06.188Z",
+  "places": 98,
+  "placesWithPhotos": 14,
+  "photoCount": 60,
+  "previousPhotoCount": 2,
+  "previousCoveredPlaces": 2,
+  "remainingWithoutVerifiedPhotos": 84,
+  "method": "623 geographic candidates, named categories, branch/name research, visual identity checks and individual Commons author/license metadata. Geographic proximity alone never attached a photo.",
+  "remainingExplanation": "No exact eligible photograph confirmed in this research. Some candidates had unresolved identity, unsupported reuse rights, or irrelevant subjects. Commons rate limits ended further API research; this is not a claim that no photographs exist elsewhere.",
+  "results": [
+    {
+      "id": "osm:node/10170946741",
+      "name": "Starbucks",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4280501,
+        "latitude": 51.1218424
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/10170946741",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/10170946742",
+      "name": "Coffee BOOM",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4281745,
+        "latitude": 51.1215924
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/10170946742",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/10170946745",
+      "name": "Chaleur",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4279892,
+        "latitude": 51.1215961
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/10170946745",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/10248180510",
+      "name": "Delish",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4227958,
+        "latitude": 51.1010935
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/10248180510",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/10559299807",
+      "name": "CrepeCafe",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4334497,
+        "latitude": 51.1162897
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/10559299807",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/10564988185",
+      "name": "Degirmen",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4333254,
+        "latitude": 51.1285659
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/10564988185",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/11131442511",
+      "name": "Espresso day",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4031114,
+        "latitude": 51.125631
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/11131442511",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/11206429884",
+      "name": "JumpinGoat",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4213542,
+        "latitude": 51.1104543
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/11206429884",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/11290690869",
+      "name": "TLP Flowers & Coffee",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.412037,
+        "latitude": 51.1005554
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/11290690869",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/11783576043",
+      "name": "Drinkit",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4178111,
+        "latitude": 51.1008453
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/11783576043",
+      "status": "verified_photos_added",
+      "photos": 1,
+      "reviewedFiles": [
+        {
+          "title": "File:Esil District, Astana (P1190756).jpg",
+          "evidence": "Visually inspected the 960px Commons preview: the Drinkit wordmark and 'кофейня' sign are clearly visible on the ground-floor corner facade at Бухар жырау, 28Б. Commons camera coordinates 51.100961, 71.418616 are about 58m east of the OSM cafe 51.1008453, 71.4178111, facing that exact corner facade. Image is Matti Blume's own work dated 2024-08-18, with explicit CC BY-SA 4.0 metadata. The match uses the visible brand and facade together with coordinates; proximity alone was not used."
+        }
+      ],
+      "credits": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Esil_District,_Astana_(P1190756).jpg",
+          "author": "Matti Blume",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        }
+      ]
+    },
+    {
+      "id": "osm:node/11910202470",
+      "name": "marrone rosso",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4250639,
+        "latitude": 51.1284058
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/11910202470",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/11925892164",
+      "name": "Tary",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4281541,
+        "latitude": 51.1008676
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/11925892164",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/11927785970",
+      "name": "Zebra Coffee",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4331914,
+        "latitude": 51.1149252
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/11927785970",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/12041597369",
+      "name": "MÖKKi",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4318134,
+        "latitude": 51.1251254
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/12041597369",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/12098662467",
+      "name": "Canele",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4146083,
+        "latitude": 51.1013122
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/12098662467",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/12520559589",
+      "name": "Лепим и варим",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4254505,
+        "latitude": 51.1279246
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/12520559589",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/12520559591",
+      "name": "Лепим и варим",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4078454,
+        "latitude": 51.0891569
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/12520559591",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/12893538292",
+      "name": "Аскару Забикулину",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.4057852,
+        "latitude": 51.116732
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/12893538292",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/12959449801",
+      "name": "Культура Диктует",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4219553,
+        "latitude": 51.1246776
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/12959449801",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/12990081501",
+      "name": "Discovery Coffee",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4260369,
+        "latitude": 51.0906396
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/12990081501",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/12996721851",
+      "name": "Master Coffee",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4291709,
+        "latitude": 51.1034667
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/12996721851",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/13125546428",
+      "name": "Coffee Day",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4334022,
+        "latitude": 51.1157233
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/13125546428",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/13125556689",
+      "name": "Coffee BOOM",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4336184,
+        "latitude": 51.1163017
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/13125556689",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/13173517356",
+      "name": "Gasteria",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4093464,
+        "latitude": 51.0889451
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/13173517356",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/13313122337",
+      "name": "Gasteria",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4241936,
+        "latitude": 51.1298475
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/13313122337",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/13340040665",
+      "name": "Жетігенші",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.4106104,
+        "latitude": 51.1346692
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/13340040665",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/13340040666",
+      "name": "Қобызшы",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.4100755,
+        "latitude": 51.1347534
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/13340040666",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/13408518401",
+      "name": "Zebra coffee",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4155612,
+        "latitude": 51.1379062
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/13408518401",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/13462282540",
+      "name": "Kunde Cafe",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.395459,
+        "latitude": 51.0906659
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/13462282540",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/13667384701",
+      "name": "CrepeCafe",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4337969,
+        "latitude": 51.1167613
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/13667384701",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/13681674667",
+      "name": "Лето",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.426494,
+        "latitude": 51.0963407
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/13681674667",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/13858040201",
+      "name": "Master Coffee",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4376735,
+        "latitude": 51.1299661
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/13858040201",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/14087643081",
+      "name": "Табун Лошадей",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.4146358,
+        "latitude": 51.1318367
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/14087643081",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/14089471172",
+      "name": "Qaganat",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.422767,
+        "latitude": 51.1277749
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/14089471172",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/14100100182",
+      "name": "Drinkit",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4290105,
+        "latitude": 51.1302883
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/14100100182",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/14275682079",
+      "name": "Drinkit",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.40609,
+        "latitude": 51.0890765
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/14275682079",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/1843876259",
+      "name": "Rafe",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4372343,
+        "latitude": 51.1279864
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/1843876259",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/2388707906",
+      "name": "Астана-Экспо КС",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.4182513,
+        "latitude": 51.1294931
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/2388707906",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/2671060738",
+      "name": "Избушка",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4180466,
+        "latitude": 51.1283377
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/2671060738",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/2671060739",
+      "name": "Дастархан",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4174565,
+        "latitude": 51.1284084
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/2671060739",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/2691137163",
+      "name": "Gymboree",
+      "category": "playground",
+      "location": {
+        "longitude": 71.4220016,
+        "latitude": 51.1289248
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/2691137163",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/4108293490",
+      "name": "Тайказан",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4375196,
+        "latitude": 51.126424
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/4108293490",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/4133836392",
+      "name": "Дастаркан",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4219552,
+        "latitude": 51.1235526
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/4133836392",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/4133854089",
+      "name": "Rafe",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4259859,
+        "latitude": 51.1297293
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/4133854089",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/4792472508",
+      "name": "HamStar",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4219483,
+        "latitude": 51.1360407
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/4792472508",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/4853972122",
+      "name": "Фаттуш",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4251746,
+        "latitude": 51.1277607
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/4853972122",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/4958412863",
+      "name": "Zur Sultan",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.4077184,
+        "latitude": 51.1318179
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/4958412863",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/5132817725",
+      "name": "Starbucks",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4326558,
+        "latitude": 51.1250687
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/5132817725",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/5878503586",
+      "name": "Қазақ еліне мың алғыс",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.4242471,
+        "latitude": 51.1051208
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/5878503586",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/5878547585",
+      "name": "Food line",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4270117,
+        "latitude": 51.1041602
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/5878547585",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/5878572885",
+      "name": "Семейное кафе бум",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4278829,
+        "latitude": 51.1041752
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/5878572885",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/5936638686",
+      "name": "Кафела",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4305421,
+        "latitude": 51.1354068
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/5936638686",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/5936676246",
+      "name": "Borough",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.436492,
+        "latitude": 51.1342545
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/5936676246",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/6404769888",
+      "name": "Мадо",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4348209,
+        "latitude": 51.128348
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/6404769888",
+      "status": "verified_photos_added",
+      "photos": 1,
+      "reviewedFiles": [
+        {
+          "title": "File:Esil District, Astana (P1190644).jpg",
+          "evidence": "Visually inspected the full 960px Commons preview. The MADO facade and large blue MADO sign, plus MADO-branded terrace windows, are clearly visible behind a parked car. The camera at 51.128080, 71.435621 is about 63m southeast of the OSM Mado branch at 51.128348, 71.4348209 and points at that facade. This is a real exterior/street photograph with a car in the foreground, not an interior image. Commons metadata explicitly identifies Matti Blume as author and CC BY-SA 4.0 as the license."
+        }
+      ],
+      "credits": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Esil_District,_Astana_(P1190644).jpg",
+          "author": "Matti Blume",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        }
+      ]
+    },
+    {
+      "id": "osm:node/6408255389",
+      "name": "завтрак бар",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4093574,
+        "latitude": 51.0941798
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/6408255389",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/6408271985",
+      "name": "CrepeCafe",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4285934,
+        "latitude": 51.1293821
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/6408271985",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/6494912582",
+      "name": "Coffee Like",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4207674,
+        "latitude": 51.1311886
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/6494912582",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/6678039485",
+      "name": "Буфет",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4310825,
+        "latitude": 51.1159366
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/6678039485",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/7569228633",
+      "name": "Coffee Like",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4215615,
+        "latitude": 51.1302666
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/7569228633",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/9047331868",
+      "name": "Starbucks",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.423656,
+        "latitude": 51.130891
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/9047331868",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/9047331879",
+      "name": "Starbucks",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4089158,
+        "latitude": 51.0890092
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/9047331879",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:node/9047331880",
+      "name": "Starbucks",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4254906,
+        "latitude": 51.1280727
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/9047331880",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/108096984",
+      "name": "Керуен",
+      "category": "other",
+      "location": {
+        "longitude": 71.4253099,
+        "latitude": 51.1277901
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/108096984",
+      "status": "verified_photos_added",
+      "photos": 6,
+      "reviewedFiles": [
+        {
+          "title": "File:Keruen Mall.JPG",
+          "evidence": "Exact Commons description Keruen Mall in Astana/Nur-Sultan; category Keruen Mall and the visible facade sign/interiors identify this mall. 2026 images are geotagged inside OSM Keruen footprint 51.128,71.425. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Keruen mall, interior, Astana, 2026.jpg",
+          "evidence": "Exact Commons description Keruen Mall in Astana/Nur-Sultan; category Keruen Mall and the visible facade sign/interiors identify this mall. 2026 images are geotagged inside OSM Keruen footprint 51.128,71.425. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Keruen mall, food court, Astana, 2026.jpg",
+          "evidence": "Exact Commons description Keruen Mall in Astana/Nur-Sultan; category Keruen Mall and the visible facade sign/interiors identify this mall. 2026 images are geotagged inside OSM Keruen footprint 51.128,71.425. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Keruen mall, escalators, Astana, 2026.jpg",
+          "evidence": "Exact Commons description Keruen Mall in Astana/Nur-Sultan; category Keruen Mall and the visible facade sign/interiors identify this mall. 2026 images are geotagged inside OSM Keruen footprint 51.128,71.425. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Inside of shopping mall Keruen.jpg",
+          "evidence": "Exact Commons description Keruen Mall in Astana/Nur-Sultan; category Keruen Mall and the visible facade sign/interiors identify this mall. 2026 images are geotagged inside OSM Keruen footprint 51.128,71.425. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Inside of shopping mall Keruen1.jpg",
+          "evidence": "Exact Commons description Keruen Mall in Astana/Nur-Sultan; category Keruen Mall and the visible facade sign/interiors identify this mall. 2026 images are geotagged inside OSM Keruen footprint 51.128,71.425. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        }
+      ],
+      "credits": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Keruen_Mall.JPG",
+          "author": "ChelseaFunNumberOne",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Keruen_mall,_interior,_Astana,_2026.jpg",
+          "author": "Bdx",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Keruen_mall,_food_court,_Astana,_2026.jpg",
+          "author": "Bdx",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Keruen_mall,_escalators,_Astana,_2026.jpg",
+          "author": "Bdx",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inside_of_shopping_mall_Keruen.jpg",
+          "author": "Jirka Dl",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inside_of_shopping_mall_Keruen1.jpg",
+          "author": "Jirka Dl",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+        }
+      ]
+    },
+    {
+      "id": "osm:way/1196402246",
+      "name": "Ботанический сад",
+      "category": "park",
+      "location": {
+        "longitude": 71.4165705,
+        "latitude": 51.1061652
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1196402246",
+      "status": "verified_photos_added",
+      "photos": 9,
+      "reviewedFiles": [
+        {
+          "title": "File:Botanical garden, Astana (P1190701).jpg",
+          "evidence": "OSM wikidata Q104866948 and Commons category Astana botanical garden, exact park name in each file caption; paths, lake, pavilion and fountains visually confirmed. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Botanical garden, Astana (P1190699).jpg",
+          "evidence": "OSM wikidata Q104866948 and Commons category Astana botanical garden, exact park name in each file caption; paths, lake, pavilion and fountains visually confirmed. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Botanical garden, Astana (P1190704).jpg",
+          "evidence": "OSM wikidata Q104866948 and Commons category Astana botanical garden, exact park name in each file caption; paths, lake, pavilion and fountains visually confirmed. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Botanical garden, Astana (P1190702).jpg",
+          "evidence": "OSM wikidata Q104866948 and Commons category Astana botanical garden, exact park name in each file caption; paths, lake, pavilion and fountains visually confirmed. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Botanical garden, Astana (P1190703).jpg",
+          "evidence": "OSM wikidata Q104866948 and Commons category Astana botanical garden, exact park name in each file caption; paths, lake, pavilion and fountains visually confirmed. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Botanical garden, Astana (P1190697).jpg",
+          "evidence": "OSM wikidata Q104866948 and Commons category Astana botanical garden, exact park name in each file caption; paths, lake, pavilion and fountains visually confirmed. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Botanical Garden Nur-Sultan city unknown path.jpg",
+          "evidence": "OSM wikidata Q104866948 and Commons category Astana botanical garden, exact park name in each file caption; paths, lake, pavilion and fountains visually confirmed. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Botanical Garden Nur-Sultan fountains during Sunset.jpg",
+          "evidence": "OSM wikidata Q104866948 and Commons category Astana botanical garden, exact park name in each file caption; paths, lake, pavilion and fountains visually confirmed. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Botanical Garden Nur-Sultan city Big Cauldron during Sunset.jpg",
+          "evidence": "OSM wikidata Q104866948 and Commons category Astana botanical garden, exact park name in each file caption; paths, lake, pavilion and fountains visually confirmed. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        }
+      ],
+      "credits": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Botanical_garden,_Astana_(P1190701).jpg",
+          "author": "Matti Blume",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Botanical_garden,_Astana_(P1190699).jpg",
+          "author": "Matti Blume",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Botanical_garden,_Astana_(P1190704).jpg",
+          "author": "Matti Blume",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Botanical_garden,_Astana_(P1190702).jpg",
+          "author": "Matti Blume",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Botanical_garden,_Astana_(P1190703).jpg",
+          "author": "Matti Blume",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Botanical_garden,_Astana_(P1190697).jpg",
+          "author": "Matti Blume",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Botanical_Garden_Nur-Sultan_city_unknown_path.jpg",
+          "author": "DiamondMoore",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Botanical_Garden_Nur-Sultan_fountains_during_Sunset.jpg",
+          "author": "DiamondMoore",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Botanical_Garden_Nur-Sultan_city_Big_Cauldron_during_Sunset.jpg",
+          "author": "DiamondMoore",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ]
+    },
+    {
+      "id": "osm:way/1296051287",
+      "name": "Корейский сад",
+      "category": "park",
+      "location": {
+        "longitude": 71.4362282,
+        "latitude": 51.1384204
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1296051287",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/1449295053",
+      "name": "Cups coffee",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4033936,
+        "latitude": 51.1325682
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1449295053",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/1449301315",
+      "name": "Starbucks",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4037634,
+        "latitude": 51.1327269
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1449301315",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/1449317691",
+      "name": "Лепим и варим",
+      "category": "cafe",
+      "location": {
+        "longitude": 71.4033443,
+        "latitude": 51.132337
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1449317691",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/1449322329",
+      "name": "Конвой",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.403812,
+        "latitude": 51.1328472
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1449322329",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/1449322335",
+      "name": "Gold Mine Coaster",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.4039315,
+        "latitude": 51.1322245
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1449322335",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/1449322336",
+      "name": "Pop Up",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.4041463,
+        "latitude": 51.1322131
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1449322336",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/1449322337",
+      "name": "НЛО",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.4046347,
+        "latitude": 51.1322391
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1449322337",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/1449322338",
+      "name": "Ұшатын автобус",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.4047499,
+        "latitude": 51.1324686
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1449322338",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/1449322339",
+      "name": "Динопарк",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.4044883,
+        "latitude": 51.1324374
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1449322339",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/1449322340",
+      "name": "Электронды көліктер",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.404431,
+        "latitude": 51.1327244
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1449322340",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/1456208624",
+      "name": "Аллея мира и согласия",
+      "category": "park",
+      "location": {
+        "longitude": 71.4169498,
+        "latitude": 51.0938123
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1456208624",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/1460537088",
+      "name": "Astana Musical",
+      "category": "other",
+      "location": {
+        "longitude": 71.4417645,
+        "latitude": 51.1227533
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1460537088",
+      "status": "verified_photos_added",
+      "photos": 2,
+      "reviewedFiles": [
+        {
+          "title": "File:Казахстан ЦКЗ 2011 02.jpg",
+          "evidence": "OSM alternate name is Central Concert Hall Kazakhstan and Wikidata Q573362. Commons Category:Central concert hall Kazakhstan links this same Q573362 and OSM way1460537088; file caption ЦКЗ Казахстан and visual review show a performance on the concert hall stage."
+        },
+        {
+          "title": "File:Astana-2021-10 - 28.jpg",
+          "evidence": "File description explicitly names Central Concert Hall Kazakhstan. Its Commons category links Q573362 and OSM way1460537088, identical to the Astana Musical POI alternate-name identity. Visual review shows the recognizable blue hall exterior."
+        }
+      ],
+      "credits": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD_%D0%A6%D0%9A%D0%97_2011_02.jpg",
+          "author": "Мазур Владимир",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astana-2021-10_-_28.jpg",
+          "author": "Vyacheslav Bukharov",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ]
+    },
+    {
+      "id": "osm:way/1460763574",
+      "name": "25-ти летие Независимости",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.4175645,
+        "latitude": 51.0934524
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1460763574",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/1467797207",
+      "name": "NU Park",
+      "category": "park",
+      "location": {
+        "longitude": 71.3994394,
+        "latitude": 51.0872699
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1467797207",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/1470780026",
+      "name": "Дубовая аллея",
+      "category": "park",
+      "location": {
+        "longitude": 71.408849,
+        "latitude": 51.135573
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1470780026",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/230358847",
+      "name": "Корме",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.4203796,
+        "latitude": 51.1286406
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/230358847",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/230358854",
+      "name": "Сквер",
+      "category": "park",
+      "location": {
+        "longitude": 71.4235705,
+        "latitude": 51.127997
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/230358854",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/230358855",
+      "name": "Национальная академическая библиотека Республики Казахстан",
+      "category": "other",
+      "location": {
+        "longitude": 71.4271515,
+        "latitude": 51.1272145
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/230358855",
+      "status": "verified_photos_added",
+      "photos": 2,
+      "reviewedFiles": [
+        {
+          "title": "File:Библиотека - panoramio (10).jpg",
+          "evidence": "File description explicitly identifies National Academic Library of the Republic of Kazakhstan in Astana; camera coordinate 51.127037,71.427367 agrees with OSM Dostyk 11. Visual review shows the library facade."
+        },
+        {
+          "title": "File:Национальная академическая библиотека 2008.jpg",
+          "evidence": "File title identifies the National Academic Library; the winter 2008 facade visually matches the separately geolocated library photo at Dostyk 11. Historical winter image; not current-condition evidence."
+        }
+      ],
+      "credits": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_-_panoramio_(10).jpg",
+          "author": "Nikolay Olkhovoy",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_2008.jpg",
+          "author": "Мазур Владимир",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ]
+    },
+    {
+      "id": "osm:way/230401645",
+      "name": "Байтерек",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.4304546,
+        "latitude": 51.1282882
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/230401645",
+      "status": "verified_photos_added",
+      "photos": 3,
+      "reviewedFiles": [
+        {
+          "title": "File:Interior of Bayterek Tower 06.jpg",
+          "evidence": "Commons caption explicitly identifies Interior of Bayterek Tower. OSM Q804210 is the same tower; visual review shows the observation-deck interior. Exterior-only no-FOP flagged monument photos were excluded."
+        },
+        {
+          "title": "File:Astana-2021-10 - 14.jpg",
+          "evidence": "Russian file description explicitly says view from Bayterek Tower observation deck in Nur-Sultan. Visual review shows the glass observation deck and city view; this is a photo from the attraction, not an exterior monument portrait."
+        },
+        {
+          "title": "File:Astana-2021-10 - 16.jpg",
+          "evidence": "Russian file description explicitly says view from Bayterek Tower observation deck in Nur-Sultan. Visual review shows a second city view through the observation-deck glazing."
+        }
+      ],
+      "credits": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Interior_of_Bayterek_Tower_06.jpg",
+          "author": "Davide Mauro",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astana-2021-10_-_14.jpg",
+          "author": "Vyacheslav Bukharov",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astana-2021-10_-_16.jpg",
+          "author": "Vyacheslav Bukharov",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ]
+    },
+    {
+      "id": "osm:way/239713764",
+      "name": "Азия Парк",
+      "category": "other",
+      "location": {
+        "longitude": 71.4116815,
+        "latitude": 51.1280776
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/239713764",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/240909210",
+      "name": "Сарыарка",
+      "category": "other",
+      "location": {
+        "longitude": 71.4108382,
+        "latitude": 51.1383527
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/240909210",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/243041606",
+      "name": "Президентский парк",
+      "category": "park",
+      "location": {
+        "longitude": 71.4447685,
+        "latitude": 51.113398
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/243041606",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/243041609",
+      "name": "Парк Арай",
+      "category": "park",
+      "location": {
+        "longitude": 71.4437521,
+        "latitude": 51.1339394
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/243041609",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/37884583",
+      "name": "Парк влюбленных",
+      "category": "park",
+      "location": {
+        "longitude": 71.4092097,
+        "latitude": 51.1314922
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/37884583",
+      "status": "verified_photos_added",
+      "photos": 8,
+      "reviewedFiles": [
+        {
+          "title": "File:Fountain in Lovers Park.jpg",
+          "evidence": "OSM name:en Lovers Park and location 51.1314922,71.4092097; Commons captions identify Lovers Park/Park Gashyktar and geotagged views show the same park between Turan and Kabanbay Batyr. The Khan Shatyr-facing DSC04259 viewpoint is in the western park garden. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Astana-2021-10 - 3.jpg",
+          "evidence": "OSM name:en Lovers Park and location 51.1314922,71.4092097; Commons captions identify Lovers Park/Park Gashyktar and geotagged views show the same park between Turan and Kabanbay Batyr. The Khan Shatyr-facing DSC04259 viewpoint is in the western park garden. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Astana-2021-10 - 2.jpg",
+          "evidence": "OSM name:en Lovers Park and location 51.1314922,71.4092097; Commons captions identify Lovers Park/Park Gashyktar and geotagged views show the same park between Turan and Kabanbay Batyr. The Khan Shatyr-facing DSC04259 viewpoint is in the western park garden. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Astana SAM 0051 (14933941570).jpg",
+          "evidence": "OSM name:en Lovers Park and location 51.1314922,71.4092097; Commons captions identify Lovers Park/Park Gashyktar and geotagged views show the same park between Turan and Kabanbay Batyr. The Khan Shatyr-facing DSC04259 viewpoint is in the western park garden. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Astana SAM 0055 (14933895419).jpg",
+          "evidence": "OSM name:en Lovers Park and location 51.1314922,71.4092097; Commons captions identify Lovers Park/Park Gashyktar and geotagged views show the same park between Turan and Kabanbay Batyr. The Khan Shatyr-facing DSC04259 viewpoint is in the western park garden. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Astana DSC04259 (7709960456).jpg",
+          "evidence": "OSM name:en Lovers Park and location 51.1314922,71.4092097; Commons captions identify Lovers Park/Park Gashyktar and geotagged views show the same park between Turan and Kabanbay Batyr. The Khan Shatyr-facing DSC04259 viewpoint is in the western park garden. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:ASTANA love park 2005 (1).JPG",
+          "evidence": "OSM name:en Lovers Park and location 51.1314922,71.4092097; Commons captions identify Lovers Park/Park Gashyktar and geotagged views show the same park between Turan and Kabanbay Batyr. The Khan Shatyr-facing DSC04259 viewpoint is in the western park garden. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:ASTANA love park 2005.JPG",
+          "evidence": "OSM name:en Lovers Park and location 51.1314922,71.4092097; Commons captions identify Lovers Park/Park Gashyktar and geotagged views show the same park between Turan and Kabanbay Batyr. The Khan Shatyr-facing DSC04259 viewpoint is in the western park garden. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        }
+      ],
+      "credits": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fountain_in_Lovers_Park.jpg",
+          "author": "Bernard Gagnon",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astana-2021-10_-_3.jpg",
+          "author": "Vyacheslav Bukharov",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astana-2021-10_-_2.jpg",
+          "author": "Vyacheslav Bukharov",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astana_SAM_0051_(14933941570).jpg",
+          "author": "Alex J. Butler from United Kingdom",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astana_SAM_0055_(14933895419).jpg",
+          "author": "Alex J. Butler from United Kingdom",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astana_DSC04259_(7709960456).jpg",
+          "author": "jtstewart",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:ASTANA_love_park_2005_(1).JPG",
+          "author": "Sofi Kan",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:ASTANA_love_park_2005.JPG",
+          "author": "Sofi Kan",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+        }
+      ]
+    },
+    {
+      "id": "osm:way/460703779",
+      "name": "Хан Шатыр",
+      "category": "other",
+      "location": {
+        "longitude": 71.4038726,
+        "latitude": 51.1325089
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/460703779",
+      "status": "verified_photos_added",
+      "photos": 10,
+      "reviewedFiles": [
+        {
+          "title": "File:Khan Shatyr.jpg",
+          "evidence": "Commons category Khan Shatyry Entertainment Center plus image descriptions and identifiable tent structure/interior. Entertainment images are assigned to the shopping complex only, not to unverified individual ride POIs. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Kazakhstan P9130377 (39383387124).jpg",
+          "evidence": "Commons category Khan Shatyry Entertainment Center plus image descriptions and identifiable tent structure/interior. Entertainment images are assigned to the shopping complex only, not to unverified individual ride POIs. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Astana DSC04278 (7711035070).jpg",
+          "evidence": "Commons category Khan Shatyry Entertainment Center plus image descriptions and identifiable tent structure/interior. Entertainment images are assigned to the shopping complex only, not to unverified individual ride POIs. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Astana DSC04279 (7711038396).jpg",
+          "evidence": "Commons category Khan Shatyry Entertainment Center plus image descriptions and identifiable tent structure/interior. Entertainment images are assigned to the shopping complex only, not to unverified individual ride POIs. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Astana DSC04288 (7711068540).jpg",
+          "evidence": "Commons category Khan Shatyry Entertainment Center plus image descriptions and identifiable tent structure/interior. Entertainment images are assigned to the shopping complex only, not to unverified individual ride POIs. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Astana DSC04308 (7711144680).jpg",
+          "evidence": "Commons category Khan Shatyry Entertainment Center plus image descriptions and identifiable tent structure/interior. Entertainment images are assigned to the shopping complex only, not to unverified individual ride POIs. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Astana DSC04318 (7711183110).jpg",
+          "evidence": "Commons category Khan Shatyry Entertainment Center plus image descriptions and identifiable tent structure/interior. Entertainment images are assigned to the shopping complex only, not to unverified individual ride POIs. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Astana DSC04295 (7711095178).jpg",
+          "evidence": "Commons category Khan Shatyry Entertainment Center plus image descriptions and identifiable tent structure/interior. Entertainment images are assigned to the shopping complex only, not to unverified individual ride POIs. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Astana DSC04317 (7711179968).jpg",
+          "evidence": "Commons category Khan Shatyry Entertainment Center plus image descriptions and identifiable tent structure/interior. Entertainment images are assigned to the shopping complex only, not to unverified individual ride POIs. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Kazakhstan P9130375 (40095604101).jpg",
+          "evidence": "Commons category Khan Shatyry Entertainment Center plus image descriptions and identifiable tent structure/interior. Entertainment images are assigned to the shopping complex only, not to unverified individual ride POIs. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        }
+      ],
+      "credits": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Khan_Shatyr.jpg",
+          "author": "Quarot",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kazakhstan_P9130377_(39383387124).jpg",
+          "author": "t_y_l",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astana_DSC04278_(7711035070).jpg",
+          "author": "jtstewart",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astana_DSC04279_(7711038396).jpg",
+          "author": "jtstewart",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astana_DSC04288_(7711068540).jpg",
+          "author": "jtstewart",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astana_DSC04308_(7711144680).jpg",
+          "author": "jtstewart",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astana_DSC04318_(7711183110).jpg",
+          "author": "jtstewart",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astana_DSC04295_(7711095178).jpg",
+          "author": "jtstewart",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astana_DSC04317_(7711179968).jpg",
+          "author": "jtstewart",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kazakhstan_P9130375_(40095604101).jpg",
+          "author": "t_y_l",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        }
+      ]
+    },
+    {
+      "id": "osm:way/491522670",
+      "name": "Festival Avenue",
+      "category": "other",
+      "location": {
+        "longitude": 71.4073875,
+        "latitude": 51.1281779
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/491522670",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/499328449",
+      "name": "Астана балет",
+      "category": "other",
+      "location": {
+        "longitude": 71.4196527,
+        "latitude": 51.0992346
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/499328449",
+      "status": "verified_photos_added",
+      "photos": 1,
+      "reviewedFiles": [
+        {
+          "title": "File:Астана балет.jpg",
+          "evidence": "Title and caption explicitly identify Astana Ballet. Visual review shows the named theatre entrance, consistent with the Astana Ballet POI at Uly Dala 43, not Astana Opera."
+        }
+      ],
+      "credits": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0_%D0%B1%D0%B0%D0%BB%D0%B5%D1%82.jpg",
+          "author": "Ayazhan Temirbolat",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ]
+    },
+    {
+      "id": "osm:way/499328514",
+      "name": "Mega Silk Way",
+      "category": "other",
+      "location": {
+        "longitude": 71.4073303,
+        "latitude": 51.0890897
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/499328514",
+      "status": "verified_photos_added",
+      "photos": 5,
+      "reviewedFiles": [
+        {
+          "title": "File:ТРЦ MEGA Silk-way и отель Hilton.jpg",
+          "evidence": "Title and description explicitly identify MEGA Silk Way and Hilton viewed from Expo Park. Visual review shows the illuminated shopping centre alongside Hilton."
+        },
+        {
+          "title": "File:Монументальная роспись Марата Бекеева в MEGA Silk Way 2.jpg",
+          "evidence": "Description names Marat Bekeyev mural inside MEGA Silk Way; geotag 51.089511,71.407081 is within this mall. Visual review shows a mall interior with the mural."
+        },
+        {
+          "title": "File:Монументальная роспись Марата Бекеева в MEGA Silk Way.jpg",
+          "evidence": "Description names Marat Bekeyev mural inside MEGA Silk Way; geotag 51.089508,71.405669 is within this mall. Visual review shows a distinct mural panel in the mall."
+        },
+        {
+          "title": "File:Монументальная роспись Марата Бекеева в MEGA Silk Way 3.jpg",
+          "evidence": "Description names Marat Bekeyev mural inside MEGA Silk Way; geotag 51.089303,71.408622 is within this mall. Visual review shows a distinct blue mural panel."
+        },
+        {
+          "title": "File:Монументальная роспись Марата Бекеева в MEGA Silk Way 4.jpg",
+          "evidence": "Description names Marat Bekeyev mural inside MEGA Silk Way; geotag 51.089153,71.404839 is within this mall. Visual review shows another mural panel."
+        }
+      ],
+      "credits": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%A0%D0%A6_MEGA_Silk-way_%D0%B8_%D0%BE%D1%82%D0%B5%D0%BB%D1%8C_Hilton.jpg",
+          "author": "Шалкер Гам",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%BD%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%80%D0%BE%D1%81%D0%BF%D0%B8%D1%81%D1%8C_%D0%9C%D0%B0%D1%80%D0%B0%D1%82%D0%B0_%D0%91%D0%B5%D0%BA%D0%B5%D0%B5%D0%B2%D0%B0_%D0%B2_MEGA_Silk_Way_2.jpg",
+          "author": "Timur Bekeyev",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%BD%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%80%D0%BE%D1%81%D0%BF%D0%B8%D1%81%D1%8C_%D0%9C%D0%B0%D1%80%D0%B0%D1%82%D0%B0_%D0%91%D0%B5%D0%BA%D0%B5%D0%B5%D0%B2%D0%B0_%D0%B2_MEGA_Silk_Way.jpg",
+          "author": "Timur Bekeyev",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%BD%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%80%D0%BE%D1%81%D0%BF%D0%B8%D1%81%D1%8C_%D0%9C%D0%B0%D1%80%D0%B0%D1%82%D0%B0_%D0%91%D0%B5%D0%BA%D0%B5%D0%B5%D0%B2%D0%B0_%D0%B2_MEGA_Silk_Way_3.jpg",
+          "author": "Timur Bekeyev",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%BD%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%80%D0%BE%D1%81%D0%BF%D0%B8%D1%81%D1%8C_%D0%9C%D0%B0%D1%80%D0%B0%D1%82%D0%B0_%D0%91%D0%B5%D0%BA%D0%B5%D0%B5%D0%B2%D0%B0_%D0%B2_MEGA_Silk_Way_4.jpg",
+          "author": "Timur Bekeyev",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        }
+      ]
+    },
+    {
+      "id": "osm:way/549307755",
+      "name": "Триумфальная арка Мангилик Ел",
+      "category": "landmark",
+      "location": {
+        "longitude": 71.4300836,
+        "latitude": 51.1043034
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/549307755",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/69232075",
+      "name": "Парк Жетысу",
+      "category": "park",
+      "location": {
+        "longitude": 71.4384501,
+        "latitude": 51.1359887
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/69232075",
+      "status": "verified_photos_added",
+      "photos": 9,
+      "reviewedFiles": [
+        {
+          "title": "File:Gate of Jetisy park.jpg",
+          "evidence": "OSM wikidata Q104866925 and wikimedia_commons Category:Zhetysu park; file descriptions explicitly name Jetisy/Zhetysu park. Entrance, landscape replicas, paths and water features visually match this named park. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Improvisation of Charyn Canyon in Jetisy park.jpg",
+          "evidence": "OSM wikidata Q104866925 and wikimedia_commons Category:Zhetysu park; file descriptions explicitly name Jetisy/Zhetysu park. Entrance, landscape replicas, paths and water features visually match this named park. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Charyn Canyon Jetisy park.jpg",
+          "evidence": "OSM wikidata Q104866925 and wikimedia_commons Category:Zhetysu park; file descriptions explicitly name Jetisy/Zhetysu park. Entrance, landscape replicas, paths and water features visually match this named park. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Tamgaly petroglif copy in Jetisy park.jpg",
+          "evidence": "OSM wikidata Q104866925 and wikimedia_commons Category:Zhetysu park; file descriptions explicitly name Jetisy/Zhetysu park. Entrance, landscape replicas, paths and water features visually match this named park. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Tamgaly petroglif copy in Jetisy park3.jpg",
+          "evidence": "OSM wikidata Q104866925 and wikimedia_commons Category:Zhetysu park; file descriptions explicitly name Jetisy/Zhetysu park. Entrance, landscape replicas, paths and water features visually match this named park. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Silk road improvisation in Jetty park.jpg",
+          "evidence": "OSM wikidata Q104866925 and wikimedia_commons Category:Zhetysu park; file descriptions explicitly name Jetisy/Zhetysu park. Entrance, landscape replicas, paths and water features visually match this named park. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Bakhash in Zhetysu park.jpg",
+          "evidence": "OSM wikidata Q104866925 and wikimedia_commons Category:Zhetysu park; file descriptions explicitly name Jetisy/Zhetysu park. Entrance, landscape replicas, paths and water features visually match this named park. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Bakhash in Zhetysu park 2.jpg",
+          "evidence": "OSM wikidata Q104866925 and wikimedia_commons Category:Zhetysu park; file descriptions explicitly name Jetisy/Zhetysu park. Entrance, landscape replicas, paths and water features visually match this named park. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Bakhash in Zhetysu park 3.jpg",
+          "evidence": "OSM wikidata Q104866925 and wikimedia_commons Category:Zhetysu park; file descriptions explicitly name Jetisy/Zhetysu park. Entrance, landscape replicas, paths and water features visually match this named park. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        }
+      ],
+      "credits": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gate_of_Jetisy_park.jpg",
+          "author": "Ayratayrat",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Improvisation_of_Charyn_Canyon_in_Jetisy_park.jpg",
+          "author": "Ayratayrat",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charyn_Canyon_Jetisy_park.jpg",
+          "author": "Ayratayrat",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tamgaly_petroglif_copy_in_Jetisy_park.jpg",
+          "author": "Ayratayrat",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tamgaly_petroglif_copy_in_Jetisy_park3.jpg",
+          "author": "Ayratayrat",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Silk_road_improvisation_in_Jetty_park.jpg",
+          "author": "Ayratayrat",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bakhash_in_Zhetysu_park.jpg",
+          "author": "Ayratayrat",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bakhash_in_Zhetysu_park_2.jpg",
+          "author": "Ayratayrat",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bakhash_in_Zhetysu_park_3.jpg",
+          "author": "Ayratayrat",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ]
+    },
+    {
+      "id": "osm:way/734514013",
+      "name": "Линейный парк",
+      "category": "park",
+      "location": {
+        "longitude": 71.4266471,
+        "latitude": 51.1185681
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/734514013",
+      "status": "verified_photos_added",
+      "photos": 1,
+      "reviewedFiles": [
+        {
+          "title": "File:Линейный парк Астана, Казахстан.jpg",
+          "evidence": "Title and description explicitly identify Linear Park in Astana in summer 2023; visual review shows the linear landscaped park and paths alongside the matching Esil district boulevard."
+        }
+      ],
+      "credits": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9_%D0%BF%D0%B0%D1%80%D0%BA_%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0,_%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD.jpg",
+          "author": "Maksssat",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ]
+    },
+    {
+      "id": "osm:way/762780007",
+      "name": "Abu Dhabi Plaza",
+      "category": "other",
+      "location": {
+        "longitude": 71.4279322,
+        "latitude": 51.1219718
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/762780007",
+      "status": "no_exact_eligible_photo_verified",
+      "photos": 0,
+      "reviewedFiles": [],
+      "credits": []
+    },
+    {
+      "id": "osm:way/917478479",
+      "name": "Астана Опера",
+      "category": "other",
+      "location": {
+        "longitude": 71.410753,
+        "latitude": 51.1354512
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/917478479",
+      "status": "verified_photos_added",
+      "photos": 2,
+      "reviewedFiles": [
+        {
+          "title": "File:The State Opera and Ballet Theatre “Astana Opera”.jpg",
+          "evidence": "OSM Astana Opera building and Commons exact category/description Astana Opera. Visually checked recognisable theatre facade and surrounding plaza; distant construction photographs excluded. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        },
+        {
+          "title": "File:Astana Opera 02.jpg",
+          "evidence": "OSM Astana Opera building and Commons exact category/description Astana Opera. Visually checked recognisable theatre facade and surrounding plaza; distant construction photographs excluded. Visually inspected in work/photo-review contact sheets; matches the named place, not only a nearby coordinate."
+        }
+      ],
+      "credits": [
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_State_Opera_and_Ballet_Theatre_%E2%80%9CAstana_Opera%E2%80%9D.jpg",
+          "author": "Nikolamikovic82",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        },
+        {
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astana_Opera_02.jpg",
+          "author": "Davide Mauro",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        }
+      ]
+    }
+  ]
+}

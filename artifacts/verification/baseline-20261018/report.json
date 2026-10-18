@@ -1,0 +1,74 @@
+{
+  "finishedAt": "2026-10-18T16:39:22.537Z",
+  "revision": {
+    "head": "eea69810ee65d44360597cbf22691c6237c3ac5a",
+    "branch": "codex/spot-local-prototype",
+    "filesDigest": "eb6f942284d91eba0367a3c53b422b2095f5718adb6fdb750f21f0975adf45c3",
+    "fileCount": 122
+  },
+  "mode": "offline baseline; actual POI snapshot; mocked model integrations; no paid calls",
+  "checks": [
+    {
+      "name": "lint",
+      "command": "npm run lint",
+      "startedAt": "2026-10-18T16:36:11.6313167Z",
+      "finishedAt": "2026-10-18T16:39:07.8828715Z",
+      "exitCode": 0,
+      "log": "work/baseline-20261018/lint.log"
+    },
+    {
+      "name": "typecheck",
+      "command": "npm run typecheck",
+      "startedAt": "2026-10-18T16:36:11.6364994Z",
+      "finishedAt": "2026-10-18T16:37:05.5193062Z",
+      "exitCode": 0,
+      "log": "work/baseline-20261018/typecheck.log"
+    },
+    {
+      "name": "test",
+      "command": "npm run test",
+      "startedAt": "2026-10-18T16:36:11.8602019Z",
+      "finishedAt": "2026-10-18T16:37:02.8436097Z",
+      "exitCode": 0,
+      "log": "work/baseline-20261018/test.log"
+    },
+    {
+      "name": "eval-snapshot",
+      "command": "npm run eval:snapshot",
+      "startedAt": "2026-10-18T16:36:11.6149531Z",
+      "finishedAt": "2026-10-18T16:36:46.9769174Z",
+      "exitCode": 0,
+      "log": "work/baseline-20261018/eval-snapshot.log"
+    },
+    {
+      "name": "data-validate",
+      "command": "npm run data:validate",
+      "startedAt": "2026-10-18T16:36:11.6523515Z",
+      "finishedAt": "2026-10-18T16:36:44.1744341Z",
+      "exitCode": 0,
+      "log": "work/baseline-20261018/data-validate.log"
+    }
+  ],
+  "changedDuringChecks": [
+    "data/reports/quality.json",
+    "data/reports/rag-snapshot-evaluation.json"
+  ],
+  "summary": {
+    "unitTestsPassed": 98,
+    "unitFilesPassed": 8,
+    "snapshotScenariosPassed": 18,
+    "actualPois": 98,
+    "withPhotos": 14,
+    "withHours": 29,
+    "confirmedOutlets": 0
+  },
+  "limitations": [
+    "Build/browser/E2E delegated to integrator, not run here",
+    "No provider keys or model API were verified",
+    "Snapshot evaluation has no independent human usefulness rating",
+    "No Supabase writes or paid API calls"
+  ],
+  "warnings": [
+    "Vitest reports future Vite native config-loader compatibility warning; tests currently pass"
+  ]
+}

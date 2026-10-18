@@ -1,0 +1,15 @@
+{
+  "mode": "offline-real-source-snapshot-validation",
+  "current": 2170,
+  "original": 1705,
+  "originalExactMatches": 1705,
+  "photos": 60,
+  "provenanceRecords": 2170,
+  "provenanceUniqueIds": 2170,
+  "missingProvenance": 0,
+  "wrongProvenanceHash": 0,
+  "datasetSha256": "cb8dcfff85509eb2498bb40b3b5edafb4f3d2995ca92844709da3bc8d4607fe9",
+  "networkRequests": 0,
+  "databaseWrites": 0,
+  "embeddingRequests": 0
+}

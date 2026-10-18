@@ -1,0 +1,22 @@
+{
+  "createdAt": "2026-10-18T18:00:09.711Z",
+  "baselineCode": "38b0380549c6b8b8b86b92479020fc1d0b639603ed0748bb93a481f93eac1dc4",
+  "files": {
+    "before.json": {
+      "bytes": 78430,
+      "sha256": "b7e7defed44af0f08529780a6e761d6629c6318d36fa7163124a100fba0e46af"
+    },
+    "compound-development.before.json": {
+      "bytes": 5306,
+      "sha256": "44a448074f891e0b3d7a5e00d981204ea67e151775ff5771769fe194266123d4"
+    },
+    "compound-acceptance.before.json": {
+      "bytes": 5960,
+      "sha256": "9045bf74966855e0253e9da0381270363cba49cc861a47e033ad8cf65ac8d5c0"
+    },
+    "proposal.md": {
+      "bytes": 13829,
+      "sha256": "3b98665ab148b88c27da2ab53173a309ffa5341b5f1b179c887cb45d4498bebf"
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-18",
+  "newInstall": {
+    "name": "prompt-engineering-patterns",
+    "sourceRepository": "https://github.com/wshobson/agents",
+    "sourcePath": "plugins/llm-application-dev/skills/prompt-engineering-patterns",
+    "sourceRef": "user-supplied audited snapshot 2026-10-18; full repository commit not supplied",
+    "destination": ".agents/skills/prompt-engineering-patterns",
+    "license": "MIT; Copyright (c) 2024 Seth Hobson",
+    "scripts": [],
+    "hooks": [],
+    "dependencies": [],
+    "state": [
+      "discovered",
+      "reviewed",
+      "installed_files_verified",
+      "manually_used"
+    ],
+    "files": [
+      {
+        "path": "SKILL.md",
+        "gitBlob": "869548fa7b265c81dd54b3407fd06e61c1fc8ea6",
+        "sha256": "6a210b15be01bc6f76a74ec1e46302dee310ddf79d2def63fc9b7c54221fe329"
+      },
+      {
+        "path": "references/details.md",
+        "gitBlob": "78d4311523e627b81c9fe17c113d1353a1f4a790",
+        "sha256": "406934586a34cd1aa0084d3dbd21e5e77be75de934a791cae962e1e16f55a133"
+      },
+      {
+        "path": "LICENSE",
+        "gitBlob": "326f0a55c96e672fedf9d807ca043c00df05ba0e",
+        "sha256": "f89abb55d9f073f38f1703e4518f0613c788c6174be7f13b8dfe48a1c076c746"
+      }
+    ]
+  },
+  "reuse": [
+    "openai-docs",
+    "security-best-practices",
+    "supabase",
+    "vercel-react-best-practices",
+    "frontend-design",
+    "ui-ux-pro-max",
+    "pdf",
+    "presentations",
+    "pptx"
+  ],
+  "reviewedNotAuthoredWith": [
+    "ppt-master",
+    "skill-installer"
+  ],
+  "skipped": [
+    "duplicate design/presentation packs",
+    "cloud deployment packs",
+    "ML training/CV packs",
+    "LangChain framework migration"
+  ],
+  "blocked": [],
+  "discovery": {
+    "documentedRepoPathSupported": true,
+    "nativeDiscoveryObservedThisTurn": false,
+    "explicitFileLoadUsed": true
+  },
+  "installedReuseSnapshots": [
+    {
+      "name": "openai-docs",
+      "scope": "preinstalled; reused without redistribution",
+      "sha256": "8ce8021101bcea594ff92ee6cfd8ca7641a49ee66d7bc6070555f1a33fc239d9",
+      "licenseReview": "Preinstalled content; no new executable installation or redistribution"
+    },
+    {
+      "name": "security-best-practices",
+      "scope": "preinstalled; reused without redistribution",
+      "sha256": "7b3dae1ffc5434d890f3c65c8f552af52d0307fab3b35dec13013c9ca3844c4f",
+      "licenseReview": "Preinstalled content; no new executable installation or redistribution"
+    },
+    {
+      "name": "vercel-react-best-practices",
+      "scope": "preinstalled; reused without redistribution",
+      "sha256": "71ed7794962fa6e803ee83030517b5b93a9f70fbfeb431ec4535c5480a8d8355",
+      "licenseReview": "Preinstalled content; no new executable installation or redistribution"
+    },
+    {
+      "name": "frontend-design",
+      "scope": "preinstalled; reused without redistribution",
+      "sha256": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3",
+      "licenseReview": "Preinstalled content; no new executable installation or redistribution"
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "scope": "preinstalled; reused without redistribution",
+      "sha256": "ea087c341bfb5b23195c7302027268ede86da802554c18a5c4896a6017b439f9",
+      "licenseReview": "Preinstalled content; no new executable installation or redistribution"
+    },
+    {
+      "name": "anthropic-pptx",
+      "scope": "preinstalled; reused without redistribution",
+      "sha256": "d11d1c5e9f8cf7cdfebeda2c1ef73299bee612e2d16eff90513b7aa2f1bc4d31",
+      "licenseReview": "Preinstalled content; no new executable installation or redistribution"
+    },
+    {
+      "name": "supabase",
+      "scope": "preinstalled; reused without redistribution",
+      "sha256": "1171386737b231610fa42485707272765c3516a9bbc0bd2c6c161a8cee3d7d33",
+      "licenseReview": "Preinstalled content; no new executable installation or redistribution"
+    },
+    {
+      "name": "presentations",
+      "scope": "preinstalled; reused without redistribution",
+      "sha256": "97fedde4ba6c9b9aa56e12b05b13acf035c29f9cd2f6906b8f27ceab11aea9a8",
+      "licenseReview": "Preinstalled content; no new executable installation or redistribution"
+    },
+    {
+      "name": "pdf",
+      "scope": "preinstalled; reused without redistribution",
+      "sha256": "5e14b4b8f944dc5e678ee703dfacf583010431d64d5d829902c5b2541f736c89",
+      "licenseReview": "Preinstalled content; no new executable installation or redistribution"
+    }
+  ]
+}

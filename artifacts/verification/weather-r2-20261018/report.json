@@ -1,0 +1,566 @@
+{
+  "checkedAt": "2026-10-18T18:17:01.132Z",
+  "revision": {
+    "head": "eea69810ee65d44360597cbf22691c6237c3ac5a",
+    "branch": "codex/spot-contract-harness",
+    "dirty": true,
+    "workingTreeDigest": "906ae60d3bf0843f6bc6eb09f5605e4c66dc81e0796bff1baf45099d39e9957b",
+    "fileCount": 128,
+    "dirtyPaths": [
+      ".agents/",
+      ".env.example",
+      ".github/",
+      ".gitignore",
+      "AGENTS.md",
+      "data/",
+      "eslint.config.mjs",
+      "next-env.d.ts",
+      "next.config.ts",
+      "package-lock.json",
+      "package.json",
+      "playwright.config.ts",
+      "public/",
+      "scripts/",
+      "skills.lock.json",
+      "sources/",
+      "src/",
+      "supabase/",
+      "tests/",
+      "tsconfig.json",
+      "vitest.config.ts"
+    ],
+    "exclusions": ".env* except .env.example; generated work/artifacts/reports/build/cache outputs; documentation and slide artifacts (checked separately)",
+    "files": [
+      {
+        "path": ".agents/skills/prompt-engineering-patterns/LICENSE",
+        "sha256": "f89abb55d9f073f38f1703e4518f0613c788c6174be7f13b8dfe48a1c076c746"
+      },
+      {
+        "path": ".agents/skills/prompt-engineering-patterns/SKILL.md",
+        "sha256": "6a210b15be01bc6f76a74ec1e46302dee310ddf79d2def63fc9b7c54221fe329"
+      },
+      {
+        "path": ".agents/skills/prompt-engineering-patterns/references/details.md",
+        "sha256": "406934586a34cd1aa0084d3dbd21e5e77be75de934a791cae962e1e16f55a133"
+      },
+      {
+        "path": ".env.example",
+        "sha256": "f24cf107d9f90c705f36cd2bc447c157c2773277ca59b09a14098af4e6f00f2f"
+      },
+      {
+        "path": ".github/workflows/verify.yml",
+        "sha256": "16f69edf36f3fdc150016a465fc4b8cd8dd018105a72127baa95c3c5365ed3e7"
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "2db40c389b8eadd142c12a944cc2d9ec1f45cd151ff50bdad89be50e4aa2ae88"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "4ac240559410978a0be5b1ad731ae6a7c38fbd0940bde5c9cff374370afea080"
+      },
+      {
+        "path": "data/LICENSE.md",
+        "sha256": "1c336ce5f677aa7c9cc9b77be10a23531aeec136cac55ea210dc12e598bd5c20"
+      },
+      {
+        "path": "data/local-index/metadata.json",
+        "sha256": "75105c201dd8daa4450e5337931f889e6c9ac1cdcef8881d30538b38f2ec985b"
+      },
+      {
+        "path": "data/local-index/vectors.f32",
+        "sha256": "e3c2277d085a857f74acf44ebd75e51f29643de764bb3385139b992aa4185ad8"
+      },
+      {
+        "path": "data/photo-links.json",
+        "sha256": "b1aca3218a939f2aa9e839bc64dd12820f9b3fff183df9424513570244a0b790"
+      },
+      {
+        "path": "data/pois.json",
+        "sha256": "cb8dcfff85509eb2498bb40b3b5edafb4f3d2995ca92844709da3bc8d4607fe9"
+      },
+      {
+        "path": "data/provenance.json",
+        "sha256": "a514fddd71de2509172c23008e5114e89cc36c89b90540017c56d6a49cb40bd5"
+      },
+      {
+        "path": "data/raw/commons.json",
+        "sha256": "3b03d4b0af7c77a8a6b729f91e43587b381359fde4d320c80c760bdc786c5214"
+      },
+      {
+        "path": "data/raw/overpass-astana-city-extension.json",
+        "sha256": "88def7b8a137e3950ee705b6e37206a5471d8021be8b33beb6eaedb08bb6d48a"
+      },
+      {
+        "path": "data/raw/overpass-astana-city.json",
+        "sha256": "d134d27f2c75d7c6e32c5616f5a50287a96cc65d2dd12096df789cbbfa4de57f"
+      },
+      {
+        "path": "data/raw/overpass.json",
+        "sha256": "2f45130f9f452eededf77c1b3a4b5a4372ce1834414e40b025333ce546e28fc5"
+      },
+      {
+        "path": "data/raw/photos-geography.json",
+        "sha256": "f55b3d64e1102eca0307231dc0ba1e0f36402dcf14de4e758d2ea3aa04e769cd"
+      },
+      {
+        "path": "data/scope-exclusions.json",
+        "sha256": "2c423b23929267310f68a4dc6e4468bb55f69a66bc7bf621ffe424da23c1dd48"
+      },
+      {
+        "path": "data/staging/astana-city-extension-pois.json",
+        "sha256": "e8b7fb2db7a249f0446089c680605023d6e0fe0d5e2b2fe2c5c28378b085b617"
+      },
+      {
+        "path": "data/staging/astana-city-extension-provenance.json",
+        "sha256": "1bca23b871300f4a9ad9dca6f5cea7d784c6b7a25b7e18667754121e035b499b"
+      },
+      {
+        "path": "data/staging/astana-city-pois.json",
+        "sha256": "4320777d081e36ba38790eb3416ab04d77d750b05671868e0839985eead48420"
+      },
+      {
+        "path": "data/staging/astana-city-provenance.json",
+        "sha256": "d8273e38821d60727a92211c5c3a3ccec26bd2d5fb5334eb9478cc6b8ad6f1c6"
+      },
+      {
+        "path": "eslint.config.mjs",
+        "sha256": "9f9f359852128d5d57d91c75cb53f8ca9eb1451cdce8208150c7b3f5284f7a60"
+      },
+      {
+        "path": "next-env.d.ts",
+        "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b"
+      },
+      {
+        "path": "next.config.ts",
+        "sha256": "302da8950504755abaa1e62fda94184423318ec9405bb2931af740dfa6764d2a"
+      },
+      {
+        "path": "package-lock.json",
+        "sha256": "32f160b5eb88f99b086e08e937e32931c6dd08abca1957b809a91c82678e0b68"
+      },
+      {
+        "path": "package.json",
+        "sha256": "86206e5bfa11cfafb9322e24a3c7305b115db4760bfa5ef894470018614a1153"
+      },
+      {
+        "path": "playwright.config.ts",
+        "sha256": "f7234d72f172f5197442f5efee224bdbfe2777b6d19e7bdcb4a97f51edf42039"
+      },
+      {
+        "path": "public/favicon.svg",
+        "sha256": "67806109ae61f03699b1ea852bb8c12ecd4302e66f44514b212e17ed171a9b46"
+      },
+      {
+        "path": "scripts/capture-ui.mjs",
+        "sha256": "35555788837fbdcd020662896b479e1adf75203f8c9b16c7c954f1415cde95ee"
+      },
+      {
+        "path": "scripts/data/collect-city.ts",
+        "sha256": "298e06663b4fcfd211b0cec920b9c6902747470840eb08318a7d19e79cef4595"
+      },
+      {
+        "path": "scripts/data/collect.ts",
+        "sha256": "08cdfdac389e02559f4ce860022b28e3bc87ba33ee84e0f505c8ed24d20258b0"
+      },
+      {
+        "path": "scripts/data/common.ts",
+        "sha256": "4d2ff3ed666d594e784007da194f253e927c37a551a4542e7cc30f8e8fa6d209"
+      },
+      {
+        "path": "scripts/data/discover-photos.ts",
+        "sha256": "45fc08beaaea90819faf6dab7ae67e712429f7e67995ee4ab5bfa9d7d9d6f5aa"
+      },
+      {
+        "path": "scripts/data/embed.ts",
+        "sha256": "c84d07e20327a1441c169230db32dee892fa8f68b8d31cf7a8ef1c664c42c88f"
+      },
+      {
+        "path": "scripts/data/import-plan.ts",
+        "sha256": "773c010d9630f5c56c998920db51e5b1301bed0d3ddb01aa041806001b824279"
+      },
+      {
+        "path": "scripts/data/local-index-document.ts",
+        "sha256": "cd09d401997b161e296d94ebb5e0a75418e12aea19bf8cef9a8caa1d93962d87"
+      },
+      {
+        "path": "scripts/data/local-index.ts",
+        "sha256": "91bb360744a49badbb3d702b575f0e79ba9ca5b49c7099052d9c40e1a93ec6b6"
+      },
+      {
+        "path": "scripts/data/normalize.ts",
+        "sha256": "46bcc6eec38fb629cfcaa4e5e6f06bcbed40723965eb9a466068d5b38368e872"
+      },
+      {
+        "path": "scripts/data/photos.ts",
+        "sha256": "d41010a4b71c946ba478ac0bab0c2206f283c48ddea58e4d091f973931dde023"
+      },
+      {
+        "path": "scripts/data/provenance.ts",
+        "sha256": "1a272af2e5acde237f45e4ec5560ccb62bdfc10054b23e5662c86b54a0680411"
+      },
+      {
+        "path": "scripts/data/refresh-photos.ts",
+        "sha256": "86042b1ac7d34a1fd8b3cdde90754bc3124a11880b1e4aeb94ed9df126eadad7"
+      },
+      {
+        "path": "scripts/data/upsert.ts",
+        "sha256": "6c681cff9d186b29c74f7b08bf0d8f99f785ab5ad66933af186991de4480bbaa"
+      },
+      {
+        "path": "scripts/data/validate.ts",
+        "sha256": "55c0c7e0ffd1a522f35ce0fb6db0ac7368c639072654bd3f4276af163df9acdb"
+      },
+      {
+        "path": "scripts/doctor.ts",
+        "sha256": "2208790442f425898689ed9ec3eb3727df46eaaedbe122148476c490d65df12d"
+      },
+      {
+        "path": "scripts/harness/checks.ts",
+        "sha256": "1130469b2c01f50c46d0766aa76de6797903d2cb79ab260d6b3faf85a7a68c87"
+      },
+      {
+        "path": "scripts/harness/evidence.mjs",
+        "sha256": "d1dce70af774da036b53ed3485058cb80decb24f19d3565f6d6de92cf224b702"
+      },
+      {
+        "path": "scripts/harness/runner.mjs",
+        "sha256": "cf73f3069affd224d23600997834dbe285c2ebb32b3748d083cfeeaa9c83361c"
+      },
+      {
+        "path": "scripts/inspect-map.mjs",
+        "sha256": "44194ace70d36e520fcd77a88dda389cce8450a087b5990fa6b264702131cf66"
+      },
+      {
+        "path": "scripts/live-smoke.ts",
+        "sha256": "42bde2350975b3678ac95a7218aed6f7085249ff218f0723db668a7473c4e258"
+      },
+      {
+        "path": "scripts/prepare-assets.mjs",
+        "sha256": "f72ad784ad57239717980e7efab8f85afb2f94c6c58d1a9aacec4410ecc81124"
+      },
+      {
+        "path": "scripts/run-mode.mjs",
+        "sha256": "2272ab0a7408ea6239b3ee25d6602b2c33db53928e4d9a420cebfa87ef99398f"
+      },
+      {
+        "path": "scripts/start-local-models.ps1",
+        "sha256": "e137ac087d67da6af22d5c1bbb72ede29784e5f141dade7e4379a68bb9f51ca3"
+      },
+      {
+        "path": "scripts/stop-local-models.ps1",
+        "sha256": "71969534b6e1cedb4611591c96a4c9b887aeb50e4cccc2c48225f76a8fe6d5f8"
+      },
+      {
+        "path": "scripts/verify-live-browser.mjs",
+        "sha256": "d6469b4d66f6b5edb2edfa472babb27128436c4913e26c08964e67877e8d0dd4"
+      },
+      {
+        "path": "scripts/watch-local-model-memory.ps1",
+        "sha256": "187afc652c41ddae0b62a6e282bbe3a9591b9bdc156d840a518ef4defe9d1494"
+      },
+      {
+        "path": "skills.lock.json",
+        "sha256": "2474cc73ad63a80a4715611894fe402602b848a57da5924b82c30f494dd12870"
+      },
+      {
+        "path": "sources/hackathon_requirements.pdf",
+        "sha256": "3a585b703bd53750b95c08c8600ab5b259cb7f9b0c8e8f70b01f8f9a2858d094"
+      },
+      {
+        "path": "src/app/api/health/route.ts",
+        "sha256": "f04dc8384de2e8ec2e283a0e20e6564606daf8ecac3fb3917aac9cbbd0272bde"
+      },
+      {
+        "path": "src/app/api/pois/route.ts",
+        "sha256": "2d9b0a8d319cc87fc3d250c704d15178a95a484874a1cd59103741bb12c0e8f3"
+      },
+      {
+        "path": "src/app/api/search/route.ts",
+        "sha256": "52693509bf40bf666d706a78b1055a0c7fbd54d027a5a88222661b117909198a"
+      },
+      {
+        "path": "src/app/error.tsx",
+        "sha256": "9adef60ef0f6f53bd1e0500cbe18664bc2f398ee25f0df05e9936679520e1c5d"
+      },
+      {
+        "path": "src/app/globals.css",
+        "sha256": "1da334992d0c4444adde66a94b5aca0af3a34373b5eff2cdcdb3b2c38406f851"
+      },
+      {
+        "path": "src/app/layout.tsx",
+        "sha256": "504526b531d068c2abdc3e5b992c72f19ac8020bff7aae54226adcb06f0df6f1"
+      },
+      {
+        "path": "src/app/page.tsx",
+        "sha256": "c6b3ff2f5cb251a7f5fec972fc72dac0b769072f46aa03837286ec4e602583e6"
+      },
+      {
+        "path": "src/components/CityMap.tsx",
+        "sha256": "b18f64e8d8a865ba2f034f6ecec5a867c9d79d7230e6e6f22563498e8c71a21b"
+      },
+      {
+        "path": "src/components/DataLimits.tsx",
+        "sha256": "d64fb346524048300b50c3210d5e308c235c489873ac3df181434c9dc46e5b38"
+      },
+      {
+        "path": "src/components/PlacePhoto.tsx",
+        "sha256": "cd70ffec0701cd0e7123f99c4e6a3d3f0ef041be9d36062e886094293c338682"
+      },
+      {
+        "path": "src/components/SpotApp.tsx",
+        "sha256": "f672562d04250ef59896701a9d883d3224eb3e4b01b2e5231622699fcc31582f"
+      },
+      {
+        "path": "src/lib/domain.ts",
+        "sha256": "5dee8a638e535965bd600c5e271dffc4b4a414029ffd439fa574f0a681c7d63f"
+      },
+      {
+        "path": "src/lib/grounded-copy.ts",
+        "sha256": "319442ca8848cae4a4ed287d4a07ef73513e06e608df3c5e2687c8fcb3062e5e"
+      },
+      {
+        "path": "src/lib/hours.ts",
+        "sha256": "832e8f269f2744bb318ecb7b9bff21c7f844050d98266f386f6f8fc4a0192d9c"
+      },
+      {
+        "path": "src/lib/http.ts",
+        "sha256": "e2bdaa283630b8023bdca6418d24c3bb15a9950af368881c71f1100ea13d5790"
+      },
+      {
+        "path": "src/lib/journey-search.ts",
+        "sha256": "27dc02aa655ed3470e401352a6fc6ee117421adeab22ba04daff28968f48bc4a"
+      },
+      {
+        "path": "src/lib/journey.ts",
+        "sha256": "3db55037c585121073aee33e4f4953843c52bc031c06c8861488bd80f14b5864"
+      },
+      {
+        "path": "src/lib/local-index.ts",
+        "sha256": "780a28e99e4b4aa25596df608f81e4e23a2d51894c6e7da7f815d92efd9ec576"
+      },
+      {
+        "path": "src/lib/model.ts",
+        "sha256": "5ad0b3d7dd0b42bdb75571b5e48cd61c2713c1e9c70a1c695538f60b3fc22ec8"
+      },
+      {
+        "path": "src/lib/place-scope.ts",
+        "sha256": "5330e2893dec9127f4e2659908b95377279dbb2c24c15c9a18ad06072d65c28d"
+      },
+      {
+        "path": "src/lib/retrieval.ts",
+        "sha256": "39ad37468ff6853fe0bf9b480b435c65d02743407f202193af8e48231bab6f02"
+      },
+      {
+        "path": "src/lib/routing.ts",
+        "sha256": "1515b0487f07466b0ce9d9dfc881e926bd0025eda6480f8772c63f940f6754fe"
+      },
+      {
+        "path": "src/lib/search.ts",
+        "sha256": "a7f55c4fe39f3cd1e9e2349ba1887ed9a7142ad5b96b10b80c17355194238083"
+      },
+      {
+        "path": "src/lib/server/budget.ts",
+        "sha256": "ef71c0b3e49483d63e157908a82e95c56a8e6fb91f9ff7b844b3b27d506f436e"
+      },
+      {
+        "path": "src/lib/server/config.ts",
+        "sha256": "b11f3edc6db9a9f5cd48237f3dc367c0f581969ce320adc0b532d094f51262a8"
+      },
+      {
+        "path": "src/lib/server/providers.ts",
+        "sha256": "459ead87830231516fc111266a23943a4a81a8a6891fd5c39c35feb3027a46dc"
+      },
+      {
+        "path": "src/lib/source-facts.ts",
+        "sha256": "8de922a092b037149061517e7f167d194a3241fbe9d509ea8780978ee6f66c1a"
+      },
+      {
+        "path": "src/lib/types.ts",
+        "sha256": "3100076cb4f1d23449d2e76f1b79421e812eb7911e742fd2e351e55770c2d448"
+      },
+      {
+        "path": "src/lib/ui-copy.ts",
+        "sha256": "e44768eaea954cdd92c0ad61fc7f04699a644add47926f48cbbfe36271cd410c"
+      },
+      {
+        "path": "src/lib/ui-time.ts",
+        "sha256": "2100953211a311738a34d300799c0bf9784fbb08c32ad1410c1705d412516ac6"
+      },
+      {
+        "path": "supabase/.gitignore",
+        "sha256": "507699eb91144818edf61d3a079212cacf31d8db520eae428e3b48fcf0d6919c"
+      },
+      {
+        "path": "supabase/config.toml",
+        "sha256": "d75388672837aab6f18babc219cf5e4b42f99e1e054a3cbe2bc4869eac1b1bac"
+      },
+      {
+        "path": "supabase/migrations/20261016143150_spot_initial.sql",
+        "sha256": "9b065cfb9ca84013cd203275d60349c64423a1247b054fc203700bd12b95ceb9"
+      },
+      {
+        "path": "supabase/verify-access.sql",
+        "sha256": "89d909708a4098156f0d4a819f81af1669d59eef2910c2204fb1e5af4b8dc8a5"
+      },
+      {
+        "path": "tests/e2e/context.spec.ts",
+        "sha256": "6015b43f9a52faee2b36a882b49c10ab1e9cff6685bee214a658ce3577893241"
+      },
+      {
+        "path": "tests/e2e/data-limits.spec.ts",
+        "sha256": "0a3de1984df4204b7d138af2745597ea5320cb0ffd7bdd952706dcc7abc4438e"
+      },
+      {
+        "path": "tests/e2e/photos.spec.ts",
+        "sha256": "26adf8bb9ace73d048c919d4d392b86b71e0ddd10db329fe85665f65c0b56446"
+      },
+      {
+        "path": "tests/e2e/planned-journey.spec.ts",
+        "sha256": "7cc972c6cce344b56091cbdf445362d3f9de7e84caa8917aaea822f7f10c3c6a"
+      },
+      {
+        "path": "tests/e2e/spot.spec.ts",
+        "sha256": "cef3fa53e2dfa29315aa784caaa7f0c23b9c2cb18c2f9818c098ef6c4dec4eb5"
+      },
+      {
+        "path": "tests/eval/acceptance.json",
+        "sha256": "72d9007d7b6bdf4793300c7b034e22e4d0e1840aad90389ba77e7ddb85728ff3"
+      },
+      {
+        "path": "tests/eval/compound-acceptance.json",
+        "sha256": "eac192d53c10cc96c705e6d1920a1d95f2a40260f2f77637c00fc583ccd2688e"
+      },
+      {
+        "path": "tests/eval/compound-development.json",
+        "sha256": "0faee644f640622d239ca8c956645e1a6ee9718b77486ba53ce6b6421ce51fab"
+      },
+      {
+        "path": "tests/eval/development.json",
+        "sha256": "76eeee62266a2bebcd9b999e1bdaf583d63d465f04cb7946efd028b87062bfa1"
+      },
+      {
+        "path": "tests/evaluate-live.ts",
+        "sha256": "6e5e4c1478664e50a6e3996abab2ec8f095eda07a913a72efe7aa133814cdc05"
+      },
+      {
+        "path": "tests/evaluate-snapshot.ts",
+        "sha256": "b6b37acf2d2adf18722b9dfc22745214cbefd9266c3ef0176b40e809adfbed97"
+      },
+      {
+        "path": "tests/unit/api-contract.test.ts",
+        "sha256": "70a6b78e86f6cf5d6350c752ab417acf676ffc7cf77741a645080b60ccc7f899"
+      },
+      {
+        "path": "tests/unit/city-import.test.ts",
+        "sha256": "a2339f415cf401d69219eba4d2267a133c2612c94a0a87b7f3797bdc1ed75677"
+      },
+      {
+        "path": "tests/unit/compound-quality.test.ts",
+        "sha256": "3fb0e31be3e889d36882e5ceb0db8305f2dff392cb3aca17d02ef9fe28be9309"
+      },
+      {
+        "path": "tests/unit/data-limits.test.ts",
+        "sha256": "477122e4967b19fa28cc7b94b315866b12cc4d8ef37731225821b4bdfa19b7f1"
+      },
+      {
+        "path": "tests/unit/domain.test.ts",
+        "sha256": "4187e7d16521270deb771027e71f55f23781dab22a4fcbc44fe8aef2e634b8e4"
+      },
+      {
+        "path": "tests/unit/fixtures/valhalla-pedestrian.json",
+        "sha256": "8d8d737e04374af59369216a93a6a7efbb6e5fe4dea337dedea9718ce4c5ed35"
+      },
+      {
+        "path": "tests/unit/harness.test.ts",
+        "sha256": "b903a4c40c218c8dbabfde9b1cb0a6bf26d47bea99e3f1ba7b068147edda9921"
+      },
+      {
+        "path": "tests/unit/http.test.ts",
+        "sha256": "c28ea37a79bdb6d5480a08f28dea5992e7b6f3da634953748c5ef4b05343458a"
+      },
+      {
+        "path": "tests/unit/import-contract.test.ts",
+        "sha256": "52782e4fcafc50e19b6a46e4ca30fd703ca8973e81b76a5de71361b397229902"
+      },
+      {
+        "path": "tests/unit/ingestion.test.ts",
+        "sha256": "a22e7e414154f4444a0e2cd474bc94e65ae36c6ef620f429a69d51823fd656be"
+      },
+      {
+        "path": "tests/unit/journey-routing.test.ts",
+        "sha256": "69b468fa0c388677374a8fc664af29a56369b03bb008dd74c9f8805fabdc4612"
+      },
+      {
+        "path": "tests/unit/local-index.test.ts",
+        "sha256": "5e726a383ed017ad7fad4d57afadcf03f4efb17fd2781700a599679315b5d509"
+      },
+      {
+        "path": "tests/unit/model.test.ts",
+        "sha256": "01310cbd9207d4cbe08a91081d1614f2fa26993a699a869237b776dfa9469cc6"
+      },
+      {
+        "path": "tests/unit/photos.test.ts",
+        "sha256": "a91188d2eaa1460c8d481cea343b61e35134504f318eb3fda5277d621bfd4bc6"
+      },
+      {
+        "path": "tests/unit/place-scope.test.ts",
+        "sha256": "c76970b4a6254f1906424f632736184158fb6ac6a23b1a56b2c32abafdd07532"
+      },
+      {
+        "path": "tests/unit/provider-contract.test.ts",
+        "sha256": "b048716ad2495fcc4b517276e117a98c778aa15f33748b9232742c83046936ac"
+      },
+      {
+        "path": "tests/unit/routing.test.ts",
+        "sha256": "ae9cc6358a9e932c5455ee589e873a110be0481102bf79b7d8c7cf666b6f9f7e"
+      },
+      {
+        "path": "tests/unit/scenarios.test.ts",
+        "sha256": "d4d89e94e10ff202e76b13f372f190396b5e963b41529e5157bd23ec82b4c59d"
+      },
+      {
+        "path": "tests/unit/search.integration.test.ts",
+        "sha256": "9eab65fa1f99efec490b6ce70d6608cc8efdaef224675e43329f2ff3d9d642c3"
+      },
+      {
+        "path": "tests/unit/source-facts.test.ts",
+        "sha256": "2354475ce8fb48b27e89b1271ec5ad82674ae0f06756fb4dbd6599d21ca31cdf"
+      },
+      {
+        "path": "tests/unit/ui-copy.test.ts",
+        "sha256": "e00a831a6576a10910657619f944a5a1e0bf0e291b68b3495914cfff40e717c2"
+      },
+      {
+        "path": "tests/unit/ui-time.test.ts",
+        "sha256": "65ac978d482b1cb370b59a73e639c660fd1ddf4240f3a59c1ac4e69907040611"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha256": "4c4fc3691cba5606c69af38340119265472659a90f4ba48e193c4a303ef37015"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha256": "5ad5d7fc1a51b7c9febdeebf7779db27f8e0fc8a4031fda0a8eb8f32a308cf8e"
+      }
+    ]
+  },
+  "id": "WEATHER-01",
+  "status": "passed",
+  "mode": "demo",
+  "kind": "recommendations",
+  "poiIds": [
+    "osm:node/12520559591",
+    "osm:node/14275682079",
+    "osm:node/9047331879"
+  ],
+  "warnings": [
+    "Прогноз погоды не подключён. Погода не проверялась; обязательные условия можно задать вручную.",
+    "Демо по реальному снимку OSM. Облачные сервисы не вызываются."
+  ],
+  "networkAttempts": 0,
+  "paidRequests": 0,
+  "limitations": [
+    "This checks honest absence of a weather integration, not real meteorological conditions."
+  ]
+}

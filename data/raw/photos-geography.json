@@ -1,0 +1,5635 @@
+{
+  "fetchedAt": "2026-10-16T15:25:05.221Z",
+  "zones": [
+    {
+      "name": "expo",
+      "lat": 51.09,
+      "lon": 71.412,
+      "sourceUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&maxlag=5&list=geosearch&gscoord=51.09%7C71.412&gsradius=3000&gslimit=500&gsnamespace=6",
+      "count": 135
+    },
+    {
+      "name": "botanical",
+      "lat": 51.1062,
+      "lon": 71.4166,
+      "sourceUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&maxlag=5&list=geosearch&gscoord=51.1062%7C71.4166&gsradius=3000&gslimit=500&gsnamespace=6",
+      "count": 407
+    },
+    {
+      "name": "central",
+      "lat": 51.129,
+      "lon": 71.422,
+      "sourceUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&maxlag=5&list=geosearch&gscoord=51.129%7C71.422&gsradius=3000&gslimit=500&gsnamespace=6",
+      "count": 500
+    }
+  ],
+  "files": [
+    {
+      "pageid": 151967079,
+      "ns": 6,
+      "title": "File:Sign, Astana (P1190776).jpg",
+      "lat": 51.088700328837,
+      "lon": 71.410924274257,
+      "dist": 1985.8,
+      "primary": ""
+    },
+    {
+      "pageid": 152325058,
+      "ns": 6,
+      "title": "File:Value transport, Astana (P1190775).jpg",
+      "lat": 51.088649323325,
+      "lon": 71.410790041538,
+      "dist": 1993.3,
+      "primary": ""
+    },
+    {
+      "pageid": 152324913,
+      "ns": 6,
+      "title": "File:Changan UNI-V, Astana (P1190773).jpg",
+      "lat": 51.088646632088,
+      "lon": 71.410659895397,
+      "dist": 1995.4,
+      "primary": ""
+    },
+    {
+      "pageid": 152324912,
+      "ns": 6,
+      "title": "File:Red Bus Tour, Astana (P1190771).jpg",
+      "lat": 51.088360445847,
+      "lon": 71.411244018152,
+      "dist": 2018.6,
+      "primary": ""
+    },
+    {
+      "pageid": 138510305,
+      "ns": 6,
+      "title": "File:Serik Jumanğarin and Nooruddin Azizi (2023-08-03).jpg",
+      "lat": 51.0919,
+      "lon": 71.412217,
+      "dist": 1619.3,
+      "primary": ""
+    },
+    {
+      "pageid": 119455719,
+      "ns": 6,
+      "title": "File:Ospan Orden Kurmet.jpg",
+      "lat": 51.091914,
+      "lon": 71.412156,
+      "dist": 1618.6,
+      "primary": ""
+    },
+    {
+      "pageid": 124693600,
+      "ns": 6,
+      "title": "File:Монументальная роспись Марата Бекеева в MEGA Silk Way 3.jpg",
+      "lat": 51.089303,
+      "lon": 71.408622,
+      "dist": 1959.7,
+      "primary": ""
+    },
+    {
+      "pageid": 61571629,
+      "ns": 6,
+      "title": "File:Expo 2017 Pakistan Pavilion.jpg",
+      "lat": 51.087837,
+      "lon": 71.414336,
+      "dist": 2048,
+      "primary": ""
+    },
+    {
+      "pageid": 138510303,
+      "ns": 6,
+      "title": "File:Afghan delegation in the Museum of Future Energy (2023-08-04).jpg",
+      "lat": 51.089347,
+      "lon": 71.416169,
+      "dist": 1874.2,
+      "primary": ""
+    },
+    {
+      "pageid": 150869149,
+      "ns": 6,
+      "title": "File:Miraszhugunussov2.jpg",
+      "lat": 51.092697,
+      "lon": 71.411567,
+      "dist": 1542,
+      "primary": ""
+    },
+    {
+      "pageid": 124693598,
+      "ns": 6,
+      "title": "File:Монументальная роспись Марата Бекеева в MEGA Silk Way 2.jpg",
+      "lat": 51.089511,
+      "lon": 71.407081,
+      "dist": 1971.2,
+      "primary": ""
+    },
+    {
+      "pageid": 61568860,
+      "ns": 6,
+      "title": "File:Expo 2017 India Pavilion.jpg",
+      "lat": 51.08788,
+      "lon": 71.415961,
+      "dist": 2037.6,
+      "primary": ""
+    },
+    {
+      "pageid": 61568861,
+      "ns": 6,
+      "title": "File:Expo 2017 China Pavilion Queue Area & Entrance.jpg",
+      "lat": 51.08817,
+      "lon": 71.417071,
+      "dist": 2005.1,
+      "primary": ""
+    },
+    {
+      "pageid": 90722316,
+      "ns": 6,
+      "title": "File:Спортзал Astana IT University.jpg",
+      "lat": 51.090308,
+      "lon": 71.417839,
+      "dist": 1769.2,
+      "primary": ""
+    },
+    {
+      "pageid": 124693599,
+      "ns": 6,
+      "title": "File:Монументальная роспись Марата Бекеева в MEGA Silk Way.jpg",
+      "lat": 51.089508,
+      "lon": 71.405669,
+      "dist": 2006.9,
+      "primary": ""
+    },
+    {
+      "pageid": 61570942,
+      "ns": 6,
+      "title": "File:Expo 2017 Papua New Guinea Pavilion.jpg",
+      "lat": 51.088003,
+      "lon": 71.41838,
+      "dist": 2027.2,
+      "primary": ""
+    },
+    {
+      "pageid": 61568879,
+      "ns": 6,
+      "title": "File:Expo 2017 Car Park.jpg",
+      "lat": 51.085626,
+      "lon": 71.413759,
+      "dist": 2296.3,
+      "primary": ""
+    },
+    {
+      "pageid": 124693602,
+      "ns": 6,
+      "title": "File:Монументальная роспись Марата Бекеева в MEGA Silk Way 4.jpg",
+      "lat": 51.089153,
+      "lon": 71.404839,
+      "dist": 2065.8,
+      "primary": ""
+    },
+    {
+      "pageid": 146521993,
+      "ns": 6,
+      "title": "File:Тошматов Маҳмуд.jpg",
+      "lat": 51.088889,
+      "lon": 71.404722,
+      "dist": 2096,
+      "primary": ""
+    },
+    {
+      "pageid": 182669508,
+      "ns": 6,
+      "title": "File:Mixing soil samples for geotechnical testing.jpg",
+      "lat": 51.091053,
+      "lon": 71.400392,
+      "dist": 2029.2,
+      "primary": ""
+    },
+    {
+      "pageid": 182669473,
+      "ns": 6,
+      "title": "File:Women in Science.jpg",
+      "lat": 51.091053,
+      "lon": 71.400392,
+      "dist": 2029.2,
+      "primary": ""
+    },
+    {
+      "pageid": 182669471,
+      "ns": 6,
+      "title": "File:Young researchers.jpg",
+      "lat": 51.091053,
+      "lon": 71.400392,
+      "dist": 2029.2,
+      "primary": ""
+    },
+    {
+      "pageid": 182217533,
+      "ns": 6,
+      "title": "File:Research work was successfully shown to the industry.jpg",
+      "lat": 51.093594,
+      "lon": 71.422303,
+      "dist": 1457.2,
+      "primary": ""
+    },
+    {
+      "pageid": 182669509,
+      "ns": 6,
+      "title": "File:RAs with professor at Nazarbayev University.jpg",
+      "lat": 51.090642,
+      "lon": 71.400122,
+      "dist": 2077.7,
+      "primary": ""
+    },
+    {
+      "pageid": 182669510,
+      "ns": 6,
+      "title": "File:Research group meeting at Nazarbayev University.jpg",
+      "lat": 51.090919,
+      "lon": 71.400139,
+      "dist": 2051.4,
+      "primary": ""
+    },
+    {
+      "pageid": 182669511,
+      "ns": 6,
+      "title": "File:Triaxial testing at NU.jpg",
+      "lat": 51.090794,
+      "lon": 71.399711,
+      "dist": 2079.8,
+      "primary": ""
+    },
+    {
+      "pageid": 128682631,
+      "ns": 6,
+      "title": "File:Prospekt of Ulı dala sign on pole.jpg",
+      "lat": 51.096696,
+      "lon": 71.420446,
+      "dist": 1090.4,
+      "primary": ""
+    },
+    {
+      "pageid": 182726395,
+      "ns": 6,
+      "title": "File:Sense of Light.jpg",
+      "lat": 51.090581,
+      "lon": 71.398375,
+      "dist": 2153.1,
+      "primary": ""
+    },
+    {
+      "pageid": 46184649,
+      "ns": 6,
+      "title": "File:Automated.JPG",
+      "lat": 51.09085,
+      "lon": 71.398316666667,
+      "dist": 2131.5,
+      "primary": ""
+    },
+    {
+      "pageid": 46190885,
+      "ns": 6,
+      "title": "File:Isolation of zebra fish brain.JPG",
+      "lat": 51.090680555556,
+      "lon": 71.398133333333,
+      "dist": 2154.3,
+      "primary": ""
+    },
+    {
+      "pageid": 74187093,
+      "ns": 6,
+      "title": "File:A K E.jpg",
+      "lat": 51.098336111111,
+      "lon": 71.416175,
+      "dist": 874.9,
+      "primary": ""
+    },
+    {
+      "pageid": 46252717,
+      "ns": 6,
+      "title": "File:AFM image of the superhydrophobic surface.png",
+      "lat": 51.090869444444,
+      "lon": 71.398125,
+      "dist": 2137.8,
+      "primary": ""
+    },
+    {
+      "pageid": 46252712,
+      "ns": 6,
+      "title": "File:Water on copper plate.JPG",
+      "lat": 51.090869444444,
+      "lon": 71.398125,
+      "dist": 2137.8,
+      "primary": ""
+    },
+    {
+      "pageid": 46252714,
+      "ns": 6,
+      "title": "File:Mirror effect of the superhydrophobic surface on a copper plate.jpg",
+      "lat": 51.090869444444,
+      "lon": 71.398125,
+      "dist": 2137.8,
+      "primary": ""
+    },
+    {
+      "pageid": 46252713,
+      "ns": 6,
+      "title": "File:Superhydrophobic surface.JPG",
+      "lat": 51.0906,
+      "lon": 71.397744444444,
+      "dist": 2177.7,
+      "primary": ""
+    },
+    {
+      "pageid": 46191229,
+      "ns": 6,
+      "title": "File:Halloween celebration at lab.jpg",
+      "lat": 51.090980555556,
+      "lon": 71.397736111111,
+      "dist": 2144.5,
+      "primary": ""
+    },
+    {
+      "pageid": 46184648,
+      "ns": 6,
+      "title": "File:Work hard and smile.JPG",
+      "lat": 51.090552777778,
+      "lon": 71.397658333333,
+      "dist": 2185.6,
+      "primary": ""
+    },
+    {
+      "pageid": 46249232,
+      "ns": 6,
+      "title": "File:Chemical components.JPG",
+      "lat": 51.091061111111,
+      "lon": 71.397530555556,
+      "dist": 2146.4,
+      "primary": ""
+    },
+    {
+      "pageid": 46249231,
+      "ns": 6,
+      "title": "File:Biology laboratory work, bacteria- bacillus subtilies.JPG",
+      "lat": 51.090805555556,
+      "lon": 71.397338888889,
+      "dist": 2177,
+      "primary": ""
+    },
+    {
+      "pageid": 154275219,
+      "ns": 6,
+      "title": "File:Sangariev.jpg",
+      "lat": 51.093692,
+      "lon": 71.425636,
+      "dist": 1527.3,
+      "primary": ""
+    },
+    {
+      "pageid": 128682632,
+      "ns": 6,
+      "title": "File:Prospekt of Ulı dala sign on house.jpg",
+      "lat": 51.096443,
+      "lon": 71.422832,
+      "dist": 1168.9,
+      "primary": ""
+    },
+    {
+      "pageid": 182748447,
+      "ns": 6,
+      "title": "File:3D Neuroblast.jpg",
+      "lat": 51.091083,
+      "lon": 71.397094,
+      "dist": 2163.5,
+      "primary": ""
+    },
+    {
+      "pageid": 182748469,
+      "ns": 6,
+      "title": "File:Drosophila Neuroblast.jpg",
+      "lat": 51.091083,
+      "lon": 71.397086,
+      "dist": 2163.9,
+      "primary": ""
+    },
+    {
+      "pageid": 182669505,
+      "ns": 6,
+      "title": "File:Through the biology lens.jpg",
+      "lat": 51.090981,
+      "lon": 71.396989,
+      "dist": 2176.9,
+      "primary": ""
+    },
+    {
+      "pageid": 124584030,
+      "ns": 6,
+      "title": "File:Молодые деревья вдоль дороги (47984806057).jpg",
+      "lat": 51.083058,
+      "lon": 71.422394,
+      "dist": 2604.9,
+      "primary": ""
+    },
+    {
+      "pageid": 46253676,
+      "ns": 6,
+      "title": "File:Three Tigers.JPG",
+      "lat": 51.088994444444,
+      "lon": 71.396908333333,
+      "dist": 2356.1,
+      "primary": ""
+    },
+    {
+      "pageid": 182669481,
+      "ns": 6,
+      "title": "File:Preparing samples for analysis.jpg",
+      "lat": 51.090875,
+      "lon": 71.396819,
+      "dist": 2193.6,
+      "primary": ""
+    },
+    {
+      "pageid": 182669488,
+      "ns": 6,
+      "title": "File:Marie Curie 2026.jpg",
+      "lat": 51.090964,
+      "lon": 71.396811,
+      "dist": 2186.2,
+      "primary": ""
+    },
+    {
+      "pageid": 182748072,
+      "ns": 6,
+      "title": "File:Bacteria planet.jpg",
+      "lat": 51.091147,
+      "lon": 71.396836,
+      "dist": 2169.4,
+      "primary": ""
+    },
+    {
+      "pageid": 182748533,
+      "ns": 6,
+      "title": "File:White eyed drosophila.jpg",
+      "lat": 51.091081,
+      "lon": 71.396806,
+      "dist": 2176.4,
+      "primary": ""
+    },
+    {
+      "pageid": 182683490,
+      "ns": 6,
+      "title": "File:Our uniserse.jpg",
+      "lat": 51.092014,
+      "lon": 71.396972,
+      "dist": 2089.7,
+      "primary": ""
+    },
+    {
+      "pageid": 182669503,
+      "ns": 6,
+      "title": "File:Scientific data.jpg",
+      "lat": 51.091039,
+      "lon": 71.396714,
+      "dist": 2184.1,
+      "primary": ""
+    },
+    {
+      "pageid": 182669490,
+      "ns": 6,
+      "title": "File:RAs at Nazarbayev University.jpg",
+      "lat": 51.090931,
+      "lon": 71.396683,
+      "dist": 2194.7,
+      "primary": ""
+    },
+    {
+      "pageid": 182735119,
+      "ns": 6,
+      "title": "File:Drosophilla brain.jpg",
+      "lat": 51.091153,
+      "lon": 71.396675,
+      "dist": 2176.1,
+      "primary": ""
+    },
+    {
+      "pageid": 182669504,
+      "ns": 6,
+      "title": "File:People in science 2026.jpg",
+      "lat": 51.090881,
+      "lon": 71.396492,
+      "dist": 2207.5,
+      "primary": ""
+    },
+    {
+      "pageid": 182669479,
+      "ns": 6,
+      "title": "File:Transferring liquid samples.jpg",
+      "lat": 51.091122,
+      "lon": 71.396531,
+      "dist": 2185.1,
+      "primary": ""
+    },
+    {
+      "pageid": 182669478,
+      "ns": 6,
+      "title": "File:Creating sustainability solutions.jpg",
+      "lat": 51.090858,
+      "lon": 71.396461,
+      "dist": 2210.9,
+      "primary": ""
+    },
+    {
+      "pageid": 182669472,
+      "ns": 6,
+      "title": "File:Biology laboratory 2026.jpg",
+      "lat": 51.090858,
+      "lon": 71.396461,
+      "dist": 2210.9,
+      "primary": ""
+    },
+    {
+      "pageid": 182748275,
+      "ns": 6,
+      "title": "File:AFM Collagen.jpg",
+      "lat": 51.091186,
+      "lon": 71.395981,
+      "dist": 2204.6,
+      "primary": ""
+    },
+    {
+      "pageid": 182728835,
+      "ns": 6,
+      "title": "File:Robot dog.jpg",
+      "lat": 51.091325,
+      "lon": 71.395906,
+      "dist": 2196.3,
+      "primary": ""
+    },
+    {
+      "pageid": 182669489,
+      "ns": 6,
+      "title": "File:Antidot development.jpg",
+      "lat": 51.090978,
+      "lon": 71.395783,
+      "dist": 2231.1,
+      "primary": ""
+    },
+    {
+      "pageid": 182217549,
+      "ns": 6,
+      "title": "File:Students with their supervisor.jpg",
+      "lat": 51.091361,
+      "lon": 71.395844,
+      "dist": 2196.2,
+      "primary": ""
+    },
+    {
+      "pageid": 46249241,
+      "ns": 6,
+      "title": "File:Animal heart.JPG",
+      "lat": 51.092516666667,
+      "lon": 71.39585,
+      "dist": 2101,
+      "primary": ""
+    },
+    {
+      "pageid": 143367482,
+      "ns": 6,
+      "title": "File:Street sign in Astana 01.jpg",
+      "lat": 51.096111,
+      "lon": 71.426092,
+      "dist": 1303,
+      "primary": ""
+    },
+    {
+      "pageid": 118456365,
+      "ns": 6,
+      "title": "File:Lilac lol.jpg",
+      "lat": 51.086739,
+      "lon": 71.395661,
+      "dist": 2611.7,
+      "primary": ""
+    },
+    {
+      "pageid": 196741726,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Celebration in Astana, 28 June 2026.jpg",
+      "lat": 51.100853,
+      "lon": 71.412728,
+      "dist": 653.1,
+      "primary": ""
+    },
+    {
+      "pageid": 151963319,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190756).jpg",
+      "lat": 51.100961139262,
+      "lon": 71.41861623353,
+      "dist": 599.3,
+      "primary": ""
+    },
+    {
+      "pageid": 151603601,
+      "ns": 6,
+      "title": "File:Bilingual sign, Astana (P1190757).jpg",
+      "lat": 51.100830536552,
+      "lon": 71.41966979002,
+      "dist": 634.4,
+      "primary": ""
+    },
+    {
+      "pageid": 126163179,
+      "ns": 6,
+      "title": "File:Educational development over the years.jpg",
+      "lat": 51.098683,
+      "lon": 71.424933,
+      "dist": 1018.4,
+      "primary": ""
+    },
+    {
+      "pageid": 137765857,
+      "ns": 6,
+      "title": "File:Астана, строящаяся станция ЛРТ у мечети сверху.jpg",
+      "lat": 51.079168,
+      "lon": 71.402833,
+      "dist": 1364.1,
+      "primary": ""
+    },
+    {
+      "pageid": 101313966,
+      "ns": 6,
+      "title": "File:ISS043-E-64056 - View of Earth.jpg",
+      "lat": 51.1,
+      "lon": 71.4,
+      "dist": 1348.6,
+      "primary": ""
+    },
+    {
+      "pageid": 101313952,
+      "ns": 6,
+      "title": "File:ISS043-E-64055 - View of Earth.jpg",
+      "lat": 51.1,
+      "lon": 71.4,
+      "dist": 1348.6,
+      "primary": ""
+    },
+    {
+      "pageid": 111570821,
+      "ns": 6,
+      "title": "File:ISS028-E-37501 - View of Earth.jpg",
+      "lat": 51.1,
+      "lon": 71.4,
+      "dist": 1348.6,
+      "primary": ""
+    },
+    {
+      "pageid": 101331720,
+      "ns": 6,
+      "title": "File:ISS043-E-66641 - View of Earth.jpg",
+      "lat": 51.1,
+      "lon": 71.4,
+      "dist": 1348.6,
+      "primary": ""
+    },
+    {
+      "pageid": 119409892,
+      "ns": 6,
+      "title": "File:ISS035-E-34376 - View of Earth.jpg",
+      "lat": 51.1,
+      "lon": 71.4,
+      "dist": 1348.6,
+      "primary": ""
+    },
+    {
+      "pageid": 101331722,
+      "ns": 6,
+      "title": "File:ISS043-E-66642 - View of Earth.jpg",
+      "lat": 51.1,
+      "lon": 71.4,
+      "dist": 1348.6,
+      "primary": ""
+    },
+    {
+      "pageid": 118456814,
+      "ns": 6,
+      "title": "File:Стебель Одуванчика.jpg",
+      "lat": 51.084669,
+      "lon": 71.393856,
+      "dist": 2873.1,
+      "primary": ""
+    },
+    {
+      "pageid": 118456816,
+      "ns": 6,
+      "title": "File:Бархатцы оранжевый.jpg",
+      "lat": 51.084669,
+      "lon": 71.393856,
+      "dist": 2873.1,
+      "primary": ""
+    },
+    {
+      "pageid": 118456367,
+      "ns": 6,
+      "title": "File:Fofofofofofofo.jpg",
+      "lat": 51.084872,
+      "lon": 71.39225,
+      "dist": 2918.2,
+      "primary": ""
+    },
+    {
+      "pageid": 118456364,
+      "ns": 6,
+      "title": "File:Djhfshfshf.jpg",
+      "lat": 51.084903,
+      "lon": 71.392058,
+      "dist": 2923.2,
+      "primary": ""
+    },
+    {
+      "pageid": 118456363,
+      "ns": 6,
+      "title": "File:Skfjsdufsifu.jpg",
+      "lat": 51.085033,
+      "lon": 71.391922,
+      "dist": 2917.1,
+      "primary": ""
+    },
+    {
+      "pageid": 182725057,
+      "ns": 6,
+      "title": "File:Titanium dioxide thin film with inverse opal structure.tif",
+      "lat": 51.09,
+      "lon": 71.39,
+      "dist": 2587.5,
+      "primary": ""
+    },
+    {
+      "pageid": 182724625,
+      "ns": 6,
+      "title": "File:Microflowers of bismuth sulfide.png",
+      "lat": 51.09,
+      "lon": 71.39,
+      "dist": 2587.5,
+      "primary": ""
+    },
+    {
+      "pageid": 119324550,
+      "ns": 6,
+      "title": "File:Нур-Султан, ботанический сад, ель.jpg",
+      "lat": 51.1027,
+      "lon": 71.420816,
+      "dist": 488,
+      "primary": ""
+    },
+    {
+      "pageid": 151604137,
+      "ns": 6,
+      "title": "File:Royal Flowers, Astana (P1190745).jpg",
+      "lat": 51.09959,
+      "lon": 71.42798,
+      "dist": 1082.4,
+      "primary": ""
+    },
+    {
+      "pageid": 119324551,
+      "ns": 6,
+      "title": "File:Нур-Султан, ботанический сад, барбарис коротконожковый.jpg",
+      "lat": 51.102798,
+      "lon": 71.42096,
+      "dist": 485.6,
+      "primary": ""
+    },
+    {
+      "pageid": 119324552,
+      "ns": 6,
+      "title": "File:Нур-Султан, ботанический сад, можжевельник казацкий.jpg",
+      "lat": 51.103054,
+      "lon": 71.42103,
+      "dist": 466.9,
+      "primary": ""
+    },
+    {
+      "pageid": 137766000,
+      "ns": 6,
+      "title": "File:Астана, EXPO-2017 сверху.jpg",
+      "lat": 51.075197,
+      "lon": 71.404572,
+      "dist": 1725.9,
+      "primary": ""
+    },
+    {
+      "pageid": 119324562,
+      "ns": 6,
+      "title": "File:Нур-Султан, ботанический сад, сосны (2).jpg",
+      "lat": 51.104644,
+      "lon": 71.421583,
+      "dist": 388.6,
+      "primary": ""
+    },
+    {
+      "pageid": 119324555,
+      "ns": 6,
+      "title": "File:Нур-Султан, ботанический сад, пруд.jpg",
+      "lat": 51.105051,
+      "lon": 71.421642,
+      "dist": 374.5,
+      "primary": ""
+    },
+    {
+      "pageid": 151963478,
+      "ns": 6,
+      "title": "File:Botanical garden, Astana (P1190701).jpg",
+      "lat": 51.105692405787,
+      "lon": 71.41936482838,
+      "dist": 201.1,
+      "primary": ""
+    },
+    {
+      "pageid": 152034780,
+      "ns": 6,
+      "title": "File:Botanical garden, Astana (P1190702).jpg",
+      "lat": 51.106080274452,
+      "lon": 71.417507008782,
+      "dist": 64.7,
+      "primary": ""
+    },
+    {
+      "pageid": 119324557,
+      "ns": 6,
+      "title": "File:Нур-Султан, ботанический сад, одуванчик лекарственный.jpg",
+      "lat": 51.105065,
+      "lon": 71.422516,
+      "dist": 431.9,
+      "primary": ""
+    },
+    {
+      "pageid": 119324556,
+      "ns": 6,
+      "title": "File:Нур-Султан, ботанический сад, сосны (1).jpg",
+      "lat": 51.105065,
+      "lon": 71.422516,
+      "dist": 431.9,
+      "primary": ""
+    },
+    {
+      "pageid": 151963312,
+      "ns": 6,
+      "title": "File:Botanical garden, Astana (P1190703).jpg",
+      "lat": 51.10620453834,
+      "lon": 71.416711743348,
+      "dist": 7.8,
+      "primary": ""
+    },
+    {
+      "pageid": 152034764,
+      "ns": 6,
+      "title": "File:Botanical garden, Astana (P1190700).jpg",
+      "lat": 51.105752170078,
+      "lon": 71.419736303648,
+      "dist": 224.6,
+      "primary": ""
+    },
+    {
+      "pageid": 151882488,
+      "ns": 6,
+      "title": "File:Botanical garden, Astana (P1190704).jpg",
+      "lat": 51.10629931,
+      "lon": 71.41629517,
+      "dist": 24,
+      "primary": ""
+    },
+    {
+      "pageid": 120347328,
+      "ns": 6,
+      "title": "File:Инсталляция в ботаническом саду г. Нур-Султан.jpg",
+      "lat": 51.10648,
+      "lon": 71.416152,
+      "dist": 2537.2,
+      "primary": ""
+    },
+    {
+      "pageid": 152034751,
+      "ns": 6,
+      "title": "File:Botanical garden, Astana (P1190699).jpg",
+      "lat": 51.105355575003,
+      "lon": 71.422710607083,
+      "dist": 436.8,
+      "primary": ""
+    },
+    {
+      "pageid": 138510302,
+      "ns": 6,
+      "title": "File:Delegation of Afghanistan in the Astana Grand Mosque group photo (2023-08-04).jpg",
+      "lat": 51.073222,
+      "lon": 71.410514,
+      "dist": 1868.5,
+      "primary": ""
+    },
+    {
+      "pageid": 120347326,
+      "ns": 6,
+      "title": "File:Араукария в оранжерее ботанического сада Нур-Султана.jpg",
+      "lat": 51.10616,
+      "lon": 71.419865,
+      "dist": 228,
+      "primary": ""
+    },
+    {
+      "pageid": 120347327,
+      "ns": 6,
+      "title": "File:Араукария в оранжерее ботанического сада г. Нур-Султан.jpg",
+      "lat": 51.10616,
+      "lon": 71.419865,
+      "dist": 228,
+      "primary": ""
+    },
+    {
+      "pageid": 152034737,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190698).jpg",
+      "lat": 51.10534131421,
+      "lon": 71.423338464587,
+      "dist": 480.1,
+      "primary": ""
+    },
+    {
+      "pageid": 152324886,
+      "ns": 6,
+      "title": "File:Botanical garden, Astana (P1190697).jpg",
+      "lat": 51.105318968368,
+      "lon": 71.4234149091,
+      "dist": 485.8,
+      "primary": ""
+    },
+    {
+      "pageid": 151604073,
+      "ns": 6,
+      "title": "File:Kaspi Postomat, Astana (P1190696).jpg",
+      "lat": 51.104413393015,
+      "lon": 71.426171434073,
+      "dist": 697.2,
+      "primary": ""
+    },
+    {
+      "pageid": 152028045,
+      "ns": 6,
+      "title": "File:Construction, Esil District, Astana (P1190694).jpg",
+      "lat": 51.104286952042,
+      "lon": 71.426741053042,
+      "dist": 739.3,
+      "primary": ""
+    },
+    {
+      "pageid": 196741725,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Celebration in Astana, 28 June 2026-3.jpg",
+      "lat": 51.105808,
+      "lon": 71.422592,
+      "dist": 420.6,
+      "primary": ""
+    },
+    {
+      "pageid": 145601157,
+      "ns": 6,
+      "title": "File:Astana Grand Mosque - interior.jpg",
+      "lat": 51.072806,
+      "lon": 71.411539,
+      "dist": 1912.2,
+      "primary": ""
+    },
+    {
+      "pageid": 152324900,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190746).jpg",
+      "lat": 51.10333946792,
+      "lon": 71.42929219235,
+      "dist": 941.5,
+      "primary": ""
+    },
+    {
+      "pageid": 138510300,
+      "ns": 6,
+      "title": "File:Delegation of Afghanistan in the Astana Grand Mosque (2023-08-04).jpg",
+      "lat": 51.07265,
+      "lon": 71.409889,
+      "dist": 1934.9,
+      "primary": ""
+    },
+    {
+      "pageid": 145601168,
+      "ns": 6,
+      "title": "File:Astana Grand Mosque - main prayer hall view.jpg",
+      "lat": 51.072389,
+      "lon": 71.409344,
+      "dist": 1967,
+      "primary": ""
+    },
+    {
+      "pageid": 145601155,
+      "ns": 6,
+      "title": "File:Astana Grand Mosque - main prayer hall.jpg",
+      "lat": 51.072383,
+      "lon": 71.409297,
+      "dist": 1968,
+      "primary": ""
+    },
+    {
+      "pageid": 145601161,
+      "ns": 6,
+      "title": "File:Astana Grand Mosque - interior dome decoration.jpg",
+      "lat": 51.072383,
+      "lon": 71.409297,
+      "dist": 1968,
+      "primary": ""
+    },
+    {
+      "pageid": 120428063,
+      "ns": 6,
+      "title": "File:Three lotuses.jpg",
+      "lat": 51.107127,
+      "lon": 71.419122,
+      "dist": 2440.5,
+      "primary": ""
+    },
+    {
+      "pageid": 152324882,
+      "ns": 6,
+      "title": "File:Hyundai Santa Fe, Astana (P1190693).jpg",
+      "lat": 51.104280501015,
+      "lon": 71.428673285978,
+      "dist": 869.5,
+      "primary": ""
+    },
+    {
+      "pageid": 145601164,
+      "ns": 6,
+      "title": "File:Astana Grand Mosque - main prayer hall columns decorations.jpg",
+      "lat": 51.072344,
+      "lon": 71.409278,
+      "dist": 1972.4,
+      "primary": ""
+    },
+    {
+      "pageid": 145601162,
+      "ns": 6,
+      "title": "File:Astana Grand Mosque - main prayer hall decorations.jpg",
+      "lat": 51.072344,
+      "lon": 71.409278,
+      "dist": 1972.4,
+      "primary": ""
+    },
+    {
+      "pageid": 120428058,
+      "ns": 6,
+      "title": "File:Chill Birds.jpg",
+      "lat": 51.107372,
+      "lon": 71.419218,
+      "dist": 2412.8,
+      "primary": ""
+    },
+    {
+      "pageid": 151815834,
+      "ns": 6,
+      "title": "File:Glass houses, Astana (P1190705).jpg",
+      "lat": 51.107564680288,
+      "lon": 71.419491572802,
+      "dist": 2389.9,
+      "primary": ""
+    },
+    {
+      "pageid": 120428057,
+      "ns": 6,
+      "title": "File:Sunny flowers.jpg",
+      "lat": 51.107735,
+      "lon": 71.418604,
+      "dist": 2376.4,
+      "primary": ""
+    },
+    {
+      "pageid": 120428055,
+      "ns": 6,
+      "title": "File:Capital daisies.jpg",
+      "lat": 51.107735,
+      "lon": 71.418604,
+      "dist": 2376.4,
+      "primary": ""
+    },
+    {
+      "pageid": 152034706,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190688).jpg",
+      "lat": 51.10426442,
+      "lon": 71.430139711833,
+      "dist": 969.5,
+      "primary": ""
+    },
+    {
+      "pageid": 120428059,
+      "ns": 6,
+      "title": "File:Botanical triangles.jpg",
+      "lat": 51.107663,
+      "lon": 71.420157,
+      "dist": 2376.1,
+      "primary": ""
+    },
+    {
+      "pageid": 152034690,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190685).jpg",
+      "lat": 51.104592850568,
+      "lon": 71.430201656987,
+      "dist": 966.3,
+      "primary": ""
+    },
+    {
+      "pageid": 152250897,
+      "ns": 6,
+      "title": "File:Chevrolet Cobalt, Astana (P1190685).jpg",
+      "lat": 51.104592850568,
+      "lon": 71.430201656987,
+      "dist": 966.3,
+      "primary": ""
+    },
+    {
+      "pageid": 152028033,
+      "ns": 6,
+      "title": "File:Outdoor gym, Astana (P1190690).jpg",
+      "lat": 51.103963770017,
+      "lon": 71.431789694005,
+      "dist": 1089.3,
+      "primary": ""
+    },
+    {
+      "pageid": 152034724,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190692).jpg",
+      "lat": 51.103920280527,
+      "lon": 71.432771775518,
+      "dist": 1157.2,
+      "primary": ""
+    },
+    {
+      "pageid": 182590338,
+      "ns": 6,
+      "title": "File:Electron micrograph of airborne particles.png",
+      "lat": 51.083333,
+      "lon": 71.383333,
+      "dist": 2135.1,
+      "primary": ""
+    },
+    {
+      "pageid": 182520303,
+      "ns": 6,
+      "title": "File:A Microscopic View of Urban Air.png",
+      "lat": 51.083333,
+      "lon": 71.383333,
+      "dist": 2135.1,
+      "primary": ""
+    },
+    {
+      "pageid": 125033196,
+      "ns": 6,
+      "title": "File:Tokayev poster 2022.jpg",
+      "lat": 51.109153,
+      "lon": 71.426455,
+      "dist": 2228.7,
+      "primary": ""
+    },
+    {
+      "pageid": 151815863,
+      "ns": 6,
+      "title": "File:Tank 500, Astana (P1190744).jpg",
+      "lat": 51.110114539017,
+      "lon": 71.422918561008,
+      "dist": 2100.9,
+      "primary": ""
+    },
+    {
+      "pageid": 58267350,
+      "ns": 6,
+      "title": "File:Kazakhstan vs. Austria at 2017 IIHF World Championship Division I 07.jpg",
+      "lat": 51.109648,
+      "lon": 71.395092,
+      "dist": 1549.7,
+      "primary": ""
+    },
+    {
+      "pageid": 182729660,
+      "ns": 6,
+      "title": "File:Where Curiosity Meets Nature.jpg",
+      "lat": 51.113132,
+      "lon": 71.405614,
+      "dist": 2102.7,
+      "primary": ""
+    },
+    {
+      "pageid": 182730392,
+      "ns": 6,
+      "title": "File:Meet the House Resident A Silverfish Under the Microscope.jpg",
+      "lat": 51.113233,
+      "lon": 71.405432,
+      "dist": 2100.2,
+      "primary": ""
+    },
+    {
+      "pageid": 151882491,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190706).jpg",
+      "lat": 51.112783399445,
+      "lon": 71.427040003383,
+      "dist": 1837.2,
+      "primary": ""
+    },
+    {
+      "pageid": 143367483,
+      "ns": 6,
+      "title": "File:Buildings in Astana.jpg",
+      "lat": 51.116697,
+      "lon": 71.420942,
+      "dist": 1370,
+      "primary": ""
+    },
+    {
+      "pageid": 182221292,
+      "ns": 6,
+      "title": "File:Lymphedema 1.jpg",
+      "lat": 51.119831,
+      "lon": 71.408103,
+      "dist": 1407.2,
+      "primary": ""
+    },
+    {
+      "pageid": 151604082,
+      "ns": 6,
+      "title": "File:Cycling infrastructure, Astana (P1190707).jpg",
+      "lat": 51.120518156855,
+      "lon": 71.42964316985,
+      "dist": 1083.5,
+      "primary": ""
+    },
+    {
+      "pageid": 72495325,
+      "ns": 6,
+      "title": "File:Astana, Kazakhstan, July 2018 - 7.jpg",
+      "lat": 51.120109555556,
+      "lon": 71.431053138889,
+      "dist": 1173.2,
+      "primary": ""
+    },
+    {
+      "pageid": 72495314,
+      "ns": 6,
+      "title": "File:Astana, Kazakhstan, July 2018 - 6.jpg",
+      "lat": 51.120468138889,
+      "lon": 71.431816083333,
+      "dist": 1170.2,
+      "primary": ""
+    },
+    {
+      "pageid": 72495297,
+      "ns": 6,
+      "title": "File:Astana, Kazakhstan, July 2018 - 5.jpg",
+      "lat": 51.120380388889,
+      "lon": 71.432044972222,
+      "dist": 1187.5,
+      "primary": ""
+    },
+    {
+      "pageid": 72495339,
+      "ns": 6,
+      "title": "File:Astana, Kazakhstan, July 2018 - 8.jpg",
+      "lat": 51.12057875,
+      "lon": 71.431617722222,
+      "dist": 1152.1,
+      "primary": ""
+    },
+    {
+      "pageid": 152037190,
+      "ns": 6,
+      "title": "File:Light metro, Astana (P1190708).jpg",
+      "lat": 51.121454971418,
+      "lon": 71.429812011287,
+      "dist": 1000.5,
+      "primary": ""
+    },
+    {
+      "pageid": 151815841,
+      "ns": 6,
+      "title": "File:Light metro, Astana (P1190710).jpg",
+      "lat": 51.122244216047,
+      "lon": 71.430192926402,
+      "dist": 944.1,
+      "primary": ""
+    },
+    {
+      "pageid": 151603592,
+      "ns": 6,
+      "title": "File:Light metro, Astana (P1190711).jpg",
+      "lat": 51.12229842308,
+      "lon": 71.430268065848,
+      "dist": 942.5,
+      "primary": ""
+    },
+    {
+      "pageid": 151882356,
+      "ns": 6,
+      "title": "File:Light metro, Astana (P1190712).jpg",
+      "lat": 51.122446185002,
+      "lon": 71.430432694958,
+      "dist": 936.7,
+      "primary": ""
+    },
+    {
+      "pageid": 152324889,
+      "ns": 6,
+      "title": "File:Polisia, Astana (P1190713).jpg",
+      "lat": 51.122548371003,
+      "lon": 71.430461800932,
+      "dist": 929.2,
+      "primary": ""
+    },
+    {
+      "pageid": 98959050,
+      "ns": 6,
+      "title": "File:Амина Умурзакова улица Нур-Султан (Астана).jpg",
+      "lat": 51.1246,
+      "lon": 71.41069,
+      "dist": 928.6,
+      "primary": ""
+    },
+    {
+      "pageid": 199434782,
+      "ns": 6,
+      "title": "File:Baiterek metro station, Astana, 2026.jpg",
+      "lat": 51.123294,
+      "lon": 71.430061,
+      "dist": 848,
+      "primary": ""
+    },
+    {
+      "pageid": 199433249,
+      "ns": 6,
+      "title": "File:Kazpost, Astana centre, 2026.jpg",
+      "lat": 51.123417,
+      "lon": 71.429956,
+      "dist": 832.9,
+      "primary": ""
+    },
+    {
+      "pageid": 114275464,
+      "ns": 6,
+      "title": "File:SAM 0612 (15131050142).jpg",
+      "lat": 51.11737,
+      "lon": 71.442203,
+      "dist": 1913.2,
+      "primary": ""
+    },
+    {
+      "pageid": 114275461,
+      "ns": 6,
+      "title": "File:SAM 0611 (15131432895).jpg",
+      "lat": 51.11737,
+      "lon": 71.442203,
+      "dist": 1913.2,
+      "primary": ""
+    },
+    {
+      "pageid": 111475612,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 41.jpg",
+      "lat": 51.125911,
+      "lon": 71.413414,
+      "dist": 690.6,
+      "primary": ""
+    },
+    {
+      "pageid": 111475603,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 34.jpg",
+      "lat": 51.121575,
+      "lon": 71.438331,
+      "dist": 1407.3,
+      "primary": ""
+    },
+    {
+      "pageid": 111475600,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 33.jpg",
+      "lat": 51.121181,
+      "lon": 71.439689,
+      "dist": 1509.9,
+      "primary": ""
+    },
+    {
+      "pageid": 152324877,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190675).jpg",
+      "lat": 51.126341023307,
+      "lon": 71.42521000087,
+      "dist": 370.9,
+      "primary": ""
+    },
+    {
+      "pageid": 155082466,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190714).jpg",
+      "lat": 51.1248268998,
+      "lon": 71.431596087112,
+      "dist": 814.7,
+      "primary": ""
+    },
+    {
+      "pageid": 151604058,
+      "ns": 6,
+      "title": "File:Cycling infrastructure, Astana (P1190676).jpg",
+      "lat": 51.126328225943,
+      "lon": 71.425456308407,
+      "dist": 382.7,
+      "primary": ""
+    },
+    {
+      "pageid": 152032692,
+      "ns": 6,
+      "title": "File:Toyota Land Cruiser Prado, Astana (LRM 20240815 163504).jpg",
+      "lat": 51.126354,
+      "lon": 71.425522,
+      "dist": 383.4,
+      "primary": ""
+    },
+    {
+      "pageid": 152032674,
+      "ns": 6,
+      "title": "File:Toyota Land Cruiser Prado, Astana (LRM 20240815 163449).jpg",
+      "lat": 51.126366,
+      "lon": 71.425537,
+      "dist": 383,
+      "primary": ""
+    },
+    {
+      "pageid": 111475607,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 37.jpg",
+      "lat": 51.126664,
+      "lon": 71.424072,
+      "dist": 297.3,
+      "primary": ""
+    },
+    {
+      "pageid": 127546063,
+      "ns": 6,
+      "title": "File:2022 Kazakh presidential election billboard, Astana.jpg",
+      "lat": 51.126652,
+      "lon": 71.424379,
+      "dist": 309.4,
+      "primary": ""
+    },
+    {
+      "pageid": 111475610,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 38.jpg",
+      "lat": 51.127247,
+      "lon": 71.417214,
+      "dist": 386.7,
+      "primary": ""
+    },
+    {
+      "pageid": 151882361,
+      "ns": 6,
+      "title": "File:Night at Esil District, Astana (P1190721).jpg",
+      "lat": 51.125050287205,
+      "lon": 71.431656783633,
+      "dist": 804.4,
+      "primary": ""
+    },
+    {
+      "pageid": 111475604,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 35.jpg",
+      "lat": 51.122864,
+      "lon": 71.437706,
+      "dist": 1291.1,
+      "primary": ""
+    },
+    {
+      "pageid": 58567155,
+      "ns": 6,
+      "title": "File:Левый берег - panoramio (5).jpg",
+      "lat": 51.127579,
+      "lon": 71.416347,
+      "dist": 425,
+      "primary": ""
+    },
+    {
+      "pageid": 151967080,
+      "ns": 6,
+      "title": "File:Geely Emgrand, Astana (P1190778).jpg",
+      "lat": 51.125374287343,
+      "lon": 71.432161416033,
+      "dist": 815.7,
+      "primary": ""
+    },
+    {
+      "pageid": 152324916,
+      "ns": 6,
+      "title": "File:Talan Gallery, Astana (P1190777).jpg",
+      "lat": 51.12551501202,
+      "lon": 71.43178845405,
+      "dist": 785.4,
+      "primary": ""
+    },
+    {
+      "pageid": 152324879,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190677).jpg",
+      "lat": 51.12473332392,
+      "lon": 71.434516655122,
+      "dist": 994,
+      "primary": ""
+    },
+    {
+      "pageid": 152026807,
+      "ns": 6,
+      "title": "File:La Creme, Astana (P1190672).jpg",
+      "lat": 51.127949840023,
+      "lon": 71.419401590178,
+      "dist": 215.7,
+      "primary": ""
+    },
+    {
+      "pageid": 199412612,
+      "ns": 6,
+      "title": "File:Chocolates, Galmart, Keruen mall, Astana, 2026.jpg",
+      "lat": 51.127439,
+      "lon": 71.424597,
+      "dist": 250.9,
+      "primary": ""
+    },
+    {
+      "pageid": 199412656,
+      "ns": 6,
+      "title": "File:Kazakh wines, Galmart, Keruen mall, Astana, 2026.jpg",
+      "lat": 51.127492,
+      "lon": 71.424303,
+      "dist": 232.3,
+      "primary": ""
+    },
+    {
+      "pageid": 152034600,
+      "ns": 6,
+      "title": "File:Geely Atlas, Astana (P1190678).jpg",
+      "lat": 51.124716797285,
+      "lon": 71.435078755775,
+      "dist": 1029.5,
+      "primary": ""
+    },
+    {
+      "pageid": 152034621,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190679).jpg",
+      "lat": 51.12472306545,
+      "lon": 71.435140486472,
+      "dist": 1033,
+      "primary": ""
+    },
+    {
+      "pageid": 152026811,
+      "ns": 6,
+      "title": "File:La Creme, Astana (P1190673).jpg",
+      "lat": 51.128018590027,
+      "lon": 71.419357340215,
+      "dist": 214.3,
+      "primary": ""
+    },
+    {
+      "pageid": 55071214,
+      "ns": 6,
+      "title": "File:Библиотека - panoramio (10).jpg",
+      "lat": 51.1270366,
+      "lon": 71.4273673,
+      "dist": 433.5,
+      "primary": ""
+    },
+    {
+      "pageid": 80933437,
+      "ns": 6,
+      "title": "File:Саксаул Ресторан, naryn soup with horse-meat qazı and noodles.jpg",
+      "lat": 51.127778,
+      "lon": 71.422778,
+      "dist": 146.3,
+      "primary": ""
+    },
+    {
+      "pageid": 152027555,
+      "ns": 6,
+      "title": "File:YandexGo, Astana (P1190680).jpg",
+      "lat": 51.12474083628,
+      "lon": 71.435245019473,
+      "dist": 1038.6,
+      "primary": ""
+    },
+    {
+      "pageid": 199412616,
+      "ns": 6,
+      "title": "File:Cheeses, Galmart, Keruen mall, Astana, 2026.jpg",
+      "lat": 51.127511,
+      "lon": 71.424858,
+      "dist": 259.2,
+      "primary": ""
+    },
+    {
+      "pageid": 169426827,
+      "ns": 6,
+      "title": "File:La Creme, Astana (LRM 20240815 164309).jpg",
+      "lat": 51.128072,
+      "lon": 71.41927,
+      "dist": 216.7,
+      "primary": ""
+    },
+    {
+      "pageid": 152034578,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190674).jpg",
+      "lat": 51.128144262625,
+      "lon": 71.419014369588,
+      "dist": 229,
+      "primary": ""
+    },
+    {
+      "pageid": 122761123,
+      "ns": 6,
+      "title": "File:Jack London Keesh in Kazakh.jpg",
+      "lat": 51.127274,
+      "lon": 71.427124,
+      "dist": 405.8,
+      "primary": ""
+    },
+    {
+      "pageid": 152034564,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190666).jpg",
+      "lat": 51.124868146018,
+      "lon": 71.435442781992,
+      "dist": 1044.6,
+      "primary": ""
+    },
+    {
+      "pageid": 80933436,
+      "ns": 6,
+      "title": "File:Саксаул Ресторан, horse-meat qazı.jpg",
+      "lat": 51.128056,
+      "lon": 71.422222,
+      "dist": 106.1,
+      "primary": ""
+    },
+    {
+      "pageid": 94779319,
+      "ns": 6,
+      "title": "File:Nur-Sultan view.jpg",
+      "lat": 51.125015,
+      "lon": 71.435341,
+      "dist": 1031.1,
+      "primary": ""
+    },
+    {
+      "pageid": 199412611,
+      "ns": 6,
+      "title": "File:Biscuits, Galmart, Keruen mall, Astana, 2026.jpg",
+      "lat": 51.127739,
+      "lon": 71.425308,
+      "dist": 270.1,
+      "primary": ""
+    },
+    {
+      "pageid": 152037540,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190668).jpg",
+      "lat": 51.124797775678,
+      "lon": 71.436112517373,
+      "dist": 1090.1,
+      "primary": ""
+    },
+    {
+      "pageid": 152324872,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190667).jpg",
+      "lat": 51.124891744832,
+      "lon": 71.43589578767,
+      "dist": 1071.9,
+      "primary": ""
+    },
+    {
+      "pageid": 69172558,
+      "ns": 6,
+      "title": "File:Astana DSC04174 (7709751882).jpg",
+      "lat": 51.124213,
+      "lon": 71.437552,
+      "dist": 1208.8,
+      "primary": ""
+    },
+    {
+      "pageid": 16822203,
+      "ns": 6,
+      "title": "File:Inside of shopping mall Keruen.jpg",
+      "lat": 51.1282383333,
+      "lon": 71.4229883333,
+      "dist": 109.2,
+      "primary": ""
+    },
+    {
+      "pageid": 16822213,
+      "ns": 6,
+      "title": "File:Inside of shopping mall Keruen1.jpg",
+      "lat": 51.1282383333,
+      "lon": 71.4229883333,
+      "dist": 109.2,
+      "primary": ""
+    },
+    {
+      "pageid": 152037546,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190671).jpg",
+      "lat": 51.124919726288,
+      "lon": 71.436243672798,
+      "dist": 1092.7,
+      "primary": ""
+    },
+    {
+      "pageid": 199412682,
+      "ns": 6,
+      "title": "File:Keruen mall, interior, Astana, 2026.jpg",
+      "lat": 51.127992,
+      "lon": 71.425117,
+      "dist": 244.7,
+      "primary": ""
+    },
+    {
+      "pageid": 44980136,
+      "ns": 6,
+      "title": "File:Astana (14935145827).jpg",
+      "lat": 51.121047,
+      "lon": 71.443448,
+      "dist": 1738.5,
+      "primary": ""
+    },
+    {
+      "pageid": 55071241,
+      "ns": 6,
+      "title": "File:Национальный архив Республики Казахстан.jpg",
+      "lat": 51.1276829,
+      "lon": 71.4273243,
+      "dist": 399.4,
+      "primary": ""
+    },
+    {
+      "pageid": 199412680,
+      "ns": 6,
+      "title": "File:Keruen mall, food court, Astana, 2026.jpg",
+      "lat": 51.128128,
+      "lon": 71.424942,
+      "dist": 227,
+      "primary": ""
+    },
+    {
+      "pageid": 111475632,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 15.jpg",
+      "lat": 51.126447,
+      "lon": 71.432494,
+      "dist": 785.4,
+      "primary": ""
+    },
+    {
+      "pageid": 151967082,
+      "ns": 6,
+      "title": "File:Flooding, Astana (P1190779).jpg",
+      "lat": 51.124818988045,
+      "lon": 71.437098848005,
+      "dist": 1151.7,
+      "primary": ""
+    },
+    {
+      "pageid": 199412655,
+      "ns": 6,
+      "title": "File:Jacadi shop, Keruen mall, Astana, 2026.jpg",
+      "lat": 51.128272,
+      "lon": 71.425575,
+      "dist": 262.3,
+      "primary": ""
+    },
+    {
+      "pageid": 199412657,
+      "ns": 6,
+      "title": "File:Keruen mall, escalators, Astana, 2026.jpg",
+      "lat": 51.128389,
+      "lon": 71.425208,
+      "dist": 233.9,
+      "primary": ""
+    },
+    {
+      "pageid": 152325049,
+      "ns": 6,
+      "title": "File:Booth, Astana (P1190762).jpg",
+      "lat": 51.12752939091,
+      "lon": 71.430042660913,
+      "dist": 584.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69172415,
+      "ns": 6,
+      "title": "File:Astana DSC04143 (7709688680).jpg",
+      "lat": 51.120861,
+      "lon": 71.444716,
+      "dist": 1825.5,
+      "primary": ""
+    },
+    {
+      "pageid": 111475631,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 13.jpg",
+      "lat": 51.127278,
+      "lon": 71.431136,
+      "dist": 665.7,
+      "primary": ""
+    },
+    {
+      "pageid": 151967036,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190761).jpg",
+      "lat": 51.127592750328,
+      "lon": 71.430023819195,
+      "dist": 581.4,
+      "primary": ""
+    },
+    {
+      "pageid": 111475569,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 16.jpg",
+      "lat": 51.127097,
+      "lon": 71.431914,
+      "dist": 723.5,
+      "primary": ""
+    },
+    {
+      "pageid": 151967031,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190760).jpg",
+      "lat": 51.127654169028,
+      "lon": 71.430256097,
+      "dist": 595.3,
+      "primary": ""
+    },
+    {
+      "pageid": 144269709,
+      "ns": 6,
+      "title": "File:Street signs in Nurjol Boulevard.jpg",
+      "lat": 51.129139,
+      "lon": 71.422,
+      "dist": 15.5,
+      "primary": ""
+    },
+    {
+      "pageid": 111475597,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 32.jpg",
+      "lat": 51.121464,
+      "lon": 71.444464,
+      "dist": 1777.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69172448,
+      "ns": 6,
+      "title": "File:Astana DSC04151 (7709700794).jpg",
+      "lat": 51.123677,
+      "lon": 71.440966,
+      "dist": 1449.9,
+      "primary": ""
+    },
+    {
+      "pageid": 69172453,
+      "ns": 6,
+      "title": "File:Astana DSC04152 (7709702114).jpg",
+      "lat": 51.123677,
+      "lon": 71.440966,
+      "dist": 1449.9,
+      "primary": ""
+    },
+    {
+      "pageid": 69172747,
+      "ns": 6,
+      "title": "File:Astana DSC04228 (7709886208).jpg",
+      "lat": 51.129169,
+      "lon": 71.422491,
+      "dist": 39.1,
+      "primary": ""
+    },
+    {
+      "pageid": 57911615,
+      "ns": 6,
+      "title": "File:Нурсая-юг - panoramio.jpg",
+      "lat": 51.125452,
+      "lon": 71.437461,
+      "dist": 1148.8,
+      "primary": ""
+    },
+    {
+      "pageid": 69172824,
+      "ns": 6,
+      "title": "File:Astana SAM 0080 (15117492611).jpg",
+      "lat": 51.128347,
+      "lon": 71.428084,
+      "dist": 430.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69172840,
+      "ns": 6,
+      "title": "File:Astana SAM 0082 (14933982688).jpg",
+      "lat": 51.128347,
+      "lon": 71.428084,
+      "dist": 430.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69172623,
+      "ns": 6,
+      "title": "File:Astana DSC04191 (7709793398).jpg",
+      "lat": 51.127119,
+      "lon": 71.432922,
+      "dist": 790.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172698,
+      "ns": 6,
+      "title": "File:Astana DSC04214 (7709854594).jpg",
+      "lat": 51.128619,
+      "lon": 71.426797,
+      "dist": 337.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172716,
+      "ns": 6,
+      "title": "File:Astana DSC04217 (7709861564).jpg",
+      "lat": 51.128619,
+      "lon": 71.426797,
+      "dist": 337.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172705,
+      "ns": 6,
+      "title": "File:Astana DSC04216 (7709859280).jpg",
+      "lat": 51.128619,
+      "lon": 71.426797,
+      "dist": 337.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172704,
+      "ns": 6,
+      "title": "File:Astana DSC04215 (7709857270).jpg",
+      "lat": 51.128619,
+      "lon": 71.426797,
+      "dist": 337.4,
+      "primary": ""
+    },
+    {
+      "pageid": 152037050,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190654).jpg",
+      "lat": 51.127726005002,
+      "lon": 71.43086940648,
+      "dist": 634.9,
+      "primary": ""
+    },
+    {
+      "pageid": 151604047,
+      "ns": 6,
+      "title": "File:Cycling infrastructure, Astana (P1190662).jpg",
+      "lat": 51.127746811503,
+      "lon": 71.43079600893,
+      "dist": 629.4,
+      "primary": ""
+    },
+    {
+      "pageid": 152034558,
+      "ns": 6,
+      "title": "File:Cycling infrastructure, Astana (P1190658).jpg",
+      "lat": 51.127710855138,
+      "lon": 71.430998152512,
+      "dist": 644.1,
+      "primary": ""
+    },
+    {
+      "pageid": 152324868,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190660).jpg",
+      "lat": 51.127737788225,
+      "lon": 71.430971330422,
+      "dist": 641.6,
+      "primary": ""
+    },
+    {
+      "pageid": 152037020,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190650).jpg",
+      "lat": 51.127456927867,
+      "lon": 71.43210262387,
+      "dist": 725.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69172662,
+      "ns": 6,
+      "title": "File:Astana DSC04202 (7709825876).jpg",
+      "lat": 51.12725,
+      "lon": 71.432922,
+      "dist": 786.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69172635,
+      "ns": 6,
+      "title": "File:Astana DSC04193 (7709798992).jpg",
+      "lat": 51.127236,
+      "lon": 71.433019,
+      "dist": 793.6,
+      "primary": ""
+    },
+    {
+      "pageid": 151815578,
+      "ns": 6,
+      "title": "File:Best Western Plus, Astana (LRM 20240816 183134).jpg",
+      "lat": 51.125614,
+      "lon": 71.437485,
+      "dist": 1144.3,
+      "primary": ""
+    },
+    {
+      "pageid": 198969458,
+      "ns": 6,
+      "title": "File:Best Western Hotel, Astana (20240816-2024-08-16 15.31.34).jpg",
+      "lat": 51.125613888333,
+      "lon": 71.437486111667,
+      "dist": 1144.4,
+      "primary": ""
+    },
+    {
+      "pageid": 124583646,
+      "ns": 6,
+      "title": "File:Вид с монумента Байтерек (48014745108).jpg",
+      "lat": 51.127983,
+      "lon": 71.430388,
+      "dist": 596.2,
+      "primary": ""
+    },
+    {
+      "pageid": 124583645,
+      "ns": 6,
+      "title": "File:Люди на «зебре» (48014744808).jpg",
+      "lat": 51.127983,
+      "lon": 71.430388,
+      "dist": 596.2,
+      "primary": ""
+    },
+    {
+      "pageid": 124583652,
+      "ns": 6,
+      "title": "File:Полицейский транспорт (48014822562).jpg",
+      "lat": 51.127983,
+      "lon": 71.430388,
+      "dist": 596.2,
+      "primary": ""
+    },
+    {
+      "pageid": 69172697,
+      "ns": 6,
+      "title": "File:Astana DSC04213 (7709851860).jpg",
+      "lat": 51.1287,
+      "lon": 71.427152,
+      "dist": 361.1,
+      "primary": ""
+    },
+    {
+      "pageid": 152324902,
+      "ns": 6,
+      "title": "File:Lobby, Best Western Plus, Astana (P1190758).jpg",
+      "lat": 51.125772145865,
+      "lon": 71.437194293758,
+      "dist": 1119.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172694,
+      "ns": 6,
+      "title": "File:Astana DSC04212 (7709849758).jpg",
+      "lat": 51.128555,
+      "lon": 71.428252,
+      "dist": 439.1,
+      "primary": ""
+    },
+    {
+      "pageid": 151882486,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190639).jpg",
+      "lat": 51.125877674515,
+      "lon": 71.437136725085,
+      "dist": 1111.9,
+      "primary": ""
+    },
+    {
+      "pageid": 147720767,
+      "ns": 6,
+      "title": "File:20240402 120654 TouristPoliceBox Astana-amBajterek-Turm 301dpi.jpg",
+      "lat": 51.127889,
+      "lon": 71.43125,
+      "dist": 657.2,
+      "primary": ""
+    },
+    {
+      "pageid": 69172744,
+      "ns": 6,
+      "title": "File:Astana DSC04227 (7709883818).jpg",
+      "lat": 51.129477,
+      "lon": 71.422802,
+      "dist": 77.1,
+      "primary": ""
+    },
+    {
+      "pageid": 44980032,
+      "ns": 6,
+      "title": "File:Astana 20140803 183647 (14935007009).jpg",
+      "lat": 51.120657,
+      "lon": 71.446366,
+      "dist": 1937.1,
+      "primary": ""
+    },
+    {
+      "pageid": 151963838,
+      "ns": 6,
+      "title": "File:Tractor, Astana (P1190724).jpg",
+      "lat": 51.12594,
+      "lon": 71.43733,
+      "dist": 1122.6,
+      "primary": ""
+    },
+    {
+      "pageid": 111475596,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 30.jpg",
+      "lat": 51.122028,
+      "lon": 71.444672,
+      "dist": 1762,
+      "primary": ""
+    },
+    {
+      "pageid": 69173001,
+      "ns": 6,
+      "title": "File:Astana SAM 0109 (15117503011).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172933,
+      "ns": 6,
+      "title": "File:Astana SAM 0096 (15120523675).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172943,
+      "ns": 6,
+      "title": "File:Astana SAM 0097 (14933956847).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172993,
+      "ns": 6,
+      "title": "File:Astana SAM 0107 (14933852400).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172991,
+      "ns": 6,
+      "title": "File:Astana SAM 0106 (15097511956).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172952,
+      "ns": 6,
+      "title": "File:Astana SAM 0099 (14933825379).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172970,
+      "ns": 6,
+      "title": "File:Astana SAM 0103 (15120508995).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172965,
+      "ns": 6,
+      "title": "File:Astana SAM 0102 (15117515601).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172852,
+      "ns": 6,
+      "title": "File:Astana SAM 0086 (14933889040).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172858,
+      "ns": 6,
+      "title": "File:Astana SAM 0087 (14933886440).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172983,
+      "ns": 6,
+      "title": "File:Astana SAM 0105 (15122332465).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69173018,
+      "ns": 6,
+      "title": "File:Astana SAM 0112 (14933801589).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172949,
+      "ns": 6,
+      "title": "File:Astana SAM 0098 (15120518935).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172912,
+      "ns": 6,
+      "title": "File:Astana SAM 0092 (15117532051).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172879,
+      "ns": 6,
+      "title": "File:Astana SAM 0089 (15097541356).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172998,
+      "ns": 6,
+      "title": "File:Astana SAM 0108 (14933848080).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172956,
+      "ns": 6,
+      "title": "File:Astana SAM 0100 (14933863600).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172960,
+      "ns": 6,
+      "title": "File:Astana SAM 0101 (14933948457).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69173011,
+      "ns": 6,
+      "title": "File:Astana SAM 0110 (14933804689).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69173014,
+      "ns": 6,
+      "title": "File:Astana SAM 0111 (14933931048).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 69172975,
+      "ns": 6,
+      "title": "File:Astana SAM 0104 (15120506655).jpg",
+      "lat": 51.128225,
+      "lon": 71.430509,
+      "dist": 600,
+      "primary": ""
+    },
+    {
+      "pageid": 111475599,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 31.jpg",
+      "lat": 51.122033,
+      "lon": 71.444681,
+      "dist": 1762.3,
+      "primary": ""
+    },
+    {
+      "pageid": 69172693,
+      "ns": 6,
+      "title": "File:Astana DSC04211 (7709847412).jpg",
+      "lat": 51.12873,
+      "lon": 71.428319,
+      "dist": 442,
+      "primary": ""
+    },
+    {
+      "pageid": 69172802,
+      "ns": 6,
+      "title": "File:Astana DSC04245 (7709924248).jpg",
+      "lat": 51.129897,
+      "lon": 71.418002,
+      "dist": 296.3,
+      "primary": ""
+    },
+    {
+      "pageid": 111475630,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 14.jpg",
+      "lat": 51.12827,
+      "lon": 71.43052,
+      "dist": 600.1,
+      "primary": ""
+    },
+    {
+      "pageid": 69172821,
+      "ns": 6,
+      "title": "File:Astana DSC04251 (7709936192).jpg",
+      "lat": 51.129905,
+      "lon": 71.414308,
+      "dist": 546.1,
+      "primary": ""
+    },
+    {
+      "pageid": 152037032,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190652).jpg",
+      "lat": 51.127951258692,
+      "lon": 71.431966281235,
+      "dist": 705.2,
+      "primary": ""
+    },
+    {
+      "pageid": 141682843,
+      "ns": 6,
+      "title": "File:Nurjol Boulevard, Astana.jpg",
+      "lat": 51.128333,
+      "lon": 71.430556,
+      "dist": 601.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69172795,
+      "ns": 6,
+      "title": "File:Astana DSC04242 (7709918302).jpg",
+      "lat": 51.129941,
+      "lon": 71.419377,
+      "dist": 210.8,
+      "primary": ""
+    },
+    {
+      "pageid": 69172619,
+      "ns": 6,
+      "title": "File:Astana DSC04190 (7709790576).jpg",
+      "lat": 51.126988,
+      "lon": 71.435094,
+      "dist": 940.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69172779,
+      "ns": 6,
+      "title": "File:Astana DSC04238 (7709908804).jpg",
+      "lat": 51.129911,
+      "lon": 71.42028,
+      "dist": 157.1,
+      "primary": ""
+    },
+    {
+      "pageid": 69172477,
+      "ns": 6,
+      "title": "File:Astana DSC04156 (7709708446).jpg",
+      "lat": 51.124202,
+      "lon": 71.441461,
+      "dist": 1459.1,
+      "primary": ""
+    },
+    {
+      "pageid": 16822113,
+      "ns": 6,
+      "title": "File:New buildings in Astana2.jpg",
+      "lat": 51.1280916667,
+      "lon": 71.4316133333,
+      "dist": 678.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172769,
+      "ns": 6,
+      "title": "File:Astana DSC04235 (7709902002).jpg",
+      "lat": 51.129894,
+      "lon": 71.420769,
+      "dist": 131.4,
+      "primary": ""
+    },
+    {
+      "pageid": 151881974,
+      "ns": 6,
+      "title": "File:Press To Go, Astana (P1190648).jpg",
+      "lat": 51.127843526748,
+      "lon": 71.432610011398,
+      "dist": 751.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172771,
+      "ns": 6,
+      "title": "File:Astana SAM 0064 (15120568135).jpg",
+      "lat": 51.129989,
+      "lon": 71.419823,
+      "dist": 187.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172764,
+      "ns": 6,
+      "title": "File:Astana SAM 0063 (14933917510).jpg",
+      "lat": 51.129989,
+      "lon": 71.419823,
+      "dist": 187.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172804,
+      "ns": 6,
+      "title": "File:Astana SAM 0075 (15097560256).jpg",
+      "lat": 51.129989,
+      "lon": 71.419823,
+      "dist": 187.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172818,
+      "ns": 6,
+      "title": "File:Astana SAM 0078 (14933924957).jpg",
+      "lat": 51.129989,
+      "lon": 71.419823,
+      "dist": 187.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172760,
+      "ns": 6,
+      "title": "File:Astana SAM 0062 (14934007878).jpg",
+      "lat": 51.129989,
+      "lon": 71.419823,
+      "dist": 187.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172755,
+      "ns": 6,
+      "title": "File:Astana SAM 0061 (15117578971).jpg",
+      "lat": 51.129989,
+      "lon": 71.419823,
+      "dist": 187.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172785,
+      "ns": 6,
+      "title": "File:Astana SAM 0067 (14933997448).jpg",
+      "lat": 51.129989,
+      "lon": 71.419823,
+      "dist": 187.5,
+      "primary": ""
+    },
+    {
+      "pageid": 111475594,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 29.jpg",
+      "lat": 51.123914,
+      "lon": 71.4421,
+      "dist": 1512.4,
+      "primary": ""
+    },
+    {
+      "pageid": 124583630,
+      "ns": 6,
+      "title": "File:Строительство домов на бульваре Нуржол (48014732006).jpg",
+      "lat": 51.130036,
+      "lon": 71.419066,
+      "dist": 234.9,
+      "primary": ""
+    },
+    {
+      "pageid": 111475572,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 20.jpg",
+      "lat": 51.127881,
+      "lon": 71.432572,
+      "dist": 748.2,
+      "primary": ""
+    },
+    {
+      "pageid": 152037027,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190651).jpg",
+      "lat": 51.128025324257,
+      "lon": 71.432105756103,
+      "dist": 713.5,
+      "primary": ""
+    },
+    {
+      "pageid": 111475621,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 7.jpg",
+      "lat": 51.130028,
+      "lon": 71.419511,
+      "dist": 207.9,
+      "primary": ""
+    },
+    {
+      "pageid": 69172671,
+      "ns": 6,
+      "title": "File:Astana DSC04203 (7709828014).jpg",
+      "lat": 51.128152,
+      "lon": 71.431666,
+      "dist": 681.1,
+      "primary": ""
+    },
+    {
+      "pageid": 104077536,
+      "ns": 6,
+      "title": "File:Astana City Tours KZ 960 BD 01 (45420730212).jpg",
+      "lat": 51.128879,
+      "lon": 71.428663,
+      "dist": 465.2,
+      "primary": ""
+    },
+    {
+      "pageid": 16821996,
+      "ns": 6,
+      "title": "File:Kazakh Eli monument from Ishim river.jpg",
+      "lat": 51.1205083333,
+      "lon": 71.4473066667,
+      "dist": 2002.7,
+      "primary": ""
+    },
+    {
+      "pageid": 152037014,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190649).jpg",
+      "lat": 51.128011857798,
+      "lon": 71.432599282562,
+      "dist": 747.8,
+      "primary": ""
+    },
+    {
+      "pageid": 152037044,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190653).jpg",
+      "lat": 51.128180188237,
+      "lon": 71.432019925415,
+      "dist": 705.1,
+      "primary": ""
+    },
+    {
+      "pageid": 152324909,
+      "ns": 6,
+      "title": "File:Changan UNI-V, Astana (P1190759).jpg",
+      "lat": 51.126690753147,
+      "lon": 71.436614343107,
+      "dist": 1051.7,
+      "primary": ""
+    },
+    {
+      "pageid": 152324906,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190759).jpg",
+      "lat": 51.126690753147,
+      "lon": 71.436614343107,
+      "dist": 1051.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69168500,
+      "ns": 6,
+      "title": "File:Another view of Downtown Astana (6245921591).jpg",
+      "lat": 51.128468,
+      "lon": 71.431045,
+      "dist": 634,
+      "primary": ""
+    },
+    {
+      "pageid": 17144781,
+      "ns": 6,
+      "title": "File:Central Downtown Astana 1.jpg",
+      "lat": 51.128468,
+      "lon": 71.431045,
+      "dist": 634,
+      "primary": ""
+    },
+    {
+      "pageid": 69172658,
+      "ns": 6,
+      "title": "File:Astana DSC04199 (7709819750).jpg",
+      "lat": 51.128113,
+      "lon": 71.432397,
+      "dist": 732.2,
+      "primary": ""
+    },
+    {
+      "pageid": 69172412,
+      "ns": 6,
+      "title": "File:Astana DSC04142 (7709686902).jpg",
+      "lat": 51.120422,
+      "lon": 71.447508,
+      "dist": 2019.6,
+      "primary": ""
+    },
+    {
+      "pageid": 16821991,
+      "ns": 6,
+      "title": "File:Ishim river bridge2.jpg",
+      "lat": 51.1204733333,
+      "lon": 71.4475083333,
+      "dist": 2016.9,
+      "primary": ""
+    },
+    {
+      "pageid": 111475629,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 12.jpg",
+      "lat": 51.128844,
+      "lon": 71.429764,
+      "dist": 542.1,
+      "primary": ""
+    },
+    {
+      "pageid": 69172502,
+      "ns": 6,
+      "title": "File:Astana DSC04161 (7709721764).jpg",
+      "lat": 51.126183,
+      "lon": 71.438138,
+      "dist": 1168.9,
+      "primary": ""
+    },
+    {
+      "pageid": 55071096,
+      "ns": 6,
+      "title": "File:Вид на Акорду - panoramio (1).jpg",
+      "lat": 51.1276562,
+      "lon": 71.4341911,
+      "dist": 863.8,
+      "primary": ""
+    },
+    {
+      "pageid": 111475622,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 6.jpg",
+      "lat": 51.130367,
+      "lon": 71.417244,
+      "dist": 365,
+      "primary": ""
+    },
+    {
+      "pageid": 17144980,
+      "ns": 6,
+      "title": "File:Central Downtown Astana 4.jpg",
+      "lat": 51.128872,
+      "lon": 71.430015,
+      "dist": 559.5,
+      "primary": ""
+    },
+    {
+      "pageid": 17144691,
+      "ns": 6,
+      "title": "File:View from Bayterek tower.jpg",
+      "lat": 51.128872,
+      "lon": 71.430015,
+      "dist": 559.5,
+      "primary": ""
+    },
+    {
+      "pageid": 111475593,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 28.jpg",
+      "lat": 51.124725,
+      "lon": 71.441453,
+      "dist": 1438.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172639,
+      "ns": 6,
+      "title": "File:Astana DSC04194 (7709802700).jpg",
+      "lat": 51.128013,
+      "lon": 71.433458,
+      "dist": 807.1,
+      "primary": ""
+    },
+    {
+      "pageid": 111475589,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 27.jpg",
+      "lat": 51.124758,
+      "lon": 71.441453,
+      "dist": 1437.2,
+      "primary": ""
+    },
+    {
+      "pageid": 69172679,
+      "ns": 6,
+      "title": "File:Astana DSC04206 (7709835318).jpg",
+      "lat": 51.128766,
+      "lon": 71.430769,
+      "dist": 612.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172645,
+      "ns": 6,
+      "title": "File:Astana DSC04195 (7709806250).jpg",
+      "lat": 51.128061,
+      "lon": 71.433341,
+      "dist": 798.3,
+      "primary": ""
+    },
+    {
+      "pageid": 69172681,
+      "ns": 6,
+      "title": "File:Astana DSC04207 (7709838156).jpg",
+      "lat": 51.12878,
+      "lon": 71.430752,
+      "dist": 611.2,
+      "primary": ""
+    },
+    {
+      "pageid": 152324917,
+      "ns": 6,
+      "title": "File:Darijani, Astana (LRM 20240819 173519).jpg",
+      "lat": 51.130455,
+      "lon": 71.414932,
+      "dist": 519.1,
+      "primary": ""
+    },
+    {
+      "pageid": 198969528,
+      "ns": 6,
+      "title": "File:Daredzhani, Astana (20240819-2024-08-19 14.35.19).jpg",
+      "lat": 51.130455555,
+      "lon": 71.414933333333,
+      "dist": 519,
+      "primary": ""
+    },
+    {
+      "pageid": 111475571,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 17.jpg",
+      "lat": 51.127303,
+      "lon": 71.435761,
+      "dist": 978.7,
+      "primary": ""
+    },
+    {
+      "pageid": 152324862,
+      "ns": 6,
+      "title": "File:Haval Dargo, Astana (P1190647).jpg",
+      "lat": 51.128330941553,
+      "lon": 71.432585673103,
+      "dist": 742.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172648,
+      "ns": 6,
+      "title": "File:Astana DSC04196 (7709809746).jpg",
+      "lat": 51.128105,
+      "lon": 71.433361,
+      "dist": 799,
+      "primary": ""
+    },
+    {
+      "pageid": 55070900,
+      "ns": 6,
+      "title": "File:Вид на Акорду - panoramio.jpg",
+      "lat": 51.127334,
+      "lon": 71.4357361,
+      "dist": 976.3,
+      "primary": ""
+    },
+    {
+      "pageid": 69168638,
+      "ns": 6,
+      "title": "File:Wedding Season in Astana (6246453490).jpg",
+      "lat": 51.128306,
+      "lon": 71.432847,
+      "dist": 760.9,
+      "primary": ""
+    },
+    {
+      "pageid": 69172843,
+      "ns": 6,
+      "title": "File:Astana DSC04257 (7709953130).jpg",
+      "lat": 51.130444,
+      "lon": 71.412961,
+      "dist": 650.9,
+      "primary": ""
+    },
+    {
+      "pageid": 69172798,
+      "ns": 6,
+      "title": "File:Astana DSC04244 (7709922432).jpg",
+      "lat": 51.130527,
+      "lon": 71.418438,
+      "dist": 301,
+      "primary": ""
+    },
+    {
+      "pageid": 69172556,
+      "ns": 6,
+      "title": "File:Astana DSC04175 (7709754170).jpg",
+      "lat": 51.126488,
+      "lon": 71.438325,
+      "dist": 1173,
+      "primary": ""
+    },
+    {
+      "pageid": 69172411,
+      "ns": 6,
+      "title": "File:Astana DSC04141 (7709683472).jpg",
+      "lat": 51.12048,
+      "lon": 71.448225,
+      "dist": 2060.9,
+      "primary": ""
+    },
+    {
+      "pageid": 69172809,
+      "ns": 6,
+      "title": "File:Astana DSC04248 (7709930348).jpg",
+      "lat": 51.130647,
+      "lon": 71.415097,
+      "dist": 515.3,
+      "primary": ""
+    },
+    {
+      "pageid": 124583655,
+      "ns": 6,
+      "title": "File:Ветрогенератор (48014733801).jpg",
+      "lat": 51.12888,
+      "lon": 71.431327,
+      "dist": 651,
+      "primary": ""
+    },
+    {
+      "pageid": 152036973,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190642).jpg",
+      "lat": 51.127381839277,
+      "lon": 71.436266043708,
+      "dist": 1011.7,
+      "primary": ""
+    },
+    {
+      "pageid": 152036964,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190641).jpg",
+      "lat": 51.127381839277,
+      "lon": 71.436266043708,
+      "dist": 1011.7,
+      "primary": ""
+    },
+    {
+      "pageid": 57911604,
+      "ns": 6,
+      "title": "File:Орынбор 10 - panoramio.jpg",
+      "lat": 51.126381,
+      "lon": 71.438835,
+      "dist": 1210.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172396,
+      "ns": 6,
+      "title": "File:Astana DSC04135 (7709669978).jpg",
+      "lat": 51.120919,
+      "lon": 71.447883,
+      "dist": 2017.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172653,
+      "ns": 6,
+      "title": "File:Astana DSC04197 (7709813862).jpg",
+      "lat": 51.128077,
+      "lon": 71.434322,
+      "dist": 866,
+      "primary": ""
+    },
+    {
+      "pageid": 69172399,
+      "ns": 6,
+      "title": "File:Astana DSC04136 (7709672368).jpg",
+      "lat": 51.120597,
+      "lon": 71.448263,
+      "dist": 2057.3,
+      "primary": ""
+    },
+    {
+      "pageid": 111475574,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 21.jpg",
+      "lat": 51.126744,
+      "lon": 71.438042,
+      "dist": 1147.2,
+      "primary": ""
+    },
+    {
+      "pageid": 16821986,
+      "ns": 6,
+      "title": "File:Ishim river bridge1.jpg",
+      "lat": 51.1202966667,
+      "lon": 71.44865,
+      "dist": 2096.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69172405,
+      "ns": 6,
+      "title": "File:Astana DSC04138 (7709676782).jpg",
+      "lat": 51.120627,
+      "lon": 71.448305,
+      "dist": 2058.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172400,
+      "ns": 6,
+      "title": "File:Astana DSC04137 (7709674740).jpg",
+      "lat": 51.120627,
+      "lon": 71.448305,
+      "dist": 2058.4,
+      "primary": ""
+    },
+    {
+      "pageid": 111475575,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 22.jpg",
+      "lat": 51.1265,
+      "lon": 71.438767,
+      "dist": 1202.6,
+      "primary": ""
+    },
+    {
+      "pageid": 148445617,
+      "ns": 6,
+      "title": "File:Мемориальная доска к дому, где жил Абиш Кекильбайулы в Астане последние 10 лет.jpg",
+      "lat": 51.128594444444,
+      "lon": 71.432911111111,
+      "dist": 762.7,
+      "primary": ""
+    },
+    {
+      "pageid": 152037010,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190646).jpg",
+      "lat": 51.128320841778,
+      "lon": 71.433867769013,
+      "dist": 831.6,
+      "primary": ""
+    },
+    {
+      "pageid": 57911609,
+      "ns": 6,
+      "title": "File:Орынбор 10 - panoramio (1).jpg",
+      "lat": 51.126489,
+      "lon": 71.439028,
+      "dist": 1220.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69172737,
+      "ns": 6,
+      "title": "File:Astana SAM 0058 (15120209182).jpg",
+      "lat": 51.130878,
+      "lon": 71.414222,
+      "dist": 581.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172743,
+      "ns": 6,
+      "title": "File:Astana SAM 0059 (14934013297).jpg",
+      "lat": 51.130878,
+      "lon": 71.414222,
+      "dist": 581.5,
+      "primary": ""
+    },
+    {
+      "pageid": 59011517,
+      "ns": 6,
+      "title": "File:Астана - современный город - panoramio.jpg",
+      "lat": 51.129316,
+      "lon": 71.430574,
+      "dist": 599.3,
+      "primary": ""
+    },
+    {
+      "pageid": 152036946,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190640).jpg",
+      "lat": 51.127127655687,
+      "lon": 71.43765006356,
+      "dist": 1111.8,
+      "primary": ""
+    },
+    {
+      "pageid": 69172409,
+      "ns": 6,
+      "title": "File:Astana DSC04140 (7709680854).jpg",
+      "lat": 51.120983,
+      "lon": 71.448225,
+      "dist": 2035.8,
+      "primary": ""
+    },
+    {
+      "pageid": 69172404,
+      "ns": 6,
+      "title": "File:Astana DSC04139 (7709678850).jpg",
+      "lat": 51.120983,
+      "lon": 71.448225,
+      "dist": 2035.8,
+      "primary": ""
+    },
+    {
+      "pageid": 69172582,
+      "ns": 6,
+      "title": "File:Astana DSC04180 (7709766376).jpg",
+      "lat": 51.126522,
+      "lon": 71.439133,
+      "dist": 1227,
+      "primary": ""
+    },
+    {
+      "pageid": 69172587,
+      "ns": 6,
+      "title": "File:Astana DSC04181 (7709768360).jpg",
+      "lat": 51.126497,
+      "lon": 71.439213,
+      "dist": 1233,
+      "primary": ""
+    },
+    {
+      "pageid": 69172617,
+      "ns": 6,
+      "title": "File:Astana DSC04189 (7709788152).jpg",
+      "lat": 51.127255,
+      "lon": 71.437458,
+      "dist": 1096,
+      "primary": ""
+    },
+    {
+      "pageid": 69172817,
+      "ns": 6,
+      "title": "File:Astana DSC04250 (7709933938).jpg",
+      "lat": 51.130988,
+      "lon": 71.414475,
+      "dist": 569.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69172497,
+      "ns": 6,
+      "title": "File:Astana DSC04160 (7709718350).jpg",
+      "lat": 51.125252,
+      "lon": 71.441955,
+      "dist": 1453.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69172566,
+      "ns": 6,
+      "title": "File:Astana DSC04177 (7709759246).jpg",
+      "lat": 51.126627,
+      "lon": 71.43923,
+      "dist": 1231,
+      "primary": ""
+    },
+    {
+      "pageid": 69172567,
+      "ns": 6,
+      "title": "File:Astana DSC04178 (7709761768).jpg",
+      "lat": 51.126627,
+      "lon": 71.43923,
+      "dist": 1231,
+      "primary": ""
+    },
+    {
+      "pageid": 69172580,
+      "ns": 6,
+      "title": "File:Astana DSC04179 (7709764406).jpg",
+      "lat": 51.126638,
+      "lon": 71.439213,
+      "dist": 1229.6,
+      "primary": ""
+    },
+    {
+      "pageid": 152036998,
+      "ns": 6,
+      "title": "File:Toyota Highlander, Astana (P1190645).jpg",
+      "lat": 51.12812616341,
+      "lon": 71.435388779938,
+      "dist": 939.4,
+      "primary": ""
+    },
+    {
+      "pageid": 152324855,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190644).jpg",
+      "lat": 51.12808015205,
+      "lon": 71.435620989042,
+      "dist": 956,
+      "primary": ""
+    },
+    {
+      "pageid": 55071110,
+      "ns": 6,
+      "title": "File:Астана - panoramio (2).jpg",
+      "lat": 51.1300262,
+      "lon": 71.4282687,
+      "dist": 452.1,
+      "primary": ""
+    },
+    {
+      "pageid": 111475619,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 5.jpg",
+      "lat": 51.131019,
+      "lon": 71.412628,
+      "dist": 691.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172841,
+      "ns": 6,
+      "title": "File:Astana DSC04256 (7709950052).jpg",
+      "lat": 51.131052,
+      "lon": 71.412627,
+      "dist": 692.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69172839,
+      "ns": 6,
+      "title": "File:Astana DSC04255 (7709947530).jpg",
+      "lat": 51.131052,
+      "lon": 71.412627,
+      "dist": 692.7,
+      "primary": ""
+    },
+    {
+      "pageid": 144269702,
+      "ns": 6,
+      "title": "File:Transport Tower, Astana.jpg",
+      "lat": 51.131194,
+      "lon": 71.416639,
+      "dist": 446.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69172562,
+      "ns": 6,
+      "title": "File:Astana DSC04176 (7709756508).jpg",
+      "lat": 51.126775,
+      "lon": 71.439372,
+      "dist": 1237.3,
+      "primary": ""
+    },
+    {
+      "pageid": 111475616,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 4.jpg",
+      "lat": 51.131103,
+      "lon": 71.412178,
+      "dist": 724.2,
+      "primary": ""
+    },
+    {
+      "pageid": 69172806,
+      "ns": 6,
+      "title": "File:Astana DSC04246 (7709926334).jpg",
+      "lat": 51.131261,
+      "lon": 71.417847,
+      "dist": 383.7,
+      "primary": ""
+    },
+    {
+      "pageid": 23913145,
+      "ns": 6,
+      "title": "File:ASTANA love park 2005.JPG",
+      "lat": 51.131054,
+      "lon": 71.410811,
+      "dist": 813.5,
+      "primary": ""
+    },
+    {
+      "pageid": 23913144,
+      "ns": 6,
+      "title": "File:ASTANA love park 2005 (1).JPG",
+      "lat": 51.131054,
+      "lon": 71.410811,
+      "dist": 813.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172593,
+      "ns": 6,
+      "title": "File:Astana DSC04183 (7709772468).jpg",
+      "lat": 51.126955,
+      "lon": 71.439597,
+      "dist": 1248.9,
+      "primary": ""
+    },
+    {
+      "pageid": 69172602,
+      "ns": 6,
+      "title": "File:Astana DSC04184 (7709774498).jpg",
+      "lat": 51.126988,
+      "lon": 71.43955,
+      "dist": 1245,
+      "primary": ""
+    },
+    {
+      "pageid": 69172603,
+      "ns": 6,
+      "title": "File:Astana DSC04182 (7709770196).jpg",
+      "lat": 51.126986,
+      "lon": 71.439608,
+      "dist": 1249,
+      "primary": ""
+    },
+    {
+      "pageid": 111475579,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 24.jpg",
+      "lat": 51.126125,
+      "lon": 71.441703,
+      "dist": 1411.6,
+      "primary": ""
+    },
+    {
+      "pageid": 111475585,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 25.jpg",
+      "lat": 51.126125,
+      "lon": 71.441703,
+      "dist": 1411.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69172393,
+      "ns": 6,
+      "title": "File:Astana DSC04133 (7709665682).jpg",
+      "lat": 51.121433,
+      "lon": 71.44913,
+      "dist": 2071.9,
+      "primary": ""
+    },
+    {
+      "pageid": 69172848,
+      "ns": 6,
+      "title": "File:Astana DSC04259 (7709960456).jpg",
+      "lat": 51.131422,
+      "lon": 71.410844,
+      "dist": 823.7,
+      "primary": ""
+    },
+    {
+      "pageid": 55070837,
+      "ns": 6,
+      "title": "File:Астана - panoramio.jpg",
+      "lat": 51.1274418,
+      "lon": 71.4390407,
+      "dist": 1201.7,
+      "primary": ""
+    },
+    {
+      "pageid": 57911621,
+      "ns": 6,
+      "title": "File:Нурсая-север - panoramio.jpg",
+      "lat": 51.128037,
+      "lon": 71.437665,
+      "dist": 1098.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172609,
+      "ns": 6,
+      "title": "File:Astana DSC04186 (7709778680).jpg",
+      "lat": 51.127161,
+      "lon": 71.439863,
+      "dist": 1263.2,
+      "primary": ""
+    },
+    {
+      "pageid": 69172552,
+      "ns": 6,
+      "title": "File:Astana DSC04173 (7709749262).jpg",
+      "lat": 51.126636,
+      "lon": 71.441047,
+      "dist": 1354.9,
+      "primary": ""
+    },
+    {
+      "pageid": 69172862,
+      "ns": 6,
+      "title": "File:Astana DSC04264 (7709974008).jpg",
+      "lat": 51.13143,
+      "lon": 71.409955,
+      "dist": 882.9,
+      "primary": ""
+    },
+    {
+      "pageid": 69168481,
+      "ns": 6,
+      "title": "File:Topiary Bushes In The Shape Of Bactrian Camels (6246442968).jpg",
+      "lat": 51.128926,
+      "lon": 71.435337,
+      "dist": 930.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69172847,
+      "ns": 6,
+      "title": "File:Astana DSC04258 (7709956970).jpg",
+      "lat": 51.131583,
+      "lon": 71.411102,
+      "dist": 812.9,
+      "primary": ""
+    },
+    {
+      "pageid": 69172543,
+      "ns": 6,
+      "title": "File:Astana DSC04172 (7709747464).jpg",
+      "lat": 51.126711,
+      "lon": 71.441075,
+      "dist": 1355.3,
+      "primary": ""
+    },
+    {
+      "pageid": 69172605,
+      "ns": 6,
+      "title": "File:Astana DSC04185 (7709776726).jpg",
+      "lat": 51.127247,
+      "lon": 71.439983,
+      "dist": 1270,
+      "primary": ""
+    },
+    {
+      "pageid": 69172541,
+      "ns": 6,
+      "title": "File:Astana DSC04171 (7709745424).jpg",
+      "lat": 51.126538,
+      "lon": 71.441544,
+      "dist": 1391.1,
+      "primary": ""
+    },
+    {
+      "pageid": 144269705,
+      "ns": 6,
+      "title": "File:Fountain in Lovers Park.jpg",
+      "lat": 51.131528,
+      "lon": 71.409556,
+      "dist": 912.7,
+      "primary": ""
+    },
+    {
+      "pageid": 87404297,
+      "ns": 6,
+      "title": "File:Азат Абыкен на Радио.jpg",
+      "lat": 51.131819,
+      "lon": 71.42025,
+      "dist": 336.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69168463,
+      "ns": 6,
+      "title": "File:Downtown Astana With The National Concert Hall (6246435844).jpg",
+      "lat": 51.123081,
+      "lon": 71.44761,
+      "dist": 1904.6,
+      "primary": ""
+    },
+    {
+      "pageid": 17145349,
+      "ns": 6,
+      "title": "File:Central Downtown Astana pamorama.jpg",
+      "lat": 51.123081,
+      "lon": 71.44761,
+      "dist": 1904.6,
+      "primary": ""
+    },
+    {
+      "pageid": 152028027,
+      "ns": 6,
+      "title": "File:Electric bus, Astana (P1190681).jpg",
+      "lat": 51.128005637762,
+      "lon": 71.438504848948,
+      "dist": 1157.1,
+      "primary": ""
+    },
+    {
+      "pageid": 144269703,
+      "ns": 6,
+      "title": "File:Building on Nurjol Bulvar.jpg",
+      "lat": 51.128556,
+      "lon": 71.437167,
+      "dist": 1059.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172518,
+      "ns": 6,
+      "title": "File:Astana DSC04165 (7709732686).jpg",
+      "lat": 51.126377,
+      "lon": 71.442288,
+      "dist": 1445.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172859,
+      "ns": 6,
+      "title": "File:Astana DSC04263 (7709970126).jpg",
+      "lat": 51.131702,
+      "lon": 71.410038,
+      "dist": 887.1,
+      "primary": ""
+    },
+    {
+      "pageid": 152034641,
+      "ns": 6,
+      "title": "File:Yutong ZK6128HG, Astana (P1190682).jpg",
+      "lat": 51.128071622542,
+      "lon": 71.438531969792,
+      "dist": 1158.3,
+      "primary": ""
+    },
+    {
+      "pageid": 69172529,
+      "ns": 6,
+      "title": "File:Astana DSC04168 (7709739566).jpg",
+      "lat": 51.12648,
+      "lon": 71.44228,
+      "dist": 1442.7,
+      "primary": ""
+    },
+    {
+      "pageid": 152034553,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190657).jpg",
+      "lat": 51.130575656542,
+      "lon": 71.430829024612,
+      "dist": 640.5,
+      "primary": ""
+    },
+    {
+      "pageid": 73810977,
+      "ns": 6,
+      "title": "File:Новый и вечный город Астана (141580761).jpeg",
+      "lat": 51.131753333333,
+      "lon": 71.40903,
+      "dist": 955.4,
+      "primary": ""
+    },
+    {
+      "pageid": 152028020,
+      "ns": 6,
+      "title": "File:YandexGo, Astana (P1190661).jpg",
+      "lat": 51.130403788978,
+      "lon": 71.431727349258,
+      "dist": 696.5,
+      "primary": ""
+    },
+    {
+      "pageid": 140666723,
+      "ns": 6,
+      "title": "File:Mädi Takiev (2023-10-12).jpg",
+      "lat": 51.127657,
+      "lon": 71.440045,
+      "dist": 1268.1,
+      "primary": ""
+    },
+    {
+      "pageid": 57952121,
+      "ns": 6,
+      "title": "File:Полосатые небоскребы - panoramio.jpg",
+      "lat": 51.13178,
+      "lon": 71.42463,
+      "dist": 359.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172869,
+      "ns": 6,
+      "title": "File:Astana DSC04265 (7710983498).jpg",
+      "lat": 51.131844,
+      "lon": 71.408852,
+      "dist": 970.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172874,
+      "ns": 6,
+      "title": "File:Astana DSC04266 (7710989876).jpg",
+      "lat": 51.131844,
+      "lon": 71.408838,
+      "dist": 971.4,
+      "primary": ""
+    },
+    {
+      "pageid": 111475617,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 3.jpg",
+      "lat": 51.131775,
+      "lon": 71.407906,
+      "dist": 1030.8,
+      "primary": ""
+    },
+    {
+      "pageid": 152037070,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190664).jpg",
+      "lat": 51.130256044652,
+      "lon": 71.433052282848,
+      "dist": 783.8,
+      "primary": ""
+    },
+    {
+      "pageid": 57952173,
+      "ns": 6,
+      "title": "File:Қазмедиа Орталығы - panoramio.jpg",
+      "lat": 51.132164,
+      "lon": 71.422011,
+      "dist": 351.8,
+      "primary": ""
+    },
+    {
+      "pageid": 152324871,
+      "ns": 6,
+      "title": "File:Esil District, Astana (P1190663).jpg",
+      "lat": 51.130251556047,
+      "lon": 71.43317387632,
+      "dist": 792.1,
+      "primary": ""
+    },
+    {
+      "pageid": 111475614,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 2.jpg",
+      "lat": 51.131786,
+      "lon": 71.407372,
+      "dist": 1066.7,
+      "primary": ""
+    },
+    {
+      "pageid": 57952131,
+      "ns": 6,
+      "title": "File:Tyркiстан Кошесi - panoramio.jpg",
+      "lat": 51.130428,
+      "lon": 71.433031,
+      "dist": 786,
+      "primary": ""
+    },
+    {
+      "pageid": 111475613,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 1.jpg",
+      "lat": 51.131633,
+      "lon": 71.405708,
+      "dist": 1174,
+      "primary": ""
+    },
+    {
+      "pageid": 69172722,
+      "ns": 6,
+      "title": "File:Astana SAM 0055 (14933895419).jpg",
+      "lat": 51.131955,
+      "lon": 71.407806,
+      "dist": 1043.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172706,
+      "ns": 6,
+      "title": "File:Astana SAM 0053 (15097599826).jpg",
+      "lat": 51.131955,
+      "lon": 71.407806,
+      "dist": 1043.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172696,
+      "ns": 6,
+      "title": "File:Astana SAM 0051 (14933941570).jpg",
+      "lat": 51.131955,
+      "lon": 71.407806,
+      "dist": 1043.5,
+      "primary": ""
+    },
+    {
+      "pageid": 114121189,
+      "ns": 6,
+      "title": "File:Astana DSC04131 (7709662188) (cropped).jpg",
+      "lat": 51.121977,
+      "lon": 71.450402,
+      "dist": 2130.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172386,
+      "ns": 6,
+      "title": "File:Astana DSC04131 (7709662188).jpg",
+      "lat": 51.121977,
+      "lon": 71.450402,
+      "dist": 2130.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172383,
+      "ns": 6,
+      "title": "File:Astana DSC04129 (7709658488).jpg",
+      "lat": 51.121936,
+      "lon": 71.450497,
+      "dist": 2138.2,
+      "primary": ""
+    },
+    {
+      "pageid": 69172381,
+      "ns": 6,
+      "title": "File:Astana DSC04128 (7709656036).jpg",
+      "lat": 51.121936,
+      "lon": 71.450497,
+      "dist": 2138.2,
+      "primary": ""
+    },
+    {
+      "pageid": 41201070,
+      "ns": 6,
+      "title": "File:RIXOS ASTANA,KAZAKHSTAN - panoramio.jpg",
+      "lat": 51.132602,
+      "lon": 71.420724,
+      "dist": 410.3,
+      "primary": ""
+    },
+    {
+      "pageid": 104077540,
+      "ns": 6,
+      "title": "File:Astana City Bus (30555312907).jpg",
+      "lat": 51.132151,
+      "lon": 71.406519,
+      "dist": 1135.7,
+      "primary": ""
+    },
+    {
+      "pageid": 104077541,
+      "ns": 6,
+      "title": "File:KZ 836 BN 01 (30555624457).jpg",
+      "lat": 51.132151,
+      "lon": 71.406519,
+      "dist": 1135.7,
+      "primary": ""
+    },
+    {
+      "pageid": 53673936,
+      "ns": 6,
+      "title": "File:Астана в лучах заходящего солнца - panoramio.jpg",
+      "lat": 51.132131,
+      "lon": 71.40594,
+      "dist": 1173.5,
+      "primary": ""
+    },
+    {
+      "pageid": 124583667,
+      "ns": 6,
+      "title": "File:Вход во двор без забора (48014746603).jpg",
+      "lat": 51.130013,
+      "lon": 71.43615,
+      "dist": 993.8,
+      "primary": ""
+    },
+    {
+      "pageid": 57952163,
+      "ns": 6,
+      "title": "File:Вид на Астану от Хан Шатыр - panoramio.jpg",
+      "lat": 51.132185,
+      "lon": 71.405366,
+      "dist": 1213.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69173093,
+      "ns": 6,
+      "title": "File:Astana DSC04329 (7711227994).jpg",
+      "lat": 51.132219,
+      "lon": 71.405283,
+      "dist": 1220.2,
+      "primary": ""
+    },
+    {
+      "pageid": 17146835,
+      "ns": 6,
+      "title": "File:Modern kazakh bride.jpg",
+      "lat": 51.131592,
+      "lon": 71.43259,
+      "dist": 793.2,
+      "primary": ""
+    },
+    {
+      "pageid": 93912103,
+      "ns": 6,
+      "title": "File:Randa Kassis with Kairat Abdrakhmanov.jpg",
+      "lat": 51.131978,
+      "lon": 71.432494,
+      "dist": 803.7,
+      "primary": ""
+    },
+    {
+      "pageid": 194022120,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Celebration in Astana-3.jpg",
+      "lat": 51.133183,
+      "lon": 71.431817,
+      "dist": 828,
+      "primary": ""
+    },
+    {
+      "pageid": 194022121,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Celebration in Astana-2.jpg",
+      "lat": 51.133233,
+      "lon": 71.431808,
+      "dist": 830.6,
+      "primary": ""
+    },
+    {
+      "pageid": 193273940,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Cake, Astana-3.jpg",
+      "lat": 51.133381,
+      "lon": 71.431642,
+      "dist": 830.7,
+      "primary": ""
+    },
+    {
+      "pageid": 193273941,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Cake, Astana-2.jpg",
+      "lat": 51.133275,
+      "lon": 71.431769,
+      "dist": 831.1,
+      "primary": ""
+    },
+    {
+      "pageid": 194022119,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Celebration in Astana.jpg",
+      "lat": 51.133247,
+      "lon": 71.4318,
+      "dist": 831.1,
+      "primary": ""
+    },
+    {
+      "pageid": 193273939,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Cake, Astana.jpg",
+      "lat": 51.133311,
+      "lon": 71.431756,
+      "dist": 832.6,
+      "primary": ""
+    },
+    {
+      "pageid": 193273943,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Cake, Astana-4.jpg",
+      "lat": 51.133381,
+      "lon": 71.431686,
+      "dist": 833.1,
+      "primary": ""
+    },
+    {
+      "pageid": 193273930,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Cake, Astana-8.jpg",
+      "lat": 51.133239,
+      "lon": 71.431847,
+      "dist": 833.3,
+      "primary": ""
+    },
+    {
+      "pageid": 194022123,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Celebration in Astana-5.jpg",
+      "lat": 51.133294,
+      "lon": 71.431794,
+      "dist": 833.7,
+      "primary": ""
+    },
+    {
+      "pageid": 193273931,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Cake, Astana-7.jpg",
+      "lat": 51.133256,
+      "lon": 71.431856,
+      "dist": 834.8,
+      "primary": ""
+    },
+    {
+      "pageid": 193273926,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Cake, Astana-9.jpg",
+      "lat": 51.133319,
+      "lon": 71.4318,
+      "dist": 835.6,
+      "primary": ""
+    },
+    {
+      "pageid": 193273927,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Cake, Astana-10.jpg",
+      "lat": 51.133339,
+      "lon": 71.431778,
+      "dist": 835.7,
+      "primary": ""
+    },
+    {
+      "pageid": 193273933,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Cake, Astana-11.jpg",
+      "lat": 51.133356,
+      "lon": 71.431764,
+      "dist": 836,
+      "primary": ""
+    },
+    {
+      "pageid": 193273936,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Cake, Astana-5.jpg",
+      "lat": 51.133331,
+      "lon": 71.431794,
+      "dist": 836.1,
+      "primary": ""
+    },
+    {
+      "pageid": 194022122,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Celebration in Astana-4.jpg",
+      "lat": 51.133397,
+      "lon": 71.431817,
+      "dist": 841.6,
+      "primary": ""
+    },
+    {
+      "pageid": 193273935,
+      "ns": 6,
+      "title": "File:Wikipedia 25 Cake, Astana-6.jpg",
+      "lat": 51.133633,
+      "lon": 71.431856,
+      "dist": 859.3,
+      "primary": ""
+    },
+    {
+      "pageid": 57952181,
+      "ns": 6,
+      "title": "File:Сарайшык кошеси - panoramio.jpg",
+      "lat": 51.133639,
+      "lon": 71.412034,
+      "dist": 865.8,
+      "primary": ""
+    },
+    {
+      "pageid": 58562524,
+      "ns": 6,
+      "title": "File:Школа ^66 - panoramio.jpg",
+      "lat": 51.131581,
+      "lon": 71.433783,
+      "dist": 870.9,
+      "primary": ""
+    },
+    {
+      "pageid": 58562460,
+      "ns": 6,
+      "title": "File:Школа^66 - panoramio.jpg",
+      "lat": 51.131929,
+      "lon": 71.434157,
+      "dist": 908.7,
+      "primary": ""
+    },
+    {
+      "pageid": 57952209,
+      "ns": 6,
+      "title": "File:Жилой комплекс \"Триумф Астаны\" - panoramio.jpg",
+      "lat": 51.13403,
+      "lon": 71.411197,
+      "dist": 938.7,
+      "primary": ""
+    },
+    {
+      "pageid": 104077559,
+      "ns": 6,
+      "title": "File:KZ 495 BC 01 (44826906784).jpg",
+      "lat": 51.134036,
+      "lon": 71.409931,
+      "dist": 1011.3,
+      "primary": ""
+    },
+    {
+      "pageid": 104077549,
+      "ns": 6,
+      "title": "File:KZ 641 BC 01 (43719414640).jpg",
+      "lat": 51.134036,
+      "lon": 71.409931,
+      "dist": 1011.3,
+      "primary": ""
+    },
+    {
+      "pageid": 104077544,
+      "ns": 6,
+      "title": "File:KZ 07 AZ 01 (30578594127).jpg",
+      "lat": 51.134036,
+      "lon": 71.409931,
+      "dist": 1011.3,
+      "primary": ""
+    },
+    {
+      "pageid": 112239684,
+      "ns": 6,
+      "title": "File:IMG9172RTK.jpg",
+      "lat": 51.134625,
+      "lon": 71.410553,
+      "dist": 1014.5,
+      "primary": ""
+    },
+    {
+      "pageid": 104077550,
+      "ns": 6,
+      "title": "File:Astana City Bus (43719414650).jpg",
+      "lat": 51.134387,
+      "lon": 71.407442,
+      "dist": 1179.3,
+      "primary": ""
+    },
+    {
+      "pageid": 69168760,
+      "ns": 6,
+      "title": "File:Nyetta With Her \"Yurt, Sweet Yurt\" (7508105280).jpg",
+      "lat": 51.135133,
+      "lon": 71.406626,
+      "dist": 1271.2,
+      "primary": ""
+    },
+    {
+      "pageid": 69168768,
+      "ns": 6,
+      "title": "File:Traditional Yurt With Traditional Kazakh Musical Instruments (7508130466).jpg",
+      "lat": 51.135133,
+      "lon": 71.406626,
+      "dist": 1271.2,
+      "primary": ""
+    },
+    {
+      "pageid": 69168748,
+      "ns": 6,
+      "title": "File:Yurts At Astana Days 2012 (7508100890).jpg",
+      "lat": 51.135133,
+      "lon": 71.406626,
+      "dist": 1271.2,
+      "primary": ""
+    },
+    {
+      "pageid": 69168744,
+      "ns": 6,
+      "title": "File:Traditional Kazakh Mobile Homes (7508095304).jpg",
+      "lat": 51.135133,
+      "lon": 71.406626,
+      "dist": 1271.2,
+      "primary": ""
+    },
+    {
+      "pageid": 69168769,
+      "ns": 6,
+      "title": "File:Kazakh Matrons at Astana Days (7508133514).jpg",
+      "lat": 51.135133,
+      "lon": 71.406626,
+      "dist": 1271.2,
+      "primary": ""
+    },
+    {
+      "pageid": 69168758,
+      "ns": 6,
+      "title": "File:Ken With Golden Eagle (7508121788).jpg",
+      "lat": 51.135133,
+      "lon": 71.406626,
+      "dist": 1271.2,
+      "primary": ""
+    },
+    {
+      "pageid": 69168770,
+      "ns": 6,
+      "title": "File:Eagle and Friend (7508126706).jpg",
+      "lat": 51.135133,
+      "lon": 71.406626,
+      "dist": 1271.2,
+      "primary": ""
+    },
+    {
+      "pageid": 69168759,
+      "ns": 6,
+      "title": "File:Nyetta Approves Of This Bactrian's Fuzzy Legs (7508116466).jpg",
+      "lat": 51.135133,
+      "lon": 71.406626,
+      "dist": 1271.2,
+      "primary": ""
+    },
+    {
+      "pageid": 69168764,
+      "ns": 6,
+      "title": "File:Out For An Urban Ride (7508114108).jpg",
+      "lat": 51.135133,
+      "lon": 71.406626,
+      "dist": 1271.2,
+      "primary": ""
+    },
+    {
+      "pageid": 69168753,
+      "ns": 6,
+      "title": "File:A Friendly, Fuzzy Camel (7508111530).jpg",
+      "lat": 51.135133,
+      "lon": 71.406626,
+      "dist": 1271.2,
+      "primary": ""
+    },
+    {
+      "pageid": 104077553,
+      "ns": 6,
+      "title": "File:KZ 395 BS 01 (44826906824).jpg",
+      "lat": 51.134477,
+      "lon": 71.405961,
+      "dist": 1274.1,
+      "primary": ""
+    },
+    {
+      "pageid": 124583568,
+      "ns": 6,
+      "title": "File:Велодорожка и челодорожка (48029558328).jpg",
+      "lat": 51.1362,
+      "lon": 71.436402,
+      "dist": 1284.9,
+      "primary": ""
+    },
+    {
+      "pageid": 69173051,
+      "ns": 6,
+      "title": "File:Astana DSC04317 (7711179968).jpg",
+      "lat": 51.132361,
+      "lon": 71.404344,
+      "dist": 1287.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69173054,
+      "ns": 6,
+      "title": "File:Astana DSC04318 (7711183110).jpg",
+      "lat": 51.132361,
+      "lon": 71.404344,
+      "dist": 1287.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69173057,
+      "ns": 6,
+      "title": "File:Astana DSC04319 (7711186328).jpg",
+      "lat": 51.132313,
+      "lon": 71.404238,
+      "dist": 1293,
+      "primary": ""
+    },
+    {
+      "pageid": 69172961,
+      "ns": 6,
+      "title": "File:Astana DSC04288 (7711068540).jpg",
+      "lat": 51.132183,
+      "lon": 71.404169,
+      "dist": 1293.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69172944,
+      "ns": 6,
+      "title": "File:Astana DSC04279 (7711038396).jpg",
+      "lat": 51.132888,
+      "lon": 71.403988,
+      "dist": 1329.1,
+      "primary": ""
+    },
+    {
+      "pageid": 69172940,
+      "ns": 6,
+      "title": "File:Astana DSC04278 (7711035070).jpg",
+      "lat": 51.13278,
+      "lon": 71.403863,
+      "dist": 1333.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69172969,
+      "ns": 6,
+      "title": "File:Astana DSC04291 (7711079146).jpg",
+      "lat": 51.132088,
+      "lon": 71.403486,
+      "dist": 1336.8,
+      "primary": ""
+    },
+    {
+      "pageid": 69172947,
+      "ns": 6,
+      "title": "File:Astana DSC04280 (7711041338).jpg",
+      "lat": 51.132872,
+      "lon": 71.403727,
+      "dist": 1345.8,
+      "primary": ""
+    },
+    {
+      "pageid": 69172948,
+      "ns": 6,
+      "title": "File:Astana DSC04281 (7711044322).jpg",
+      "lat": 51.132872,
+      "lon": 71.403727,
+      "dist": 1345.8,
+      "primary": ""
+    },
+    {
+      "pageid": 69172950,
+      "ns": 6,
+      "title": "File:Astana DSC04282 (7711047516).jpg",
+      "lat": 51.132872,
+      "lon": 71.403727,
+      "dist": 1345.8,
+      "primary": ""
+    },
+    {
+      "pageid": 69173088,
+      "ns": 6,
+      "title": "File:Astana DSC04328 (7711224754).jpg",
+      "lat": 51.132555,
+      "lon": 71.403433,
+      "dist": 1354.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69173019,
+      "ns": 6,
+      "title": "File:Astana DSC04308 (7711144680).jpg",
+      "lat": 51.132438,
+      "lon": 71.40333,
+      "dist": 1357.7,
+      "primary": ""
+    },
+    {
+      "pageid": 136953236,
+      "ns": 6,
+      "title": "File:Svetlana Jaqipova (2023-09-04).jpg",
+      "lat": 51.128355,
+      "lon": 71.441763,
+      "dist": 1381,
+      "primary": ""
+    },
+    {
+      "pageid": 136952862,
+      "ns": 6,
+      "title": "File:Majilis discusses candidacy of new Labor and Social security minister (44941).jpg",
+      "lat": 51.128355,
+      "lon": 71.441763,
+      "dist": 1381,
+      "primary": ""
+    },
+    {
+      "pageid": 137008999,
+      "ns": 6,
+      "title": "File:Renat Aytaev (2023-09-05).jpg",
+      "lat": 51.12869,
+      "lon": 71.44181,
+      "dist": 1382.8,
+      "primary": ""
+    },
+    {
+      "pageid": 137008997,
+      "ns": 6,
+      "title": "File:Erlan Nısanbaev (2023-09-05).jpg",
+      "lat": 51.12869,
+      "lon": 71.44181,
+      "dist": 1382.8,
+      "primary": ""
+    },
+    {
+      "pageid": 69172985,
+      "ns": 6,
+      "title": "File:Astana DSC04295 (7711095178).jpg",
+      "lat": 51.132672,
+      "lon": 71.402761,
+      "dist": 1403.2,
+      "primary": ""
+    },
+    {
+      "pageid": 137083629,
+      "ns": 6,
+      "title": "File:Нысанбаевтың кандидатурасын талқылау барысы (44965).jpg",
+      "lat": 51.128115,
+      "lon": 71.442208,
+      "dist": 1413.6,
+      "primary": ""
+    },
+    {
+      "pageid": 118975962,
+      "ns": 6,
+      "title": "File:Здание парламента Казахстана.jpg",
+      "lat": 51.12963,
+      "lon": 71.442409,
+      "dist": 1425.9,
+      "primary": ""
+    },
+    {
+      "pageid": 145074775,
+      "ns": 6,
+      "title": "File:Светлана Жақыпова (51872).jpg",
+      "lat": 51.127857,
+      "lon": 71.442378,
+      "dist": 1427.7,
+      "primary": ""
+    },
+    {
+      "pageid": 136952271,
+      "ns": 6,
+      "title": "File:Majilis discusses candidacy of new Minister of Agriculture Saparov (44953).jpg",
+      "lat": 51.128345,
+      "lon": 71.44262,
+      "dist": 1440.8,
+      "primary": ""
+    },
+    {
+      "pageid": 136952493,
+      "ns": 6,
+      "title": "File:Aydarbek Saparov (2023-09-04).jpg",
+      "lat": 51.128345,
+      "lon": 71.44262,
+      "dist": 1440.8,
+      "primary": ""
+    },
+    {
+      "pageid": 136952494,
+      "ns": 6,
+      "title": "File:Ermek Amanşaev (2023-09-04).jpg",
+      "lat": 51.128345,
+      "lon": 71.44262,
+      "dist": 1440.8,
+      "primary": ""
+    },
+    {
+      "pageid": 138443054,
+      "ns": 6,
+      "title": "File:Kim Jeong-jae (2023-10-03).jpg",
+      "lat": 51.127985,
+      "lon": 71.442613,
+      "dist": 1442.9,
+      "primary": ""
+    },
+    {
+      "pageid": 54477329,
+      "ns": 6,
+      "title": "File:Астана Триумф - panoramio.jpg",
+      "lat": 51.139563,
+      "lon": 71.409974,
+      "dist": 1443.5,
+      "primary": ""
+    },
+    {
+      "pageid": 136952270,
+      "ns": 6,
+      "title": "File:Majilis discusses candidacy of new Minister of Agriculture Saparov (44951).jpg",
+      "lat": 51.127865,
+      "lon": 71.442627,
+      "dist": 1444.9,
+      "primary": ""
+    },
+    {
+      "pageid": 111475568,
+      "ns": 6,
+      "title": "File:Astana-2021-10 - 18.jpg",
+      "lat": 51.134042,
+      "lon": 71.441122,
+      "dist": 1447.3,
+      "primary": ""
+    },
+    {
+      "pageid": 181521483,
+      "ns": 6,
+      "title": "File:Kazakhstan, Aqmola, Astana - Chubary microdistrict WMID8669636.jpg",
+      "lat": 51.142222,
+      "lon": 71.428611,
+      "dist": 1540.9,
+      "primary": ""
+    },
+    {
+      "pageid": 69172660,
+      "ns": 6,
+      "title": "File:Astana SAM 0043 (14934045668).jpg",
+      "lat": 51.142498,
+      "lon": 71.410639,
+      "dist": 1697.4,
+      "primary": ""
+    },
+    {
+      "pageid": 159297057,
+      "ns": 6,
+      "title": "File:Wv Astana banner.jpg",
+      "lat": 51.131146,
+      "lon": 71.397901,
+      "dist": 1698.5,
+      "primary": ""
+    },
+    {
+      "pageid": 125196946,
+      "ns": 6,
+      "title": "File:Астана, улица Достык сверху.jpg",
+      "lat": 51.131146,
+      "lon": 71.397901,
+      "dist": 1698.5,
+      "primary": ""
+    },
+    {
+      "pageid": 125196943,
+      "ns": 6,
+      "title": "File:Астана, улица Бектурова сверху.jpg",
+      "lat": 51.131151,
+      "lon": 71.397837,
+      "dist": 1703,
+      "primary": ""
+    },
+    {
+      "pageid": 57345719,
+      "ns": 6,
+      "title": "File:Весна над Акордой - panoramio.jpg",
+      "lat": 51.125836,
+      "lon": 71.446325,
+      "dist": 1733.6,
+      "primary": ""
+    },
+    {
+      "pageid": 124583550,
+      "ns": 6,
+      "title": "File:Набережная Ишима (48029625352).jpg",
+      "lat": 51.139302,
+      "lon": 71.440822,
+      "dist": 1742.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69172647,
+      "ns": 6,
+      "title": "File:Astana SAM 0040 (15120620575).jpg",
+      "lat": 51.14484,
+      "lon": 71.415596,
+      "dist": 1817.1,
+      "primary": ""
+    },
+    {
+      "pageid": 133955085,
+      "ns": 6,
+      "title": "File:Idrak izvestniy komik.jpg",
+      "lat": 51.145789,
+      "lon": 71.422356,
+      "dist": 1867,
+      "primary": ""
+    },
+    {
+      "pageid": 69172636,
+      "ns": 6,
+      "title": "File:Astana SAM 0038 (15120253912).jpg",
+      "lat": 51.145473,
+      "lon": 71.41375,
+      "dist": 1920,
+      "primary": ""
+    },
+    {
+      "pageid": 44980909,
+      "ns": 6,
+      "title": "File:Central Astana on a Sunny, Snowy Day in February 2013 (8481953080).jpg",
+      "lat": 51.125074,
+      "lon": 71.448898,
+      "dist": 1927.2,
+      "primary": ""
+    },
+    {
+      "pageid": 125108638,
+      "ns": 6,
+      "title": "File:Астана, Малый Талдыколь, сферопанорама.jpg",
+      "lat": 51.130413,
+      "lon": 71.394455,
+      "dist": 1928.5,
+      "primary": ""
+    },
+    {
+      "pageid": 125192551,
+      "ns": 6,
+      "title": "File:Астана, левый берег сверху (3).jpg",
+      "lat": 51.130415,
+      "lon": 71.394454,
+      "dist": 1928.6,
+      "primary": ""
+    },
+    {
+      "pageid": 125197839,
+      "ns": 6,
+      "title": "File:Астана, Талдыколь сверху.jpg",
+      "lat": 51.131236,
+      "lon": 71.394395,
+      "dist": 1942.3,
+      "primary": ""
+    },
+    {
+      "pageid": 56052416,
+      "ns": 6,
+      "title": "File:Ёлка у цирка - panoramio.jpg",
+      "lat": 51.146508,
+      "lon": 71.42099,
+      "dist": 1948.1,
+      "primary": ""
+    },
+    {
+      "pageid": 146521997,
+      "ns": 6,
+      "title": "File:Иқтисоддон Маҳмуд Тошматов.jpg",
+      "lat": 51.146944,
+      "lon": 71.424444,
+      "dist": 2002.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69172627,
+      "ns": 6,
+      "title": "File:Astana SAM 0037 (14934063527).jpg",
+      "lat": 51.146832,
+      "lon": 71.41787,
+      "dist": 2003.7,
+      "primary": ""
+    },
+    {
+      "pageid": 57761894,
+      "ns": 6,
+      "title": "File:Yesil District, Astana 010000, Kazakhstan - panoramio (3).jpg",
+      "lat": 51.1473999449,
+      "lon": 71.4217204625,
+      "dist": 2046.1,
+      "primary": ""
+    },
+    {
+      "pageid": 57761927,
+      "ns": 6,
+      "title": "File:Yesil District, Astana 010000, Kazakhstan - panoramio (4).jpg",
+      "lat": 51.147410087,
+      "lon": 71.4215620446,
+      "dist": 2047.3,
+      "primary": ""
+    },
+    {
+      "pageid": 57762060,
+      "ns": 6,
+      "title": "File:Yesil District, Astana 010000, Kazakhstan - panoramio (7).jpg",
+      "lat": 51.1467806902,
+      "lon": 71.4140485933,
+      "dist": 2053.5,
+      "primary": ""
+    },
+    {
+      "pageid": 57762070,
+      "ns": 6,
+      "title": "File:Yesil District, Astana 010000, Kazakhstan - panoramio (8).jpg",
+      "lat": 51.1467806902,
+      "lon": 71.4140485933,
+      "dist": 2053.5,
+      "primary": ""
+    },
+    {
+      "pageid": 57761944,
+      "ns": 6,
+      "title": "File:Yesil District, Astana 010000, Kazakhstan - panoramio (5).jpg",
+      "lat": 51.1469748149,
+      "lon": 71.4148559379,
+      "dist": 2059.9,
+      "primary": ""
+    },
+    {
+      "pageid": 57761966,
+      "ns": 6,
+      "title": "File:Yesil District, Astana 010000, Kazakhstan - panoramio (6).jpg",
+      "lat": 51.1469748149,
+      "lon": 71.4148559379,
+      "dist": 2059.9,
+      "primary": ""
+    },
+    {
+      "pageid": 56052540,
+      "ns": 6,
+      "title": "File:Главный флаг Казахстана - panoramio.jpg",
+      "lat": 51.147855,
+      "lon": 71.421848,
+      "dist": 2096.6,
+      "primary": ""
+    },
+    {
+      "pageid": 56052407,
+      "ns": 6,
+      "title": "File:Золотые слова... - panoramio.jpg",
+      "lat": 51.148424,
+      "lon": 71.421361,
+      "dist": 2160.3,
+      "primary": ""
+    },
+    {
+      "pageid": 69172594,
+      "ns": 6,
+      "title": "File:Astana SAM 0026 (15120645915).jpg",
+      "lat": 51.148501,
+      "lon": 71.421904,
+      "dist": 2168.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172576,
+      "ns": 6,
+      "title": "File:Astana SAM 0023 (14934084778).jpg",
+      "lat": 51.148501,
+      "lon": 71.421904,
+      "dist": 2168.4,
+      "primary": ""
+    },
+    {
+      "pageid": 198529973,
+      "ns": 6,
+      "title": "File:Bandera kazaja ondeando.jpg",
+      "lat": 51.148501,
+      "lon": 71.421904,
+      "dist": 2168.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172586,
+      "ns": 6,
+      "title": "File:Astana SAM 0024 (15120277162).jpg",
+      "lat": 51.148501,
+      "lon": 71.421904,
+      "dist": 2168.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172622,
+      "ns": 6,
+      "title": "File:Astana SAM 0036 (15120260212).jpg",
+      "lat": 51.148501,
+      "lon": 71.421904,
+      "dist": 2168.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172610,
+      "ns": 6,
+      "title": "File:Astana SAM 0033 (14934072508).jpg",
+      "lat": 51.148501,
+      "lon": 71.421904,
+      "dist": 2168.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172595,
+      "ns": 6,
+      "title": "File:Astana SAM 0028 (15117488961).jpg",
+      "lat": 51.148501,
+      "lon": 71.421904,
+      "dist": 2168.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172599,
+      "ns": 6,
+      "title": "File:Astana SAM 0029 (14933917308).jpg",
+      "lat": 51.148501,
+      "lon": 71.421904,
+      "dist": 2168.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172600,
+      "ns": 6,
+      "title": "File:Astana SAM 0030 (14933950199).jpg",
+      "lat": 51.148501,
+      "lon": 71.421904,
+      "dist": 2168.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172604,
+      "ns": 6,
+      "title": "File:Astana SAM 0032 (15120641775).jpg",
+      "lat": 51.148501,
+      "lon": 71.421904,
+      "dist": 2168.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172596,
+      "ns": 6,
+      "title": "File:Astana SAM 0027 (14933832460).jpg",
+      "lat": 51.148501,
+      "lon": 71.421904,
+      "dist": 2168.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172592,
+      "ns": 6,
+      "title": "File:Astana SAM 0025 (15097654426).jpg",
+      "lat": 51.148501,
+      "lon": 71.421904,
+      "dist": 2168.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172618,
+      "ns": 6,
+      "title": "File:Astana SAM 0035 (15120634245).jpg",
+      "lat": 51.148501,
+      "lon": 71.421904,
+      "dist": 2168.4,
+      "primary": ""
+    },
+    {
+      "pageid": 56052465,
+      "ns": 6,
+      "title": "File:Астана в декабре - panoramio.jpg",
+      "lat": 51.148506,
+      "lon": 71.421054,
+      "dist": 2170,
+      "primary": ""
+    },
+    {
+      "pageid": 83706097,
+      "ns": 6,
+      "title": "File:Atameken miniature park 02.jpg",
+      "lat": 51.1487,
+      "lon": 71.418306,
+      "dist": 2205.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69168801,
+      "ns": 6,
+      "title": "File:Dragonflies on the Lagoon in Astana (7526382126).jpg",
+      "lat": 51.135308,
+      "lon": 71.452074,
+      "dist": 2212.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69168803,
+      "ns": 6,
+      "title": "File:Yellow Water Lilies - Nuphar lutea (7526389328).jpg",
+      "lat": 51.135308,
+      "lon": 71.452074,
+      "dist": 2212.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69168802,
+      "ns": 6,
+      "title": "File:A Well Camouflaged Frog (7526391648).jpg",
+      "lat": 51.135308,
+      "lon": 71.452074,
+      "dist": 2212.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69168807,
+      "ns": 6,
+      "title": "File:Great Cormorant At Astana's Lagoon (7526392982).jpg",
+      "lat": 51.135308,
+      "lon": 71.452074,
+      "dist": 2212.6,
+      "primary": ""
+    },
+    {
+      "pageid": 69168804,
+      "ns": 6,
+      "title": "File:Mother Duck with her Growing Ducklings (7526385196).jpg",
+      "lat": 51.135308,
+      "lon": 71.452074,
+      "dist": 2212.6,
+      "primary": ""
+    },
+    {
+      "pageid": 83706106,
+      "ns": 6,
+      "title": "File:Atameken miniature park 09.jpg",
+      "lat": 51.148769,
+      "lon": 71.416711,
+      "dist": 2229,
+      "primary": ""
+    },
+    {
+      "pageid": 199869921,
+      "ns": 6,
+      "title": "File:Puccinia minussensis 676583762.jpg",
+      "lat": 51.13106,
+      "lon": 71.45393,
+      "dist": 2239.9,
+      "primary": ""
+    },
+    {
+      "pageid": 199869947,
+      "ns": 6,
+      "title": "File:Puccinia minussensis 676583816.jpg",
+      "lat": 51.13106,
+      "lon": 71.45393,
+      "dist": 2239.9,
+      "primary": ""
+    },
+    {
+      "pageid": 44980872,
+      "ns": 6,
+      "title": "File:New Astana Skyline (9587635437).jpg",
+      "lat": 51.125,
+      "lon": 71.4536,
+      "dist": 2249.6,
+      "primary": ""
+    },
+    {
+      "pageid": 83706099,
+      "ns": 6,
+      "title": "File:Atameken miniature park 01.jpg",
+      "lat": 51.149217,
+      "lon": 71.419419,
+      "dist": 2255.2,
+      "primary": ""
+    },
+    {
+      "pageid": 83706096,
+      "ns": 6,
+      "title": "File:Atameken miniature park 03.jpg",
+      "lat": 51.149139,
+      "lon": 71.417969,
+      "dist": 2256.9,
+      "primary": ""
+    },
+    {
+      "pageid": 69172338,
+      "ns": 6,
+      "title": "File:Astana DSC04119 (7709637462).jpg",
+      "lat": 51.124819,
+      "lon": 71.45385,
+      "dist": 2270.8,
+      "primary": ""
+    },
+    {
+      "pageid": 69172345,
+      "ns": 6,
+      "title": "File:Astana DSC04120 (7709639142).jpg",
+      "lat": 51.124819,
+      "lon": 71.45385,
+      "dist": 2270.8,
+      "primary": ""
+    },
+    {
+      "pageid": 69172369,
+      "ns": 6,
+      "title": "File:Astana DSC04124 (7709646860).jpg",
+      "lat": 51.124636,
+      "lon": 71.453802,
+      "dist": 2271.8,
+      "primary": ""
+    },
+    {
+      "pageid": 83706101,
+      "ns": 6,
+      "title": "File:Atameken miniature park 04.jpg",
+      "lat": 51.149292,
+      "lon": 71.417983,
+      "dist": 2273.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69172330,
+      "ns": 6,
+      "title": "File:Astana DSC04117 (7709633628).jpg",
+      "lat": 51.12458,
+      "lon": 71.453836,
+      "dist": 2275.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172329,
+      "ns": 6,
+      "title": "File:Astana DSC04116 (7709631558).jpg",
+      "lat": 51.12458,
+      "lon": 71.453836,
+      "dist": 2275.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172333,
+      "ns": 6,
+      "title": "File:Astana DSC04118 (7709635700).jpg",
+      "lat": 51.12458,
+      "lon": 71.453836,
+      "dist": 2275.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172374,
+      "ns": 6,
+      "title": "File:Astana DSC04125 (7709649744).jpg",
+      "lat": 51.123902,
+      "lon": 71.453652,
+      "dist": 2280.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172377,
+      "ns": 6,
+      "title": "File:Astana DSC04126 (7709651774).jpg",
+      "lat": 51.123908,
+      "lon": 71.453658,
+      "dist": 2280.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69172378,
+      "ns": 6,
+      "title": "File:Astana DSC04127 (7709653406).jpg",
+      "lat": 51.123827,
+      "lon": 71.453663,
+      "dist": 2283.3,
+      "primary": ""
+    },
+    {
+      "pageid": 69172337,
+      "ns": 6,
+      "title": "File:Astana DSC04115 (7709629318).jpg",
+      "lat": 51.12433,
+      "lon": 71.453897,
+      "dist": 2285.7,
+      "primary": ""
+    },
+    {
+      "pageid": 44979968,
+      "ns": 6,
+      "title": "File:Astana DSC04113 (7709625554).jpg",
+      "lat": 51.125647,
+      "lon": 71.454405,
+      "dist": 2291.9,
+      "primary": ""
+    },
+    {
+      "pageid": 83706100,
+      "ns": 6,
+      "title": "File:Atameken miniature park 05.jpg",
+      "lat": 51.149589,
+      "lon": 71.418228,
+      "dist": 2304.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69168800,
+      "ns": 6,
+      "title": "File:The New Astana Music Hall (7526379258).jpg",
+      "lat": 51.131484,
+      "lon": 71.45482,
+      "dist": 2306.8,
+      "primary": ""
+    },
+    {
+      "pageid": 114275432,
+      "ns": 6,
+      "title": "File:Cast of Ak Orda Presidential Palace (15107891556).jpg",
+      "lat": 51.149632,
+      "lon": 71.41787,
+      "dist": 2312.2,
+      "primary": ""
+    },
+    {
+      "pageid": 114291887,
+      "ns": 6,
+      "title": "File:Constitution of Kazakhstan (14944227840) (cropped).jpg",
+      "lat": 51.149632,
+      "lon": 71.41787,
+      "dist": 2312.2,
+      "primary": ""
+    },
+    {
+      "pageid": 114275436,
+      "ns": 6,
+      "title": "File:SAM 0356 (14944306567).jpg",
+      "lat": 51.149632,
+      "lon": 71.41787,
+      "dist": 2312.2,
+      "primary": ""
+    },
+    {
+      "pageid": 114275435,
+      "ns": 6,
+      "title": "File:Constitution of Kazakhstan (14944227840).jpg",
+      "lat": 51.149632,
+      "lon": 71.41787,
+      "dist": 2312.2,
+      "primary": ""
+    },
+    {
+      "pageid": 114275433,
+      "ns": 6,
+      "title": "File:Nursultan Nazarbayev and National Emblem of Kazakhstan (14944232760).jpg",
+      "lat": 51.149632,
+      "lon": 71.41787,
+      "dist": 2312.2,
+      "primary": ""
+    },
+    {
+      "pageid": 83706105,
+      "ns": 6,
+      "title": "File:Atameken miniature park 08.jpg",
+      "lat": 51.149831,
+      "lon": 71.41745,
+      "dist": 2338,
+      "primary": ""
+    },
+    {
+      "pageid": 83706102,
+      "ns": 6,
+      "title": "File:Atameken miniature park 06.jpg",
+      "lat": 51.149872,
+      "lon": 71.417533,
+      "dist": 2341.7,
+      "primary": ""
+    },
+    {
+      "pageid": 57762104,
+      "ns": 6,
+      "title": "File:Yesil District, Astana 010000, Kazakhstan - panoramio (10).jpg",
+      "lat": 51.149337924,
+      "lon": 71.4129267598,
+      "dist": 2348.4,
+      "primary": ""
+    },
+    {
+      "pageid": 57762090,
+      "ns": 6,
+      "title": "File:Yesil District, Astana 010000, Kazakhstan - panoramio (9).jpg",
+      "lat": 51.149337924,
+      "lon": 71.4129267598,
+      "dist": 2348.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172315,
+      "ns": 6,
+      "title": "File:Astana DSC04109 (7709618498).jpg",
+      "lat": 51.126911,
+      "lon": 71.455991,
+      "dist": 2383.4,
+      "primary": ""
+    },
+    {
+      "pageid": 69172316,
+      "ns": 6,
+      "title": "File:Astana DSC04108 (7709616946).jpg",
+      "lat": 51.126905,
+      "lon": 71.455994,
+      "dist": 2383.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69172309,
+      "ns": 6,
+      "title": "File:Astana DSC04107 (7709615232).jpg",
+      "lat": 51.126905,
+      "lon": 71.455994,
+      "dist": 2383.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69172308,
+      "ns": 6,
+      "title": "File:Astana DSC04106 (7709613510).jpg",
+      "lat": 51.127052,
+      "lon": 71.456255,
+      "dist": 2400.2,
+      "primary": ""
+    },
+    {
+      "pageid": 44980206,
+      "ns": 6,
+      "title": "File:Astana (8238363469).jpg",
+      "lat": 51.150493,
+      "lon": 71.426367,
+      "dist": 2409.3,
+      "primary": ""
+    },
+    {
+      "pageid": 69172305,
+      "ns": 6,
+      "title": "File:Astana DSC04105 (7709611588).jpg",
+      "lat": 51.127216,
+      "lon": 71.456652,
+      "dist": 2426.3,
+      "primary": ""
+    },
+    {
+      "pageid": 69172303,
+      "ns": 6,
+      "title": "File:Astana DSC04104 (7709609188).jpg",
+      "lat": 51.127194,
+      "lon": 71.456661,
+      "dist": 2427.1,
+      "primary": ""
+    },
+    {
+      "pageid": 69172297,
+      "ns": 6,
+      "title": "File:Astana DSC04103 (7709606742).jpg",
+      "lat": 51.127272,
+      "lon": 71.45708,
+      "dist": 2455.5,
+      "primary": ""
+    },
+    {
+      "pageid": 69172302,
+      "ns": 6,
+      "title": "File:Astana DSC04102 (7709604932).jpg",
+      "lat": 51.127272,
+      "lon": 71.45708,
+      "dist": 2455.5,
+      "primary": ""
+    },
+    {
+      "pageid": 57761881,
+      "ns": 6,
+      "title": "File:Yesil District, Astana 010000, Kazakhstan - panoramio (2).jpg",
+      "lat": 51.1507745817,
+      "lon": 71.4278747049,
+      "dist": 2455.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69172292,
+      "ns": 6,
+      "title": "File:Astana DSC04101 (7709603174).jpg",
+      "lat": 51.126969,
+      "lon": 71.457388,
+      "dist": 2479.8,
+      "primary": ""
+    },
+    {
+      "pageid": 89357718,
+      "ns": 6,
+      "title": "File:Приложение \"Сергек. Патруль\".jpg",
+      "lat": 51.150074005556,
+      "lon": 71.410278319444,
+      "dist": 2481.9,
+      "primary": ""
+    },
+    {
+      "pageid": 57761869,
+      "ns": 6,
+      "title": "File:Yesil District, Nur-Sultan 010000, Kazakhstan - panoramio (1).jpg",
+      "lat": 51.1510309002,
+      "lon": 71.4280916285,
+      "dist": 2486.3,
+      "primary": ""
+    },
+    {
+      "pageid": 57761858,
+      "ns": 6,
+      "title": "File:Yesil District, Astana 010000, Kazakhstan - panoramio.jpg",
+      "lat": 51.1510309002,
+      "lon": 71.4280916285,
+      "dist": 2486.3,
+      "primary": ""
+    },
+    {
+      "pageid": 151826293,
+      "ns": 6,
+      "title": "File:Red Bus Tour, Astana (P1190743) (cropped).jpg",
+      "lat": 51.148065199707,
+      "lon": 71.44077531525,
+      "dist": 2492,
+      "primary": ""
+    },
+    {
+      "pageid": 151604125,
+      "ns": 6,
+      "title": "File:Astana Red Bus Tour, Astana (P1190743).jpg",
+      "lat": 51.148065199707,
+      "lon": 71.44077531525,
+      "dist": 2492,
+      "primary": ""
+    },
+    {
+      "pageid": 187336038,
+      "ns": 6,
+      "title": "File:Mapillary (641658355419769, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M08S000.jpg",
+      "lat": 51.1286021,
+      "lon": 71.4579972,
+      "dist": 2512.4,
+      "primary": ""
+    },
+    {
+      "pageid": 187336039,
+      "ns": 6,
+      "title": "File:Mapillary (636872835885942, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M10S000.jpg",
+      "lat": 51.1287765,
+      "lon": 71.4580166,
+      "dist": 2513.5,
+      "primary": ""
+    },
+    {
+      "pageid": 187336036,
+      "ns": 6,
+      "title": "File:Mapillary (981441880840237, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M06S000.jpg",
+      "lat": 51.1284156,
+      "lon": 71.458026,
+      "dist": 2514.8,
+      "primary": ""
+    },
+    {
+      "pageid": 187336046,
+      "ns": 6,
+      "title": "File:Mapillary (1204877567665831, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M12S000.jpg",
+      "lat": 51.1289137,
+      "lon": 71.4580451,
+      "dist": 2515.3,
+      "primary": ""
+    },
+    {
+      "pageid": 187336048,
+      "ns": 6,
+      "title": "File:Mapillary (621688670847979, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M14S000.jpg",
+      "lat": 51.1290054,
+      "lon": 71.4580812,
+      "dist": 2517.8,
+      "primary": ""
+    },
+    {
+      "pageid": 187336049,
+      "ns": 6,
+      "title": "File:Mapillary (1450841702856339, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M16S000.jpg",
+      "lat": 51.1290527,
+      "lon": 71.458106,
+      "dist": 2519.6,
+      "primary": ""
+    },
+    {
+      "pageid": 187336054,
+      "ns": 6,
+      "title": "File:Mapillary (1213069900538188, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M18S000.jpg",
+      "lat": 51.1290642,
+      "lon": 71.4581171,
+      "dist": 2520.4,
+      "primary": ""
+    },
+    {
+      "pageid": 187336055,
+      "ns": 6,
+      "title": "File:Mapillary (2262356460826663, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M20S000.jpg",
+      "lat": 51.1290668,
+      "lon": 71.4581229,
+      "dist": 2520.8,
+      "primary": ""
+    },
+    {
+      "pageid": 187336058,
+      "ns": 6,
+      "title": "File:Mapillary (2694876384041722, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M22S000.jpg",
+      "lat": 51.1290685,
+      "lon": 71.4581258,
+      "dist": 2521,
+      "primary": ""
+    },
+    {
+      "pageid": 187336030,
+      "ns": 6,
+      "title": "File:Mapillary (882658080652483, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M04S000.jpg",
+      "lat": 51.1282283,
+      "lon": 71.4581065,
+      "dist": 2521.1,
+      "primary": ""
+    },
+    {
+      "pageid": 187336070,
+      "ns": 6,
+      "title": "File:Mapillary (1418384979538584, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M24S000.jpg",
+      "lat": 51.1290707,
+      "lon": 71.4581303,
+      "dist": 2521.3,
+      "primary": ""
+    },
+    {
+      "pageid": 187336067,
+      "ns": 6,
+      "title": "File:Mapillary (1869383563820221, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M26S000.jpg",
+      "lat": 51.1290725,
+      "lon": 71.4581345,
+      "dist": 2521.6,
+      "primary": ""
+    },
+    {
+      "pageid": 187336090,
+      "ns": 6,
+      "title": "File:Mapillary (857441559897458, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M28S000.jpg",
+      "lat": 51.129074,
+      "lon": 71.4581384,
+      "dist": 2521.8,
+      "primary": ""
+    },
+    {
+      "pageid": 187336073,
+      "ns": 6,
+      "title": "File:Mapillary (1039340978102217, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M30S000.jpg",
+      "lat": 51.1290758,
+      "lon": 71.4581427,
+      "dist": 2522.1,
+      "primary": ""
+    },
+    {
+      "pageid": 187336105,
+      "ns": 6,
+      "title": "File:Mapillary (967613938864886, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M32S000.jpg",
+      "lat": 51.1290764,
+      "lon": 71.4581457,
+      "dist": 2522.4,
+      "primary": ""
+    },
+    {
+      "pageid": 187336089,
+      "ns": 6,
+      "title": "File:Mapillary (489916194085643, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M34S000.jpg",
+      "lat": 51.1290764,
+      "lon": 71.4581482,
+      "dist": 2522.5,
+      "primary": ""
+    },
+    {
+      "pageid": 187336103,
+      "ns": 6,
+      "title": "File:Mapillary (1566913417326131, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M36S000.jpg",
+      "lat": 51.1290786,
+      "lon": 71.4581511,
+      "dist": 2522.7,
+      "primary": ""
+    },
+    {
+      "pageid": 187336104,
+      "ns": 6,
+      "title": "File:Mapillary (1100608571794911, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M38S000.jpg",
+      "lat": 51.1290817,
+      "lon": 71.458154,
+      "dist": 2522.9,
+      "primary": ""
+    },
+    {
+      "pageid": 187336109,
+      "ns": 6,
+      "title": "File:Mapillary (1340340463751162, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M40S000.jpg",
+      "lat": 51.1290839,
+      "lon": 71.4581562,
+      "dist": 2523.1,
+      "primary": ""
+    },
+    {
+      "pageid": 187336112,
+      "ns": 6,
+      "title": "File:Mapillary (1344919066715866, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M42S000.jpg",
+      "lat": 51.129085,
+      "lon": 71.4581592,
+      "dist": 2523.3,
+      "primary": ""
+    },
+    {
+      "pageid": 187336115,
+      "ns": 6,
+      "title": "File:Mapillary (676226888153979, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M44S000.jpg",
+      "lat": 51.129086,
+      "lon": 71.4581619,
+      "dist": 2523.5,
+      "primary": ""
+    },
+    {
+      "pageid": 187336120,
+      "ns": 6,
+      "title": "File:Mapillary (1037424608243029, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M46S000.jpg",
+      "lat": 51.1290867,
+      "lon": 71.4581656,
+      "dist": 2523.7,
+      "primary": ""
+    },
+    {
+      "pageid": 187336122,
+      "ns": 6,
+      "title": "File:Mapillary (1035693845286175, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M48S000.jpg",
+      "lat": 51.1290873,
+      "lon": 71.4581677,
+      "dist": 2523.9,
+      "primary": ""
+    },
+    {
+      "pageid": 187336170,
+      "ns": 6,
+      "title": "File:Mapillary (578350072035425, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M24S000.jpg",
+      "lat": 51.1290922,
+      "lon": 71.4581691,
+      "dist": 2524,
+      "primary": ""
+    },
+    {
+      "pageid": 187336121,
+      "ns": 6,
+      "title": "File:Mapillary (649031264397046, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M50S000.jpg",
+      "lat": 51.1290876,
+      "lon": 71.4581695,
+      "dist": 2524,
+      "primary": ""
+    },
+    {
+      "pageid": 187336175,
+      "ns": 6,
+      "title": "File:Mapillary (3399509540180607, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M26S000.jpg",
+      "lat": 51.1291001,
+      "lon": 71.4581702,
+      "dist": 2524.1,
+      "primary": ""
+    },
+    {
+      "pageid": 187336129,
+      "ns": 6,
+      "title": "File:Mapillary (2098285900645124, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M52S000.jpg",
+      "lat": 51.1290876,
+      "lon": 71.4581712,
+      "dist": 2524.1,
+      "primary": ""
+    },
+    {
+      "pageid": 187336169,
+      "ns": 6,
+      "title": "File:Mapillary (691823440197609, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M22S000.jpg",
+      "lat": 51.1290924,
+      "lon": 71.458172,
+      "dist": 2524.2,
+      "primary": ""
+    },
+    {
+      "pageid": 187336132,
+      "ns": 6,
+      "title": "File:Mapillary (1787115622020286, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M54S000.jpg",
+      "lat": 51.1290874,
+      "lon": 71.458173,
+      "dist": 2524.3,
+      "primary": ""
+    },
+    {
+      "pageid": 187336166,
+      "ns": 6,
+      "title": "File:Mapillary (695097279777831, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M20S000.jpg",
+      "lat": 51.1290925,
+      "lon": 71.4581749,
+      "dist": 2524.4,
+      "primary": ""
+    },
+    {
+      "pageid": 187336130,
+      "ns": 6,
+      "title": "File:Mapillary (1013504373535168, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M56S000.jpg",
+      "lat": 51.1290871,
+      "lon": 71.4581751,
+      "dist": 2524.4,
+      "primary": ""
+    },
+    {
+      "pageid": 187336160,
+      "ns": 6,
+      "title": "File:Mapillary (650844660994074, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M18S000.jpg",
+      "lat": 51.1290923,
+      "lon": 71.4581762,
+      "dist": 2524.5,
+      "primary": ""
+    },
+    {
+      "pageid": 187336138,
+      "ns": 6,
+      "title": "File:Mapillary (556960347420579, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M58S000.jpg",
+      "lat": 51.1290867,
+      "lon": 71.4581765,
+      "dist": 2524.5,
+      "primary": ""
+    },
+    {
+      "pageid": 187336139,
+      "ns": 6,
+      "title": "File:Mapillary (1250461689832085, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M00S000.jpg",
+      "lat": 51.129086,
+      "lon": 71.4581773,
+      "dist": 2524.6,
+      "primary": ""
+    },
+    {
+      "pageid": 187336142,
+      "ns": 6,
+      "title": "File:Mapillary (1287440859030957, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M02S000.jpg",
+      "lat": 51.129085,
+      "lon": 71.4581782,
+      "dist": 2524.6,
+      "primary": ""
+    },
+    {
+      "pageid": 187336159,
+      "ns": 6,
+      "title": "File:Mapillary (679479681112463, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M16S000.jpg",
+      "lat": 51.1290921,
+      "lon": 71.4581785,
+      "dist": 2524.6,
+      "primary": ""
+    },
+    {
+      "pageid": 187336145,
+      "ns": 6,
+      "title": "File:Mapillary (642729161965096, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M04S000.jpg",
+      "lat": 51.1290836,
+      "lon": 71.4581796,
+      "dist": 2524.7,
+      "primary": ""
+    },
+    {
+      "pageid": 187336156,
+      "ns": 6,
+      "title": "File:Mapillary (1450734329241268, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M14S000.jpg",
+      "lat": 51.1290919,
+      "lon": 71.4581806,
+      "dist": 2524.8,
+      "primary": ""
+    },
+    {
+      "pageid": 187336146,
+      "ns": 6,
+      "title": "File:Mapillary (2943121289202351, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M06S000.jpg",
+      "lat": 51.1290827,
+      "lon": 71.4581816,
+      "dist": 2524.9,
+      "primary": ""
+    },
+    {
+      "pageid": 187336152,
+      "ns": 6,
+      "title": "File:Mapillary (3978897542379339, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M12S000.jpg",
+      "lat": 51.1290914,
+      "lon": 71.4581824,
+      "dist": 2524.9,
+      "primary": ""
+    },
+    {
+      "pageid": 187336150,
+      "ns": 6,
+      "title": "File:Mapillary (1208186464358253, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M08S000.jpg",
+      "lat": 51.1290873,
+      "lon": 71.4581827,
+      "dist": 2524.9,
+      "primary": ""
+    },
+    {
+      "pageid": 187336151,
+      "ns": 6,
+      "title": "File:Mapillary (24168358306085197, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M09S000.jpg",
+      "lat": 51.1290895,
+      "lon": 71.4581829,
+      "dist": 2525,
+      "primary": ""
+    },
+    {
+      "pageid": 187336176,
+      "ns": 6,
+      "title": "File:Mapillary (1414289593338270, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M28S000.jpg",
+      "lat": 51.1291488,
+      "lon": 71.4581852,
+      "dist": 2525.1,
+      "primary": ""
+    },
+    {
+      "pageid": 187336179,
+      "ns": 6,
+      "title": "File:Mapillary (1203269174543579, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M30S000.jpg",
+      "lat": 51.1292317,
+      "lon": 71.4582147,
+      "dist": 2527.3,
+      "primary": ""
+    },
+    {
+      "pageid": 187336028,
+      "ns": 6,
+      "title": "File:Mapillary (1726014811325314, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H02M02S000.jpg",
+      "lat": 51.1280479,
+      "lon": 71.4582193,
+      "dist": 2529.7,
+      "primary": ""
+    },
+    {
+      "pageid": 69173285,
+      "ns": 6,
+      "title": "File:Astana DSC04389 (7711463916).jpg",
+      "lat": 51.148436,
+      "lon": 71.440861,
+      "dist": 2530.3,
+      "primary": ""
+    },
+    {
+      "pageid": 69173290,
+      "ns": 6,
+      "title": "File:Astana DSC04390 (7711466698).jpg",
+      "lat": 51.148436,
+      "lon": 71.440861,
+      "dist": 2530.3,
+      "primary": ""
+    },
+    {
+      "pageid": 187336184,
+      "ns": 6,
+      "title": "File:Mapillary (2062641727533612, HLFTCapndq7emt3iO1gDzr) (YMtest) 2025-03-31 05H03M32S000.jpg",
+      "lat": 51.1292949,
+      "lon": 71.4582765,
+      "dist": 2531.7,
+      "primary": ""
+    }
+  ]
+}

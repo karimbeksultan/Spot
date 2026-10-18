@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "revision": "R3 pitch redesign",
+  "sha256": "dd754aa1c3dc26df0dedd6ba9048b2282c56c85af94770be8aecbadce7f05cd1",
+  "bytes": 533919,
+  "slides": 11,
+  "coreSlides": 9,
+  "appendixSlides": 2,
+  "coreSpeechWords": 657,
+  "speechDuration": "5–7 minutes estimated including transitions; not measured rehearsal",
+  "codeDigest": "906ae60d3bf0843f6bc6eb09f5605e4c66dc81e0796bff1baf45099d39e9957b",
+  "dataDigest": "cb8dcfff85509eb2498bb40b3b5edafb4f3d2995ca92844709da3bc8d4607fe9",
+  "counts": {
+    "stored": 2170,
+    "eligible": 2165,
+    "quarantined": 5,
+    "withPhotos": 14,
+    "photos": 60,
+    "withHours": 337
+  },
+  "actualCaptureSource": "preserved verified R2 local app screenshots, cropped only",
+  "fixturesInPresentationCapture": false,
+  "newBrowserCalls": 0,
+  "paidApiRequests": 0,
+  "nativeTables": [
+    10
+  ],
+  "nativeCharts": [],
+  "editableEvidenceDiagram": {
+    "slide": 6,
+    "meaning": "four-stage RAG flow, native text objects"
+  },
+  "structureChecks": {
+    "packageIntegrity": "passed",
+    "layout": "passed",
+    "fonts": "passed",
+    "artifactImport": "passed",
+    "additionalXsd": "passed"
+  },
+  "renderedFinalSlides": 11,
+  "visualQa": "All11 final slides reviewed individually; root independently reviewed all11 drafts. Corrected estimate wording, exact privacy scope, risk-impact-mitigation-residual notes and clean map hero crop.",
+  "nativePowerPointOpened": false,
+  "nativePowerPointFontRenderingVerified": false,
+  "preservedR2": {
+    "path": "C:\\Users\\Beks\\Documents\\Codex\\2026-10-16\\project-name-spot-work-in-my\\outputs\\Spot_Build_with_AI_2026-10-18_R2.pptx",
+    "sha256": "e72a9947ae745db0e033fbab6e387f64daad3062ee157a10b6acbdf0359e222b"
+  },
+  "photoRights": {
+    "author": "DiamondMoore",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Botanical_Garden_Nur-Sultan_fountains_during_Sunset.jpg",
+    "changes": "cropped on slide, historical photo, not present-day verification"
+  },
+  "outputFiles": {
+    "presentation": "C:\\Users\\Beks\\Documents\\Codex\\2026-10-16\\project-name-spot-work-in-my\\outputs\\Spot_Pitch_Deck_2026-10-18_R3.pptx",
+    "speech": "C:\\Users\\Beks\\Documents\\Codex\\2026-10-16\\project-name-spot-work-in-my\\outputs\\Spot_Pitch_Speech_RU_2026-10-18_R3.txt",
+    "preview": "C:\\Users\\Beks\\Documents\\Codex\\2026-10-16\\project-name-spot-work-in-my\\outputs\\Spot_Pitch_Preview_2026-10-18_R3.png",
+    "repoCopy": "C:\\Users\\Beks\\Documents\\Codex\\2026-10-16\\project-name-spot-work-in-my\\work\\Spot\\docs\\spot-pitch-2026-10-18-R3.pptx"
+  },
+  "skills": {
+    "authoring": "Presentations artifact-tool native editable pipeline",
+    "contentVisualGuidance": "Anthropic PPTX pinned dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "additionalValidation": "previously reviewed installed Anthropic PPTX validator; newly downloaded scripts not executed"
+  },
+  "receipts": {
+    "structure": "validation.json",
+    "additionalValidator": "anthropic-validation.json",
+    "assets": "asset-provenance.json",
+    "contactSheet": "contact-sheet.png"
+  }
+}

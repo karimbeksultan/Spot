@@ -1,0 +1,446 @@
+{
+  "generatedAt": "2026-10-16T15:36:45.744Z",
+  "scope": "All 41 non-cafe POIs in the source dataset",
+  "method": [
+    "Reviewed 623-file Commons geographic discovery candidate list; proximity not accepted as identity",
+    "Queried named Commons categories and specific known file titles; captured imageinfo/extmetadata and category warnings",
+    "Targeted Commons web searches in Russian, English and Kazakh",
+    "Visually reviewed 29 candidate thumbnails; selected additions have exact name/category identity",
+    "Did not copy arbitrary commercial map listings, generate fake photos, or assign unrelated nearby places"
+  ],
+  "acceptedAdditions": 14,
+  "newlyCoveredPoiCount": 6,
+  "metadataCache": "work/photo-landmarks/verified-metadata.json",
+  "results": [
+    {
+      "poiId": "osm:node/12893538292",
+      "name": "Аскару Забикулину",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/node/12893538292",
+      "geographicCandidatesReviewed": 3,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Nearby files depict insects/nature, not the Askar Zabikulin memorial; targeted Commons web search did not identify a licensed memorial photo."
+    },
+    {
+      "poiId": "osm:node/13340040665",
+      "name": "Жетігенші",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/node/13340040665",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Nearest named candidate IMG9172RTK depicts Ruslan Kuatov, not this statue. Other nearby photos are traffic and city events; no exact statue identity."
+    },
+    {
+      "poiId": "osm:node/13340040666",
+      "name": "Қобызшы",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/node/13340040666",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Nearest candidate IMG9172RTK describes Ruslan Kuatov. No file with the specific Kobyzshy statue identity confirmed."
+    },
+    {
+      "poiId": "osm:node/14087643081",
+      "name": "Табун Лошадей",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/node/14087643081",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Nearby images show surrounding buildings/plaza. A web result named herd of horses is from Bukhar-Zhyrau District and was rejected."
+    },
+    {
+      "poiId": "osm:node/2388707906",
+      "name": "Астана-Экспо КС",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/node/2388707906",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "This is Astana-Expo KS gallery/company near Korme, not the Expo2017 site. No exact photo of this POI verified."
+    },
+    {
+      "poiId": "osm:node/2691137163",
+      "name": "Gymboree",
+      "category": "playground",
+      "sourceUrl": "https://www.openstreetmap.org/node/2691137163",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Nearby mall and restaurant photos do not prove the Gymboree facility or its specific branch."
+    },
+    {
+      "poiId": "osm:node/4958412863",
+      "name": "Zur Sultan",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/node/4958412863",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Reviewed geotagged SAM0051/0053/0055 show Lovers Park/plaza but not the specific Zur Sultan statue; no exact identity."
+    },
+    {
+      "poiId": "osm:node/5878503586",
+      "name": "Қазақ еліне мың алғыс",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/node/5878503586",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Nearby Botanical Garden images do not establish the specific memorial; no named match found."
+    },
+    {
+      "poiId": "osm:way/108096984",
+      "name": "Керуен",
+      "category": "other",
+      "sourceUrl": "https://www.openstreetmap.org/way/108096984",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "category_candidates_handed_to_root",
+      "reason": "Named Commons category metadata researched; final visual selection owned by parent agent."
+    },
+    {
+      "poiId": "osm:way/1196402246",
+      "name": "Ботанический сад",
+      "category": "park",
+      "sourceUrl": "https://www.openstreetmap.org/way/1196402246",
+      "geographicCandidatesReviewed": 25,
+      "acceptedTitles": [],
+      "status": "category_candidates_handed_to_root",
+      "reason": "Named Commons category metadata researched; final visual selection owned by parent agent."
+    },
+    {
+      "poiId": "osm:way/1296051287",
+      "name": "Корейский сад",
+      "category": "park",
+      "sourceUrl": "https://www.openstreetmap.org/way/1296051287",
+      "geographicCandidatesReviewed": 2,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Nearby files show river embankment/cycle paths; no Korean Garden identity confirmed."
+    },
+    {
+      "poiId": "osm:way/1449322329",
+      "name": "Конвой",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/way/1449322329",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Indoor attraction inside Khan Shatyr: general mall images do not establish this specific ride. No exact named or visually labelled attraction photo verified."
+    },
+    {
+      "poiId": "osm:way/1449322335",
+      "name": "Gold Mine Coaster",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/way/1449322335",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Indoor attraction inside Khan Shatyr: general mall images do not establish this specific ride. No exact named or visually labelled attraction photo verified."
+    },
+    {
+      "poiId": "osm:way/1449322336",
+      "name": "Pop Up",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/way/1449322336",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Indoor attraction inside Khan Shatyr: general mall images do not establish this specific ride. No exact named or visually labelled attraction photo verified."
+    },
+    {
+      "poiId": "osm:way/1449322337",
+      "name": "НЛО",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/way/1449322337",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Indoor attraction inside Khan Shatyr: general mall images do not establish this specific ride. No exact named or visually labelled attraction photo verified."
+    },
+    {
+      "poiId": "osm:way/1449322338",
+      "name": "Ұшатын автобус",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/way/1449322338",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Indoor attraction inside Khan Shatyr: general mall images do not establish this specific ride. No exact named or visually labelled attraction photo verified."
+    },
+    {
+      "poiId": "osm:way/1449322339",
+      "name": "Динопарк",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/way/1449322339",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Indoor attraction inside Khan Shatyr: general mall images do not establish this specific ride. No exact named or visually labelled attraction photo verified."
+    },
+    {
+      "poiId": "osm:way/1449322340",
+      "name": "Электронды көліктер",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/way/1449322340",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Indoor attraction inside Khan Shatyr: general mall images do not establish this specific ride. No exact named or visually labelled attraction photo verified."
+    },
+    {
+      "poiId": "osm:way/1456208624",
+      "name": "Аллея мира и согласия",
+      "category": "park",
+      "sourceUrl": "https://www.openstreetmap.org/way/1456208624",
+      "geographicCandidatesReviewed": 7,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "No exact licensed photo of this Peace and Harmony alley verified; Expo panoramas are not enough to assign."
+    },
+    {
+      "poiId": "osm:way/1460537088",
+      "name": "Astana Musical",
+      "category": "other",
+      "sourceUrl": "https://www.openstreetmap.org/way/1460537088",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [
+        "File:Казахстан ЦКЗ 2011 02.jpg",
+        "File:Astana-2021-10 - 28.jpg"
+      ],
+      "status": "verified_additions",
+      "reason": "Exact caption/category identity and representative pixels reviewed; individual author/license checked."
+    },
+    {
+      "poiId": "osm:way/1460763574",
+      "name": "25-ти летие Независимости",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/way/1460763574",
+      "geographicCandidatesReviewed": 8,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "No exact licensed image of this 25th Anniversary of Independence object verified; web results concern medals/people, not the landmark."
+    },
+    {
+      "poiId": "osm:way/1467797207",
+      "name": "NU Park",
+      "category": "park",
+      "sourceUrl": "https://www.openstreetmap.org/way/1467797207",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "No exact NU Park photograph verified; university campus photography alone does not prove this park."
+    },
+    {
+      "poiId": "osm:way/1470780026",
+      "name": "Дубовая аллея",
+      "category": "park",
+      "sourceUrl": "https://www.openstreetmap.org/way/1470780026",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Nearby yurt/event/bus photos do not document the Oak Alley; no exact place match."
+    },
+    {
+      "poiId": "osm:way/230358847",
+      "name": "Корме",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/way/230358847",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Nearby files depict La Creme, Transport Tower and boulevard. No explicitly identified Korme building photograph confirmed."
+    },
+    {
+      "poiId": "osm:way/230358854",
+      "name": "Сквер",
+      "category": "park",
+      "sourceUrl": "https://www.openstreetmap.org/way/230358854",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Generic unnamed square cannot be matched from nearby shopping-mall interiors or broad boulevard images."
+    },
+    {
+      "poiId": "osm:way/230358855",
+      "name": "Национальная академическая библиотека Республики Казахстан",
+      "category": "other",
+      "sourceUrl": "https://www.openstreetmap.org/way/230358855",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [
+        "File:Библиотека - panoramio (10).jpg",
+        "File:Национальная академическая библиотека 2008.jpg"
+      ],
+      "status": "verified_additions",
+      "reason": "Exact caption/category identity and representative pixels reviewed; individual author/license checked."
+    },
+    {
+      "poiId": "osm:way/230401645",
+      "name": "Байтерек",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/way/230401645",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [
+        "File:Interior of Bayterek Tower 06.jpg",
+        "File:Astana-2021-10 - 14.jpg",
+        "File:Astana-2021-10 - 16.jpg"
+      ],
+      "status": "verified_additions",
+      "reason": "Exact caption/category identity and representative pixels reviewed; individual author/license checked."
+    },
+    {
+      "poiId": "osm:way/239713764",
+      "name": "Азия Парк",
+      "category": "other",
+      "sourceUrl": "https://www.openstreetmap.org/way/239713764",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Nearby Lovers Park and ministry-building images do not depict Asia Park mall; no exact branch photograph verified."
+    },
+    {
+      "poiId": "osm:way/240909210",
+      "name": "Сарыарка",
+      "category": "other",
+      "sourceUrl": "https://www.openstreetmap.org/way/240909210",
+      "geographicCandidatesReviewed": 17,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Search results confuse Saryarka district/velodrome with this mall; nearby photos are residential buildings. Rejected wrong-subject matches."
+    },
+    {
+      "poiId": "osm:way/243041606",
+      "name": "Президентский парк",
+      "category": "park",
+      "sourceUrl": "https://www.openstreetmap.org/way/243041606",
+      "geographicCandidatesReviewed": 2,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Commons Presidential Park category mostly covers the park near Palace of Peace; dataset OSMway is a different southern polygon. Same-name alone insufficient; no exact polygon match."
+    },
+    {
+      "poiId": "osm:way/243041609",
+      "name": "Парк Арай",
+      "category": "park",
+      "sourceUrl": "https://www.openstreetmap.org/way/243041609",
+      "geographicCandidatesReviewed": 2,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Nearest Astana-2021-10-18 is captioned as a view from Bayterek, not Arai Park. No exact park photo verified."
+    },
+    {
+      "poiId": "osm:way/37884583",
+      "name": "Парк влюбленных",
+      "category": "park",
+      "sourceUrl": "https://www.openstreetmap.org/way/37884583",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "category_candidates_handed_to_root",
+      "reason": "Named Commons category metadata researched; final visual selection owned by parent agent."
+    },
+    {
+      "poiId": "osm:way/460703779",
+      "name": "Хан Шатыр",
+      "category": "other",
+      "sourceUrl": "https://www.openstreetmap.org/way/460703779",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "category_candidates_handed_to_root",
+      "reason": "Named Commons category metadata researched; final visual selection owned by parent agent."
+    },
+    {
+      "poiId": "osm:way/491522670",
+      "name": "Festival Avenue",
+      "category": "other",
+      "sourceUrl": "https://www.openstreetmap.org/way/491522670",
+      "geographicCandidatesReviewed": 29,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Nearby Lovers Park imagery is a different place; no exact Festival Avenue mall picture verified."
+    },
+    {
+      "poiId": "osm:way/499328449",
+      "name": "Астана балет",
+      "category": "other",
+      "sourceUrl": "https://www.openstreetmap.org/way/499328449",
+      "geographicCandidatesReviewed": 9,
+      "acceptedTitles": [
+        "File:Астана балет.jpg"
+      ],
+      "status": "verified_additions",
+      "reason": "Exact caption/category identity and representative pixels reviewed; individual author/license checked."
+    },
+    {
+      "poiId": "osm:way/499328514",
+      "name": "Mega Silk Way",
+      "category": "other",
+      "sourceUrl": "https://www.openstreetmap.org/way/499328514",
+      "geographicCandidatesReviewed": 12,
+      "acceptedTitles": [
+        "File:ТРЦ MEGA Silk-way и отель Hilton.jpg",
+        "File:Монументальная роспись Марата Бекеева в MEGA Silk Way 2.jpg",
+        "File:Монументальная роспись Марата Бекеева в MEGA Silk Way.jpg",
+        "File:Монументальная роспись Марата Бекеева в MEGA Silk Way 3.jpg",
+        "File:Монументальная роспись Марата Бекеева в MEGA Silk Way 4.jpg"
+      ],
+      "status": "verified_additions",
+      "reason": "Exact caption/category identity and representative pixels reviewed; individual author/license checked."
+    },
+    {
+      "poiId": "osm:way/549307755",
+      "name": "Триумфальная арка Мангилик Ел",
+      "category": "landmark",
+      "sourceUrl": "https://www.openstreetmap.org/way/549307755",
+      "geographicCandidatesReviewed": 11,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Category:Arch of Triumph (Astana) carries explicit no-freedom-of-panorama warning. Nearby Esil images depict roads/vehicles. No suitable photo accepted."
+    },
+    {
+      "poiId": "osm:way/69232075",
+      "name": "Парк Жетысу",
+      "category": "park",
+      "sourceUrl": "https://www.openstreetmap.org/way/69232075",
+      "geographicCandidatesReviewed": 3,
+      "acceptedTitles": [],
+      "status": "category_candidates_handed_to_root",
+      "reason": "Named Commons category metadata researched; final visual selection owned by parent agent."
+    },
+    {
+      "poiId": "osm:way/734514013",
+      "name": "Линейный парк",
+      "category": "park",
+      "sourceUrl": "https://www.openstreetmap.org/way/734514013",
+      "geographicCandidatesReviewed": 9,
+      "acceptedTitles": [
+        "File:Линейный парк Астана, Казахстан.jpg"
+      ],
+      "status": "verified_additions",
+      "reason": "Exact caption/category identity and representative pixels reviewed; individual author/license checked."
+    },
+    {
+      "poiId": "osm:way/762780007",
+      "name": "Abu Dhabi Plaza",
+      "category": "other",
+      "sourceUrl": "https://www.openstreetmap.org/way/762780007",
+      "geographicCandidatesReviewed": 16,
+      "acceptedTitles": [],
+      "status": "no_exact_eligible_photo_verified",
+      "reason": "Reviewed Commons photos show 2015/2019 tower construction or a distant 2026 city view. They do not usefully document the current mall POI; rejected rather than misrepresenting it."
+    },
+    {
+      "poiId": "osm:way/917478479",
+      "name": "Астана Опера",
+      "category": "other",
+      "sourceUrl": "https://www.openstreetmap.org/way/917478479",
+      "geographicCandidatesReviewed": 30,
+      "acceptedTitles": [],
+      "status": "category_candidates_handed_to_root",
+      "reason": "Named Commons category metadata researched; final visual selection owned by parent agent."
+    }
+  ]
+}

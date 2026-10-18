@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-16T14:33:58.863Z",
+  "projectId": "jlyqncuqkqhkkopgflzl",
+  "projectName": "Spot",
+  "authorization": "User explicitly authorized this newly created free Spot project and source-data ingestion; other projects were not touched.",
+  "transport": "Supabase MCP execute_sql; no service-role secret exported",
+  "upsertPasses": [
+    {
+      "rowsUpserted": 98,
+      "runId": "864636cf-5b79-4682-9267-05a44226a52e"
+    },
+    {
+      "rowsUpserted": 98,
+      "runId": "c1124863-caf4-4962-96c3-2ea37e37d5ee"
+    }
+  ],
+  "readback": {
+    "rows": 98,
+    "uniqueIds": 98,
+    "withPhotos": 2,
+    "withHours": 29,
+    "embeddingDocuments": 0,
+    "completedIngestionRuns": 2
+  },
+  "anonymousRead": {
+    "method": "BEGIN; SET LOCAL ROLE anon; SELECT ...; ROLLBACK",
+    "observedRole": "anon",
+    "readableRows": 98,
+    "nearMegaRadiusMetres": 1500,
+    "nearMegaCount": 15
+  },
+  "anonymousWrite": {
+    "method": "rollback-only INSERT attempt under SET LOCAL ROLE anon",
+    "expected": "denied",
+    "observedSqlState": "42501",
+    "observedMessage": "permission denied for table pois"
+  },
+  "limitations": [
+    "This is an effective-database-role test, not a browser Data API credential test.",
+    "At this initial POI-ingestion checkpoint, the embedding table was empty. The later successful 98-vector run is recorded in data/reports/embedding.json."
+  ],
+  "writeProbeCleanup": {
+    "probeRows": 0,
+    "totalRows": 98
+  },
+  "anonPrivileges": {
+    "insert": false,
+    "update": false,
+    "delete": false,
+    "readIngestionLogs": false
+  }
+}

@@ -1,0 +1,48 @@
+name: Offline verification
+
+on:
+  pull_request:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'codex/**'
+
+permissions:
+  contents: read
+
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      APP_MODE: demo
+      ALLOW_LIVE_API: 'false'
+      ALLOW_PROVIDER_FAILOVER: 'false'
+      ROUTING_ENABLED: 'false'
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - name: Check out the requested revision
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Use Node 24
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install locked dependencies without lifecycle hooks
+        run: npm ci --ignore-scripts
+      - name: Prepare the reviewed local map assets
+        run: node scripts/prepare-assets.mjs
+      - name: Check offline readiness
+        run: node scripts/harness/runner.mjs doctor
+      - name: Run deterministic checks, build and smoke
+        run: node scripts/harness/runner.mjs verify
+      - name: Retain only sanitized verification evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: offline-verification
+          path: artifacts/verification/
+          if-no-files-found: warn
+          retention-days: 7

@@ -1,0 +1,31 @@
+{
+  "version": "spot-development-v1",
+  "source": "Synthetic evaluation requests against the actual licensed POI snapshot; not user research",
+  "clock": "2026-10-18T07:00:00Z",
+  "cases": [
+    {
+      "id": "DEV-MEGA-45",
+      "purpose": "Walk near Mega Silk Way with a return requirement",
+      "request": { "query": "Я возле Mega Silk Way, есть 45 минут, хочу прогуляться и вернуться", "origin": { "longitude": 71.4073303, "latitude": 51.0890897 }, "availableMinutes": 45, "returnToStart": true, "language": "ru" },
+      "expectedKind": "recommendations", "expectedItems": "one_to_three", "expectedCategories": ["park", "landmark"]
+    },
+    {
+      "id": "DEV-OUTLETS-UNKNOWN",
+      "purpose": "Mandatory outlet must have field evidence",
+      "request": { "query": "Хочу тихий кофе, розетка обязательна", "origin": { "longitude": 71.4165705, "latitude": 51.1061652 }, "availableMinutes": 60, "requiredFeatures": ["outlets"], "language": "ru" },
+      "expectedKind": "no_match", "expectedItems": "none"
+    },
+    {
+      "id": "DEV-CHILD",
+      "purpose": "Child-friendly category request without invented amenities",
+      "request": { "query": "Я с ребёнком, есть час, хочу что-нибудь интересное неподалёку", "origin": { "longitude": 71.4165705, "latitude": 51.1061652 }, "availableMinutes": 60, "language": "ru" },
+      "expectedKind": "recommendations", "expectedItems": "one_to_three", "expectedCategories": ["park", "museum", "playground"]
+    },
+    {
+      "id": "DEV-EMPTY-CATEGORY",
+      "purpose": "Unavailable category must not become an invented POI",
+      "request": { "query": "Покажи дельфинарий", "origin": { "longitude": 71.4165705, "latitude": 51.1061652 }, "availableMinutes": 60, "language": "ru" },
+      "expectedKind": "no_match", "expectedItems": "none"
+    }
+  ]
+}

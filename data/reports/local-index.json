@@ -1,0 +1,12 @@
+{
+  "records": 2170,
+  "reused": 1705,
+  "embedded": 465,
+  "uniqueNewDocuments": 425,
+  "localRequests": 54,
+  "remoteRequests": 0,
+  "training": false,
+  "model": "embeddinggemma",
+  "dimensions": 768,
+  "version": "1"
+}

@@ -1,0 +1,500 @@
+{
+  "checkedAt": "2026-10-16T15:41:28.199Z",
+  "replay": true,
+  "reviewedLinks": 60,
+  "coveredPois": 14,
+  "totalPhotos": 60,
+  "failedMetadataTitles": [],
+  "results": [
+    {
+      "poiId": "osm:node/10170946741",
+      "name": "Starbucks",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/10170946742",
+      "name": "Coffee BOOM",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/10170946745",
+      "name": "Chaleur",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/10248180510",
+      "name": "Delish",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/10559299807",
+      "name": "CrepeCafe",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/10564988185",
+      "name": "Degirmen",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/11131442511",
+      "name": "Espresso day",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/11206429884",
+      "name": "JumpinGoat",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/11290690869",
+      "name": "TLP Flowers & Coffee",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/11783576043",
+      "name": "Drinkit",
+      "photos": 1
+    },
+    {
+      "poiId": "osm:node/11910202470",
+      "name": "marrone rosso",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/11925892164",
+      "name": "Tary",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/11927785970",
+      "name": "Zebra Coffee",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/12041597369",
+      "name": "MÖKKi",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/12098662467",
+      "name": "Canele",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/12520559589",
+      "name": "Лепим и варим",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/12520559591",
+      "name": "Лепим и варим",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/12893538292",
+      "name": "Аскару Забикулину",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/12959449801",
+      "name": "Культура Диктует",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/12990081501",
+      "name": "Discovery Coffee",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/12996721851",
+      "name": "Master Coffee",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/13125546428",
+      "name": "Coffee Day",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/13125556689",
+      "name": "Coffee BOOM",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/13173517356",
+      "name": "Gasteria",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/13313122337",
+      "name": "Gasteria",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/13340040665",
+      "name": "Жетігенші",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/13340040666",
+      "name": "Қобызшы",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/13408518401",
+      "name": "Zebra coffee",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/13462282540",
+      "name": "Kunde Cafe",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/13667384701",
+      "name": "CrepeCafe",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/13681674667",
+      "name": "Лето",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/13858040201",
+      "name": "Master Coffee",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/14087643081",
+      "name": "Табун Лошадей",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/14089471172",
+      "name": "Qaganat",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/14100100182",
+      "name": "Drinkit",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/14275682079",
+      "name": "Drinkit",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/1843876259",
+      "name": "Rafe",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/2388707906",
+      "name": "Астана-Экспо КС",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/2671060738",
+      "name": "Избушка",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/2671060739",
+      "name": "Дастархан",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/2691137163",
+      "name": "Gymboree",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/4108293490",
+      "name": "Тайказан",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/4133836392",
+      "name": "Дастаркан",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/4133854089",
+      "name": "Rafe",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/4792472508",
+      "name": "HamStar",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/4853972122",
+      "name": "Фаттуш",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/4958412863",
+      "name": "Zur Sultan",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/5132817725",
+      "name": "Starbucks",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/5878503586",
+      "name": "Қазақ еліне мың алғыс",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/5878547585",
+      "name": "Food line",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/5878572885",
+      "name": "Семейное кафе бум",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/5936638686",
+      "name": "Кафела",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/5936676246",
+      "name": "Borough",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/6404769888",
+      "name": "Мадо",
+      "photos": 1
+    },
+    {
+      "poiId": "osm:node/6408255389",
+      "name": "завтрак бар",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/6408271985",
+      "name": "CrepeCafe",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/6494912582",
+      "name": "Coffee Like",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/6678039485",
+      "name": "Буфет",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/7569228633",
+      "name": "Coffee Like",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/9047331868",
+      "name": "Starbucks",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/9047331879",
+      "name": "Starbucks",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:node/9047331880",
+      "name": "Starbucks",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/108096984",
+      "name": "Керуен",
+      "photos": 6
+    },
+    {
+      "poiId": "osm:way/1196402246",
+      "name": "Ботанический сад",
+      "photos": 9
+    },
+    {
+      "poiId": "osm:way/1296051287",
+      "name": "Корейский сад",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/1449295053",
+      "name": "Cups coffee",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/1449301315",
+      "name": "Starbucks",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/1449317691",
+      "name": "Лепим и варим",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/1449322329",
+      "name": "Конвой",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/1449322335",
+      "name": "Gold Mine Coaster",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/1449322336",
+      "name": "Pop Up",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/1449322337",
+      "name": "НЛО",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/1449322338",
+      "name": "Ұшатын автобус",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/1449322339",
+      "name": "Динопарк",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/1449322340",
+      "name": "Электронды көліктер",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/1456208624",
+      "name": "Аллея мира и согласия",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/1460537088",
+      "name": "Astana Musical",
+      "photos": 2
+    },
+    {
+      "poiId": "osm:way/1460763574",
+      "name": "25-ти летие Независимости",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/1467797207",
+      "name": "NU Park",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/1470780026",
+      "name": "Дубовая аллея",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/230358847",
+      "name": "Корме",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/230358854",
+      "name": "Сквер",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/230358855",
+      "name": "Национальная академическая библиотека Республики Казахстан",
+      "photos": 2
+    },
+    {
+      "poiId": "osm:way/230401645",
+      "name": "Байтерек",
+      "photos": 3
+    },
+    {
+      "poiId": "osm:way/239713764",
+      "name": "Азия Парк",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/240909210",
+      "name": "Сарыарка",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/243041606",
+      "name": "Президентский парк",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/243041609",
+      "name": "Парк Арай",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/37884583",
+      "name": "Парк влюбленных",
+      "photos": 8
+    },
+    {
+      "poiId": "osm:way/460703779",
+      "name": "Хан Шатыр",
+      "photos": 10
+    },
+    {
+      "poiId": "osm:way/491522670",
+      "name": "Festival Avenue",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/499328449",
+      "name": "Астана балет",
+      "photos": 1
+    },
+    {
+      "poiId": "osm:way/499328514",
+      "name": "Mega Silk Way",
+      "photos": 5
+    },
+    {
+      "poiId": "osm:way/549307755",
+      "name": "Триумфальная арка Мангилик Ел",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/69232075",
+      "name": "Парк Жетысу",
+      "photos": 9
+    },
+    {
+      "poiId": "osm:way/734514013",
+      "name": "Линейный парк",
+      "photos": 1
+    },
+    {
+      "poiId": "osm:way/762780007",
+      "name": "Abu Dhabi Plaza",
+      "photos": 0
+    },
+    {
+      "poiId": "osm:way/917478479",
+      "name": "Астана Опера",
+      "photos": 2
+    }
+  ]
+}

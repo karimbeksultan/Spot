@@ -1,0 +1,50 @@
+{
+  "mode": "demo",
+  "checks": [
+    {
+      "name": "runtime",
+      "passed": true,
+      "detail": "Node 24.16.0; requires >=22"
+    },
+    {
+      "name": "dependencies",
+      "passed": true,
+      "detail": "Next and TSX installed locally"
+    },
+    {
+      "name": "real_snapshot",
+      "passed": true,
+      "detail": "2170 POI records; validate/eval checks fields separately"
+    },
+    {
+      "name": "example_config",
+      "passed": true,
+      "detail": "Example configuration exists; local secret files are not read"
+    }
+  ],
+  "providerReadiness": [
+    {
+      "provider": "openai",
+      "keyPresentInProcess": false,
+      "modelPresentInProcess": false,
+      "verified": false,
+      "status": "not_probed",
+      "reason": "Offline doctor never makes paid API requests; presence is not access verification"
+    },
+    {
+      "provider": "nvidia",
+      "keyPresentInProcess": false,
+      "modelPresentInProcess": false,
+      "verified": false,
+      "status": "not_probed",
+      "reason": "Offline doctor never makes paid API requests; presence is not access verification"
+    }
+  ],
+  "localEnvironmentFilePresent": true,
+  "localEnvironmentFileRead": false,
+  "networkRequests": 0,
+  "paidRequests": 0,
+  "liveVerified": false,
+  "nextStep": "Use demo or local Qwen without cloud keys. Cloud providers are optional; keys plus explicit finite authorization/budgets are required only for an owner-approved cloud smoke.",
+  "passed": true
+}

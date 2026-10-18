@@ -1,0 +1,202 @@
+{
+  "createdAt": "2026-10-18T18:08:57.174328+00:00",
+  "modelCalls": 7,
+  "embeddingCalls": 2,
+  "chatCalls": 5,
+  "paidCalls": 0,
+  "remoteModelCalls": 0,
+  "training": false,
+  "newDownloads": 0,
+  "appIndexDataMutations": 0,
+  "runtimeConfigChanges": 0,
+  "measurementHashes": {
+    "currentVsCompact": "ab8dd421cf92d99ad3074068e3b2f010b5ce5738accbf82e683c3fd397f21703",
+    "fourThread": "cd348b21ec7d927afa2444b28eb86476b2aa5c86d9297b2ce234a62506d79886"
+  },
+  "chatRows": [
+    {
+      "case": "PUBLIC-COFFEE-PARK-40",
+      "variant": "current-verbatim",
+      "threads": 2,
+      "promptTokens": 576,
+      "outputTokens": 8,
+      "loadMs": 4246.61,
+      "promptMs": 9937.064,
+      "outputMs": 724.79,
+      "totalMs": 14940.982,
+      "wallMs": 14954.135,
+      "indicesValid": true
+    },
+    {
+      "case": "PUBLIC-COFFEE-PARK-40",
+      "variant": "compact-experiment",
+      "threads": 2,
+      "promptTokens": 404,
+      "outputTokens": 7,
+      "loadMs": 3451.417,
+      "promptMs": 9551.623,
+      "outputMs": 1134.103,
+      "totalMs": 14163.031,
+      "wallMs": 14219.939,
+      "indicesValid": true
+    },
+    {
+      "case": "PUBLIC-ITALIAN-PARK-60",
+      "variant": "current-verbatim",
+      "threads": 2,
+      "promptTokens": 621,
+      "outputTokens": 8,
+      "loadMs": 5057.798,
+      "promptMs": 14247.521,
+      "outputMs": 902.516,
+      "totalMs": 20246.787,
+      "wallMs": 20266.11,
+      "indicesValid": true
+    },
+    {
+      "case": "PUBLIC-ITALIAN-PARK-60",
+      "variant": "compact-experiment",
+      "threads": 2,
+      "promptTokens": 404,
+      "outputTokens": 22,
+      "loadMs": 4413.306,
+      "promptMs": 7618.231,
+      "outputMs": 3590.807,
+      "totalMs": 15667.793,
+      "wallMs": 15683.1,
+      "indicesValid": true
+    },
+    {
+      "case": "PUBLIC-COFFEE-PARK-40",
+      "variant": "compact-experiment-4threads",
+      "threads": 4,
+      "promptTokens": 404,
+      "outputTokens": 7,
+      "loadMs": 4195.141,
+      "promptMs": 4692.99,
+      "outputMs": 673.161,
+      "totalMs": 9580.023,
+      "wallMs": 9586.002,
+      "indicesValid": true
+    }
+  ],
+  "embeddings": [
+    {
+      "case": "PUBLIC-COFFEE-PARK-40",
+      "total_duration": 3668962000,
+      "load_duration": 3455033400,
+      "prompt_eval_count": 22,
+      "prompt_eval_cached_count": null,
+      "prompt_eval_duration": null,
+      "eval_count": null,
+      "eval_duration": null,
+      "done_reason": null,
+      "wallMs": 3672.5,
+      "total_duration_ms": 3668.962,
+      "load_duration_ms": 3455.033,
+      "prompt_eval_duration_ms": null,
+      "eval_duration_ms": null,
+      "dimensionsValid": true
+    },
+    {
+      "case": "PUBLIC-ITALIAN-PARK-60",
+      "total_duration": 4432578100,
+      "load_duration": 4213422000,
+      "prompt_eval_count": 20,
+      "prompt_eval_cached_count": null,
+      "prompt_eval_duration": null,
+      "eval_count": null,
+      "eval_duration": null,
+      "done_reason": null,
+      "wallMs": 4445.736,
+      "total_duration_ms": 4432.578,
+      "load_duration_ms": 4213.422,
+      "prompt_eval_duration_ms": null,
+      "eval_duration_ms": null,
+      "dimensionsValid": true
+    }
+  ],
+  "fixedShortlistStageCoverage": [
+    {
+      "case": "PUBLIC-COFFEE-PARK-40",
+      "variant": "current-verbatim",
+      "selectedCategories": [
+        "cafe",
+        "cafe"
+      ],
+      "containsPark": false,
+      "caveat": "Fixed supplied shortlist, not live retrieval or final route/planner acceptance"
+    },
+    {
+      "case": "PUBLIC-COFFEE-PARK-40",
+      "variant": "compact-experiment",
+      "selectedCategories": [
+        "cafe"
+      ],
+      "containsPark": false,
+      "caveat": "Fixed supplied shortlist, not live retrieval or final route/planner acceptance"
+    },
+    {
+      "case": "PUBLIC-ITALIAN-PARK-60",
+      "variant": "current-verbatim",
+      "selectedCategories": [
+        "other",
+        "other"
+      ],
+      "containsPark": false,
+      "caveat": "Fixed supplied shortlist, not live retrieval or final route/planner acceptance"
+    },
+    {
+      "case": "PUBLIC-ITALIAN-PARK-60",
+      "variant": "compact-experiment",
+      "selectedCategories": [
+        "other",
+        "other",
+        "other"
+      ],
+      "containsPark": false,
+      "caveat": "Fixed supplied shortlist, not live retrieval or final route/planner acceptance"
+    }
+  ],
+  "fourThreadColdImprovementPercent": 32.36,
+  "allChatJsonIndicesValid": true,
+  "resourcesBefore": {
+    "checkedAt": "2026-10-18T17:57:35.939858+00:00",
+    "totalRamGiB": 15.758,
+    "availableRamGiB": 3.338,
+    "memoryLoadPercent": 78,
+    "diskFreeGiB": 39.086
+  },
+  "resourcesAfterMain": {
+    "checkedAt": "2026-10-18T17:58:50.239913+00:00",
+    "totalRamGiB": 15.758,
+    "availableRamGiB": 3.33,
+    "memoryLoadPercent": 78,
+    "diskFreeGiB": 39.084
+  },
+  "resourcesBeforeFourThreads": {
+    "checkedAt": "2026-10-18T17:59:30.856691+00:00",
+    "totalRamGiB": 15.758,
+    "availableRamGiB": 3.762,
+    "memoryLoadPercent": 76,
+    "diskFreeGiB": 39.085
+  },
+  "resourcesAfterFourThreads": {
+    "checkedAt": "2026-10-18T17:59:40.651130+00:00",
+    "totalRamGiB": 15.758,
+    "availableRamGiB": 3.658,
+    "memoryLoadPercent": 76,
+    "diskFreeGiB": 39.084
+  },
+  "snapshotChangedDuringBenchmark": false,
+  "modelSourceChangedDuringBenchmark": false,
+  "allMeasuredCandidateIdsIndependentlyScopeChecked": true,
+  "coldOnly": true,
+  "warmLatencyMeasured": false,
+  "evidenceLimits": "One cold observation per variant, fixed real POI shortlist, order effects and background load uncontrolled; not p95, end-to-end UX latency, usefulness or competition score.",
+  "references": [
+    "https://docs.ollama.com/api/chat",
+    "https://docs.ollama.com/api/embed",
+    "https://docs.ollama.com/faq"
+  ]
+}

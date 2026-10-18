@@ -1,0 +1,13 @@
+{
+  "replayedAt": "2026-10-16T14:31:22.358Z",
+  "sourceFetchedAt": "2026-10-16T14:28:38.906Z",
+  "count": 98,
+  "rejected": [],
+  "duplicates": [
+    "osm:node/4965336822 => osm:way/499328514 (reviewed bilingual alias)",
+    "osm:node/11290690869",
+    "osm:node/11783576043",
+    "osm:way/499328449",
+    "osm:way/734514013"
+  ]
+}

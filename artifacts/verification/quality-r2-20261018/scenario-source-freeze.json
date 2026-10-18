@@ -1,0 +1,76 @@
+{
+  "version": "R2",
+  "frozenAt": "2026-10-18T18:22:44+00:00",
+  "source": "docs/TEST_SCENARIOS_AND_LIMITATIONS.md",
+  "sourceSha256": "5d42c6486f19c6695b1500cf774bd841ad17e133fee95210cd93b23d0b0d98a0",
+  "sourceBytes": 33159,
+  "codeDigest": "906ae60d3bf0843f6bc6eb09f5605e4c66dc81e0796bff1baf45099d39e9957b",
+  "controls": 0,
+  "tableIssues": 0,
+  "r1OriginalSha256": "606ecf1ef0874a5d4bc1cbb698512fc7ae28f3cfb03933bc4b5d427b1a894565",
+  "core": "artifacts/verification/2026-10-18T18-12-20-902Z-22916-verify/report.json",
+  "browser": "artifacts/verification/browser-r2-summary-20261018.json",
+  "local": "artifacts/verification/local-compound-r2-20261018/summary.json",
+  "files": [
+    {
+      "file": "docs/architecture.md",
+      "sha256": "65b389b4ffa37ff67337b6690f3f2916e096935a822c1a6aa62ee42da88e57a1",
+      "bytes": 13741
+    },
+    {
+      "file": "docs/concept.md",
+      "sha256": "280178db020deb99a2e1ff9385df659a7d5fc9ea1ed317e02671887ecfea3a84",
+      "bytes": 11920
+    },
+    {
+      "file": "docs/demo-script.md",
+      "sha256": "eb3f13ab8b9a217cbb122636c2dfc3150cc92ba1f44bd76512190170464e7832",
+      "bytes": 10476
+    },
+    {
+      "file": "docs/FINAL_CRITERIA_REVIEW.md",
+      "sha256": "99fcef2ca3d2b5223d87ca61928e5124aaa25edd75fbce99a731de9dc6d605a2",
+      "bytes": 12608
+    },
+    {
+      "file": "docs/limitations.md",
+      "sha256": "1daeed93b53676f8b049ddb2c92f9cc2741445a5fe2d3078b188d7518a8673e3",
+      "bytes": 11200
+    },
+    {
+      "file": "docs/privacy.md",
+      "sha256": "49d14a960cbbbe7f7bade2b57aa771ae54890a55d5f25cce0b4cbdb06cc43c8f",
+      "bytes": 13846
+    },
+    {
+      "file": "docs/PROGRESS.md",
+      "sha256": "0a16e59e0f4580ca036e8dfa14a82ca2ec45d206b2493e8d4dea834b69e47169",
+      "bytes": 12339
+    },
+    {
+      "file": "docs/PROVIDER_CAPABILITIES.md",
+      "sha256": "16074f53295a30cd69e1b6bcb02354a37dc5bbc0caad9b8d00ffa440589155b3",
+      "bytes": 8988
+    },
+    {
+      "file": "docs/REQUIREMENTS_MATRIX.md",
+      "sha256": "9646c50be5fbf354138ff3a319c26321f82e240b44cd784e9859fe1a9fb5541c",
+      "bytes": 9974
+    },
+    {
+      "file": "docs/SUBMISSION_CHECKLIST.md",
+      "sha256": "d4ef54420f5f2cae61105ce01572372fb7c605b3cf3f47175454a85a350f29d0",
+      "bytes": 9537
+    },
+    {
+      "file": "docs/TEST_SCENARIOS_AND_LIMITATIONS.md",
+      "sha256": "5d42c6486f19c6695b1500cf774bd841ad17e133fee95210cd93b23d0b0d98a0",
+      "bytes": 33159
+    },
+    {
+      "file": "README.md",
+      "sha256": "348c5c7835c32daeb98e9da19a419e86b79f02c6a0e1785dcf7fb4623a9777be",
+      "bytes": 15447
+    }
+  ]
+}

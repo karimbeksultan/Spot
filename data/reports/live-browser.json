@@ -1,0 +1,19 @@
+{
+  "testedAt": "2026-10-16T14:56:03.706Z",
+  "status": "passed",
+  "query": "Хочу провести немного времени среди деревьев, без кафе",
+  "latencyMs": 17720,
+  "mode": "live",
+  "diagnostics": {
+    "candidateCount": 30,
+    "retrieval": "supabase-hybrid",
+    "generation": "ollama-validated"
+  },
+  "poiIds": [
+    "osm:way/1456208624"
+  ],
+  "planStatus": "fits_estimate",
+  "totalMinutes": 36,
+  "consoleErrors": [],
+  "note": "Actual Chromium UI → production Next.js → local Ollama → authorized Spot Supabase. No mocked responses."
+}

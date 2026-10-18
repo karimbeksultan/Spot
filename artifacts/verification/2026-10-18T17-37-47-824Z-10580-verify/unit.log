@@ -1,0 +1,42 @@
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - ESM syntax in a file loaded as CommonJS (vitest.config.ts:1:1). Use a `.mjs` extension or set `"type": "module"` in the closest package.json
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+
+ RUN  v5.0.5 C:/Users/Beks/Documents/Codex/2026-10-16/project-name-spot-work-in-my/work/Spot
+
+ ✓ tests/unit/harness.test.ts (6 tests) 7041ms
+   ✓ verification evidence and no-spend boundary (6)
+     ✓ still hashes real source inputs in a submitted archive without Git metadata 6161ms
+     ✓ records a failing subprocess as failed and writes only scrubbed output 756ms
+ ✓ tests/unit/local-index.test.ts (5 tests) 3650ms
+   ✓ combines local vectors and lexical ranks using known source IDs 3021ms
+ ✓ tests/unit/provider-contract.test.ts (12 tests) 1597ms
+   ✓ persists conservative reservations; parallel requests cannot overspend a run 566ms
+   ✓ repairs malformed JSON once and binds IDs/evidence without exact coordinates 626ms
+ ✓ tests/unit/api-contract.test.ts (4 tests) 1764ms
+   ✓ rejects exact coordinates in GET URL and accepts a bounded POST area 1166ms
+   ✓ dense city snapshot does not hide an exact named destination behind the nearest map limit 499ms
+ ✓ tests/unit/import-contract.test.ts (12 tests) 20997ms
+   ✓ non-destructive import plan and provenance (8)
+     ✓ snapshot dry-runs do not fetch, write files, require keys or call embedding models 20512ms
+ ✓ tests/unit/http.test.ts (6 tests) 217ms
+ ✓ tests/unit/city-import.test.ts (13 tests) 337ms
+ ✓ tests/unit/model.test.ts (9 tests) 311ms
+ ✓ tests/unit/search.integration.test.ts (13 tests) 230ms
+ ✓ tests/unit/routing.test.ts (4 tests) 159ms
+ ✓ tests/unit/ui-copy.test.ts (27 tests) 172ms
+ ✓ tests/unit/ingestion.test.ts (8 tests) 101ms
+ ✓ tests/unit/domain.test.ts (36 tests) 106ms
+ ✓ tests/unit/scenarios.test.ts (24 tests) 75ms
+ ✓ tests/unit/data-limits.test.ts (4 tests) 94ms
+ ✓ tests/unit/photos.test.ts (7 tests) 52ms
+ ✓ tests/unit/place-scope.test.ts (7 tests) 27ms
+
+ Test Files  17 passed (17)
+      Tests  197 passed (197)
+   Start at  22:39:01
+   Duration  31.11s (tests 77%, import 19%, transform 2%, worker 1%)
+
+    Isolate  17 workers spawned · ~789ms startup each (spawn + environment, per file)
+             at least ~5.92s faster with isolate: false — reuses workers across files instead of one per file
+

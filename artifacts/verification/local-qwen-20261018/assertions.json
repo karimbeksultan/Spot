@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-18T17:40:23.189Z",
+  "status": "passed",
+  "cases": 5,
+  "checks": [
+    "Known eligible source IDs",
+    "WALK and CHILD are useful nonempty validated local RAG itineraries",
+    "Time and return constraints",
+    "Only real walking legs",
+    "OUTLETS and NIGHT no_match",
+    "AIRPORT clarification without generation",
+    "Paid0 and no weight training",
+    "Current code/data digest"
+  ],
+  "digest": "38b0380549c6b8b8b86b92479020fc1d0b639603ed0748bb93a481f93eac1dc4",
+  "scope": "Synthetic public-start requests against actual local Ollama/index and free Valhalla; not human usefulness or safety validation"
+}

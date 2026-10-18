@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-16T14:50:47.860Z",
+  "projectId": "jlyqncuqkqhkkopgflzl",
+  "transport": "Local Ollama /api/embed then authorized Supabase MCP execute_sql; no service-role key exported",
+  "runtimeVersion": "0.40.5",
+  "model": "embeddinggemma",
+  "modelManifestDigest": "85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1",
+  "dimensions": 768,
+  "version": "1",
+  "generated": 98,
+  "written": 98,
+  "readback": {
+    "documents": 98,
+    "uniquePoiIds": 98,
+    "currentSourceHashes": 98,
+    "minDimensions": 768,
+    "maxDimensions": 768
+  },
+  "validation": {
+    "responseModelChecked": true,
+    "allFinite": true,
+    "allNonzero": true
+  },
+  "idempotence": {
+    "repeatedSubset": 14,
+    "changedOnRepeat": 0,
+    "totalDocumentsAfterRepeat": 98
+  },
+  "hybridRpc": {
+    "role": "anon",
+    "queryText": "парк",
+    "queryVectorSource": "Existing genuine document vector for osm:way/1456208624; app query-vector test is separate",
+    "origin": {
+      "latitude": 51.0890897,
+      "longitude": 71.4073303
+    },
+    "radiusMetres": 1500,
+    "returned": 5,
+    "firstPoi": "osm:way/1456208624"
+  },
+  "resourceSample": {
+    "peakOllamaWorkingSetMiB": 734.8,
+    "minimumFreePhysicalGiB": 2.91,
+    "samplingSeconds": 2,
+    "thresholdGiB": 1,
+    "thresholdCrossed": false
+  },
+  "limitations": [
+    "Observed memory is sampled, not a hardware safety guarantee.",
+    "This report validates ingestion and vector RPC; live app generation is tested separately."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-16",
+  "project": "Spot",
+  "projectId": "jlyqncuqkqhkkopgflzl",
+  "migrationVersion": "20261016143150",
+  "migrationApplied": true,
+  "tablesWithRls": ["pois", "poi_documents", "ingestion_runs"],
+  "anonymousRoleActuallyTested": true,
+  "actualChecks": {
+    "poiRead": "passed",
+    "geographicalRpc": "passed",
+    "insertDenied": "passed; SQLSTATE 42501",
+    "updateDenied": "passed; no-row UPDATE still denied by privilege check",
+    "deleteDenied": "passed; no-row DELETE still denied by privilege check",
+    "ingestionLogsReadDenied": "passed",
+    "missingEmbeddingCorpusRejected": "passed; EMBEDDING_CORPUS_NOT_READY"
+  },
+  "testTransactionsRolledBack": true,
+  "rpcSecurity": {"securityInvoker": true, "emptySearchPath": true},
+  "securityAdvisorWarningsOrErrors": 0,
+  "securityAdvisorInfo": "ingestion_runs intentionally has no public RLS policy and no public table privileges",
+  "performanceAdvisorInfo": "GIN and HNSW search indexes unused while embedding corpus is empty",
+  "reproduce": "supabase/verify-access.sql against the explicitly selected disposable test database"
+}

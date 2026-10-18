@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-16",
+  "provider": "https://valhalla1.openstreetmap.de/route",
+  "profile": "pedestrian",
+  "method": "Actual public-provider request through application walkingRoute function, with public OSM place coordinates only",
+  "from": {"name": "Mega Silk Way", "id": "osm:way/499328514", "source": "https://www.openstreetmap.org/way/499328514"},
+  "visit": {"name": "Аллея мира и согласия", "id": "osm:way/1456208624", "source": "https://www.openstreetmap.org/way/1456208624"},
+  "returnToStart": true,
+  "routeAvailable": true,
+  "legCount": 2,
+  "seconds": 1319.656,
+  "metres": 1834,
+  "firstLegGeometryPoints": 63,
+  "geometryMethod": "Decoded real native Valhalla polyline6; all response maneuvers checked pedestrian",
+  "limitations": "Single actual coverage probe; public demo availability and future routes are not guaranteed. Provider timing is an estimate.",
+  "reference": "https://valhalla.github.io/valhalla/api/decoding/"
+}

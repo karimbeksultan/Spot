@@ -1,0 +1,74 @@
+{
+  "checkedDate": "2026-10-16",
+  "scope": "Seven exact Spot POIs; existing Commons metadata and geographic candidates, visual review, indexed Commons searches and official websites.",
+  "verifiedAdditionalPhotos": 0,
+  "meaning": "No exact, openly licensed photo was verified in the checked sources. This does not assert that no such photo exists anywhere.",
+  "apiLimit": "Stopped Commons API search after HTTP 429 on the second request; the first exact search for Asia Park Astana returned zero files. Requests were spaced by five seconds. No retry loop or bulk metadata refetch was used.",
+  "existingMetadata": "work/photo-metadata.json",
+  "existingGeographicCandidates": "data/reports/photo-geographic-candidates.json",
+  "visualReviews": ["work/photo-review/sheet-0.png", "work/photo-review/sheet-1.png", "work/photo-review/sheet-4.png", "work/photo-extra/inspection.png"],
+  "places": [
+    {
+      "poiId": "osm:way/239713764",
+      "name": "Азия Парк",
+      "status": "no_exact_open_photo_verified",
+      "rejectedCommonsTitles": ["File:Astana-2021-10 - 41.jpg", "File:Astana DSC04251 (7709936192).jpg", "File:Astana DSC04257 (7709953130).jpg", "File:Левый берег - panoramio (5).jpg"],
+      "reason": "The first photo is explicitly a mosque. The other visually checked nearby images show the Round Square restaurant facade, fountain and skyline, not Asia Park mall. The Commons Asia Park category found by web search is a park in South Korea.",
+      "officialSources": ["https://astana.asiapark.kz/ru/", "https://astana.asiapark.kz/upload/uf/f8b/f8b1ee0e677ff7b91cd1787c1f960f42.pdf"],
+      "officialSourceFinding": "The official site confirms Kabanbay Batyr 21. Its legal-information link is a personal-data/privacy policy, not a photo reuse license. No explicit open image license was verified."
+    },
+    {
+      "poiId": "osm:way/240909210",
+      "name": "Сарыарка",
+      "status": "no_exact_open_photo_verified",
+      "rejectedCommonsTitles": ["File:Астана Триумф - panoramio.jpg"],
+      "reason": "The closest candidate is a night photo of the Triumph of Astana residential towers, not the mall. Other geographic candidates describe an opera building or temporary yurts, not Saryarka mall.",
+      "officialSources": ["https://srq.kz/ru", "https://srq.kz/ru/o-kompanii", "https://visitastana.kz/ru/about-city/what-to-see/saryarka/"],
+      "officialSourceFinding": "The mall's official website confirms Turan 24 and provides photos, but an explicit open reuse license was not verified. Visit Astana has an all-rights-reserved footer."
+    },
+    {
+      "poiId": "osm:way/230358847",
+      "name": "Корме",
+      "status": "no_exact_open_photo_verified",
+      "rejectedCommonsTitles": ["File:La Creme, Astana (P1190673).jpg", "File:La Creme, Astana (LRM 20240815 164309).jpg", "File:La Creme, Astana (P1190672).jpg", "File:Esil District, Astana (P1190674).jpg"],
+      "reason": "Existing exact metadata describes cars outside La Creme and a Chery Arrizo 8, not the Korme exhibition centre. Indexed Commons searches did not identify an exact file.",
+      "officialSources": ["https://wmc2018.org/ru/vystavka/o-vystavke"],
+      "officialSourceFinding": "The event organizer confirms the historical venue at Dostyk 3. No exact openly licensed venue photo was verified."
+    },
+    {
+      "poiId": "osm:way/243041609",
+      "name": "Парк Арай",
+      "status": "identity_needs_polygon_confirmation",
+      "rejectedCommonsTitles": ["File:Astana-2021-10 - 18.jpg", "File:Здание парламента Казахстана.jpg"],
+      "reason": "The closest candidate is a broad city panorama shot from Baiterek, and the next candidate is the Parliament building. Neither is an exact photo of this park entry.",
+      "officialSources": ["https://visitastana.kz/ru/about-city/what-to-see/?category=parks"],
+      "officialSourceFinding": "Visit Astana states that Aray was reconstructed and renamed Zhetysu in 2018. The snapshot separately includes nearby way/69232075 as Zhetysu; do not duplicate those photos onto this adjacent old-name entry until the OSM polygon relationship is checked."
+    },
+    {
+      "poiId": "osm:way/1296051287",
+      "name": "Корейский сад",
+      "status": "no_exact_open_photo_verified",
+      "rejectedCommonsTitles": ["File:Велодорожка и челодорожка (48029558328).jpg", "File:Набережная Ишима (48029625352).jpg"],
+      "reason": "Visually checked candidates show a cycle path and the river embankment; they do not depict the identifiable Korean garden pavilion or gate.",
+      "officialSources": ["https://visitastana.kz/ru/about-city/what-to-see/koreyskiy-sad-druzhby-/"],
+      "officialSourceFinding": "Official tourism page identifies the garden inside Zhetysu and includes images, but it carries an all-rights-reserved footer rather than an open image license. Generic Zhetysu photographs are not used as exact Korean-garden photos."
+    },
+    {
+      "poiId": "osm:node/4958412863",
+      "name": "Zur Sultan",
+      "status": "no_exact_open_photo_verified",
+      "rejectedCommonsTitles": ["File:Astana-2021-10 - 3.jpg", "File:Astana SAM 0055 (14933895419).jpg", "File:Astana SAM 0053 (15097599826).jpg", "File:Astana SAM 0051 (14933941570).jpg"],
+      "reason": "Nearby photos show Lovers Park, the square and the KazMunayGas arch. Astana-2021-10 - 3.jpg also clearly depicts a bronze couple, which official tourism identifies as the Bakytym Menin/My Happiness sculpture. No source connects the name Zur Sultan to that sculpture, so an identity mismatch remains. A distance of 14-16 metres to the camera alone is not sufficient evidence.",
+      "officialSources": ["https://visitnursultan.kz/about-city/what-to-see/park-vlyublennykh/"]
+    },
+    {
+      "poiId": "osm:node/14087643081",
+      "name": "Табун Лошадей",
+      "status": "no_exact_open_photo_verified",
+      "rejectedCommonsTitles": ["File:Astana DSC04250 (7709933938).jpg", "File:Astana SAM 0058 (15120209182).jpg", "File:Astana SAM 0059 (14934013297).jpg", "File:Astana DSC04248 (7709930348).jpg"],
+      "reason": "The four checked nearby photographs show the fountain, Transport Tower, Round Square and a restaurant facade; the exact horse group is not the depicted subject. A matching horse-group stock photo was found with a paid editorial license, so it was not added as an open asset.",
+      "referenceSources": ["https://lori.ru/6338648", "https://www.etovidel.net/sights/loshadi/"],
+      "officialSources": []
+    }
+  ]
+}

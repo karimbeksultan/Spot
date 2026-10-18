@@ -1,0 +1,195 @@
+{
+  "version": "spot-offline-eval-v1",
+  "mode": "demo",
+  "dataDigest": "cb8dcfff85509eb2498bb40b3b5edafb4f3d2995ca92844709da3bc8d4607fe9",
+  "scenarioTime": "Frozen per fixture; not current opening verification",
+  "source": "Actual collected POI snapshot; synthetic development and separate acceptance requests",
+  "methodology": "Deterministic assertions for result kind, known IDs, evidence membership, hard constraints, category relevance and honest route state. No LLM judge.",
+  "limitations": [
+    "No live model/database/routing verification",
+    "No independent human usefulness score",
+    "Not Recall@K: no exhaustive relevance ground truth",
+    "Small synthetic multilingual sample is not full linguistic acceptance"
+  ],
+  "networkAttempts": 0,
+  "paidRequests": 0,
+  "total": 10,
+  "passed": 10,
+  "failed": 0,
+  "results": [
+    {
+      "id": "DEV-MEGA-45",
+      "set": "development",
+      "version": "spot-development-v1",
+      "status": "passed",
+      "kind": "recommendations",
+      "source": "real_snapshot",
+      "retrieval": "snapshot-lexical",
+      "generation": "template",
+      "poiIds": [
+        "osm:way/1467797207",
+        "osm:way/1470723968"
+      ],
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/1467797207",
+        "https://www.openstreetmap.org/way/1470723968"
+      ],
+      "language": "ru",
+      "scenarioClock": "2026-10-18T07:00:00Z",
+      "elapsedMs": 454
+    },
+    {
+      "id": "DEV-OUTLETS-UNKNOWN",
+      "set": "development",
+      "version": "spot-development-v1",
+      "status": "passed",
+      "kind": "no_match",
+      "source": "real_snapshot",
+      "retrieval": "snapshot-lexical",
+      "generation": "template",
+      "poiIds": [],
+      "sourceUrls": [],
+      "language": "ru",
+      "scenarioClock": "2026-10-18T07:00:00Z",
+      "elapsedMs": 88
+    },
+    {
+      "id": "DEV-CHILD",
+      "set": "development",
+      "version": "spot-development-v1",
+      "status": "passed",
+      "kind": "recommendations",
+      "source": "real_snapshot",
+      "retrieval": "snapshot-lexical",
+      "generation": "template",
+      "poiIds": [
+        "osm:way/693661486",
+        "osm:way/622586293",
+        "osm:way/1461751890"
+      ],
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/693661486",
+        "https://www.openstreetmap.org/way/622586293",
+        "https://www.openstreetmap.org/way/1461751890"
+      ],
+      "language": "ru",
+      "scenarioClock": "2026-10-18T07:00:00Z",
+      "elapsedMs": 108
+    },
+    {
+      "id": "DEV-EMPTY-CATEGORY",
+      "set": "development",
+      "version": "spot-development-v1",
+      "status": "passed",
+      "kind": "no_match",
+      "source": "real_snapshot",
+      "retrieval": "snapshot-lexical",
+      "generation": "template",
+      "poiIds": [],
+      "sourceUrls": [],
+      "language": "ru",
+      "scenarioClock": "2026-10-18T07:00:00Z",
+      "elapsedMs": 80
+    },
+    {
+      "id": "ACC-AIRPORT",
+      "set": "acceptance",
+      "version": "spot-acceptance-v1",
+      "status": "passed",
+      "kind": "clarification",
+      "source": "real_snapshot",
+      "retrieval": "not_run",
+      "generation": "not_run",
+      "poiIds": [],
+      "sourceUrls": [],
+      "language": "ru",
+      "scenarioClock": "2026-10-18T07:00:00Z",
+      "elapsedMs": 1
+    },
+    {
+      "id": "ACC-NIGHT",
+      "set": "acceptance",
+      "version": "spot-acceptance-v1",
+      "status": "passed",
+      "kind": "no_match",
+      "source": "real_snapshot",
+      "retrieval": "snapshot-lexical",
+      "generation": "template",
+      "poiIds": [],
+      "sourceUrls": [],
+      "language": "ru",
+      "scenarioClock": "2026-10-18T18:30:00Z",
+      "elapsedMs": 113
+    },
+    {
+      "id": "ACC-STRICT-UNKNOWN-PRICE",
+      "set": "acceptance",
+      "version": "spot-acceptance-v1",
+      "status": "passed",
+      "kind": "no_match",
+      "source": "real_snapshot",
+      "retrieval": "not_run",
+      "generation": "not_run",
+      "poiIds": [],
+      "sourceUrls": [],
+      "language": "ru",
+      "scenarioClock": "2026-10-18T07:00:00Z",
+      "elapsedMs": 1
+    },
+    {
+      "id": "ACC-KK-PARK",
+      "set": "acceptance",
+      "version": "spot-acceptance-v1",
+      "status": "passed",
+      "kind": "recommendations",
+      "source": "real_snapshot",
+      "retrieval": "snapshot-lexical",
+      "generation": "template",
+      "poiIds": [
+        "osm:way/1196402246",
+        "osm:node/5878503586"
+      ],
+      "sourceUrls": [
+        "https://www.openstreetmap.org/way/1196402246",
+        "https://www.openstreetmap.org/node/5878503586"
+      ],
+      "language": "kk",
+      "scenarioClock": "2026-10-18T07:00:00Z",
+      "elapsedMs": 90
+    },
+    {
+      "id": "ACC-EN-COFFEE",
+      "set": "acceptance",
+      "version": "spot-acceptance-v1",
+      "status": "passed",
+      "kind": "recommendations",
+      "source": "real_snapshot",
+      "retrieval": "snapshot-lexical",
+      "generation": "template",
+      "poiIds": [
+        "osm:node/11206429884"
+      ],
+      "sourceUrls": [
+        "https://www.openstreetmap.org/node/11206429884"
+      ],
+      "language": "en",
+      "scenarioClock": "2026-10-18T07:00:00Z",
+      "elapsedMs": 103
+    },
+    {
+      "id": "ACC-NO-INSTRUCTION-EXECUTION",
+      "set": "acceptance",
+      "version": "spot-acceptance-v1",
+      "status": "passed",
+      "kind": "no_match",
+      "source": "real_snapshot",
+      "retrieval": "snapshot-lexical",
+      "generation": "template",
+      "poiIds": [],
+      "sourceUrls": [],
+      "language": "ru",
+      "scenarioClock": "2026-10-18T07:00:00Z",
+      "elapsedMs": 82
+    }
+  ]
+}

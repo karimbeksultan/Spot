@@ -1,0 +1,29 @@
+{
+  "version": "spot-offline-smoke-v1",
+  "status": "passed",
+  "mode": "demo",
+  "dataDigest": "cb8dcfff85509eb2498bb40b3b5edafb4f3d2995ca92844709da3bc8d4607fe9",
+  "networkAttempts": 0,
+  "paidRequests": 0,
+  "scope": "Actual search pipeline via parsed Request and AbortSignal; UI/browser and live endpoints are separate checks",
+  "steps": [
+    {
+      "action": "initial walking request",
+      "kind": "recommendations",
+      "poiIds": [
+        "osm:way/1467797207",
+        "osm:way/1470723968"
+      ]
+    },
+    {
+      "action": "indoor follow-up preserves context",
+      "kind": "no_match",
+      "poiIds": []
+    },
+    {
+      "action": "unknown mandatory outlets",
+      "kind": "no_match",
+      "poiIds": []
+    }
+  ]
+}

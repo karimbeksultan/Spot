@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "policy": "astana_only",
+  "note": "Карантин только по явному addr:city. Отсутствие тега не доказывает административную принадлежность; исходные POI и vectors не удаляются.",
+  "entries": [
+    {
+      "poiId": "osm:node/13751850910",
+      "sourceUrl": "https://www.openstreetmap.org/node/13751850910",
+      "evidenceField": "addr:city",
+      "evidenceValue": "Қосшы",
+      "reason": "В OSM указан другой город: Косшы/Қосшы. Объект исключён из выдачи Spot для Астаны; исходная запись сохранена для аудита.",
+      "sourceFetchedAt": "2026-10-18T16:50:23.296Z",
+      "checkedAt": "2026-10-18T17:28:28.960176Z",
+      "checkKind": "source_city_tag_review"
+    },
+    {
+      "poiId": "osm:relation/20456082",
+      "sourceUrl": "https://www.openstreetmap.org/relation/20456082",
+      "evidenceField": "addr:city",
+      "evidenceValue": "Қосшы",
+      "reason": "В OSM указан другой город: Косшы/Қосшы. Объект исключён из выдачи Spot для Астаны; исходная запись сохранена для аудита.",
+      "sourceFetchedAt": "2026-10-18T17:20:40.150Z",
+      "checkedAt": "2026-10-18T17:28:28.960176Z",
+      "checkKind": "source_city_tag_review"
+    },
+    {
+      "poiId": "osm:way/1101719378",
+      "sourceUrl": "https://www.openstreetmap.org/way/1101719378",
+      "evidenceField": "addr:city",
+      "evidenceValue": "Косшы",
+      "reason": "В OSM указан другой город: Косшы/Қосшы. Объект исключён из выдачи Spot для Астаны; исходная запись сохранена для аудита.",
+      "sourceFetchedAt": "2026-10-18T17:20:40.150Z",
+      "checkedAt": "2026-10-18T17:28:28.960176Z",
+      "checkKind": "source_city_tag_review"
+    },
+    {
+      "poiId": "osm:way/1499433763",
+      "sourceUrl": "https://www.openstreetmap.org/way/1499433763",
+      "evidenceField": "addr:city",
+      "evidenceValue": "Қосшы",
+      "reason": "В OSM указан другой город: Косшы/Қосшы. Объект исключён из выдачи Spot для Астаны; исходная запись сохранена для аудита.",
+      "sourceFetchedAt": "2026-10-18T16:50:23.296Z",
+      "checkedAt": "2026-10-18T17:28:28.960176Z",
+      "checkKind": "source_city_tag_review"
+    },
+    {
+      "poiId": "osm:way/1499557515",
+      "sourceUrl": "https://www.openstreetmap.org/way/1499557515",
+      "evidenceField": "addr:city",
+      "evidenceValue": "Косшы",
+      "reason": "В OSM указан другой город: Косшы/Қосшы. Объект исключён из выдачи Spot для Астаны; исходная запись сохранена для аудита.",
+      "sourceFetchedAt": "2026-10-18T16:50:23.296Z",
+      "checkedAt": "2026-10-18T17:28:28.960176Z",
+      "checkKind": "source_city_tag_review"
+    }
+  ]
+}

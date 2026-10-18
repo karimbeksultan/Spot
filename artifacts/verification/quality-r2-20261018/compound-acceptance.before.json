@@ -1,0 +1,214 @@
+{
+  "version": "compound-before-v1",
+  "mode": "demo",
+  "source": "Fixed synthetic public-origin requests over the actual licensed dataset; no human usefulness grade",
+  "clock": {
+    "noon": "2026-10-18T07:00:00Z",
+    "evening": "2026-10-18T13:00:00Z"
+  },
+  "origins": {
+    "B": {
+      "longitude": 71.4165705,
+      "latitude": 51.1061652
+    },
+    "M": {
+      "longitude": 71.4073303,
+      "latitude": 51.0890897
+    },
+    "G": {
+      "longitude": 71.4714725,
+      "latitude": 51.1467674
+    }
+  },
+  "cases": [
+    {
+      "id": "CP-ACC-01",
+      "purpose": "Absent Sami cuisine must not become a generic restaurant or park",
+      "request": {
+        "origin": {
+          "longitude": 71.4714725,
+          "latitude": 51.1467674
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Сначала ресторан строго саамской кухни, затем парк. 90 минут",
+        "availableMinutes": 90
+      },
+      "expected": {
+        "kinds": [
+          "no_match"
+        ],
+        "empty": true
+      }
+    },
+    {
+      "id": "CP-ACC-02",
+      "purpose": "Unknown mandatory outlet invalidates the cafe stage, do not keep only park",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Сначала кафе, розетка обязательна, затем парк. Есть час",
+        "availableMinutes": 60,
+        "requiredFeatures": [
+          "outlets"
+        ]
+      },
+      "expected": {
+        "kinds": [
+          "no_match"
+        ],
+        "empty": true
+      }
+    },
+    {
+      "id": "CP-ACC-03",
+      "purpose": "Five requested minutes must not be silently increased to ten",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Есть только 5 минут: сначала кофе в кафе, затем парк и вернуться",
+        "availableMinutes": 60,
+        "returnToStart": true
+      },
+      "expected": {
+        "kinds": [
+          "no_match",
+          "clarification"
+        ],
+        "empty": true,
+        "requestedMinutes": 5
+      }
+    },
+    {
+      "id": "CP-ACC-04",
+      "purpose": "Unknown prices cannot satisfy a strict zero KZT compound plan",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Кофе, затем парк, строгий бюджет 0 тенге",
+        "availableMinutes": 45,
+        "budgetKzt": 0,
+        "strictBudget": true
+      },
+      "expected": {
+        "kinds": [
+          "no_match"
+        ],
+        "empty": true
+      }
+    },
+    {
+      "id": "CP-ACC-05",
+      "purpose": "A flight remains unsupported even if coffee/park stages are present",
+      "request": {
+        "origin": {
+          "longitude": 71.4073303,
+          "latitude": 51.0890897
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "До вылета 2 часа: сначала кофе, потом парк, затем в аэропорт",
+        "availableMinutes": 120
+      },
+      "expected": {
+        "kinds": [
+          "clarification"
+        ],
+        "empty": true,
+        "clarificationCode": "airport_buffer_transport"
+      }
+    },
+    {
+      "id": "CP-ACC-06",
+      "purpose": "Booking is an unsupported action, never imply a completed reservation",
+      "request": {
+        "origin": {
+          "longitude": 71.4714725,
+          "latitude": 51.1467674
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Забронируй столик в итальянском ресторане с пиццей, потом хочу парк. 90 минут",
+        "availableMinutes": 90
+      },
+      "expected": {
+        "kinds": [
+          "clarification"
+        ],
+        "empty": true
+      }
+    },
+    {
+      "id": "CP-ACC-07",
+      "purpose": "English reverse order must remain PARK then COFFEE",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "en",
+        "maxDistanceMetres": 3000,
+        "query": "First a park, then a coffee shop. I have 60 minutes and need to return to the start",
+        "availableMinutes": 60,
+        "returnToStart": true
+      },
+      "expected": {
+        "kinds": [
+          "recommendations"
+        ],
+        "stages": [
+          {
+            "category": "park"
+          },
+          {
+            "category": "cafe"
+          }
+        ],
+        "ordered": true
+      }
+    },
+    {
+      "id": "CP-ACC-08",
+      "purpose": "Indoor-only applies to every mandatory stage, not only the cafe",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Сначала кафе, затем парк, но всё обязательно только внутри помещения",
+        "availableMinutes": 60,
+        "requiredFeatures": [
+          "indoor"
+        ]
+      },
+      "expected": {
+        "kinds": [
+          "no_match"
+        ],
+        "empty": true
+      }
+    }
+  ]
+}

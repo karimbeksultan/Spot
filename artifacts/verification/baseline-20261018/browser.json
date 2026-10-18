@@ -1,0 +1,22 @@
+{
+  "status": 200,
+  "errors": [],
+  "states": [
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "overflow": false,
+      "places": 5
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "places": 5
+    }
+  ]
+}

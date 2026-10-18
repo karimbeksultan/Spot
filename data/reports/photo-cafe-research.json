@@ -1,0 +1,3017 @@
+{
+  "generatedAt": "2026-10-16T15:40:00.920Z",
+  "scope": "57 existing cafe branches in Spot; exact venue photography only",
+  "summary": {
+    "branches": 57,
+    "verifiedBranches": 2,
+    "verifiedPhotos": 2,
+    "remaining": 55,
+    "commonsSuccessfulNameQueries": 32,
+    "commonsBrandNames": 16,
+    "previewImagesVisuallyInspected": 24
+  },
+  "limitations": [
+    "Commons API name search stopped when 429 appeared; 32 successful searches retained. Geographic candidate review covers all 57 branch IDs; 24 plausible previews were visually inspected. This is not a claim that no licensed images exist anywhere.",
+    "Openverse timeouts are recorded as unavailable checks, not zero results. The broad Marrone Rosso query returned 240 Italian colour-word matches; only the first 20 metadata results were inspected, all unrelated to Astana.",
+    "Photos from Google/2GIS/Yandex/Tripadvisor were not scraped or copied; generic photos were not substituted."
+  ],
+  "accepted": [
+    {
+      "poiId": "osm:node/11783576043",
+      "title": "File:Esil District, Astana (P1190756).jpg",
+      "matchEvidence": "Visually inspected the 960px Commons preview: the Drinkit wordmark and 'кофейня' sign are clearly visible on the ground-floor corner facade at Бухар жырау, 28Б. Commons camera coordinates 51.100961, 71.418616 are about 58m east of the OSM cafe 51.1008453, 71.4178111, facing that exact corner facade. Image is Matti Blume's own work dated 2024-08-18, with explicit CC BY-SA 4.0 metadata. The match uses the visible brand and facade together with coordinates; proximity alone was not used."
+    },
+    {
+      "poiId": "osm:node/6404769888",
+      "title": "File:Esil District, Astana (P1190644).jpg",
+      "matchEvidence": "Visually inspected the full 960px Commons preview. The MADO facade and large blue MADO sign, plus MADO-branded terrace windows, are clearly visible behind a parked car. The camera at 51.128080, 71.435621 is about 63m southeast of the OSM Mado branch at 51.128348, 71.4348209 and points at that facade. This is a real exterior/street photograph with a car in the foreground, not an interior image. Commons metadata explicitly identifies Matti Blume as author and CC BY-SA 4.0 as the license."
+    }
+  ],
+  "branches": [
+    {
+      "poiId": "osm:node/10170946741",
+      "name": "Starbucks",
+      "address": null,
+      "location": {
+        "longitude": 71.4280501,
+        "latitude": 51.1218424
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"starbucks\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22starbucks%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 4,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"starbucks\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22starbucks%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.starbucks.com.kz/en",
+          "finding": "Official site exposes product images and store locator, but no reusable exact-branch photograph was identified."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.starbucks.com.kz/en/terms-of-use",
+          "finding": "Rewards terms, not a reuse license for photographs."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/10170946742",
+      "name": "Coffee BOOM",
+      "address": null,
+      "location": {
+        "longitude": 71.4281745,
+        "latitude": 51.1215924
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 1,
+          "visuallyInspected": [
+            {
+              "pageid": 152037190,
+              "title": "File:Light metro, Astana (P1190708).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"coffee boom\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22coffee+boom%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"coffee boom\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22coffee+boom%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://coffeeboom.kz/en/formats/cbrb/cbrb-astana/",
+          "finding": "Official gallery is for Turkestan16/3, not either existing branch. No reuse grant found; not assigned."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/10170946745",
+      "name": "Chaleur",
+      "address": null,
+      "location": {
+        "longitude": 71.4279892,
+        "latitude": 51.1215961
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"chaleur\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22chaleur%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"chaleur\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22chaleur%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/10248180510",
+      "name": "Delish",
+      "address": null,
+      "location": {
+        "longitude": 71.4227958,
+        "latitude": 51.1010935
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"delish\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22delish%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"delish\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22delish%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/10559299807",
+      "name": "CrepeCafe",
+      "address": null,
+      "location": {
+        "longitude": 71.4334497,
+        "latitude": 51.1162897
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"crepecafe\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22crepecafe%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"crepecafe\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22crepecafe%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://crepecafe.kz/rus",
+          "finding": "Official ordering site and franchise gallery have images; no express open-photo license found."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://fr.crepecafe.kz/",
+          "finding": "No reusable exact branch photo verified."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/10564988185",
+      "name": "Degirmen",
+      "address": null,
+      "location": {
+        "longitude": 71.4333254,
+        "latitude": 51.1285659
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 16,
+          "visuallyInspected": [
+            {
+              "pageid": 152037010,
+              "title": "File:Esil District, Astana (P1190646).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 69172653,
+              "title": "File:Astana DSC04197 (7709813862).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 111475572,
+              "title": "File:Astana-2021-10 - 20.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"degirmen\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22degirmen%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"degirmen\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22degirmen%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/11131442511",
+      "name": "Espresso day",
+      "address": null,
+      "location": {
+        "longitude": 71.4031114,
+        "latitude": 51.125631
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"espresso day\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22espresso+day%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"espresso day\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22espresso+day%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/11206429884",
+      "name": "JumpinGoat",
+      "address": "улица Акмешит, 13/3",
+      "location": {
+        "longitude": 71.4213542,
+        "latitude": 51.1104543
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 1,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"jumpingoat\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22jumpingoat%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"jumpingoat\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22jumpingoat%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/11290690869",
+      "name": "TLP Flowers & Coffee",
+      "address": "улица Гейдара Алиева, 1",
+      "location": {
+        "longitude": 71.412037,
+        "latitude": 51.1005554
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 1,
+          "visuallyInspected": [
+            {
+              "pageid": 196741726,
+              "title": "File:Wikipedia 25 Celebration in Astana, 28 June 2026.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"tlp flowers & coffee\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22tlp+flowers+%26+coffee%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"tlp flowers & coffee\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22tlp+flowers+%26+coffee%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://tlpcompany.kz/",
+          "finding": "Site could not be accessed by web tool; nearby Wikipedia lunch image visibly shows Shaurma Food, not TLP."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/11783576043",
+      "name": "Drinkit",
+      "address": "Улица Бухар жырау, 28Б",
+      "location": {
+        "longitude": 71.4178111,
+        "latitude": 51.1008453
+      },
+      "status": "verified_photo",
+      "acceptedTitles": [
+        "File:Esil District, Astana (P1190756).jpg"
+      ],
+      "missingReason": null,
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 1,
+          "visuallyInspected": [
+            {
+              "pageid": 151963319,
+              "title": "File:Esil District, Astana (P1190756).jpg",
+              "result": "accepted"
+            }
+          ]
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"drinkit\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22drinkit%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"drinkit\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22drinkit%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.idesignawards.com/social/zoom.php?eid=9-62984-25",
+          "finding": "Architectural gallery in Astana credits Damir Otegen; no open reuse license found. Separate Commons storefront accepted only for Бухар жырау28Б."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/11910202470",
+      "name": "marrone rosso",
+      "address": null,
+      "location": {
+        "longitude": 71.4250639,
+        "latitude": 51.1284058
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 8,
+          "visuallyInspected": [
+            {
+              "pageid": 199412657,
+              "title": "File:Keruen mall, escalators, Astana, 2026.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 199412680,
+              "title": "File:Keruen mall, food court, Astana, 2026.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 199412682,
+              "title": "File:Keruen mall, interior, Astana, 2026.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"marrone rosso\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22marrone+rosso%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"marrone rosso\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22marrone+rosso%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.flickr.com/photos/130792849@N02/16765438125/",
+          "finding": "Raymond Whitby Astana cafe photo explicitly All rights reserved; not used."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.flickr.com/photos/130792849@N02/16739732916/",
+          "finding": "Colour variant explicitly All rights reserved; not used."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/11925892164",
+      "name": "Tary",
+      "address": null,
+      "location": {
+        "longitude": 71.4281541,
+        "latitude": 51.1008676
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"tary\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22tary%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 13,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"tary\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22tary%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 4,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/11927785970",
+      "name": "Zebra Coffee",
+      "address": null,
+      "location": {
+        "longitude": 71.4331914,
+        "latitude": 51.1149252
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"zebra coffee\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22zebra+coffee%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"zebra coffee\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22zebra+coffee%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/12041597369",
+      "name": "MÖKKi",
+      "address": null,
+      "location": {
+        "longitude": 71.4318134,
+        "latitude": 51.1251254
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 4,
+          "visuallyInspected": [
+            {
+              "pageid": 151882361,
+              "title": "File:Night at Esil District, Astana (P1190721).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 155082466,
+              "title": "File:Esil District, Astana (P1190714).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 152324916,
+              "title": "File:Talan Gallery, Astana (P1190777).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"mökki\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22m%C3%B6kki%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 2,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"mökki\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22m%C3%B6kki%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 19,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.jirilizler.com/ritz-carlton-astana",
+          "finding": "Named venue interior/terrace gallery by photographer Jiri Lizler; no free reuse grant found. Not downloaded or included."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://evgenytkachenko.com/restoran-mokki",
+          "finding": "Exact venue photographer portfolio; no reuse license verified."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/12098662467",
+      "name": "Canele",
+      "address": "Гейдара Алиева, 2",
+      "location": {
+        "longitude": 71.4146083,
+        "latitude": 51.1013122
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"canele\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22canele%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"canele\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22canele%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/12520559589",
+      "name": "Лепим и варим",
+      "address": null,
+      "location": {
+        "longitude": 71.4254505,
+        "latitude": 51.1279246
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 8,
+          "visuallyInspected": [
+            {
+              "pageid": 199412682,
+              "title": "File:Keruen mall, interior, Astana, 2026.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 199412680,
+              "title": "File:Keruen mall, food court, Astana, 2026.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 199412657,
+              "title": "File:Keruen mall, escalators, Astana, 2026.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"лепим и варим\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22%D0%BB%D0%B5%D0%BF%D0%B8%D0%BC+%D0%B8+%D0%B2%D0%B0%D1%80%D0%B8%D0%BC%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"лепим и варим\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22%D0%BB%D0%B5%D0%BF%D0%B8%D0%BC+%D0%B8+%D0%B2%D0%B0%D1%80%D0%B8%D0%BC%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://lepimivarim.ru/",
+          "finding": "Official site covers Astana but no reusable photo of an exact existing branch verified."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/12520559591",
+      "name": "Лепим и варим",
+      "address": null,
+      "location": {
+        "longitude": 71.4078454,
+        "latitude": 51.0891569
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 2,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"лепим и варим\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22%D0%BB%D0%B5%D0%BF%D0%B8%D0%BC+%D0%B8+%D0%B2%D0%B0%D1%80%D0%B8%D0%BC%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"лепим и варим\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22%D0%BB%D0%B5%D0%BF%D0%B8%D0%BC+%D0%B8+%D0%B2%D0%B0%D1%80%D0%B8%D0%BC%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://lepimivarim.ru/",
+          "finding": "Official site covers Astana but no reusable photo of an exact existing branch verified."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/12959449801",
+      "name": "Культура Диктует",
+      "address": "Сығанақ көшесі, 33",
+      "location": {
+        "longitude": 71.4219553,
+        "latitude": 51.1246776
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.98mag.kz/biznes/chto-kultura-diktuet-kofejnye-trendy-v-astane/",
+          "finding": "Editorial cafe article with images; no photo reuse license verified."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/12990081501",
+      "name": "Discovery Coffee",
+      "address": "Mangilik Yel, 54",
+      "location": {
+        "longitude": 71.4260369,
+        "latitude": 51.0906396
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/12996721851",
+      "name": "Master Coffee",
+      "address": null,
+      "location": {
+        "longitude": 71.4291709,
+        "latitude": 51.1034667
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 3,
+          "visuallyInspected": [
+            {
+              "pageid": 152324900,
+              "title": "File:Esil District, Astana (P1190746).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 152324882,
+              "title": "File:Hyundai Santa Fe, Astana (P1190693).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 152034706,
+              "title": "File:Esil District, Astana (P1190688).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/13125546428",
+      "name": "Coffee Day",
+      "address": null,
+      "location": {
+        "longitude": 71.4334022,
+        "latitude": 51.1157233
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/13125556689",
+      "name": "Coffee BOOM",
+      "address": null,
+      "location": {
+        "longitude": 71.4336184,
+        "latitude": 51.1163017
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"coffee boom\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22coffee+boom%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"coffee boom\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22coffee+boom%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://coffeeboom.kz/en/formats/cbrb/cbrb-astana/",
+          "finding": "Official gallery is for Turkestan16/3, not either existing branch. No reuse grant found; not assigned."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/13173517356",
+      "name": "Gasteria",
+      "address": "ТРЦ MEGA Silk Way, Кабанбай батыр проспект, 62",
+      "location": {
+        "longitude": 71.4093464,
+        "latitude": 51.0889451
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 4,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/13313122337",
+      "name": "Gasteria",
+      "address": "Қонаев көшесі, 8/1",
+      "location": {
+        "longitude": 71.4241936,
+        "latitude": 51.1298475
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 1,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/13408518401",
+      "name": "Zebra coffee",
+      "address": "Қабанбай Батыр даңғылы, 13",
+      "location": {
+        "longitude": 71.4155612,
+        "latitude": 51.1379062
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"zebra coffee\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22zebra+coffee%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"zebra coffee\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22zebra+coffee%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/13462282540",
+      "name": "Kunde Cafe",
+      "address": null,
+      "location": {
+        "longitude": 71.395459,
+        "latitude": 51.0906659
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 16,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/13667384701",
+      "name": "CrepeCafe",
+      "address": "Мәңгілік Ел даңғылы, 17",
+      "location": {
+        "longitude": 71.4337969,
+        "latitude": 51.1167613
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"crepecafe\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22crepecafe%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"crepecafe\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22crepecafe%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://crepecafe.kz/rus",
+          "finding": "Official ordering site and franchise gallery have images; no express open-photo license found."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://fr.crepecafe.kz/",
+          "finding": "No reusable exact branch photo verified."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/13681674667",
+      "name": "Лето",
+      "address": "Мәңгілік Ел даңғылы, 49",
+      "location": {
+        "longitude": 71.426494,
+        "latitude": 51.0963407
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 1,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/13858040201",
+      "name": "Master Coffee",
+      "address": "Қонаев көшесі, 35",
+      "location": {
+        "longitude": 71.4376735,
+        "latitude": 51.1299661
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 1,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/14089471172",
+      "name": "Qaganat",
+      "address": null,
+      "location": {
+        "longitude": 71.422767,
+        "latitude": 51.1277749
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 5,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/14100100182",
+      "name": "Drinkit",
+      "address": null,
+      "location": {
+        "longitude": 71.4290105,
+        "latitude": 51.1302883
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 1,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"drinkit\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22drinkit%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"drinkit\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22drinkit%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.idesignawards.com/social/zoom.php?eid=9-62984-25",
+          "finding": "Architectural gallery in Astana credits Damir Otegen; no open reuse license found. Separate Commons storefront accepted only for Бухар жырау28Б."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/14275682079",
+      "name": "Drinkit",
+      "address": "Қабанбай Батыр даңғылы, 62",
+      "location": {
+        "longitude": 71.40609,
+        "latitude": 51.0890765
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 4,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"drinkit\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22drinkit%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"drinkit\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22drinkit%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.idesignawards.com/social/zoom.php?eid=9-62984-25",
+          "finding": "Architectural gallery in Astana credits Damir Otegen; no open reuse license found. Separate Commons storefront accepted only for Бухар жырау28Б."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/1843876259",
+      "name": "Rafe",
+      "address": null,
+      "location": {
+        "longitude": 71.4372343,
+        "latitude": 51.1279864
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 9,
+          "visuallyInspected": [
+            {
+              "pageid": 57911621,
+              "title": "File:Нурсая-север - panoramio.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 144269703,
+              "title": "File:Building on Nurjol Bulvar.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 152036946,
+              "title": "File:Esil District, Astana (P1190640).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 152324855,
+              "title": "File:Esil District, Astana (P1190644).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://fulginicontract.com/projects/restaurant-rafe/",
+          "finding": "Designer gallery for a Rafe restaurant in Astana; branch address and reuse license not established."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/2671060738",
+      "name": "Избушка",
+      "address": null,
+      "location": {
+        "longitude": 71.4180466,
+        "latitude": 51.1283377
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 4,
+          "visuallyInspected": [
+            {
+              "pageid": 152034578,
+              "title": "File:Esil District, Astana (P1190674).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/2671060739",
+      "name": "Дастархан",
+      "address": null,
+      "location": {
+        "longitude": 71.4174565,
+        "latitude": 51.1284084
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 1,
+          "visuallyInspected": [
+            {
+              "pageid": 152034578,
+              "title": "File:Esil District, Astana (P1190674).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/4108293490",
+      "name": "Тайказан",
+      "address": null,
+      "location": {
+        "longitude": 71.4375196,
+        "latitude": 51.126424
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 18,
+          "visuallyInspected": [
+            {
+              "pageid": 111475574,
+              "title": "File:Astana-2021-10 - 21.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 152036946,
+              "title": "File:Esil District, Astana (P1190640).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/4133836392",
+      "name": "Дастаркан",
+      "address": "Сығанақ көшесі, 10",
+      "location": {
+        "longitude": 71.4219552,
+        "latitude": 51.1235526
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/4133854089",
+      "name": "Rafe",
+      "address": null,
+      "location": {
+        "longitude": 71.4259859,
+        "latitude": 51.1297293
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://fulginicontract.com/projects/restaurant-rafe/",
+          "finding": "Designer gallery for a Rafe restaurant in Astana; branch address and reuse license not established."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/4792472508",
+      "name": "HamStar",
+      "address": null,
+      "location": {
+        "longitude": 71.4219483,
+        "latitude": 51.1360407
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/4853972122",
+      "name": "Фаттуш",
+      "address": null,
+      "location": {
+        "longitude": 71.4251746,
+        "latitude": 51.1277607
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 8,
+          "visuallyInspected": [
+            {
+              "pageid": 199412682,
+              "title": "File:Keruen mall, interior, Astana, 2026.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 199412680,
+              "title": "File:Keruen mall, food court, Astana, 2026.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 199412657,
+              "title": "File:Keruen mall, escalators, Astana, 2026.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/5132817725",
+      "name": "Starbucks",
+      "address": null,
+      "location": {
+        "longitude": 71.4326558,
+        "latitude": 51.1250687
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 4,
+          "visuallyInspected": [
+            {
+              "pageid": 151882361,
+              "title": "File:Night at Esil District, Astana (P1190721).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 152324916,
+              "title": "File:Talan Gallery, Astana (P1190777).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 155082466,
+              "title": "File:Esil District, Astana (P1190714).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"starbucks\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22starbucks%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 4,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"starbucks\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22starbucks%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.starbucks.com.kz/en",
+          "finding": "Official site exposes product images and store locator, but no reusable exact-branch photograph was identified."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.starbucks.com.kz/en/terms-of-use",
+          "finding": "Rewards terms, not a reuse license for photographs."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/5878547585",
+      "name": "Food line",
+      "address": null,
+      "location": {
+        "longitude": 71.4270117,
+        "latitude": 51.1041602
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 3,
+          "visuallyInspected": [
+            {
+              "pageid": 152028045,
+              "title": "File:Construction, Esil District, Astana (P1190694).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 152324882,
+              "title": "File:Hyundai Santa Fe, Astana (P1190693).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/5878572885",
+      "name": "Семейное кафе бум",
+      "address": null,
+      "location": {
+        "longitude": 71.4278829,
+        "latitude": 51.1041752
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 2,
+          "visuallyInspected": [
+            {
+              "pageid": 152324882,
+              "title": "File:Hyundai Santa Fe, Astana (P1190693).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 152028045,
+              "title": "File:Construction, Esil District, Astana (P1190694).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/5936638686",
+      "name": "Кафела",
+      "address": null,
+      "location": {
+        "longitude": 71.4305421,
+        "latitude": 51.1354068
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/5936676246",
+      "name": "Borough",
+      "address": "улица Сарайшык",
+      "location": {
+        "longitude": 71.436492,
+        "latitude": 51.1342545
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/6404769888",
+      "name": "Мадо",
+      "address": null,
+      "location": {
+        "longitude": 71.4348209,
+        "latitude": 51.128348
+      },
+      "status": "verified_photo",
+      "acceptedTitles": [
+        "File:Esil District, Astana (P1190644).jpg"
+      ],
+      "missingReason": null,
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 9,
+          "visuallyInspected": [
+            {
+              "pageid": 69172653,
+              "title": "File:Astana DSC04197 (7709813862).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 152324855,
+              "title": "File:Esil District, Astana (P1190644).jpg",
+              "result": "accepted"
+            },
+            {
+              "pageid": 152037010,
+              "title": "File:Esil District, Astana (P1190646).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/6408255389",
+      "name": "завтрак бар",
+      "address": null,
+      "location": {
+        "longitude": 71.4093574,
+        "latitude": 51.0941798
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/6408271985",
+      "name": "CrepeCafe",
+      "address": null,
+      "location": {
+        "longitude": 71.4285934,
+        "latitude": 51.1293821
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 7,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"crepecafe\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22crepecafe%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"crepecafe\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22crepecafe%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://crepecafe.kz/rus",
+          "finding": "Official ordering site and franchise gallery have images; no express open-photo license found."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://fr.crepecafe.kz/",
+          "finding": "No reusable exact branch photo verified."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/6494912582",
+      "name": "Coffee Like",
+      "address": null,
+      "location": {
+        "longitude": 71.4207674,
+        "latitude": 51.1311886
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 1,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/6678039485",
+      "name": "Буфет",
+      "address": null,
+      "location": {
+        "longitude": 71.4310825,
+        "latitude": 51.1159366
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 0,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/7569228633",
+      "name": "Coffee Like",
+      "address": "Қонаев көшесі, 6",
+      "location": {
+        "longitude": 71.4215615,
+        "latitude": 51.1302666
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 2,
+          "visuallyInspected": [
+            {
+              "pageid": 69172769,
+              "title": "File:Astana DSC04235 (7709902002).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 69172779,
+              "title": "File:Astana DSC04238 (7709908804).jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/9047331868",
+      "name": "Starbucks",
+      "address": null,
+      "location": {
+        "longitude": 71.423656,
+        "latitude": 51.130891
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 1,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"starbucks\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22starbucks%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 4,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"starbucks\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22starbucks%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.starbucks.com.kz/en",
+          "finding": "Official site exposes product images and store locator, but no reusable exact-branch photograph was identified."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.starbucks.com.kz/en/terms-of-use",
+          "finding": "Rewards terms, not a reuse license for photographs."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/9047331879",
+      "name": "Starbucks",
+      "address": null,
+      "location": {
+        "longitude": 71.4089158,
+        "latitude": 51.0890092
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 1,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"starbucks\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22starbucks%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 4,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"starbucks\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22starbucks%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.starbucks.com.kz/en",
+          "finding": "Official site exposes product images and store locator, but no reusable exact-branch photograph was identified."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.starbucks.com.kz/en/terms-of-use",
+          "finding": "Rewards terms, not a reuse license for photographs."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:node/9047331880",
+      "name": "Starbucks",
+      "address": null,
+      "location": {
+        "longitude": 71.4254906,
+        "latitude": 51.1280727
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 12,
+          "visuallyInspected": [
+            {
+              "pageid": 199412682,
+              "title": "File:Keruen mall, interior, Astana, 2026.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 199412680,
+              "title": "File:Keruen mall, food court, Astana, 2026.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            },
+            {
+              "pageid": 199412657,
+              "title": "File:Keruen mall, escalators, Astana, 2026.jpg",
+              "result": "not exact cafe subject or no identifiable cafe facade"
+            }
+          ]
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"starbucks\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22starbucks%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 4,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"starbucks\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22starbucks%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.starbucks.com.kz/en",
+          "finding": "Official site exposes product images and store locator, but no reusable exact-branch photograph was identified."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.starbucks.com.kz/en/terms-of-use",
+          "finding": "Rewards terms, not a reuse license for photographs."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:way/1449295053",
+      "name": "Cups coffee",
+      "address": null,
+      "location": {
+        "longitude": 71.4033936,
+        "latitude": 51.1325682
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 13,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:way/1449301315",
+      "name": "Starbucks",
+      "address": null,
+      "location": {
+        "longitude": 71.4037634,
+        "latitude": 51.1327269
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 14,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"starbucks\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22starbucks%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 4,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"starbucks\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22starbucks%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.starbucks.com.kz/en",
+          "finding": "Official site exposes product images and store locator, but no reusable exact-branch photograph was identified."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://www.starbucks.com.kz/en/terms-of-use",
+          "finding": "Rewards terms, not a reuse license for photographs."
+        }
+      ]
+    },
+    {
+      "poiId": "osm:way/1449317691",
+      "name": "Лепим и варим",
+      "address": null,
+      "location": {
+        "longitude": 71.4033443,
+        "latitude": 51.132337
+      },
+      "status": "no_verified_photo_found",
+      "acceptedTitles": [],
+      "missingReason": "No photograph with both exact branch identity and suitable verified reuse rights was found in the sources reviewed. Do not substitute another branch, a nearby mall, generic city view or stock imagery.",
+      "sources": [
+        {
+          "kind": "Commons geographic candidates",
+          "report": "data/reports/photo-geographic-candidates.json",
+          "candidates": 13,
+          "visuallyInspected": []
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"лепим и варим\" Astana",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22%D0%BB%D0%B5%D0%BF%D0%B8%D0%BC+%D0%B8+%D0%B2%D0%B0%D1%80%D0%B8%D0%BC%22+Astana&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Commons exact-name search",
+          "query": "\"лепим и варим\" Астана",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=%22%D0%BB%D0%B5%D0%BF%D0%B8%D0%BC+%D0%B8+%D0%B2%D0%B0%D1%80%D0%B8%D0%BC%22+%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0&srnamespace=6&srlimit=30&format=json",
+          "total": 0,
+          "result": "No exact branch photo; returned matches were unrelated files."
+        },
+        {
+          "kind": "Grouped indexed web search",
+          "result": "Other branch names searched with Astana/Астана and Commons/Flickr domain restrictions; no exact licensed candidate returned."
+        },
+        {
+          "kind": "Openverse",
+          "queries": [
+            "Astana cafe",
+            "Astana restaurant",
+            "Marrone Rosso",
+            "Astana Starbucks",
+            "Astana Rafe",
+            "Astana Drinkit",
+            "Astana Mado",
+            "Astana Tary"
+          ],
+          "result": "Reviewed broad licensed results do not depict this branch."
+        },
+        {
+          "kind": "official or photographer/editorial lead",
+          "url": "https://lepimivarim.ru/",
+          "finding": "Official site covers Astana but no reusable photo of an exact existing branch verified."
+        }
+      ]
+    }
+  ]
+}

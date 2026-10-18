@@ -1,0 +1,200 @@
+{
+  "version": "compound-before-v1",
+  "mode": "demo",
+  "source": "Fixed synthetic public-origin requests over the actual licensed dataset; no human usefulness grade",
+  "clock": {
+    "noon": "2026-10-18T07:00:00Z",
+    "evening": "2026-10-18T13:00:00Z"
+  },
+  "origins": {
+    "B": {
+      "longitude": 71.4165705,
+      "latitude": 51.1061652
+    },
+    "M": {
+      "longitude": 71.4073303,
+      "latitude": 51.0890897
+    },
+    "G": {
+      "longitude": 71.4714725,
+      "latitude": 51.1467674
+    }
+  },
+  "cases": [
+    {
+      "id": "CP-DEV-01",
+      "purpose": "Both coffee AND park are mandatory, not an OR shortlist",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Есть 40 минут: хочу кофе и парк рядом",
+        "availableMinutes": 40
+      },
+      "expected": {
+        "kinds": [
+          "recommendations"
+        ],
+        "stages": [
+          {
+            "category": "cafe"
+          },
+          {
+            "category": "park"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CP-DEV-02",
+      "purpose": "Explicit coffee then park and return, retain both stages",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Сначала кофе в кафе, потом прогулка в парке. Есть 60 минут, нужно вернуться к старту",
+        "availableMinutes": 60,
+        "returnToStart": true
+      },
+      "expected": {
+        "kinds": [
+          "recommendations"
+        ],
+        "stages": [
+          {
+            "category": "cafe"
+          },
+          {
+            "category": "park"
+          }
+        ],
+        "ordered": true
+      }
+    },
+    {
+      "id": "CP-DEV-03",
+      "purpose": "Source-backed Italian restaurant with pizza THEN park in the evening",
+      "request": {
+        "origin": {
+          "longitude": 71.4714725,
+          "latitude": 51.1467674
+        },
+        "startTime": "2026-10-18T13:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Сначала итальянский ресторан с пиццей, затем парк. Есть 90 минут вечером",
+        "availableMinutes": 90
+      },
+      "expected": {
+        "kinds": [
+          "recommendations"
+        ],
+        "stages": [
+          {
+            "venueType": "restaurant",
+            "cuisines": [
+              "italian",
+              "pizza"
+            ]
+          },
+          {
+            "category": "park"
+          }
+        ],
+        "ordered": true
+      }
+    },
+    {
+      "id": "CP-DEV-04",
+      "purpose": "Kazakh ordered coffee then park, preserve language and return",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "kk",
+        "maxDistanceMetres": 3000,
+        "query": "Алдымен кофе ішетін кафеге, содан соң саябаққа барғым келеді. 60 минут, бастапқы жерге қайту керек",
+        "availableMinutes": 60,
+        "returnToStart": true
+      },
+      "expected": {
+        "kinds": [
+          "recommendations"
+        ],
+        "stages": [
+          {
+            "category": "cafe"
+          },
+          {
+            "category": "park"
+          }
+        ],
+        "ordered": true
+      }
+    },
+    {
+      "id": "CP-DEV-05",
+      "purpose": "Cuisine plus restaurant type must have field evidence even without a park",
+      "request": {
+        "origin": {
+          "longitude": 71.4714725,
+          "latitude": 51.1467674
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Нужен именно итальянский ресторан с пиццей, есть 45 минут",
+        "availableMinutes": 45
+      },
+      "expected": {
+        "kinds": [
+          "recommendations"
+        ],
+        "stages": [
+          {
+            "venueType": "restaurant",
+            "cuisines": [
+              "italian",
+              "pizza"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "CP-DEV-06",
+      "purpose": "Contradictory required cafe stage and explicit no cafes need clarification/empty",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Сначала кафе, затем парк, но кафе не предлагай: без кафе",
+        "availableMinutes": 60,
+        "excludedCategories": [
+          "cafe"
+        ]
+      },
+      "expected": {
+        "kinds": [
+          "clarification",
+          "no_match"
+        ],
+        "empty": true
+      }
+    }
+  ]
+}

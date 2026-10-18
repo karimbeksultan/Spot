@@ -1,0 +1,92 @@
+{
+  "startedAt": "2026-10-16T14:53:41.217Z",
+  "finishedAt": "2026-10-16T14:54:47.252Z",
+  "status": "passed",
+  "endpoint": "http://127.0.0.1:3000",
+  "corpusSize": 98,
+  "plannedQueries": 3,
+  "completedQueries": 3,
+  "passedQueries": 3,
+  "methodology": "Sequential actual HTTP requests to local Spot with browser Origin header, using public OSM presets. No model/database/routing mocks. Nonempty cases require live Supabase hybrid + validated Ollama output + actual pedestrian plan within budget. The empty mandatory-outlet case requires hybrid retrieval and preserved hard constraints; generation is correctly skipped. Grounded identities/evidence and content hashes are checked against the collected corpus. This is an integration acceptance sample, not an independent human usefulness study.",
+  "p50Ms": 29363,
+  "p95Ms": 33515,
+  "results": [
+    {
+      "id": "mega_45_return",
+      "query": "Я возле Mega Silk Way, есть 45 минут, хочу прогуляться и вернуться",
+      "publicOriginId": "osm:way/499328514",
+      "status": "passed",
+      "latencyMs": 33515,
+      "checks": {
+        "httpSucceeded": true,
+        "realHybridRetrieval": true,
+        "timeAndReturnPreserved": true,
+        "uniquePoiIds": true,
+        "knownGroundedFacts": true,
+        "hardConstraintsPreserved": true,
+        "actualValidatedGeneration": true,
+        "oneToThreePlaces": true,
+        "actualPedestrianLegs": true,
+        "completeBudget": true
+      },
+      "mode": "live",
+      "retrieval": "supabase-hybrid",
+      "generation": "ollama-validated",
+      "returnedPoiIds": [
+        "osm:way/1456208624"
+      ],
+      "planStatus": "fits_estimate",
+      "totalMinutes": 40
+    },
+    {
+      "id": "child_60_botanical",
+      "query": "Я с ребёнком, есть час, хочу что-нибудь интересное неподалёку",
+      "publicOriginId": "osm:way/1196402246",
+      "status": "passed",
+      "latencyMs": 29363,
+      "checks": {
+        "httpSucceeded": true,
+        "realHybridRetrieval": true,
+        "timeAndReturnPreserved": true,
+        "uniquePoiIds": true,
+        "knownGroundedFacts": true,
+        "hardConstraintsPreserved": true,
+        "actualValidatedGeneration": true,
+        "oneToThreePlaces": true,
+        "actualPedestrianLegs": true,
+        "completeBudget": true
+      },
+      "mode": "live",
+      "retrieval": "supabase-hybrid",
+      "generation": "ollama-validated",
+      "returnedPoiIds": [
+        "osm:node/2691137163"
+      ],
+      "planStatus": "fits_estimate",
+      "totalMinutes": 53
+    },
+    {
+      "id": "mandatory_outlets",
+      "query": "Хочу кофе в тихом месте рядом, розетка обязательна",
+      "publicOriginId": "osm:way/1196402246",
+      "status": "passed",
+      "latencyMs": 3142,
+      "checks": {
+        "httpSucceeded": true,
+        "realHybridRetrieval": true,
+        "timeAndReturnPreserved": true,
+        "uniquePoiIds": true,
+        "knownGroundedFacts": true,
+        "hardConstraintsPreserved": true,
+        "emptyWithoutRelaxingOutlets": true,
+        "noInventedEmptyRoute": true
+      },
+      "mode": "retrieval-only",
+      "retrieval": "supabase-hybrid",
+      "generation": "template",
+      "returnedPoiIds": [],
+      "planStatus": "unverified",
+      "totalMinutes": null
+    }
+  ]
+}

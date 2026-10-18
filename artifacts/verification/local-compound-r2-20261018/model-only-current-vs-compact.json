@@ -1,0 +1,260 @@
+{
+  "startedAt": "2026-10-18T17:57:36.300100+00:00",
+  "scope": "model-only fixed real shortlist; no route or recommendation usefulness acceptance",
+  "originKind": "existing public MEGA Silk Way test origin, not personal GPS",
+  "loopbackBase": "http://127.0.0.1:11434",
+  "snapshotSha256Before": "cb8dcfff85509eb2498bb40b3b5edafb4f3d2995ca92844709da3bc8d4607fe9",
+  "modelSourceSha256Before": "0582dc1dac74431677d9aab612334f71e195b68f9bce312ac1cf0684fcd2c133",
+  "ollamaVersion": {
+    "version": "0.40.5"
+  },
+  "sourcePromptVersion": "spot-grounded-choices-v3",
+  "chatModel": "qwen3:0.6b",
+  "embeddingModel": "embeddinggemma",
+  "modelsAvailable": [
+    "qwen3:0.6b",
+    "embeddinggemma:latest"
+  ],
+  "initialLoadedModels": [],
+  "modelCapabilities": [
+    "completion",
+    "tools",
+    "thinking"
+  ],
+  "modelDefaultParameters": "repeat_penalty                 1\nstop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95",
+  "configuredOptions": {
+    "temperature": 0,
+    "num_predict": 50,
+    "num_thread": 2,
+    "num_ctx": 2048
+  },
+  "keepAlive": 0,
+  "think": false,
+  "resourcesBefore": {
+    "checkedAt": "2026-10-18T17:57:35.939858+00:00",
+    "totalRamGiB": 15.758,
+    "availableRamGiB": 3.338,
+    "memoryLoadPercent": 78,
+    "diskFreeGiB": 39.086
+  },
+  "paidRequests": 0,
+  "remoteModelRequests": 0,
+  "training": false,
+  "newModelDownloads": 0,
+  "appIndexDataMutations": 0,
+  "results": [
+    {
+      "case": "PUBLIC-COFFEE-PARK-40",
+      "publicQuery": "Хочу кофе, потом прогуляться в парке. Есть 40 минут, нужно вернуться.",
+      "availableMinutes": 40,
+      "candidateIds": [
+        "osm:node/12520559591",
+        "osm:node/14275682079",
+        "osm:node/9047331879",
+        "osm:way/1467797207",
+        "osm:way/1470723968",
+        "osm:way/1456208624"
+      ],
+      "candidateNames": [
+        "Лепим и варим",
+        "Drinkit",
+        "Starbucks",
+        "NU Park",
+        "Японский сад",
+        "Аллея мира и согласия"
+      ],
+      "embedding": {
+        "total_duration": 3668962000,
+        "load_duration": 3455033400,
+        "prompt_eval_count": 22,
+        "prompt_eval_cached_count": null,
+        "prompt_eval_duration": null,
+        "eval_count": null,
+        "eval_duration": null,
+        "done_reason": null,
+        "wallMs": 3672.5,
+        "total_duration_ms": 3668.962,
+        "load_duration_ms": 3455.033,
+        "prompt_eval_duration_ms": null,
+        "eval_duration_ms": null,
+        "dimensionsValid": true
+      },
+      "chat": [
+        {
+          "variant": "current-verbatim",
+          "total_duration": 14940982000,
+          "load_duration": 4246610100,
+          "prompt_eval_count": 576,
+          "prompt_eval_cached_count": 0,
+          "prompt_eval_duration": 9937064000,
+          "eval_count": 8,
+          "eval_duration": 724790000,
+          "done_reason": "stop",
+          "wallMs": 14954.135,
+          "total_duration_ms": 14940.982,
+          "load_duration_ms": 4246.61,
+          "prompt_eval_duration_ms": 9937.064,
+          "eval_duration_ms": 724.79,
+          "shortJsonResponse": "{\"indices\":[0,1]}",
+          "indicesContractValid": true,
+          "num_ctx": 2048,
+          "num_thread": 2,
+          "num_predict": 50,
+          "messageUtf8Bytes": 2661,
+          "resourcesAfter": {
+            "checkedAt": "2026-10-18T17:57:54.931029+00:00",
+            "totalRamGiB": 15.758,
+            "availableRamGiB": 2.606,
+            "memoryLoadPercent": 83,
+            "diskFreeGiB": 39.086
+          },
+          "loadedModelsAfter": []
+        },
+        {
+          "variant": "compact-experiment",
+          "total_duration": 14163031100,
+          "load_duration": 3451416900,
+          "prompt_eval_count": 404,
+          "prompt_eval_cached_count": 0,
+          "prompt_eval_duration": 9551623000,
+          "eval_count": 7,
+          "eval_duration": 1134103000,
+          "done_reason": "stop",
+          "wallMs": 14219.939,
+          "total_duration_ms": 14163.031,
+          "load_duration_ms": 3451.417,
+          "prompt_eval_duration_ms": 9551.623,
+          "eval_duration_ms": 1134.103,
+          "shortJsonResponse": "{\"indices\": [0]}",
+          "indicesContractValid": true,
+          "num_ctx": 2048,
+          "num_thread": 2,
+          "num_predict": 50,
+          "messageUtf8Bytes": 1746,
+          "resourcesAfter": {
+            "checkedAt": "2026-10-18T17:58:09.325434+00:00",
+            "totalRamGiB": 15.758,
+            "availableRamGiB": 2.534,
+            "memoryLoadPercent": 83,
+            "diskFreeGiB": 39.085
+          },
+          "loadedModelsAfter": []
+        }
+      ]
+    },
+    {
+      "case": "PUBLIC-ITALIAN-PARK-60",
+      "publicQuery": "Хочу итальянский ресторан, затем прогуляться в парке за 60 минут.",
+      "availableMinutes": 60,
+      "candidateIds": [
+        "osm:node/5857276421",
+        "osm:node/13230394599",
+        "osm:node/10064384673",
+        "osm:way/1467797207",
+        "osm:way/1470723968",
+        "osm:way/1456208624"
+      ],
+      "candidateNames": [
+        "Астана Кузин",
+        "Leto Cafe",
+        "Del Papa",
+        "NU Park",
+        "Японский сад",
+        "Аллея мира и согласия"
+      ],
+      "embedding": {
+        "total_duration": 4432578100,
+        "load_duration": 4213422000,
+        "prompt_eval_count": 20,
+        "prompt_eval_cached_count": null,
+        "prompt_eval_duration": null,
+        "eval_count": null,
+        "eval_duration": null,
+        "done_reason": null,
+        "wallMs": 4445.736,
+        "total_duration_ms": 4432.578,
+        "load_duration_ms": 4213.422,
+        "prompt_eval_duration_ms": null,
+        "eval_duration_ms": null,
+        "dimensionsValid": true
+      },
+      "chat": [
+        {
+          "variant": "current-verbatim",
+          "total_duration": 20246787300,
+          "load_duration": 5057797600,
+          "prompt_eval_count": 621,
+          "prompt_eval_cached_count": 0,
+          "prompt_eval_duration": 14247521000,
+          "eval_count": 8,
+          "eval_duration": 902516000,
+          "done_reason": "stop",
+          "wallMs": 20266.11,
+          "total_duration_ms": 20246.787,
+          "load_duration_ms": 5057.798,
+          "prompt_eval_duration_ms": 14247.521,
+          "eval_duration_ms": 902.516,
+          "shortJsonResponse": "{\"indices\":[0,1]}",
+          "indicesContractValid": true,
+          "num_ctx": 2048,
+          "num_thread": 2,
+          "num_predict": 50,
+          "messageUtf8Bytes": 2875,
+          "resourcesAfter": {
+            "checkedAt": "2026-10-18T17:58:34.272822+00:00",
+            "totalRamGiB": 15.758,
+            "availableRamGiB": 2.507,
+            "memoryLoadPercent": 84,
+            "diskFreeGiB": 39.085
+          },
+          "loadedModelsAfter": []
+        },
+        {
+          "variant": "compact-experiment",
+          "total_duration": 15667793500,
+          "load_duration": 4413305800,
+          "prompt_eval_count": 404,
+          "prompt_eval_cached_count": 0,
+          "prompt_eval_duration": 7618231000,
+          "eval_count": 22,
+          "eval_duration": 3590807000,
+          "done_reason": "stop",
+          "wallMs": 15683.1,
+          "total_duration_ms": 15667.793,
+          "load_duration_ms": 4413.306,
+          "prompt_eval_duration_ms": 7618.231,
+          "eval_duration_ms": 3590.807,
+          "shortJsonResponse": "{\n  \"indices\": [\n    0,\n    1,\n    2\n  ]\n}",
+          "indicesContractValid": true,
+          "num_ctx": 2048,
+          "num_thread": 2,
+          "num_predict": 50,
+          "messageUtf8Bytes": 1755,
+          "resourcesAfter": {
+            "checkedAt": "2026-10-18T17:58:50.104343+00:00",
+            "totalRamGiB": 15.758,
+            "availableRamGiB": 2.564,
+            "memoryLoadPercent": 83,
+            "diskFreeGiB": 39.084
+          },
+          "loadedModelsAfter": []
+        }
+      ]
+    }
+  ],
+  "loopbackHttpRequests": 14,
+  "completedAt": "2026-10-18T17:58:50.238899+00:00",
+  "resourcesAfter": {
+    "checkedAt": "2026-10-18T17:58:50.239913+00:00",
+    "totalRamGiB": 15.758,
+    "availableRamGiB": 3.33,
+    "memoryLoadPercent": 78,
+    "diskFreeGiB": 39.084
+  },
+  "snapshotSha256After": "cb8dcfff85509eb2498bb40b3b5edafb4f3d2995ca92844709da3bc8d4607fe9",
+  "modelSourceSha256After": "0582dc1dac74431677d9aab612334f71e195b68f9bce312ac1cf0684fcd2c133",
+  "snapshotChangedDuringMicrobenchmark": false,
+  "modelSourceChangedDuringMicrobenchmark": false,
+  "complete": true,
+  "modelCalls": 6
+}

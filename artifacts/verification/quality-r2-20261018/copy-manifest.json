@@ -1,0 +1,10 @@
+{
+  "copiedAt": "2026-10-18T18:10:27.784Z",
+  "files": {
+    "before.json": "b7e7defed44af0f08529780a6e761d6629c6318d36fa7163124a100fba0e46af",
+    "after.json": "4ed5a90d38c0516e48502709265d1093a16bf1b8057d62e1e2d8cddb473aa3b2",
+    "compound-development.before.json": "44a448074f891e0b3d7a5e00d981204ea67e151775ff5771769fe194266123d4",
+    "compound-acceptance.before.json": "9045bf74966855e0253e9da0381270363cba49cc861a47e033ad8cf65ac8d5c0",
+    "manifest-before.json": "6d0d3de22a140a2c4d8f9c6f71a82f4f7a5ac6f8f74eb423c0991ef510c70551"
+  }
+}

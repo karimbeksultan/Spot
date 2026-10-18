@@ -1,0 +1,10 @@
+{
+  "queries": 18,
+  "expectedBehaviorPassed": 18,
+  "hardConstraintsPassed": 18,
+  "evidenceChecksPassed": 18,
+  "routeHonestyPassed": 18,
+  "p50Ms": 217,
+  "p95Ms": 629,
+  "failures": []
+}

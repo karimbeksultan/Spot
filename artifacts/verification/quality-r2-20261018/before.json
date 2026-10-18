@@ -1,0 +1,2301 @@
+{
+  "version": "compound-before-v1",
+  "createdAt": "2026-10-18T17:58:37.160Z",
+  "revision": {
+    "head": "eea69810ee65d44360597cbf22691c6237c3ac5a",
+    "branch": "codex/spot-contract-harness",
+    "codeDigest": "38b0380549c6b8b8b86b92479020fc1d0b639603ed0748bb93a481f93eac1dc4"
+  },
+  "codeDigestAfter": "38b0380549c6b8b8b86b92479020fc1d0b639603ed0748bb93a481f93eac1dc4",
+  "sourceUnchanged": true,
+  "dataDigest": "cb8dcfff85509eb2498bb40b3b5edafb4f3d2995ca92844709da3bc8d4607fe9",
+  "mode": "demo",
+  "networkAttempts": 0,
+  "paidRequests": 0,
+  "training": false,
+  "total": 14,
+  "passed": 5,
+  "failed": 9,
+  "methodology": "Fixed development/acceptance cases, deterministic semantic-stage/source-cuisine assertions; no LLM judge, no jury grade, no route feasibility claim in demo; every selected item must match at least one mandatory stage; this additional assertion is computed only from the same saved actual responses, with no new implementation run",
+  "results": [
+    {
+      "id": "CP-DEV-01",
+      "set": "development",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Есть 40 минут: хочу кофе и парк рядом",
+        "availableMinutes": 40
+      },
+      "expected": {
+        "kinds": [
+          "recommendations"
+        ],
+        "stages": [
+          {
+            "category": "cafe"
+          },
+          {
+            "category": "park"
+          }
+        ]
+      },
+      "status": "passed",
+      "failedAssertions": [],
+      "assertions": {
+        "expectedKind": true,
+        "emptyWhenRequired": true,
+        "mandatoryStageCoverage": true,
+        "mandatoryStageOrder": true,
+        "cuisineFieldEvidence": true,
+        "requestedFiveMinutesNotRaised": true,
+        "clarificationCode": true,
+        "knownSourceIds": true,
+        "evidenceMembership": true,
+        "noNetwork": true,
+        "honestRoute": true,
+        "allSelectedMatchStages": true
+      },
+      "elapsedMs": 405,
+      "actual": {
+        "kind": "recommendations",
+        "mode": "demo",
+        "resultKind": "alternatives",
+        "context": {
+          "query": "Есть 40 минут: хочу кофе и парк рядом",
+          "origin": {
+            "longitude": 71.4165705,
+            "latitude": 51.1061652
+          },
+          "availableMinutes": 40,
+          "returnToStart": false,
+          "requiredFeatures": [],
+          "excludedCategories": [],
+          "excludedPoiIds": [],
+          "keepPoiIds": [],
+          "maxDistanceMetres": 3000,
+          "confirmedOpen": false,
+          "startTime": "2026-10-18T07:00:00Z",
+          "interests": [
+            "cafe",
+            "park",
+            "landmark"
+          ],
+          "language": "ru",
+          "budgetKzt": null,
+          "strictBudget": false,
+          "transport": "walking",
+          "groupSize": 1,
+          "airportDeadline": null
+        },
+        "items": [
+          {
+            "id": "osm:way/1196402246",
+            "name": "Ботанический сад",
+            "category": "park",
+            "sourceUrl": "https://www.openstreetmap.org/way/1196402246",
+            "visitMinutes": 11,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:way/1196402246:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:way/1196402246:category",
+                "poiId": "osm:way/1196402246",
+                "field": "category",
+                "value": "park",
+                "sourceUrl": "https://www.openstreetmap.org/way/1196402246",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": null,
+            "sourceCuisine": null
+          },
+          {
+            "id": "osm:node/12098662467",
+            "name": "Canele",
+            "category": "cafe",
+            "sourceUrl": "https://www.openstreetmap.org/node/12098662467",
+            "visitMinutes": 11,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:node/12098662467:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:node/12098662467:category",
+                "poiId": "osm:node/12098662467",
+                "field": "category",
+                "value": "cafe",
+                "sourceUrl": "https://www.openstreetmap.org/node/12098662467",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              },
+              {
+                "id": "osm:node/12098662467:opening_hours",
+                "poiId": "osm:node/12098662467",
+                "field": "opening_hours",
+                "value": "Mo-Su 09:00-22:00",
+                "sourceUrl": "https://www.openstreetmap.org/node/12098662467",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": "cafe",
+            "sourceCuisine": null
+          }
+        ],
+        "plan": {
+          "visitMinutes": 22,
+          "reserveMinutes": 5,
+          "status": "unverified",
+          "travelMinutes": null,
+          "totalMinutes": null,
+          "warnings": [
+            "Пеший путь не рассчитан. Длительность плана и возврат во время не подтверждены."
+          ],
+          "returnToStart": false,
+          "legs": []
+        },
+        "clarification": null,
+        "warnings": [
+          "Демо по реальному снимку OSM. Облачные сервисы не вызываются."
+        ],
+        "provenance": {
+          "dataSource": "real_snapshot",
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "clock": "2026-10-18T07:00:00Z"
+        },
+        "diagnostics": {
+          "candidateCount": 371,
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "exclusions": {},
+          "elapsedMs": 387
+        }
+      },
+      "routeFitAssessment": "not_run: demo deliberately has no walking provider; semantic coverage is tested without claiming route feasibility",
+      "orderedStageContractPresent": false
+    },
+    {
+      "id": "CP-DEV-02",
+      "set": "development",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Сначала кофе в кафе, потом прогулка в парке. Есть 60 минут, нужно вернуться к старту",
+        "availableMinutes": 60,
+        "returnToStart": true
+      },
+      "expected": {
+        "kinds": [
+          "recommendations"
+        ],
+        "stages": [
+          {
+            "category": "cafe"
+          },
+          {
+            "category": "park"
+          }
+        ],
+        "ordered": true
+      },
+      "status": "failed",
+      "failedAssertions": [
+        "mandatoryStageCoverage",
+        "mandatoryStageOrder"
+      ],
+      "assertions": {
+        "expectedKind": true,
+        "emptyWhenRequired": true,
+        "mandatoryStageCoverage": false,
+        "mandatoryStageOrder": false,
+        "cuisineFieldEvidence": true,
+        "requestedFiveMinutesNotRaised": true,
+        "clarificationCode": true,
+        "knownSourceIds": true,
+        "evidenceMembership": true,
+        "noNetwork": true,
+        "honestRoute": true,
+        "allSelectedMatchStages": true
+      },
+      "elapsedMs": 174,
+      "actual": {
+        "kind": "recommendations",
+        "mode": "demo",
+        "resultKind": "alternatives",
+        "context": {
+          "query": "Сначала кофе в кафе, потом прогулка в парке. Есть 60 минут, нужно вернуться к старту",
+          "origin": {
+            "longitude": 71.4165705,
+            "latitude": 51.1061652
+          },
+          "availableMinutes": 60,
+          "returnToStart": true,
+          "requiredFeatures": [],
+          "excludedCategories": [],
+          "excludedPoiIds": [],
+          "keepPoiIds": [],
+          "maxDistanceMetres": 3000,
+          "confirmedOpen": false,
+          "startTime": "2026-10-18T07:00:00Z",
+          "interests": [
+            "cafe",
+            "park",
+            "landmark"
+          ],
+          "language": "ru",
+          "budgetKzt": null,
+          "strictBudget": false,
+          "transport": "walking",
+          "groupSize": 1,
+          "airportDeadline": null
+        },
+        "items": [
+          {
+            "id": "osm:node/12098662467",
+            "name": "Canele",
+            "category": "cafe",
+            "sourceUrl": "https://www.openstreetmap.org/node/12098662467",
+            "visitMinutes": 12,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:node/12098662467:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:node/12098662467:category",
+                "poiId": "osm:node/12098662467",
+                "field": "category",
+                "value": "cafe",
+                "sourceUrl": "https://www.openstreetmap.org/node/12098662467",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              },
+              {
+                "id": "osm:node/12098662467:opening_hours",
+                "poiId": "osm:node/12098662467",
+                "field": "opening_hours",
+                "value": "Mo-Su 09:00-22:00",
+                "sourceUrl": "https://www.openstreetmap.org/node/12098662467",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": "cafe",
+            "sourceCuisine": null
+          },
+          {
+            "id": "osm:node/11206429884",
+            "name": "JumpinGoat",
+            "category": "cafe",
+            "sourceUrl": "https://www.openstreetmap.org/node/11206429884",
+            "visitMinutes": 12,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:node/11206429884:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:node/11206429884:category",
+                "poiId": "osm:node/11206429884",
+                "field": "category",
+                "value": "cafe",
+                "sourceUrl": "https://www.openstreetmap.org/node/11206429884",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              },
+              {
+                "id": "osm:node/11206429884:opening_hours",
+                "poiId": "osm:node/11206429884",
+                "field": "opening_hours",
+                "value": "Mo-Su 10:00-22:00",
+                "sourceUrl": "https://www.openstreetmap.org/node/11206429884",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": "cafe",
+            "sourceCuisine": "coffee_shop"
+          },
+          {
+            "id": "osm:node/11783576043",
+            "name": "Drinkit",
+            "category": "cafe",
+            "sourceUrl": "https://www.openstreetmap.org/node/11783576043",
+            "visitMinutes": 12,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:node/11783576043:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:node/11783576043:category",
+                "poiId": "osm:node/11783576043",
+                "field": "category",
+                "value": "cafe",
+                "sourceUrl": "https://www.openstreetmap.org/node/11783576043",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              },
+              {
+                "id": "osm:node/11783576043:opening_hours",
+                "poiId": "osm:node/11783576043",
+                "field": "opening_hours",
+                "value": "Mo-Su 08:00-22:00",
+                "sourceUrl": "https://www.openstreetmap.org/node/11783576043",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": "cafe",
+            "sourceCuisine": "coffee_shop"
+          }
+        ],
+        "plan": {
+          "visitMinutes": 36,
+          "reserveMinutes": 5,
+          "status": "unverified",
+          "travelMinutes": null,
+          "totalMinutes": null,
+          "warnings": [
+            "Пеший путь не рассчитан. Длительность плана и возврат во время не подтверждены."
+          ],
+          "returnToStart": true,
+          "legs": []
+        },
+        "clarification": null,
+        "warnings": [
+          "Демо по реальному снимку OSM. Облачные сервисы не вызываются."
+        ],
+        "provenance": {
+          "dataSource": "real_snapshot",
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "clock": "2026-10-18T07:00:00Z"
+        },
+        "diagnostics": {
+          "candidateCount": 371,
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "exclusions": {},
+          "elapsedMs": 172
+        }
+      },
+      "routeFitAssessment": "not_run: demo deliberately has no walking provider; semantic coverage is tested without claiming route feasibility",
+      "orderedStageContractPresent": false
+    },
+    {
+      "id": "CP-DEV-03",
+      "set": "development",
+      "request": {
+        "origin": {
+          "longitude": 71.4714725,
+          "latitude": 51.1467674
+        },
+        "startTime": "2026-10-18T13:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Сначала итальянский ресторан с пиццей, затем парк. Есть 90 минут вечером",
+        "availableMinutes": 90
+      },
+      "expected": {
+        "kinds": [
+          "recommendations"
+        ],
+        "stages": [
+          {
+            "venueType": "restaurant",
+            "cuisines": [
+              "italian",
+              "pizza"
+            ]
+          },
+          {
+            "category": "park"
+          }
+        ],
+        "ordered": true
+      },
+      "status": "failed",
+      "failedAssertions": [
+        "mandatoryStageCoverage",
+        "mandatoryStageOrder",
+        "cuisineFieldEvidence"
+      ],
+      "assertions": {
+        "expectedKind": true,
+        "emptyWhenRequired": true,
+        "mandatoryStageCoverage": false,
+        "mandatoryStageOrder": false,
+        "cuisineFieldEvidence": false,
+        "requestedFiveMinutesNotRaised": true,
+        "clarificationCode": true,
+        "knownSourceIds": true,
+        "evidenceMembership": true,
+        "noNetwork": true,
+        "honestRoute": true,
+        "allSelectedMatchStages": true
+      },
+      "elapsedMs": 214,
+      "actual": {
+        "kind": "recommendations",
+        "mode": "demo",
+        "resultKind": "alternatives",
+        "context": {
+          "query": "Сначала итальянский ресторан с пиццей, затем парк. Есть 90 минут вечером",
+          "origin": {
+            "longitude": 71.4714725,
+            "latitude": 51.1467674
+          },
+          "availableMinutes": 90,
+          "returnToStart": false,
+          "requiredFeatures": [],
+          "excludedCategories": [],
+          "excludedPoiIds": [],
+          "keepPoiIds": [],
+          "maxDistanceMetres": 3000,
+          "confirmedOpen": false,
+          "startTime": "2026-10-18T13:00:00Z",
+          "interests": [
+            "park",
+            "landmark"
+          ],
+          "language": "ru",
+          "budgetKzt": null,
+          "strictBudget": false,
+          "transport": "walking",
+          "groupSize": 1,
+          "airportDeadline": null
+        },
+        "items": [
+          {
+            "id": "osm:way/536287083",
+            "name": "Парк без названия (OSM way/536287083)",
+            "category": "park",
+            "sourceUrl": "https://www.openstreetmap.org/way/536287083",
+            "visitMinutes": 15,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:way/536287083:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:way/536287083:category",
+                "poiId": "osm:way/536287083",
+                "field": "category",
+                "value": "park",
+                "sourceUrl": "https://www.openstreetmap.org/way/536287083",
+                "fetchedAt": "2026-10-18T16:50:23.296Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": null,
+            "sourceCuisine": null
+          },
+          {
+            "id": "osm:way/536287088",
+            "name": "Парк без названия (OSM way/536287088)",
+            "category": "park",
+            "sourceUrl": "https://www.openstreetmap.org/way/536287088",
+            "visitMinutes": 15,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:way/536287088:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:way/536287088:category",
+                "poiId": "osm:way/536287088",
+                "field": "category",
+                "value": "park",
+                "sourceUrl": "https://www.openstreetmap.org/way/536287088",
+                "fetchedAt": "2026-10-18T16:50:23.296Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": null,
+            "sourceCuisine": null
+          },
+          {
+            "id": "osm:way/509262352",
+            "name": "Парк без названия (OSM way/509262352)",
+            "category": "park",
+            "sourceUrl": "https://www.openstreetmap.org/way/509262352",
+            "visitMinutes": 15,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:way/509262352:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:way/509262352:category",
+                "poiId": "osm:way/509262352",
+                "field": "category",
+                "value": "park",
+                "sourceUrl": "https://www.openstreetmap.org/way/509262352",
+                "fetchedAt": "2026-10-18T16:50:23.296Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": null,
+            "sourceCuisine": null
+          }
+        ],
+        "plan": {
+          "visitMinutes": 45,
+          "reserveMinutes": 5,
+          "status": "unverified",
+          "travelMinutes": null,
+          "totalMinutes": null,
+          "warnings": [
+            "Пеший путь не рассчитан. Длительность плана и возврат во время не подтверждены."
+          ],
+          "returnToStart": false,
+          "legs": []
+        },
+        "clarification": null,
+        "warnings": [
+          "Демо по реальному снимку OSM. Облачные сервисы не вызываются."
+        ],
+        "provenance": {
+          "dataSource": "real_snapshot",
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "clock": "2026-10-18T13:00:00Z"
+        },
+        "diagnostics": {
+          "candidateCount": 427,
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "exclusions": {},
+          "elapsedMs": 213
+        }
+      },
+      "routeFitAssessment": "not_run: demo deliberately has no walking provider; semantic coverage is tested without claiming route feasibility",
+      "orderedStageContractPresent": false
+    },
+    {
+      "id": "CP-DEV-04",
+      "set": "development",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "kk",
+        "maxDistanceMetres": 3000,
+        "query": "Алдымен кофе ішетін кафеге, содан соң саябаққа барғым келеді. 60 минут, бастапқы жерге қайту керек",
+        "availableMinutes": 60,
+        "returnToStart": true
+      },
+      "expected": {
+        "kinds": [
+          "recommendations"
+        ],
+        "stages": [
+          {
+            "category": "cafe"
+          },
+          {
+            "category": "park"
+          }
+        ],
+        "ordered": true
+      },
+      "status": "failed",
+      "failedAssertions": [
+        "mandatoryStageCoverage",
+        "mandatoryStageOrder"
+      ],
+      "assertions": {
+        "expectedKind": true,
+        "emptyWhenRequired": true,
+        "mandatoryStageCoverage": false,
+        "mandatoryStageOrder": false,
+        "cuisineFieldEvidence": true,
+        "requestedFiveMinutesNotRaised": true,
+        "clarificationCode": true,
+        "knownSourceIds": true,
+        "evidenceMembership": true,
+        "noNetwork": true,
+        "honestRoute": true,
+        "allSelectedMatchStages": true
+      },
+      "elapsedMs": 156,
+      "actual": {
+        "kind": "recommendations",
+        "mode": "demo",
+        "resultKind": "alternatives",
+        "context": {
+          "query": "Алдымен кофе ішетін кафеге, содан соң саябаққа барғым келеді. 60 минут, бастапқы жерге қайту керек",
+          "origin": {
+            "longitude": 71.4165705,
+            "latitude": 51.1061652
+          },
+          "availableMinutes": 60,
+          "returnToStart": true,
+          "requiredFeatures": [],
+          "excludedCategories": [],
+          "excludedPoiIds": [],
+          "keepPoiIds": [],
+          "maxDistanceMetres": 3000,
+          "confirmedOpen": false,
+          "startTime": "2026-10-18T07:00:00Z",
+          "interests": [
+            "cafe",
+            "park",
+            "landmark"
+          ],
+          "language": "kk",
+          "budgetKzt": null,
+          "strictBudget": false,
+          "transport": "walking",
+          "groupSize": 1,
+          "airportDeadline": null
+        },
+        "items": [
+          {
+            "id": "osm:node/12098662467",
+            "name": "Canele",
+            "category": "cafe",
+            "sourceUrl": "https://www.openstreetmap.org/node/12098662467",
+            "visitMinutes": 12,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:node/12098662467:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:node/12098662467:category",
+                "poiId": "osm:node/12098662467",
+                "field": "category",
+                "value": "cafe",
+                "sourceUrl": "https://www.openstreetmap.org/node/12098662467",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              },
+              {
+                "id": "osm:node/12098662467:opening_hours",
+                "poiId": "osm:node/12098662467",
+                "field": "opening_hours",
+                "value": "Mo-Su 09:00-22:00",
+                "sourceUrl": "https://www.openstreetmap.org/node/12098662467",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": "cafe",
+            "sourceCuisine": null
+          },
+          {
+            "id": "osm:node/11206429884",
+            "name": "JumpinGoat",
+            "category": "cafe",
+            "sourceUrl": "https://www.openstreetmap.org/node/11206429884",
+            "visitMinutes": 12,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:node/11206429884:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:node/11206429884:category",
+                "poiId": "osm:node/11206429884",
+                "field": "category",
+                "value": "cafe",
+                "sourceUrl": "https://www.openstreetmap.org/node/11206429884",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              },
+              {
+                "id": "osm:node/11206429884:opening_hours",
+                "poiId": "osm:node/11206429884",
+                "field": "opening_hours",
+                "value": "Mo-Su 10:00-22:00",
+                "sourceUrl": "https://www.openstreetmap.org/node/11206429884",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": "cafe",
+            "sourceCuisine": "coffee_shop"
+          },
+          {
+            "id": "osm:node/11783576043",
+            "name": "Drinkit",
+            "category": "cafe",
+            "sourceUrl": "https://www.openstreetmap.org/node/11783576043",
+            "visitMinutes": 12,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:node/11783576043:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:node/11783576043:category",
+                "poiId": "osm:node/11783576043",
+                "field": "category",
+                "value": "cafe",
+                "sourceUrl": "https://www.openstreetmap.org/node/11783576043",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              },
+              {
+                "id": "osm:node/11783576043:opening_hours",
+                "poiId": "osm:node/11783576043",
+                "field": "opening_hours",
+                "value": "Mo-Su 08:00-22:00",
+                "sourceUrl": "https://www.openstreetmap.org/node/11783576043",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": "cafe",
+            "sourceCuisine": "coffee_shop"
+          }
+        ],
+        "plan": {
+          "visitMinutes": 36,
+          "reserveMinutes": 5,
+          "status": "unverified",
+          "travelMinutes": null,
+          "totalMinutes": null,
+          "warnings": [
+            "Пеший путь не рассчитан. Длительность плана и возврат во время не подтверждены."
+          ],
+          "returnToStart": true,
+          "legs": []
+        },
+        "clarification": null,
+        "warnings": [
+          "Демо по реальному снимку OSM. Облачные сервисы не вызываются."
+        ],
+        "provenance": {
+          "dataSource": "real_snapshot",
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "clock": "2026-10-18T07:00:00Z"
+        },
+        "diagnostics": {
+          "candidateCount": 371,
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "exclusions": {},
+          "elapsedMs": 155
+        }
+      },
+      "routeFitAssessment": "not_run: demo deliberately has no walking provider; semantic coverage is tested without claiming route feasibility",
+      "orderedStageContractPresent": false
+    },
+    {
+      "id": "CP-DEV-05",
+      "set": "development",
+      "request": {
+        "origin": {
+          "longitude": 71.4714725,
+          "latitude": 51.1467674
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Нужен именно итальянский ресторан с пиццей, есть 45 минут",
+        "availableMinutes": 45
+      },
+      "expected": {
+        "kinds": [
+          "recommendations"
+        ],
+        "stages": [
+          {
+            "venueType": "restaurant",
+            "cuisines": [
+              "italian",
+              "pizza"
+            ]
+          }
+        ]
+      },
+      "status": "failed",
+      "failedAssertions": [
+        "cuisineFieldEvidence",
+        "allSelectedMatchStages"
+      ],
+      "assertions": {
+        "expectedKind": true,
+        "emptyWhenRequired": true,
+        "mandatoryStageCoverage": true,
+        "mandatoryStageOrder": true,
+        "cuisineFieldEvidence": false,
+        "requestedFiveMinutesNotRaised": true,
+        "clarificationCode": true,
+        "knownSourceIds": true,
+        "evidenceMembership": true,
+        "noNetwork": true,
+        "honestRoute": true,
+        "allSelectedMatchStages": false
+      },
+      "elapsedMs": 183,
+      "actual": {
+        "kind": "recommendations",
+        "mode": "demo",
+        "resultKind": "alternatives",
+        "context": {
+          "query": "Нужен именно итальянский ресторан с пиццей, есть 45 минут",
+          "origin": {
+            "longitude": 71.4714725,
+            "latitude": 51.1467674
+          },
+          "availableMinutes": 45,
+          "returnToStart": false,
+          "requiredFeatures": [],
+          "excludedCategories": [],
+          "excludedPoiIds": [],
+          "keepPoiIds": [],
+          "maxDistanceMetres": 3000,
+          "confirmedOpen": false,
+          "startTime": "2026-10-18T07:00:00Z",
+          "interests": [],
+          "language": "ru",
+          "budgetKzt": null,
+          "strictBudget": false,
+          "transport": "walking",
+          "groupSize": 1,
+          "airportDeadline": null
+        },
+        "items": [
+          {
+            "id": "osm:node/4409067789",
+            "name": "The Garden",
+            "category": "other",
+            "sourceUrl": "https://www.openstreetmap.org/node/4409067789",
+            "visitMinutes": 10,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:node/4409067789:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:node/4409067789:category",
+                "poiId": "osm:node/4409067789",
+                "field": "category",
+                "value": "other",
+                "sourceUrl": "https://www.openstreetmap.org/node/4409067789",
+                "fetchedAt": "2026-10-18T17:20:40.150Z",
+                "confirmedAt": null
+              },
+              {
+                "id": "osm:node/4409067789:opening_hours",
+                "poiId": "osm:node/4409067789",
+                "field": "opening_hours",
+                "value": "Mo-Su 12:00-01:00",
+                "sourceUrl": "https://www.openstreetmap.org/node/4409067789",
+                "fetchedAt": "2026-10-18T17:20:40.150Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": "restaurant",
+            "sourceCuisine": "french;cake;coffee_shop;steak_house;pasta;italian;pizza;chicken;italian_pizza"
+          },
+          {
+            "id": "osm:node/453247457",
+            "name": "Арарат",
+            "category": "other",
+            "sourceUrl": "https://www.openstreetmap.org/node/453247457",
+            "visitMinutes": 10,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:node/453247457:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:node/453247457:category",
+                "poiId": "osm:node/453247457",
+                "field": "category",
+                "value": "other",
+                "sourceUrl": "https://www.openstreetmap.org/node/453247457",
+                "fetchedAt": "2026-10-18T17:20:40.150Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": "restaurant",
+            "sourceCuisine": null
+          }
+        ],
+        "plan": {
+          "visitMinutes": 20,
+          "reserveMinutes": 5,
+          "status": "unverified",
+          "travelMinutes": null,
+          "totalMinutes": null,
+          "warnings": [
+            "Пеший путь не рассчитан. Длительность плана и возврат во время не подтверждены."
+          ],
+          "returnToStart": false,
+          "legs": []
+        },
+        "clarification": null,
+        "warnings": [
+          "Демо по реальному снимку OSM. Облачные сервисы не вызываются."
+        ],
+        "provenance": {
+          "dataSource": "real_snapshot",
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "clock": "2026-10-18T07:00:00Z"
+        },
+        "diagnostics": {
+          "candidateCount": 427,
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "exclusions": {},
+          "elapsedMs": 182
+        }
+      },
+      "routeFitAssessment": "not_run: demo deliberately has no walking provider; semantic coverage is tested without claiming route feasibility",
+      "orderedStageContractPresent": false
+    },
+    {
+      "id": "CP-DEV-06",
+      "set": "development",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Сначала кафе, затем парк, но кафе не предлагай: без кафе",
+        "availableMinutes": 60,
+        "excludedCategories": [
+          "cafe"
+        ]
+      },
+      "expected": {
+        "kinds": [
+          "clarification",
+          "no_match"
+        ],
+        "empty": true
+      },
+      "status": "failed",
+      "failedAssertions": [
+        "expectedKind",
+        "emptyWhenRequired"
+      ],
+      "assertions": {
+        "expectedKind": false,
+        "emptyWhenRequired": false,
+        "mandatoryStageCoverage": true,
+        "mandatoryStageOrder": true,
+        "cuisineFieldEvidence": true,
+        "requestedFiveMinutesNotRaised": true,
+        "clarificationCode": true,
+        "knownSourceIds": true,
+        "evidenceMembership": true,
+        "noNetwork": true,
+        "honestRoute": true,
+        "allSelectedMatchStages": true
+      },
+      "elapsedMs": 111,
+      "actual": {
+        "kind": "recommendations",
+        "mode": "demo",
+        "resultKind": "alternatives",
+        "context": {
+          "query": "Сначала кафе, затем парк, но кафе не предлагай: без кафе",
+          "origin": {
+            "longitude": 71.4165705,
+            "latitude": 51.1061652
+          },
+          "availableMinutes": 60,
+          "returnToStart": false,
+          "requiredFeatures": [],
+          "excludedCategories": [
+            "cafe"
+          ],
+          "excludedPoiIds": [],
+          "keepPoiIds": [],
+          "maxDistanceMetres": 3000,
+          "confirmedOpen": false,
+          "startTime": "2026-10-18T07:00:00Z",
+          "interests": [
+            "cafe",
+            "park",
+            "landmark"
+          ],
+          "language": "ru",
+          "budgetKzt": null,
+          "strictBudget": false,
+          "transport": "walking",
+          "groupSize": 1,
+          "airportDeadline": null
+        },
+        "items": [
+          {
+            "id": "osm:way/1196402246",
+            "name": "Ботанический сад",
+            "category": "park",
+            "sourceUrl": "https://www.openstreetmap.org/way/1196402246",
+            "visitMinutes": 12,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:way/1196402246:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:way/1196402246:category",
+                "poiId": "osm:way/1196402246",
+                "field": "category",
+                "value": "park",
+                "sourceUrl": "https://www.openstreetmap.org/way/1196402246",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": null,
+            "sourceCuisine": null
+          },
+          {
+            "id": "osm:way/1204592699",
+            "name": "Парк без названия (OSM way/1204592699)",
+            "category": "park",
+            "sourceUrl": "https://www.openstreetmap.org/way/1204592699",
+            "visitMinutes": 12,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:way/1204592699:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:way/1204592699:category",
+                "poiId": "osm:way/1204592699",
+                "field": "category",
+                "value": "park",
+                "sourceUrl": "https://www.openstreetmap.org/way/1204592699",
+                "fetchedAt": "2026-10-18T16:50:23.296Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": null,
+            "sourceCuisine": null
+          },
+          {
+            "id": "osm:way/258615112",
+            "name": "Парк без названия (OSM way/258615112)",
+            "category": "park",
+            "sourceUrl": "https://www.openstreetmap.org/way/258615112",
+            "visitMinutes": 12,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:way/258615112:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:way/258615112:category",
+                "poiId": "osm:way/258615112",
+                "field": "category",
+                "value": "park",
+                "sourceUrl": "https://www.openstreetmap.org/way/258615112",
+                "fetchedAt": "2026-10-18T16:50:23.296Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": null,
+            "sourceCuisine": null
+          }
+        ],
+        "plan": {
+          "visitMinutes": 36,
+          "reserveMinutes": 5,
+          "status": "unverified",
+          "travelMinutes": null,
+          "totalMinutes": null,
+          "warnings": [
+            "Пеший путь не рассчитан. Длительность плана и возврат во время не подтверждены."
+          ],
+          "returnToStart": false,
+          "legs": []
+        },
+        "clarification": null,
+        "warnings": [
+          "Демо по реальному снимку OSM. Облачные сервисы не вызываются."
+        ],
+        "provenance": {
+          "dataSource": "real_snapshot",
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "clock": "2026-10-18T07:00:00Z"
+        },
+        "diagnostics": {
+          "candidateCount": 371,
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "exclusions": {
+            "excluded_category": 57
+          },
+          "elapsedMs": 111
+        }
+      },
+      "routeFitAssessment": "not_run: demo deliberately has no walking provider; semantic coverage is tested without claiming route feasibility",
+      "orderedStageContractPresent": false
+    },
+    {
+      "id": "CP-ACC-01",
+      "set": "acceptance",
+      "request": {
+        "origin": {
+          "longitude": 71.4714725,
+          "latitude": 51.1467674
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Сначала ресторан строго саамской кухни, затем парк. 90 минут",
+        "availableMinutes": 90
+      },
+      "expected": {
+        "kinds": [
+          "no_match"
+        ],
+        "empty": true
+      },
+      "status": "failed",
+      "failedAssertions": [
+        "expectedKind",
+        "emptyWhenRequired"
+      ],
+      "assertions": {
+        "expectedKind": false,
+        "emptyWhenRequired": false,
+        "mandatoryStageCoverage": true,
+        "mandatoryStageOrder": true,
+        "cuisineFieldEvidence": true,
+        "requestedFiveMinutesNotRaised": true,
+        "clarificationCode": true,
+        "knownSourceIds": true,
+        "evidenceMembership": true,
+        "noNetwork": true,
+        "honestRoute": true,
+        "allSelectedMatchStages": true
+      },
+      "elapsedMs": 119,
+      "actual": {
+        "kind": "recommendations",
+        "mode": "demo",
+        "resultKind": "alternatives",
+        "context": {
+          "query": "Сначала ресторан строго саамской кухни, затем парк. 90 минут",
+          "origin": {
+            "longitude": 71.4714725,
+            "latitude": 51.1467674
+          },
+          "availableMinutes": 90,
+          "returnToStart": false,
+          "requiredFeatures": [],
+          "excludedCategories": [],
+          "excludedPoiIds": [],
+          "keepPoiIds": [],
+          "maxDistanceMetres": 3000,
+          "confirmedOpen": false,
+          "startTime": "2026-10-18T07:00:00Z",
+          "interests": [
+            "park",
+            "landmark"
+          ],
+          "language": "ru",
+          "budgetKzt": null,
+          "strictBudget": false,
+          "transport": "walking",
+          "groupSize": 1,
+          "airportDeadline": null
+        },
+        "items": [
+          {
+            "id": "osm:way/536287083",
+            "name": "Парк без названия (OSM way/536287083)",
+            "category": "park",
+            "sourceUrl": "https://www.openstreetmap.org/way/536287083",
+            "visitMinutes": 15,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:way/536287083:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:way/536287083:category",
+                "poiId": "osm:way/536287083",
+                "field": "category",
+                "value": "park",
+                "sourceUrl": "https://www.openstreetmap.org/way/536287083",
+                "fetchedAt": "2026-10-18T16:50:23.296Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": null,
+            "sourceCuisine": null
+          },
+          {
+            "id": "osm:way/536287088",
+            "name": "Парк без названия (OSM way/536287088)",
+            "category": "park",
+            "sourceUrl": "https://www.openstreetmap.org/way/536287088",
+            "visitMinutes": 15,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:way/536287088:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:way/536287088:category",
+                "poiId": "osm:way/536287088",
+                "field": "category",
+                "value": "park",
+                "sourceUrl": "https://www.openstreetmap.org/way/536287088",
+                "fetchedAt": "2026-10-18T16:50:23.296Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": null,
+            "sourceCuisine": null
+          },
+          {
+            "id": "osm:way/509262352",
+            "name": "Парк без названия (OSM way/509262352)",
+            "category": "park",
+            "sourceUrl": "https://www.openstreetmap.org/way/509262352",
+            "visitMinutes": 15,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:way/509262352:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:way/509262352:category",
+                "poiId": "osm:way/509262352",
+                "field": "category",
+                "value": "park",
+                "sourceUrl": "https://www.openstreetmap.org/way/509262352",
+                "fetchedAt": "2026-10-18T16:50:23.296Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": null,
+            "sourceCuisine": null
+          }
+        ],
+        "plan": {
+          "visitMinutes": 45,
+          "reserveMinutes": 5,
+          "status": "unverified",
+          "travelMinutes": null,
+          "totalMinutes": null,
+          "warnings": [
+            "Пеший путь не рассчитан. Длительность плана и возврат во время не подтверждены."
+          ],
+          "returnToStart": false,
+          "legs": []
+        },
+        "clarification": null,
+        "warnings": [
+          "Демо по реальному снимку OSM. Облачные сервисы не вызываются."
+        ],
+        "provenance": {
+          "dataSource": "real_snapshot",
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "clock": "2026-10-18T07:00:00Z"
+        },
+        "diagnostics": {
+          "candidateCount": 427,
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "exclusions": {},
+          "elapsedMs": 119
+        }
+      },
+      "routeFitAssessment": "not_run: demo deliberately has no walking provider; semantic coverage is tested without claiming route feasibility",
+      "orderedStageContractPresent": false
+    },
+    {
+      "id": "CP-ACC-02",
+      "set": "acceptance",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Сначала кафе, розетка обязательна, затем парк. Есть час",
+        "availableMinutes": 60,
+        "requiredFeatures": [
+          "outlets"
+        ]
+      },
+      "expected": {
+        "kinds": [
+          "no_match"
+        ],
+        "empty": true
+      },
+      "status": "passed",
+      "failedAssertions": [],
+      "assertions": {
+        "expectedKind": true,
+        "emptyWhenRequired": true,
+        "mandatoryStageCoverage": true,
+        "mandatoryStageOrder": true,
+        "cuisineFieldEvidence": true,
+        "requestedFiveMinutesNotRaised": true,
+        "clarificationCode": true,
+        "knownSourceIds": true,
+        "evidenceMembership": true,
+        "noNetwork": true,
+        "honestRoute": true,
+        "allSelectedMatchStages": true
+      },
+      "elapsedMs": 113,
+      "actual": {
+        "kind": "no_match",
+        "mode": "demo",
+        "resultKind": "alternatives",
+        "context": {
+          "query": "Сначала кафе, розетка обязательна, затем парк. Есть час",
+          "origin": {
+            "longitude": 71.4165705,
+            "latitude": 51.1061652
+          },
+          "availableMinutes": 60,
+          "returnToStart": false,
+          "requiredFeatures": [
+            "outlets"
+          ],
+          "excludedCategories": [],
+          "excludedPoiIds": [],
+          "keepPoiIds": [],
+          "maxDistanceMetres": 3000,
+          "confirmedOpen": false,
+          "startTime": "2026-10-18T07:00:00Z",
+          "interests": [
+            "cafe",
+            "park",
+            "landmark"
+          ],
+          "language": "ru",
+          "budgetKzt": null,
+          "strictBudget": false,
+          "transport": "walking",
+          "groupSize": 1,
+          "airportDeadline": null
+        },
+        "items": [],
+        "plan": {
+          "visitMinutes": 0,
+          "reserveMinutes": 5,
+          "status": "unverified",
+          "travelMinutes": null,
+          "totalMinutes": null,
+          "warnings": [
+            "Пеший путь не рассчитан. Длительность плана и возврат во время не подтверждены."
+          ],
+          "returnToStart": false,
+          "legs": []
+        },
+        "clarification": null,
+        "warnings": [
+          "Демо по реальному снимку OSM. Облачные сервисы не вызываются.",
+          "По обязательным условиям подтверждённых вариантов не найдено. Условия сохранены; их можно изменить вручную."
+        ],
+        "provenance": {
+          "dataSource": "real_snapshot",
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "clock": "2026-10-18T07:00:00Z"
+        },
+        "diagnostics": {
+          "candidateCount": 371,
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "exclusions": {
+            "unconfirmed_outlets": 371
+          },
+          "elapsedMs": 113
+        }
+      },
+      "routeFitAssessment": "not_run: demo deliberately has no walking provider; semantic coverage is tested without claiming route feasibility",
+      "orderedStageContractPresent": false
+    },
+    {
+      "id": "CP-ACC-03",
+      "set": "acceptance",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Есть только 5 минут: сначала кофе в кафе, затем парк и вернуться",
+        "availableMinutes": 60,
+        "returnToStart": true
+      },
+      "expected": {
+        "kinds": [
+          "no_match",
+          "clarification"
+        ],
+        "empty": true,
+        "requestedMinutes": 5
+      },
+      "status": "failed",
+      "failedAssertions": [
+        "expectedKind",
+        "emptyWhenRequired",
+        "requestedFiveMinutesNotRaised"
+      ],
+      "assertions": {
+        "expectedKind": false,
+        "emptyWhenRequired": false,
+        "mandatoryStageCoverage": true,
+        "mandatoryStageOrder": true,
+        "cuisineFieldEvidence": true,
+        "requestedFiveMinutesNotRaised": false,
+        "clarificationCode": true,
+        "knownSourceIds": true,
+        "evidenceMembership": true,
+        "noNetwork": true,
+        "honestRoute": true,
+        "allSelectedMatchStages": true
+      },
+      "elapsedMs": 116,
+      "actual": {
+        "kind": "recommendations",
+        "mode": "demo",
+        "resultKind": "alternatives",
+        "context": {
+          "query": "Есть только 5 минут: сначала кофе в кафе, затем парк и вернуться",
+          "origin": {
+            "longitude": 71.4165705,
+            "latitude": 51.1061652
+          },
+          "availableMinutes": 10,
+          "returnToStart": true,
+          "requiredFeatures": [],
+          "excludedCategories": [],
+          "excludedPoiIds": [],
+          "keepPoiIds": [],
+          "maxDistanceMetres": 3000,
+          "confirmedOpen": false,
+          "startTime": "2026-10-18T07:00:00Z",
+          "interests": [
+            "cafe",
+            "park",
+            "landmark"
+          ],
+          "language": "ru",
+          "budgetKzt": null,
+          "strictBudget": false,
+          "transport": "walking",
+          "groupSize": 1,
+          "airportDeadline": null
+        },
+        "items": [
+          {
+            "id": "osm:node/12098662467",
+            "name": "Canele",
+            "category": "cafe",
+            "sourceUrl": "https://www.openstreetmap.org/node/12098662467",
+            "visitMinutes": 5,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:node/12098662467:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:node/12098662467:category",
+                "poiId": "osm:node/12098662467",
+                "field": "category",
+                "value": "cafe",
+                "sourceUrl": "https://www.openstreetmap.org/node/12098662467",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              },
+              {
+                "id": "osm:node/12098662467:opening_hours",
+                "poiId": "osm:node/12098662467",
+                "field": "opening_hours",
+                "value": "Mo-Su 09:00-22:00",
+                "sourceUrl": "https://www.openstreetmap.org/node/12098662467",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": "cafe",
+            "sourceCuisine": null
+          }
+        ],
+        "plan": {
+          "visitMinutes": 5,
+          "reserveMinutes": 5,
+          "status": "unverified",
+          "travelMinutes": null,
+          "totalMinutes": null,
+          "warnings": [
+            "Пеший путь не рассчитан. Длительность плана и возврат во время не подтверждены."
+          ],
+          "returnToStart": true,
+          "legs": []
+        },
+        "clarification": null,
+        "warnings": [
+          "Демо по реальному снимку OSM. Облачные сервисы не вызываются."
+        ],
+        "provenance": {
+          "dataSource": "real_snapshot",
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "clock": "2026-10-18T07:00:00Z"
+        },
+        "diagnostics": {
+          "candidateCount": 371,
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "exclusions": {},
+          "elapsedMs": 116
+        }
+      },
+      "routeFitAssessment": "not_run: demo deliberately has no walking provider; semantic coverage is tested without claiming route feasibility",
+      "orderedStageContractPresent": false
+    },
+    {
+      "id": "CP-ACC-04",
+      "set": "acceptance",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Кофе, затем парк, строгий бюджет 0 тенге",
+        "availableMinutes": 45,
+        "budgetKzt": 0,
+        "strictBudget": true
+      },
+      "expected": {
+        "kinds": [
+          "no_match"
+        ],
+        "empty": true
+      },
+      "status": "passed",
+      "failedAssertions": [],
+      "assertions": {
+        "expectedKind": true,
+        "emptyWhenRequired": true,
+        "mandatoryStageCoverage": true,
+        "mandatoryStageOrder": true,
+        "cuisineFieldEvidence": true,
+        "requestedFiveMinutesNotRaised": true,
+        "clarificationCode": true,
+        "knownSourceIds": true,
+        "evidenceMembership": true,
+        "noNetwork": true,
+        "honestRoute": true,
+        "allSelectedMatchStages": true
+      },
+      "elapsedMs": 1,
+      "actual": {
+        "kind": "no_match",
+        "mode": "demo",
+        "resultKind": "alternatives",
+        "context": {
+          "query": "Кофе, затем парк, строгий бюджет 0 тенге",
+          "origin": {
+            "longitude": 71.4165705,
+            "latitude": 51.1061652
+          },
+          "availableMinutes": 45,
+          "returnToStart": false,
+          "requiredFeatures": [],
+          "excludedCategories": [],
+          "excludedPoiIds": [],
+          "keepPoiIds": [],
+          "maxDistanceMetres": 3000,
+          "confirmedOpen": false,
+          "startTime": "2026-10-18T07:00:00Z",
+          "interests": [
+            "cafe",
+            "park",
+            "landmark"
+          ],
+          "language": "ru",
+          "budgetKzt": 0,
+          "strictBudget": true,
+          "transport": "walking",
+          "groupSize": 1,
+          "airportDeadline": null
+        },
+        "items": [],
+        "plan": {
+          "visitMinutes": 0,
+          "reserveMinutes": 5,
+          "status": "unverified",
+          "travelMinutes": null,
+          "totalMinutes": null,
+          "warnings": [
+            "Пеший путь не рассчитан. Длительность плана и возврат во время не подтверждены."
+          ],
+          "returnToStart": false,
+          "legs": []
+        },
+        "clarification": null,
+        "warnings": [
+          "В данных нет подтверждённых цен: строгий бюджет в KZT проверить нельзя. Неизвестная цена не считается нулевой; условия сохранены."
+        ],
+        "provenance": {
+          "dataSource": "real_snapshot",
+          "retrieval": "not_run",
+          "generation": "not_run",
+          "clock": "2026-10-18T07:00:00Z"
+        },
+        "diagnostics": {
+          "candidateCount": 0,
+          "retrieval": "not_run",
+          "generation": "not_run",
+          "elapsedMs": 0
+        }
+      },
+      "routeFitAssessment": "not_run: demo deliberately has no walking provider; semantic coverage is tested without claiming route feasibility",
+      "orderedStageContractPresent": false
+    },
+    {
+      "id": "CP-ACC-05",
+      "set": "acceptance",
+      "request": {
+        "origin": {
+          "longitude": 71.4073303,
+          "latitude": 51.0890897
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "До вылета 2 часа: сначала кофе, потом парк, затем в аэропорт",
+        "availableMinutes": 120
+      },
+      "expected": {
+        "kinds": [
+          "clarification"
+        ],
+        "empty": true,
+        "clarificationCode": "airport_buffer_transport"
+      },
+      "status": "passed",
+      "failedAssertions": [],
+      "assertions": {
+        "expectedKind": true,
+        "emptyWhenRequired": true,
+        "mandatoryStageCoverage": true,
+        "mandatoryStageOrder": true,
+        "cuisineFieldEvidence": true,
+        "requestedFiveMinutesNotRaised": true,
+        "clarificationCode": true,
+        "knownSourceIds": true,
+        "evidenceMembership": true,
+        "noNetwork": true,
+        "honestRoute": true,
+        "allSelectedMatchStages": true
+      },
+      "elapsedMs": 0,
+      "actual": {
+        "kind": "clarification",
+        "mode": "demo",
+        "resultKind": "alternatives",
+        "context": {
+          "query": "До вылета 2 часа: сначала кофе, потом парк, затем в аэропорт",
+          "origin": {
+            "longitude": 71.4073303,
+            "latitude": 51.0890897
+          },
+          "availableMinutes": 120,
+          "returnToStart": false,
+          "requiredFeatures": [],
+          "excludedCategories": [],
+          "excludedPoiIds": [],
+          "keepPoiIds": [],
+          "maxDistanceMetres": 3000,
+          "confirmedOpen": false,
+          "startTime": "2026-10-18T07:00:00Z",
+          "interests": [
+            "cafe",
+            "park",
+            "landmark"
+          ],
+          "language": "ru",
+          "budgetKzt": null,
+          "strictBudget": false,
+          "transport": "walking",
+          "groupSize": 1,
+          "airportDeadline": null
+        },
+        "items": [],
+        "plan": {
+          "visitMinutes": 0,
+          "reserveMinutes": 5,
+          "status": "unverified",
+          "travelMinutes": null,
+          "totalMinutes": null,
+          "warnings": [
+            "Пеший путь не рассчитан. Длительность плана и возврат во время не подтверждены."
+          ],
+          "returnToStart": false,
+          "legs": []
+        },
+        "clarification": {
+          "code": "airport_buffer_transport",
+          "question": "К какому времени нужно вернуться в аэропорт и на каком транспорте? До вылета нужны запас и трансфер. Этот прототип проверяет только пешие прогулки и не может подтвердить трансфер.",
+          "fields": [
+            "airportDeadline",
+            "transport"
+          ]
+        },
+        "warnings": [],
+        "provenance": {
+          "dataSource": "real_snapshot",
+          "retrieval": "not_run",
+          "generation": "not_run",
+          "clock": "2026-10-18T07:00:00Z"
+        },
+        "diagnostics": {
+          "candidateCount": 0,
+          "retrieval": "not_run",
+          "generation": "not_run",
+          "elapsedMs": 0
+        }
+      },
+      "routeFitAssessment": "not_run: demo deliberately has no walking provider; semantic coverage is tested without claiming route feasibility",
+      "orderedStageContractPresent": false
+    },
+    {
+      "id": "CP-ACC-06",
+      "set": "acceptance",
+      "request": {
+        "origin": {
+          "longitude": 71.4714725,
+          "latitude": 51.1467674
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Забронируй столик в итальянском ресторане с пиццей, потом хочу парк. 90 минут",
+        "availableMinutes": 90
+      },
+      "expected": {
+        "kinds": [
+          "clarification"
+        ],
+        "empty": true
+      },
+      "status": "failed",
+      "failedAssertions": [
+        "expectedKind",
+        "emptyWhenRequired"
+      ],
+      "assertions": {
+        "expectedKind": false,
+        "emptyWhenRequired": false,
+        "mandatoryStageCoverage": true,
+        "mandatoryStageOrder": true,
+        "cuisineFieldEvidence": true,
+        "requestedFiveMinutesNotRaised": true,
+        "clarificationCode": true,
+        "knownSourceIds": true,
+        "evidenceMembership": true,
+        "noNetwork": true,
+        "honestRoute": true,
+        "allSelectedMatchStages": true
+      },
+      "elapsedMs": 103,
+      "actual": {
+        "kind": "recommendations",
+        "mode": "demo",
+        "resultKind": "alternatives",
+        "context": {
+          "query": "Забронируй столик в итальянском ресторане с пиццей, потом хочу парк. 90 минут",
+          "origin": {
+            "longitude": 71.4714725,
+            "latitude": 51.1467674
+          },
+          "availableMinutes": 90,
+          "returnToStart": false,
+          "requiredFeatures": [],
+          "excludedCategories": [],
+          "excludedPoiIds": [],
+          "keepPoiIds": [],
+          "maxDistanceMetres": 3000,
+          "confirmedOpen": false,
+          "startTime": "2026-10-18T07:00:00Z",
+          "interests": [
+            "park",
+            "landmark"
+          ],
+          "language": "ru",
+          "budgetKzt": null,
+          "strictBudget": false,
+          "transport": "walking",
+          "groupSize": 1,
+          "airportDeadline": null
+        },
+        "items": [
+          {
+            "id": "osm:way/536287083",
+            "name": "Парк без названия (OSM way/536287083)",
+            "category": "park",
+            "sourceUrl": "https://www.openstreetmap.org/way/536287083",
+            "visitMinutes": 15,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:way/536287083:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:way/536287083:category",
+                "poiId": "osm:way/536287083",
+                "field": "category",
+                "value": "park",
+                "sourceUrl": "https://www.openstreetmap.org/way/536287083",
+                "fetchedAt": "2026-10-18T16:50:23.296Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": null,
+            "sourceCuisine": null
+          },
+          {
+            "id": "osm:way/536287088",
+            "name": "Парк без названия (OSM way/536287088)",
+            "category": "park",
+            "sourceUrl": "https://www.openstreetmap.org/way/536287088",
+            "visitMinutes": 15,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:way/536287088:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:way/536287088:category",
+                "poiId": "osm:way/536287088",
+                "field": "category",
+                "value": "park",
+                "sourceUrl": "https://www.openstreetmap.org/way/536287088",
+                "fetchedAt": "2026-10-18T16:50:23.296Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": null,
+            "sourceCuisine": null
+          },
+          {
+            "id": "osm:way/509262352",
+            "name": "Парк без названия (OSM way/509262352)",
+            "category": "park",
+            "sourceUrl": "https://www.openstreetmap.org/way/509262352",
+            "visitMinutes": 15,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:way/509262352:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:way/509262352:category",
+                "poiId": "osm:way/509262352",
+                "field": "category",
+                "value": "park",
+                "sourceUrl": "https://www.openstreetmap.org/way/509262352",
+                "fetchedAt": "2026-10-18T16:50:23.296Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": null,
+            "sourceCuisine": null
+          }
+        ],
+        "plan": {
+          "visitMinutes": 45,
+          "reserveMinutes": 5,
+          "status": "unverified",
+          "travelMinutes": null,
+          "totalMinutes": null,
+          "warnings": [
+            "Пеший путь не рассчитан. Длительность плана и возврат во время не подтверждены."
+          ],
+          "returnToStart": false,
+          "legs": []
+        },
+        "clarification": null,
+        "warnings": [
+          "Демо по реальному снимку OSM. Облачные сервисы не вызываются."
+        ],
+        "provenance": {
+          "dataSource": "real_snapshot",
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "clock": "2026-10-18T07:00:00Z"
+        },
+        "diagnostics": {
+          "candidateCount": 427,
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "exclusions": {},
+          "elapsedMs": 103
+        }
+      },
+      "routeFitAssessment": "not_run: demo deliberately has no walking provider; semantic coverage is tested without claiming route feasibility",
+      "orderedStageContractPresent": false
+    },
+    {
+      "id": "CP-ACC-07",
+      "set": "acceptance",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "en",
+        "maxDistanceMetres": 3000,
+        "query": "First a park, then a coffee shop. I have 60 minutes and need to return to the start",
+        "availableMinutes": 60,
+        "returnToStart": true
+      },
+      "expected": {
+        "kinds": [
+          "recommendations"
+        ],
+        "stages": [
+          {
+            "category": "park"
+          },
+          {
+            "category": "cafe"
+          }
+        ],
+        "ordered": true
+      },
+      "status": "failed",
+      "failedAssertions": [
+        "mandatoryStageCoverage",
+        "mandatoryStageOrder"
+      ],
+      "assertions": {
+        "expectedKind": true,
+        "emptyWhenRequired": true,
+        "mandatoryStageCoverage": false,
+        "mandatoryStageOrder": false,
+        "cuisineFieldEvidence": true,
+        "requestedFiveMinutesNotRaised": true,
+        "clarificationCode": true,
+        "knownSourceIds": true,
+        "evidenceMembership": true,
+        "noNetwork": true,
+        "honestRoute": true,
+        "allSelectedMatchStages": true
+      },
+      "elapsedMs": 84,
+      "actual": {
+        "kind": "recommendations",
+        "mode": "demo",
+        "resultKind": "alternatives",
+        "context": {
+          "query": "First a park, then a coffee shop. I have 60 minutes and need to return to the start",
+          "origin": {
+            "longitude": 71.4165705,
+            "latitude": 51.1061652
+          },
+          "availableMinutes": 60,
+          "returnToStart": true,
+          "requiredFeatures": [],
+          "excludedCategories": [],
+          "excludedPoiIds": [],
+          "keepPoiIds": [],
+          "maxDistanceMetres": 3000,
+          "confirmedOpen": false,
+          "startTime": "2026-10-18T07:00:00Z",
+          "interests": [
+            "cafe",
+            "park",
+            "landmark"
+          ],
+          "language": "en",
+          "budgetKzt": null,
+          "strictBudget": false,
+          "transport": "walking",
+          "groupSize": 1,
+          "airportDeadline": null
+        },
+        "items": [
+          {
+            "id": "osm:node/11206429884",
+            "name": "JumpinGoat",
+            "category": "cafe",
+            "sourceUrl": "https://www.openstreetmap.org/node/11206429884",
+            "visitMinutes": 12,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:node/11206429884:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:node/11206429884:category",
+                "poiId": "osm:node/11206429884",
+                "field": "category",
+                "value": "cafe",
+                "sourceUrl": "https://www.openstreetmap.org/node/11206429884",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              },
+              {
+                "id": "osm:node/11206429884:opening_hours",
+                "poiId": "osm:node/11206429884",
+                "field": "opening_hours",
+                "value": "Mo-Su 10:00-22:00",
+                "sourceUrl": "https://www.openstreetmap.org/node/11206429884",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": "cafe",
+            "sourceCuisine": "coffee_shop"
+          },
+          {
+            "id": "osm:node/11783576043",
+            "name": "Drinkit",
+            "category": "cafe",
+            "sourceUrl": "https://www.openstreetmap.org/node/11783576043",
+            "visitMinutes": 12,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:node/11783576043:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:node/11783576043:category",
+                "poiId": "osm:node/11783576043",
+                "field": "category",
+                "value": "cafe",
+                "sourceUrl": "https://www.openstreetmap.org/node/11783576043",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              },
+              {
+                "id": "osm:node/11783576043:opening_hours",
+                "poiId": "osm:node/11783576043",
+                "field": "opening_hours",
+                "value": "Mo-Su 08:00-22:00",
+                "sourceUrl": "https://www.openstreetmap.org/node/11783576043",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": "cafe",
+            "sourceCuisine": "coffee_shop"
+          },
+          {
+            "id": "osm:node/11290690869",
+            "name": "TLP Flowers & Coffee",
+            "category": "cafe",
+            "sourceUrl": "https://www.openstreetmap.org/node/11290690869",
+            "visitMinutes": 12,
+            "openingStatus": "unknown",
+            "evidenceIds": [
+              "osm:node/11290690869:category"
+            ],
+            "evidence": [
+              {
+                "id": "osm:node/11290690869:category",
+                "poiId": "osm:node/11290690869",
+                "field": "category",
+                "value": "cafe",
+                "sourceUrl": "https://www.openstreetmap.org/node/11290690869",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              },
+              {
+                "id": "osm:node/11290690869:opening_hours",
+                "poiId": "osm:node/11290690869",
+                "field": "opening_hours",
+                "value": "Su-Sa 09:00-23:00",
+                "sourceUrl": "https://www.openstreetmap.org/node/11290690869",
+                "fetchedAt": "2026-10-16T14:28:38.906Z",
+                "confirmedAt": null
+              }
+            ],
+            "sourceAmenity": "cafe",
+            "sourceCuisine": "breakfast;cake;coffee_shop;diner;donut;italian;pasta"
+          }
+        ],
+        "plan": {
+          "visitMinutes": 36,
+          "reserveMinutes": 5,
+          "status": "unverified",
+          "travelMinutes": null,
+          "totalMinutes": null,
+          "warnings": [
+            "Пеший путь не рассчитан. Длительность плана и возврат во время не подтверждены."
+          ],
+          "returnToStart": true,
+          "legs": []
+        },
+        "clarification": null,
+        "warnings": [
+          "Демо по реальному снимку OSM. Облачные сервисы не вызываются."
+        ],
+        "provenance": {
+          "dataSource": "real_snapshot",
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "clock": "2026-10-18T07:00:00Z"
+        },
+        "diagnostics": {
+          "candidateCount": 371,
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "exclusions": {},
+          "elapsedMs": 83
+        }
+      },
+      "routeFitAssessment": "not_run: demo deliberately has no walking provider; semantic coverage is tested without claiming route feasibility",
+      "orderedStageContractPresent": false
+    },
+    {
+      "id": "CP-ACC-08",
+      "set": "acceptance",
+      "request": {
+        "origin": {
+          "longitude": 71.4165705,
+          "latitude": 51.1061652
+        },
+        "startTime": "2026-10-18T07:00:00Z",
+        "language": "ru",
+        "maxDistanceMetres": 3000,
+        "query": "Сначала кафе, затем парк, но всё обязательно только внутри помещения",
+        "availableMinutes": 60,
+        "requiredFeatures": [
+          "indoor"
+        ]
+      },
+      "expected": {
+        "kinds": [
+          "no_match"
+        ],
+        "empty": true
+      },
+      "status": "passed",
+      "failedAssertions": [],
+      "assertions": {
+        "expectedKind": true,
+        "emptyWhenRequired": true,
+        "mandatoryStageCoverage": true,
+        "mandatoryStageOrder": true,
+        "cuisineFieldEvidence": true,
+        "requestedFiveMinutesNotRaised": true,
+        "clarificationCode": true,
+        "knownSourceIds": true,
+        "evidenceMembership": true,
+        "noNetwork": true,
+        "honestRoute": true,
+        "allSelectedMatchStages": true
+      },
+      "elapsedMs": 92,
+      "actual": {
+        "kind": "no_match",
+        "mode": "demo",
+        "resultKind": "alternatives",
+        "context": {
+          "query": "Сначала кафе, затем парк, но всё обязательно только внутри помещения",
+          "origin": {
+            "longitude": 71.4165705,
+            "latitude": 51.1061652
+          },
+          "availableMinutes": 60,
+          "returnToStart": false,
+          "requiredFeatures": [
+            "indoor"
+          ],
+          "excludedCategories": [],
+          "excludedPoiIds": [],
+          "keepPoiIds": [],
+          "maxDistanceMetres": 3000,
+          "confirmedOpen": false,
+          "startTime": "2026-10-18T07:00:00Z",
+          "interests": [
+            "cafe",
+            "park",
+            "landmark"
+          ],
+          "language": "ru",
+          "budgetKzt": null,
+          "strictBudget": false,
+          "transport": "walking",
+          "groupSize": 1,
+          "airportDeadline": null
+        },
+        "items": [],
+        "plan": {
+          "visitMinutes": 0,
+          "reserveMinutes": 5,
+          "status": "unverified",
+          "travelMinutes": null,
+          "totalMinutes": null,
+          "warnings": [
+            "Пеший путь не рассчитан. Длительность плана и возврат во время не подтверждены."
+          ],
+          "returnToStart": false,
+          "legs": []
+        },
+        "clarification": null,
+        "warnings": [
+          "Демо по реальному снимку OSM. Облачные сервисы не вызываются.",
+          "По обязательным условиям подтверждённых вариантов не найдено. Условия сохранены; их можно изменить вручную."
+        ],
+        "provenance": {
+          "dataSource": "real_snapshot",
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "clock": "2026-10-18T07:00:00Z"
+        },
+        "diagnostics": {
+          "candidateCount": 371,
+          "retrieval": "snapshot-lexical",
+          "generation": "template",
+          "exclusions": {
+            "unconfirmed_indoor": 368
+          },
+          "elapsedMs": 92
+        }
+      },
+      "routeFitAssessment": "not_run: demo deliberately has no walking provider; semantic coverage is tested without claiming route feasibility",
+      "orderedStageContractPresent": false
+    }
+  ]
+}

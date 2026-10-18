@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-18T17:39:34.326Z",
+  "count": 2170,
+  "categories": {
+    "other": 1208,
+    "landmark": 72,
+    "cafe": 357,
+    "playground": 346,
+    "museum": 8,
+    "park": 179
+  },
+  "withPhotos": 14,
+  "withOpeningHours": 338,
+  "withConfirmedOutlets": 0,
+  "evidenceCount": 2576,
+  "checks": "unique IDs, bounds/order, required fields, attribution, category evidence, tri-state values"
+}

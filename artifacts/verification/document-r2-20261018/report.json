@@ -1,0 +1,135 @@
+{
+  "source": "C:\\Users\\Beks\\Documents\\Codex\\2026-10-16\\project-name-spot-work-in-my\\work\\Spot\\docs\\TEST_SCENARIOS_AND_LIMITATIONS.md",
+  "sourceSha256": "5d42c6486f19c6695b1500cf774bd841ad17e133fee95210cd93b23d0b0d98a0",
+  "pdf": "C:\\Users\\Beks\\Documents\\Codex\\2026-10-16\\project-name-spot-work-in-my\\outputs\\Spot_Сценарии_и_ограничения_2026-10-18_R2.pdf",
+  "pdfSha256": "b7ec5fa2c70eb9859e288f19e7d81bf74078819e00bc8d504431dd86776f4108",
+  "markdownCopy": "C:\\Users\\Beks\\Documents\\Codex\\2026-10-16\\project-name-spot-work-in-my\\outputs\\Spot_Сценарии_и_ограничения_2026-10-18_R2.md",
+  "pages": 13,
+  "sourceBlocks": 42,
+  "scenarioCards": 42,
+  "allScenarioTitlesPresent": true,
+  "allEvidenceHashesPresent": true,
+  "markdownCopyMatchesSource": true,
+  "textCharactersByPage": [
+    3227,
+    3382,
+    2017,
+    1681,
+    1875,
+    1574,
+    1220,
+    1749,
+    1254,
+    1407,
+    1359,
+    2746,
+    2286
+  ],
+  "font": "Embedded Windows Arial",
+  "rendered": true,
+  "visualInspection": "passed",
+  "renderedPages": 13,
+  "renderDirectory": "C:\\Users\\Beks\\Documents\\Codex\\2026-10-16\\project-name-spot-work-in-my\\work\\spot-submission-doc\\r2\\tmp\\pdfs\\b7ec5fa2c70e",
+  "sourceSha256AfterExport": "5d42c6486f19c6695b1500cf774bd841ad17e133fee95210cd93b23d0b0d98a0",
+  "sourceUnchanged": true,
+  "markdownCopySha256": "5d42c6486f19c6695b1500cf774bd841ad17e133fee95210cd93b23d0b0d98a0",
+  "repoPdfCopy": "C:\\Users\\Beks\\Documents\\Codex\\2026-10-16\\project-name-spot-work-in-my\\work\\Spot\\docs\\TEST_SCENARIOS_AND_LIMITATIONS.pdf",
+  "repoPdfSha256": "b7ec5fa2c70eb9859e288f19e7d81bf74078819e00bc8d504431dd86776f4108",
+  "repoPdfExactCopy": true,
+  "previousRepoPdfSha256": "3278754fbb49e35b96042dcc1843428173c48b97d4ad44b28df8a1cf6d2e4572",
+  "previousRepoPdfBackup": "C:\\Users\\Beks\\Documents\\Codex\\2026-10-16\\project-name-spot-work-in-my\\work\\spot-submission-doc\\r2\\previous-edition\\TEST_SCENARIOS_AND_LIMITATIONS_3278754fbb49.pdf",
+  "previousRepoPdfBackupVerified": true,
+  "contentFieldsChecked": 224,
+  "allContentFieldsPresent": true,
+  "scenarioCardMeaning": "Source table rows include grouped unit/mock contracts, not independent quality observations.",
+  "pageBoundsCheck": [
+    {
+      "page": 1,
+      "characterCount": 3182,
+      "outOfBounds": 0
+    },
+    {
+      "page": 2,
+      "characterCount": 3339,
+      "outOfBounds": 0
+    },
+    {
+      "page": 3,
+      "characterCount": 1983,
+      "outOfBounds": 0
+    },
+    {
+      "page": 4,
+      "characterCount": 1650,
+      "outOfBounds": 0
+    },
+    {
+      "page": 5,
+      "characterCount": 1843,
+      "outOfBounds": 0
+    },
+    {
+      "page": 6,
+      "characterCount": 1544,
+      "outOfBounds": 0
+    },
+    {
+      "page": 7,
+      "characterCount": 1192,
+      "outOfBounds": 0
+    },
+    {
+      "page": 8,
+      "characterCount": 1716,
+      "outOfBounds": 0
+    },
+    {
+      "page": 9,
+      "characterCount": 1228,
+      "outOfBounds": 0
+    },
+    {
+      "page": 10,
+      "characterCount": 1378,
+      "outOfBounds": 0
+    },
+    {
+      "page": 11,
+      "characterCount": 1331,
+      "outOfBounds": 0
+    },
+    {
+      "page": 12,
+      "characterCount": 2708,
+      "outOfBounds": 0
+    },
+    {
+      "page": 13,
+      "characterCount": 2256,
+      "outOfBounds": 0
+    }
+  ],
+  "embeddedFonts": {
+    "/AAAAAA+Arial-BoldMT": true,
+    "/AAAAAA+ArialMT": true,
+    "/AAAAAA+Consolas": true
+  },
+  "visualQa": {
+    "allPagesContactSheetInspected": true,
+    "fullSizePagesInspected": [
+      1,
+      4,
+      5,
+      8,
+      9,
+      11,
+      12,
+      13
+    ],
+    "lastPageChecked": true,
+    "overflowOrClippingFound": false,
+    "kazakhGlyphsChecked": true
+  },
+  "contactSheet": "C:\\Users\\Beks\\Documents\\Codex\\2026-10-16\\project-name-spot-work-in-my\\work\\spot-submission-doc\\r2\\contact-sheet.png",
+  "finalizedAt": "2026-10-18T18:25:21.294693+00:00"
+}

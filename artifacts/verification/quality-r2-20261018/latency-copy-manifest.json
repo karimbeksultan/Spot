@@ -1,0 +1,22 @@
+{
+  "local-compound-summary.json": {
+    "sha256": "d96fdedd3effd430f4b2cd30ec84a0d66e31ee166a06357d22a5397daa4dfa7a",
+    "source": "artifacts\\verification\\local-compound-r2-20261018\\summary.json"
+  },
+  "model-only-current-vs-compact.json": {
+    "sha256": "ab8dd421cf92d99ad3074068e3b2f010b5ce5738accbf82e683c3fd397f21703",
+    "source": "artifacts\\verification\\local-compound-r2-20261018\\model-only-current-vs-compact.json"
+  },
+  "model-only-compact-4threads.json": {
+    "sha256": "cd348b21ec7d927afa2444b28eb86476b2aa5c86d9297b2ce234a62506d79886",
+    "source": "artifacts\\verification\\local-compound-r2-20261018\\model-only-compact-4threads.json"
+  },
+  "model-only-summary.json": {
+    "sha256": "4a9ba5b47b6beeeaeb7f61e3c370685751ac6d077636a179e84437165c38e84a",
+    "source": "artifacts\\verification\\local-compound-r2-20261018\\model-only-summary.json"
+  },
+  "model-only-summary.md": {
+    "sha256": "b2bf70fe80668335713705e89f71ca39e3637c2df044e6fff4e51e111273d07f",
+    "source": "artifacts\\verification\\local-compound-r2-20261018\\model-only-summary.md"
+  }
+}

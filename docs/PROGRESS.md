@@ -1,0 +1,50 @@
+# Spot: прогресс и проверенная ревизия — R2
+
+R2 — проверенная ревизия; экспорт материалов и запись имеют отдельную готовность.
+
+Рабочая ветка `codex/spot-contract-harness`, HEAD `eea69810ee65d44360597cbf22691c6237c3ac5a`. Существующие изменения сохранены; новая работа не закоммичена и не отправлена в GitHub. Документы, README и материалы исключены из code digest и имеют отдельные хеши и QA.
+
+## Сохранённое исходное состояние
+
+Baseline: 98 unit, snapshot 18, lint/typecheck/data/build завершились с exit0; desktop/mobile HTTP200, без overflow/errors. Digest122 неигнорируемых файлов `eb6f942284d91eba0367a3c53b422b2095f5718adb6fdb750f21f0975adf45c3`, без env кроме example. Логи и копии исходных отчётов: `work/baseline-20261018/`. Reset и удаления существующих изменений не было.
+
+Предыдущий выпуск R1 сохранён отдельно в `work/quality-pass-20261018/r1/` с manifest. Его code digest `38b0380549c6b8b8b86b92479020fc1d0b639603ed0748bb93a481f93eac1dc4`, core197/17, snapshot18/18, eval10/10, browser30/30 и local5 являются историей R1. Исходный R1 scenario MD SHA256 `606ecf1ef0874a5d4bc1cbb698512fc7ae28f3cfb03933bc4b5d427b1a894565`, PDF SHA256 `3278754fbb49e35b96042dcc1843428173c48b97d4ad44b28df8a1cf6d2e4572`. Эти доказательства не объявляются проверкой изменённого R2 кода.
+
+## Изменения R2
+
+Составной запрос поддерживает до трёх обязательных этапов cafe/park/restaurant. Явное «затем» задаёт порядок; AND требует все названные этапы, OR остаётся альтернативами. Ресторан подтверждается исходным amenity=restaurant и связанным evidence, кухня — точными source-токенами и evidence для каждого запрошенного значения. Модель не выводит кухню из названия. Неизвестная кухня/обязательное удобство не заменяются случайным местом. Указанные 5 минут сохраняются, а не повышаются скрыто.
+
+Предлагаемые посещения составного плана: кафе 8 мин, парк 10 мин, ресторан 25 мин. Это плановые значения, а не измеренная очередь/обслуживание. Сервер проверяет полные комбинации, не больше трёх walking попыток, часы на прибытие и весь визит, резерв 5 мин и возврат. Если полный набор не помещается или один этап не подходит, успешный поднабор не выдаётся. Отбор ограничен несколькими комбинациями и не гарантирует оптимальный маршрут или отсутствие иного подходящего плана в городе. Координаты POI могут быть центрами геометрии, а не проверенными входами; привязка маршрутизатора к графу не подтверждает фактическую доступность входа. Без рассчитанного walking обе остановки могут показываться только как непроверенные варианты: journey=unverified, общая длительность=null, линия готового маршрута отсутствует.
+
+Source facts выводятся по совпадающим исходным provenance, сохранённые payloads и векторы не менялись. Добавлены плановый старт Астаны UTC+5 и effective clock, явное изменение этапов, OR и неподдерживаемые кухни. Prompt v4 использует 4 CPU threads и 32 output tokens; query-vector cache хранит до 32 валидированных векторов 5 мин по SHA256 ключу, без сырого запроса/точного старта на диске. Невозможные или отсутствующие обязательные этапы отсекаются до модели; это ограничивает работу, но не доказывает ускорение всех запросов.
+
+## Данные и текущие проверки
+
+Сохранено и проиндексировано **2170 OSM POI**; в runtime допускаются **2165**. Пять записей с явным другим городом Косшы/Қосшы помещены в карантин без удаления payloads/векторов. Допустимые категории: 354 кафе, 179 парков/садов, 346 площадок, 72 landmarks, 8 музеев, 1206 other, включая скамейки и исходные типы ресторанов. В допустимом наборе 337 расписаний и 190 адресов, у 14 мест 60 лицензированных фото; подтверждённых розеток и цен нет. В сохранённом наборе 338 расписаний/195 адресов. Это ограниченное покрытие OSM, не полный каталог города и не проверенная административная граница для объектов без addr:city.
+
+Code digest: `906ae60d3bf0843f6bc6eb09f5605e4c66dc81e0796bff1baf45099d39e9957b`. Core verify R2 PASS: artifacts/verification/2026-10-18T18-12-20-902Z-22916-verify/report.json, все 8 шагов exit0: lint/typecheck/unit/data/snapshot/eval/build/smoke.265 unit в 21 файле, snapshot18/18, обычный eval10/10 (4development+6acceptance), data2170, smoke3 шага. Code digest906ae60d…9957b стабилен до/после; applicationFilesChangedDuringChecks=false. Eval/smoke выполнялись без сети и платных запросов.
+
+Browser R2 PASS: artifacts/verification/browser-r2-summary-20261018.json и raw browser-r2-20261018.json, exit0,38/38,0skipped/unexpected/flaky,356131.285ms; source digest906ae60d…9957b стабилен. Production localhost:3000, APP_MODE=demo;8context+8planned-journey+5data-limits+5photo+12app. Context/photo/planned-journey используют явно отмеченные UI fixtures (включая synthetic walking legs); app suite использует реальный demo snapshot. Ни local, ни cloud generation этим browser прогоном не проверяются.
+
+Фактически выполнены 3 составных local запроса: B40 мин/возврат — no_match за 15.506 с, все 3 полные попытки исключены по time_budget; The Garden → Парк защитников Отечества G90 мин — complete,58 мин за 13.393 с; отдельный разрешённый B60 мин/возврат — Canele → Ботанический сад, complete,43 мин за 11.672 с. Это 2 положительных маршрута и 1 честный отказ; исходный two-case runner завершился exit1 из-за ошибочного ожидания положительного 40 мин ответа, raw ошибка сохранена. Receipt artifacts/verification/local-compound-r2-20261018/summary.json; source/data unchanged. Всего 3 loopback embedding +3 chat +5 Valhalla requests, paid0/training=false. Замеры относятся к actualSearchElapsedMs, без последующих assertions/hash checks; cold model load включён, warm path не измерен.
+
+Doctor R2 PASS: artifacts/verification/2026-10-18T18-16-24-293Z-30204-doctor/report.json, network0; ключи не читались и endpoints не вызывались. Security R2 PASS: artifacts/verification/security-r2-20261018/report.json,5 scoped source/bundle/privacy checks, credential patterns0, тот же 906ae60d…digest; это ограниченный scan, не pentest. WEATHER R2 PASS: artifacts/verification/weather-r2-20261018/report.json, recommendations3 кафе и предупреждение о неподключённой погоде, network0/paid0, тот же digest.
+
+Зафиксированное сравнение: **5/14 BEFORE → 14/14 AFTER** по одним и тем же 14 запросам, публичным точкам, часам и семантическим assertions. AFTER networkAttempts=0, paidRequests=0; sourceUnchanged=true. Receipt: `artifacts/verification/quality-r2-20261018/after.json`, исходный BEFORE: `before.json`, его SHA256 `b7e7defed44af0f08529780a6e761d6629c6318d36fa7163124a100fba0e46af`. Это детерминированная приёмка небольшой выборки, без LLM judge, человеческой оценки, балла 8–9 или гарантии top-10.
+
+
+Ещё 12 отдельных compound regressions и 9 mocked route cases входят в общий unit count. Их нельзя складывать с unit count как независимую дополнительную выборку. BEFORE сохранён до изменений; fixtures и input hashes не подменялись. Instrumentation microbenchmark отделён от фактического времени `searchPlaces`.
+
+## Материалы и оставшиеся действия
+
+Новая редакция PDF/PPTX/ZIP имеет суффикс `_R2`. Экспорт и QA объявляются завершёнными только после появления файла и receipt. Сначала проект, критерии и презентация; затем OBS. YouTube=`pending_owner_upload`.
+
+PDF сценариев R2 фактически готов: output `Spot_Сценарии_и_ограничения_2026-10-18_R2.pdf`, точная canonical repo-copy `docs/TEST_SCENARIOS_AND_LIMITATIONS.pdf`. 13 страниц, 42 source-row карточки, 224 проверенных поля, полный render/visual QA passed; шрифты встроены, clipping=0. PDF SHA256 `b7ec5fa2c70eb9859e288f19e7d81bf74078819e00bc8d504431dd86776f4108`; source/output Markdown SHA256 `5d42c6486f19c6695b1500cf774bd841ad17e133fee95210cd93b23d0b0d98a0` неизменен. Receipt: `artifacts/verification/document-r2-20261018/report.json`. Группированные тестовые контракты не выдаются за 42 независимых наблюдения. R1 PDF и MD сохранены точными копиями.
+
+[PPTX R2](spot-pitch-2026-10-18-R2.pptx) готов, receipt `artifacts/verification/presentation-r2-20261018/report.json` passed. 10 слайдов: 8 основных и 2 приложения, 684 слова основной речи; 5–7 минут оценочно с переходами, не измеренная репетиция. Все финальные слайды отрендерены и просмотрены, структура проверена; UI capture реальный local, без fixtures. Открытие в нативном PowerPoint и его font rendering отдельно не проверены. SHA256 `e72a9947ae745db0e033fbab6e387f64daad3062ee157a10b6acbdf0359e222b`; code digest906ae60d… и datasetcb8dcfff… совпадают с текущими proofs. Исходный `Spot_source_2026-10-18_R2.zip` фактически собран: ZIP integrity, file hashes и ограниченный credential scan passed, текущий code digest сохранён; локальное видео — not_recorded_user_stopped_computer_use, YouTube pending_owner_upload.
+
+Неполные часы/адреса/фото/удобства, OSM freshness и bounded grammar остаются ограничениями. Текстовый parser берёт первое упоминание каждого типа cafe/park/restaurant: повтор одного типа в нескольких остановках и произвольное название блюда без явного restaurant не являются проверенными сценариями. Теги ресторана/кухни не подтверждают актуальное меню, наличие конкретного блюда, свободный столик, длительность обслуживания или санитарное состояние. Бронирование, аэропортовый трансфер, forecast/events/CV, all-day itinerary и групповой оптимизатор не реализованы. Пешее время — оценка; безопасность/безбарьерность/прибытие к рейсу не гарантируются. RU/KK/EN основные действия и отдельные запросы не равны полному переводу или экспертной языковой оценке. Независимого исследования полезности с людьми нет.
+
+Намеренно не выполнялись: платные API/cloud live smoke, remote DB writes, deploy, push, изменение публичности, публикация видео, обучение весов. Секреты не включались в отчёты. Исследование 8 официальных источников не является автоматическим импортом; каталог Maps не копируется.
+
+Локальная запись: `not_recorded_user_stopped_computer_use`. Computer Use обнаружил физический Esc пользователя до начала записи; все GUI/OBS действия прекращены. Видео не записано, публикации нет. YouTube остаётся `pending_owner_upload`; этот внешний результат сдачи ещё нужен.

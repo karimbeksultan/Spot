@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-16T15:48:06.018Z",
+  "liveApiMatchesSnapshot": true,
+  "coveredPois": 14,
+  "totalPhotos": 60,
+  "gallery": "Real garden photos loaded and switched to lake; MADO exterior loaded",
+  "screenshots": [
+    "desktop-gallery.png",
+    "mobile-gallery.png",
+    "mado-gallery.png"
+  ],
+  "javascriptErrors": [],
+  "database": {
+    "project": "jlyqncuqkqhkkopgflzl",
+    "pois": 98,
+    "documents": 98,
+    "contentDigestBefore": "b2046b219cda4baaa9a69e9a48731194",
+    "contentDigestAfter": "b2046b219cda4baaa9a69e9a48731194"
+  },
+  "tests": {
+    "unit": 98,
+    "browserPhotoScenarios": 7,
+    "build": "passed"
+  }
+}

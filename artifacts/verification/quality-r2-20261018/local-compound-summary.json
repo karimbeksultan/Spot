@@ -1,0 +1,908 @@
+{
+  "createdAt": "2026-10-18T18:12:55.645983+00:00",
+  "sourceDigest": "906ae60d3bf0843f6bc6eb09f5605e4c66dc81e0796bff1baf45099d39e9957b",
+  "sourceUnchanged": true,
+  "snapshotSha256": "cb8dcfff85509eb2498bb40b3b5edafb4f3d2995ca92844709da3bc8d4607fe9",
+  "dataUnchanged": true,
+  "sourceFileCount": 128,
+  "status": "two_positive_complete_itineraries_and_one_honest_constraint_refusal",
+  "allOriginalPositiveExpectationsPassed": false,
+  "initialTwoRunnerExitCode": 1,
+  "separateCoffee60RunnerExitCode": 0,
+  "initialTwoRawErrorsPreserved": [
+    "LOCAL-COMPOUND-COFFEE-PARK-40: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'no_match'\n- 'recommendations'\n"
+  ],
+  "positiveCount": 2,
+  "constraintRefusalCount": 1,
+  "negativeAssessment": "B40return positive assumption failed. Runtime preserved40minutes/return/stage atomicity, rejected3time_budget plans and returned no_match with no partial stage. This is not a positive itinerary and does not prove no feasible plan exists anywhere.",
+  "negativeBudgetFacts": {
+    "visitMinutesRequired": 18,
+    "reserveMinutes": 5,
+    "availableWalkingMinutes": 17,
+    "attemptsRejectedForBudget": 3,
+    "exactRejectedRouteTimingsRetained": false,
+    "note": "The original two-case runner retained final results, not rejected candidate leg summaries. No extra calls were made to reconstruct them."
+  },
+  "counts": {
+    "127.0.0.1/api/embed": 3,
+    "127.0.0.1/api/chat": 3,
+    "valhalla1.openstreetmap.de/route": 5
+  },
+  "paidRequests": 0,
+  "remoteModelRequests": 0,
+  "training": false,
+  "modelDownloads": 0,
+  "blockedRequests": 0,
+  "outcomes": [
+    {
+      "id": "LOCAL-COMPOUND-COFFEE-PARK-40",
+      "query": "Сначала хочу кофе в кафе, затем прогуляться в парке. Есть 40 минут, нужно вернуться.",
+      "origin": {
+        "longitude": 71.4165705,
+        "latitude": 51.1061652
+      },
+      "originIsPublicTestPoint": true,
+      "startTime": "2026-10-18T07:00:00Z",
+      "availableMinutes": 40,
+      "returnToStart": true,
+      "actualSearchElapsedMs": 15506,
+      "kind": "no_match",
+      "mode": "degraded",
+      "journeyStatus": "incomplete",
+      "requestedStages": [],
+      "actualStages": [
+        {
+          "kind": "cafe",
+          "cuisines": []
+        },
+        {
+          "kind": "park",
+          "cuisines": []
+        }
+      ],
+      "poiIds": [],
+      "names": [],
+      "plan": {
+        "visitMinutes": 0,
+        "reserveMinutes": 5,
+        "status": "unverified",
+        "travelMinutes": null,
+        "totalMinutes": null,
+        "warnings": [
+          "Пеший путь не рассчитан. Длительность плана и возврат во время не подтверждены."
+        ],
+        "returnToStart": true,
+        "legs": []
+      },
+      "diagnostics": {
+        "candidateCount": 44,
+        "retrieval": "local-hybrid",
+        "generation": "ollama-validated",
+        "promptVersion": "spot-grounded-choices-v4",
+        "provider": "ollama",
+        "model": "qwen3:0.6b",
+        "exclusions": {
+          "time_budget": 3,
+          "routing_attempts": 3
+        },
+        "elapsedMs": 15483
+      },
+      "provenance": {
+        "dataSource": "real_snapshot",
+        "retrieval": "local-hybrid",
+        "generation": "ollama-validated",
+        "clock": "2026-10-18T07:00:00Z"
+      },
+      "evidenceByStage": [
+        {
+          "index": 0,
+          "kind": "cafe",
+          "poiId": null,
+          "evidenceIds": []
+        },
+        {
+          "index": 1,
+          "kind": "park",
+          "poiId": null,
+          "evidenceIds": []
+        }
+      ],
+      "originalAssumedPositiveSatisfied": false
+    },
+    {
+      "id": "LOCAL-COMPOUND-ITALIAN-PIZZA-PARK-90",
+      "query": "Сначала хочу итальянский ресторан с пиццей, затем прогуляться в парке. Есть 90 минут.",
+      "origin": {
+        "longitude": 71.4714725,
+        "latitude": 51.1467674
+      },
+      "originIsPublicTestPoint": true,
+      "startTime": "2026-10-18T13:00:00Z",
+      "availableMinutes": 90,
+      "returnToStart": false,
+      "actualSearchElapsedMs": 13393,
+      "kind": "recommendations",
+      "mode": "live",
+      "journeyStatus": "complete",
+      "requestedStages": [],
+      "actualStages": [
+        {
+          "kind": "restaurant",
+          "cuisines": [
+            "italian",
+            "pizza"
+          ]
+        },
+        {
+          "kind": "park",
+          "cuisines": []
+        }
+      ],
+      "poiIds": [
+        "osm:node/4409067789",
+        "osm:way/37883865"
+      ],
+      "names": [
+        "The Garden",
+        "Парк защитников Отечества"
+      ],
+      "plan": {
+        "visitMinutes": 35,
+        "reserveMinutes": 5,
+        "travelMinutes": 18,
+        "totalMinutes": 58,
+        "status": "fits_estimate",
+        "warnings": [
+          "Расчётная оценка времени; фактическая скорость и доступность проходов могут отличаться."
+        ],
+        "returnToStart": false,
+        "legs": [
+          {
+            "fromId": "start",
+            "toId": "osm:node/4409067789",
+            "profile": "walking",
+            "provider": "Valhalla · FOSSGIS",
+            "seconds": 0,
+            "metres": 0,
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  71.471594,
+                  51.146804
+                ],
+                [
+                  71.471594,
+                  51.146804
+                ]
+              ]
+            }
+          },
+          {
+            "fromId": "osm:node/4409067789",
+            "toId": "osm:way/37883865",
+            "profile": "walking",
+            "provider": "Valhalla · FOSSGIS",
+            "seconds": 1055.294,
+            "metres": 1475,
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  71.471594,
+                  51.146804
+                ],
+                [
+                  71.471454,
+                  51.146987
+                ],
+                [
+                  71.470907,
+                  51.147765
+                ],
+                [
+                  71.471129,
+                  51.147842
+                ],
+                [
+                  71.470939,
+                  51.148105
+                ],
+                [
+                  71.470683,
+                  51.148459
+                ],
+                [
+                  71.470351,
+                  51.148915
+                ],
+                [
+                  71.470291,
+                  51.149001
+                ],
+                [
+                  71.470151,
+                  51.149187
+                ],
+                [
+                  71.470052,
+                  51.149357
+                ],
+                [
+                  71.469953,
+                  51.149492
+                ],
+                [
+                  71.469642,
+                  51.149951
+                ],
+                [
+                  71.469486,
+                  51.150184
+                ],
+                [
+                  71.469125,
+                  51.150664
+                ],
+                [
+                  71.468986,
+                  51.150862
+                ],
+                [
+                  71.468475,
+                  51.15159
+                ],
+                [
+                  71.468127,
+                  51.152098
+                ],
+                [
+                  71.467742,
+                  51.152629
+                ],
+                [
+                  71.467699,
+                  51.152689
+                ],
+                [
+                  71.467276,
+                  51.153226
+                ],
+                [
+                  71.467247,
+                  51.153262
+                ],
+                [
+                  71.467184,
+                  51.153342
+                ],
+                [
+                  71.466716,
+                  51.153754
+                ],
+                [
+                  71.466582,
+                  51.153803
+                ],
+                [
+                  71.466555,
+                  51.153813
+                ],
+                [
+                  71.4664,
+                  51.153814
+                ],
+                [
+                  71.466128,
+                  51.153781
+                ],
+                [
+                  71.465322,
+                  51.153736
+                ],
+                [
+                  71.465091,
+                  51.15367
+                ],
+                [
+                  71.463939,
+                  51.153369
+                ],
+                [
+                  71.463387,
+                  51.153219
+                ],
+                [
+                  71.463241,
+                  51.153178
+                ],
+                [
+                  71.46317,
+                  51.153279
+                ],
+                [
+                  71.463146,
+                  51.153309
+                ],
+                [
+                  71.463076,
+                  51.153411
+                ],
+                [
+                  71.463021,
+                  51.153484
+                ],
+                [
+                  71.462682,
+                  51.153985
+                ],
+                [
+                  71.462902,
+                  51.154017
+                ],
+                [
+                  71.462659,
+                  51.154353
+                ],
+                [
+                  71.462443,
+                  51.154398
+                ],
+                [
+                  71.462075,
+                  51.154289
+                ],
+                [
+                  71.461997,
+                  51.154375
+                ],
+                [
+                  71.461861,
+                  51.154531
+                ],
+                [
+                  71.461748,
+                  51.154499
+                ],
+                [
+                  71.461476,
+                  51.154423
+                ],
+                [
+                  71.461347,
+                  51.154386
+                ],
+                [
+                  71.46125,
+                  51.154359
+                ],
+                [
+                  71.460996,
+                  51.154288
+                ],
+                [
+                  71.460895,
+                  51.154424
+                ],
+                [
+                  71.460777,
+                  51.154393
+                ],
+                [
+                  71.460672,
+                  51.15436
+                ],
+                [
+                  71.460392,
+                  51.154282
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "diagnostics": {
+        "candidateCount": 40,
+        "retrieval": "local-hybrid",
+        "generation": "ollama-validated",
+        "promptVersion": "spot-grounded-choices-v4",
+        "provider": "ollama",
+        "model": "qwen3:0.6b",
+        "exclusions": {
+          "routing_attempts": 1
+        },
+        "elapsedMs": 13392
+      },
+      "provenance": {
+        "dataSource": "real_snapshot",
+        "retrieval": "local-hybrid",
+        "generation": "ollama-validated",
+        "clock": "2026-10-18T13:00:00Z"
+      },
+      "evidenceByStage": [
+        {
+          "index": 0,
+          "kind": "restaurant",
+          "poiId": "osm:node/4409067789",
+          "evidenceIds": [
+            "osm:node/4409067789:category",
+            "osm:node/4409067789:source-facts:venue_type:aba37c5479868a8e17366783",
+            "osm:node/4409067789:source-facts:cuisine:3b6723f69b3b0c4cc485bb4a",
+            "osm:node/4409067789:source-facts:cuisine:a0daa459a27a3c1d1796a0c4"
+          ]
+        },
+        {
+          "index": 1,
+          "kind": "park",
+          "poiId": "osm:way/37883865",
+          "evidenceIds": [
+            "osm:way/37883865:category"
+          ]
+        }
+      ],
+      "originalAssumedPositiveSatisfied": true
+    },
+    {
+      "id": "LOCAL-COMPOUND-COFFEE-PARK-60-SEPARATE",
+      "query": "Сначала хочу кофе в кафе, затем прогуляться в парке. Есть 60 минут, нужно вернуться.",
+      "origin": {
+        "longitude": 71.4165705,
+        "latitude": 51.1061652
+      },
+      "originIsPublicTestPoint": true,
+      "startTime": "2026-10-18T07:00:00Z",
+      "availableMinutes": 60,
+      "returnToStart": true,
+      "actualSearchElapsedMs": 11672,
+      "kind": "recommendations",
+      "mode": "live",
+      "journeyStatus": "complete",
+      "requestedStages": [],
+      "actualStages": [
+        {
+          "kind": "cafe",
+          "cuisines": []
+        },
+        {
+          "kind": "park",
+          "cuisines": []
+        }
+      ],
+      "poiIds": [
+        "osm:node/12098662467",
+        "osm:way/1196402246"
+      ],
+      "names": [
+        "Canele",
+        "Ботанический сад"
+      ],
+      "plan": {
+        "visitMinutes": 18,
+        "reserveMinutes": 5,
+        "travelMinutes": 20,
+        "totalMinutes": 43,
+        "status": "fits_estimate",
+        "warnings": [
+          "Расчётная оценка времени; фактическая скорость и доступность проходов могут отличаться."
+        ],
+        "returnToStart": true,
+        "legs": [
+          {
+            "fromId": "start",
+            "toId": "osm:node/12098662467",
+            "profile": "walking",
+            "provider": "Valhalla · FOSSGIS",
+            "seconds": 582.445,
+            "metres": 813,
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  71.416607,
+                  51.106236
+                ],
+                [
+                  71.41669,
+                  51.106219
+                ],
+                [
+                  71.416784,
+                  51.106162
+                ],
+                [
+                  71.41688,
+                  51.106033
+                ],
+                [
+                  71.416949,
+                  51.105989
+                ],
+                [
+                  71.416888,
+                  51.105929
+                ],
+                [
+                  71.41681,
+                  51.105868
+                ],
+                [
+                  71.416712,
+                  51.105818
+                ],
+                [
+                  71.416579,
+                  51.105757
+                ],
+                [
+                  71.417342,
+                  51.104978
+                ],
+                [
+                  71.417619,
+                  51.104709
+                ],
+                [
+                  71.418088,
+                  51.104236
+                ],
+                [
+                  71.417948,
+                  51.104137
+                ],
+                [
+                  71.417809,
+                  51.104
+                ],
+                [
+                  71.417718,
+                  51.103849
+                ],
+                [
+                  71.417656,
+                  51.103697
+                ],
+                [
+                  71.417643,
+                  51.103544
+                ],
+                [
+                  71.41764,
+                  51.103365
+                ],
+                [
+                  71.417681,
+                  51.103236
+                ],
+                [
+                  71.41772,
+                  51.103155
+                ],
+                [
+                  71.417784,
+                  51.103034
+                ],
+                [
+                  71.417747,
+                  51.103029
+                ],
+                [
+                  71.417121,
+                  51.102973
+                ],
+                [
+                  71.416615,
+                  51.102963
+                ],
+                [
+                  71.41646,
+                  51.102964
+                ],
+                [
+                  71.416408,
+                  51.10282
+                ],
+                [
+                  71.41631,
+                  51.102545
+                ],
+                [
+                  71.416186,
+                  51.1022
+                ],
+                [
+                  71.416057,
+                  51.10188
+                ],
+                [
+                  71.416208,
+                  51.101859
+                ],
+                [
+                  71.416154,
+                  51.101694
+                ],
+                [
+                  71.416075,
+                  51.101444
+                ],
+                [
+                  71.415214,
+                  51.101562
+                ],
+                [
+                  71.41489,
+                  51.101609
+                ],
+                [
+                  71.414825,
+                  51.10144
+                ],
+                [
+                  71.41477,
+                  51.101289
+                ]
+              ]
+            }
+          },
+          {
+            "fromId": "osm:node/12098662467",
+            "toId": "osm:way/1196402246",
+            "profile": "walking",
+            "provider": "Valhalla · FOSSGIS",
+            "seconds": 570.883,
+            "metres": 813,
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  71.41477,
+                  51.101289
+                ],
+                [
+                  71.414825,
+                  51.10144
+                ],
+                [
+                  71.41489,
+                  51.101609
+                ],
+                [
+                  71.415214,
+                  51.101562
+                ],
+                [
+                  71.416075,
+                  51.101444
+                ],
+                [
+                  71.416154,
+                  51.101694
+                ],
+                [
+                  71.416208,
+                  51.101859
+                ],
+                [
+                  71.416057,
+                  51.10188
+                ],
+                [
+                  71.416186,
+                  51.1022
+                ],
+                [
+                  71.41631,
+                  51.102545
+                ],
+                [
+                  71.416408,
+                  51.10282
+                ],
+                [
+                  71.41646,
+                  51.102964
+                ],
+                [
+                  71.416615,
+                  51.102963
+                ],
+                [
+                  71.417121,
+                  51.102973
+                ],
+                [
+                  71.417747,
+                  51.103029
+                ],
+                [
+                  71.417784,
+                  51.103034
+                ],
+                [
+                  71.41772,
+                  51.103155
+                ],
+                [
+                  71.417681,
+                  51.103236
+                ],
+                [
+                  71.41764,
+                  51.103365
+                ],
+                [
+                  71.417643,
+                  51.103544
+                ],
+                [
+                  71.417656,
+                  51.103697
+                ],
+                [
+                  71.417718,
+                  51.103849
+                ],
+                [
+                  71.417809,
+                  51.104
+                ],
+                [
+                  71.417948,
+                  51.104137
+                ],
+                [
+                  71.418088,
+                  51.104236
+                ],
+                [
+                  71.417619,
+                  51.104709
+                ],
+                [
+                  71.417342,
+                  51.104978
+                ],
+                [
+                  71.416579,
+                  51.105757
+                ],
+                [
+                  71.416712,
+                  51.105818
+                ],
+                [
+                  71.41681,
+                  51.105868
+                ],
+                [
+                  71.416888,
+                  51.105929
+                ],
+                [
+                  71.416949,
+                  51.105989
+                ],
+                [
+                  71.41688,
+                  51.106033
+                ],
+                [
+                  71.416784,
+                  51.106162
+                ],
+                [
+                  71.41669,
+                  51.106219
+                ],
+                [
+                  71.416607,
+                  51.106236
+                ]
+              ]
+            }
+          },
+          {
+            "fromId": "osm:way/1196402246",
+            "toId": "start",
+            "profile": "walking",
+            "provider": "Valhalla · FOSSGIS",
+            "seconds": 0,
+            "metres": 0,
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  71.416607,
+                  51.106236
+                ],
+                [
+                  71.416607,
+                  51.106236
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "diagnostics": {
+        "candidateCount": 44,
+        "retrieval": "local-hybrid",
+        "generation": "ollama-validated",
+        "promptVersion": "spot-grounded-choices-v4",
+        "provider": "ollama",
+        "model": "qwen3:0.6b",
+        "exclusions": {
+          "routing_attempts": 1
+        },
+        "elapsedMs": 11656
+      },
+      "provenance": {
+        "dataSource": "real_snapshot",
+        "retrieval": "local-hybrid",
+        "generation": "ollama-validated",
+        "clock": "2026-10-18T07:00:00Z"
+      },
+      "evidenceByStage": [
+        {
+          "index": 0,
+          "kind": "cafe",
+          "poiId": "osm:node/12098662467",
+          "evidenceIds": [
+            "osm:node/12098662467:category"
+          ]
+        },
+        {
+          "index": 1,
+          "kind": "park",
+          "poiId": "osm:way/1196402246",
+          "evidenceIds": [
+            "osm:way/1196402246:category"
+          ]
+        }
+      ],
+      "originalAssumedPositiveSatisfied": true
+    }
+  ],
+  "rawCopies": [
+    {
+      "file": "initial-two-results.json",
+      "sha256": "09255c0c3a170a939c8be04b2b6ed0a57b9737cdf9227ff4379dca807dde8584",
+      "bytes": 69182
+    },
+    {
+      "file": "separate-coffee60-results.json",
+      "sha256": "05a8b576937f60505f7b7a806f2bb91c239183ac29b5332169d942cfdc3d4588",
+      "bytes": 70214
+    },
+    {
+      "file": "model-only-current-vs-compact.json",
+      "sha256": "ab8dd421cf92d99ad3074068e3b2f010b5ce5738accbf82e683c3fd397f21703",
+      "bytes": 9092
+    },
+    {
+      "file": "model-only-compact-4threads.json",
+      "sha256": "cd348b21ec7d927afa2444b28eb86476b2aa5c86d9297b2ce234a62506d79886",
+      "bytes": 1752
+    },
+    {
+      "file": "model-only-summary.json",
+      "sha256": "4a9ba5b47b6beeeaeb7f61e3c370685751ac6d077636a179e84437165c38e84a",
+      "bytes": 5963
+    },
+    {
+      "file": "model-only-summary.md",
+      "sha256": "b2bf70fe80668335713705e89f71ca39e3637c2df044e6fff4e51e111273d07f",
+      "bytes": 6690
+    }
+  ],
+  "modelOnlyBenchmarkScope": "Separate fixed-shortlist latency measurements on promptv3; not end-to-end R2 acceptance or a score/top10 guarantee.",
+  "timingScope": "actualSearchElapsedMs excludes later assertion/source-hash checks; console status elapsed includes them. Cold model loads included; warm path not measured.",
+  "claimsNotMade": [
+    "3/3positive",
+    "40minute_route_exists",
+    "allAstana_coverage",
+    "confirmed_menu_or_reservation",
+    "personalGPS",
+    "competition_score_guarantee"
+  ]
+}

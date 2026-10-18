@@ -1,0 +1,43 @@
+{
+  "savedAt": "2026-10-18T17:23:06.414Z",
+  "originalRecords": 1705,
+  "originalPhotos": 60,
+  "originalFileSha256": "a1533b8acf540b3d917e60c9c3abeb9b9992c497837dda9d59f9add2517c415e",
+  "source": "data/raw/overpass-astana-city-extension.json",
+  "received": 622,
+  "sourceTotal": 622,
+  "sourceComplete": true,
+  "inserted": 465,
+  "finalRecords": 2170,
+  "finalPhotos": 60,
+  "originalRecordsPreservedExactly": true,
+  "databaseWrites": 0,
+  "embeddingRequests": 0,
+  "checkedAt": "2026-10-18T17:23:06.660Z",
+  "mode": "reviewed-real-source-snapshot-merge",
+  "datasetSha256": "cb8dcfff85509eb2498bb40b3b5edafb4f3d2995ca92844709da3bc8d4607fe9",
+  "categories": {
+    "other": 1208,
+    "landmark": 72,
+    "cafe": 357,
+    "playground": 346,
+    "museum": 8,
+    "park": 179
+  },
+  "benches": 673,
+  "coverage": {
+    "accepted": 2170,
+    "withOpeningHours": 338,
+    "withAddress": 195,
+    "withPhotos": 14,
+    "confirmedOutlets": 0,
+    "unknownOutlets": 2170,
+    "independentlyConfirmed": 29
+  },
+  "warnings": [
+    "This is bounded OpenStreetMap coverage, not all places or all benches in Astana. Source mapping, hours, accessibility and current condition may be incomplete.",
+    "Unlabelled indoor/attraction objects are counted but not turned into invented named venues.",
+    "Unnamed parks, gardens, playgrounds and benches use explicitly derived OSM labels; their condition and public accessibility are not guaranteed. Objects explicitly marked access=private/no, disused=yes, abandoned=yes or opening_hours=closed are excluded. Unknown access is not evidence of public access."
+  ],
+  "backupPath": "work/baseline-20261018/original/data/pois-before-city-extension.json"
+}

@@ -1,0 +1,53 @@
+{
+  "case": "PUBLIC-COFFEE-PARK-40",
+  "variant": "compact-experiment-4threads",
+  "createdAt": "2026-10-18T17:59:40.496659+00:00",
+  "total_duration": 9580023100,
+  "load_duration": 4195141100,
+  "prompt_eval_count": 404,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 4692990000,
+  "eval_count": 7,
+  "eval_duration": 673161000,
+  "done_reason": "stop",
+  "wallMs": 9586.002,
+  "total_duration_ms": 9580.023,
+  "load_duration_ms": 4195.141,
+  "prompt_eval_duration_ms": 4692.99,
+  "eval_duration_ms": 673.161,
+  "options": {
+    "temperature": 0,
+    "num_predict": 50,
+    "num_thread": 4,
+    "num_ctx": 2048
+  },
+  "keepAlive": 0,
+  "coldModelBefore": true,
+  "loadedModelsAfter": [],
+  "shortJsonResponse": "{\"indices\": [0]}",
+  "indicesContractValid": true,
+  "resourcesBefore": {
+    "checkedAt": "2026-10-18T17:59:30.856691+00:00",
+    "totalRamGiB": 15.758,
+    "availableRamGiB": 3.762,
+    "memoryLoadPercent": 76,
+    "diskFreeGiB": 39.085
+  },
+  "resourcesAfter": {
+    "checkedAt": "2026-10-18T17:59:40.651130+00:00",
+    "totalRamGiB": 15.758,
+    "availableRamGiB": 3.658,
+    "memoryLoadPercent": 76,
+    "diskFreeGiB": 39.084
+  },
+  "promptMessagesSha256": "5e6e6ab4db6898f48d231783c89a230fdb76f24eae351f7a20981c7cdd9bc917",
+  "messageUtf8Bytes": 1746,
+  "snapshotSha256": "cb8dcfff85509eb2498bb40b3b5edafb4f3d2995ca92844709da3bc8d4607fe9",
+  "originalSnapshotSha256": "cb8dcfff85509eb2498bb40b3b5edafb4f3d2995ca92844709da3bc8d4607fe9",
+  "samePromptAsTwoThreadCompact": true,
+  "modelCalls": 1,
+  "paidRequests": 0,
+  "remoteModelRequests": 0,
+  "runtimeConfigChanges": 0,
+  "caveat": "One cold observation per variant; not a warm-cache comparison or latency SLA."
+}
