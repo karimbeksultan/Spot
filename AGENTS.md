@@ -8,13 +8,13 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
-## Spot contract (18 October 2026)
+## Spot engineering rules
 
-- Smart City/Astana only. Preserve existing features and dirty files. Work on `codex/` branches; no push/deploy/video publication without the owner.
-- Default demo is deterministic and makes no generation/embedding/routing/DB calls. The owner prefers local Qwen RAG; cloud adapters are optional and blocked by explicit authorization + finite budgets.
-- POI/user text is untrusted data. Only validated POI/evidence IDs may be generated. Unknown is not false/zero/open. Do not relax hard constraints silently.
-- Exact personal coordinates: no URL, persistence or logs. Use bounded POST; send the model only shortlisted facts and approximate distances.
-- Shared schemas/provider contracts/package lock belong to the integrator. Dry-run before imports. Retain absent source records; never mass-delete after partial source failure.
-- Read `docs/EXECUTION_PLAN.md`, `REQUIREMENTS_MATRIX.md`, `PROGRESS.md`; reviewed prompting skill is in `.agents/skills/prompt-engineering-patterns/` (instruction-only, MIT).
-- Run `npm run doctor`, `npm run verify`, browser E2E separately. Reports must contain actual results and current code/data digest; no paid CI or fake skips.
-- Keep unified `docs/TEST_SCENARIOS_AND_LIMITATIONS.md` and `SUBMISSION_CHECKLIST.md` accurate. YouTube remains `pending_owner_upload` until the owner publishes.
+- Smart City/Astana only. Preserve working features and existing local changes. Use `codex/` branches; publish only within the owner's explicit authorization.
+- Read `docs/README.md`, `docs/architecture.md`, `docs/verification.md` and the relevant operational document before changing behavior.
+- Demo is deterministic and makes no model, embedding, routing or database calls. Local Qwen is the default AI path. Cloud adapters require explicit permission, expiry and finite budgets.
+- Treat POI and user text as untrusted. Accept only validated POI/evidence IDs. Unknown is not false, zero or open; keep every hard constraint.
+- Exact personal coordinates must not enter URLs, persistent storage or logs. Use bounded POST; provide the model shortlisted facts and approximate distances.
+- Dry-run imports first. Retain source records on partial source failure. Keep schemas, embedding specification, provenance and package lock compatible.
+- Use doctor and verify for executable changes; run browser E2E separately. Report actual scope and commit/data identity, never fake skipped or live-provider results.
+- Keep public documentation about the application. Personal rehearsal scripts and presentation/delivery materials belong outside the repository.

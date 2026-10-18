@@ -15,9 +15,9 @@
 
 <p align="center">
   <a href="#getting-started">Get started</a> ·
-  <a href="docs/spot-pitch-2026-10-18-R3.pptx">Pitch deck</a> ·
-  <a href="docs/TEST_SCENARIOS_AND_LIMITATIONS.pdf">Scenarios and limitations</a> ·
-  <a href="#материалы-для-жюри">Для жюри</a>
+  <a href="docs/README.md">Documentation</a> ·
+  <a href="docs/verification.md">Verification</a> ·
+  <a href="docs/privacy.md">Privacy</a>
 </p>
 
 ![Actual Spot interface showing Canele, Botanical Garden and a return to the starting point](docs/assets/spot-walking-plan.png)
@@ -146,9 +146,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Historical R2 proof: 265 unit tests, 38 browser scenarios, and separate actual local AI/routing runs. Two plans fit 43/60 and 58/90 minutes; the 40-minute return case returned `no_match`. Fixtures do not prove live AI, and tests are not a jury score or user study. [Scope](docs/PROGRESS.md) · [Local evidence](artifacts/verification/local-compound-r2-20261018/summary.md) · [GitHub Actions](https://github.com/karimbeksultan/Spot/actions).
-
-The [repository audit of 19 October 2026](docs/REPOSITORY_AUDIT_2026-10-19.md) records the latest local checks and the separate status of remote CI.
+Browser fixtures and actual local AI/routing checks have different scopes. Tests do not establish real-world usefulness or route safety. See [verification and limitations](docs/verification.md) and [GitHub Actions](https://github.com/karimbeksultan/Spot/actions).
 
 ## Project structure
 
@@ -160,7 +158,7 @@ data/              POI snapshot, provenance, vectors and data licenses
 scripts/           Collection, indexing, local modes and verification
 tests/             Unit, evaluation and browser scenarios
 supabase/          Optional database schema and migrations
-docs/              Architecture, privacy, evidence and pitch materials
+docs/              Architecture, data sources, privacy and verification
 ```
 
 ## Troubleshooting
@@ -175,15 +173,10 @@ docs/              Architecture, privacy, evidence and pitch materials
 | Map or photo is blank | Check network availability; the place list remains usable without tiles |
 | Browser executable is missing | Run `npx playwright install chromium` before browser tests |
 
-## Материалы для жюри
+## Project documentation
 
-Первый трек **НИЦ Smart City**, Астана.
-
-- [PPTX R3](docs/spot-pitch-2026-10-18-R3.pptx): 9 основных слайдов + 2 приложения. [Русская речь](docs/SPEAKER_SCRIPT_RU_R3.txt): 5–7 минут оценочно, нужна репетиция.
-- Сценарии и ограничения: [PDF R2](docs/TEST_SCENARIOS_AND_LIMITATIONS.pdf), [Markdown](docs/TEST_SCENARIOS_AND_LIMITATIONS.md).
-- [Матрица требований](docs/REQUIREMENTS_MATRIX.md), [7 критериев](docs/FINAL_CRITERIA_REVIEW.md), [чеклист сдачи](docs/SUBMISSION_CHECKLIST.md).
-- Сохранён [PPTX R2](docs/spot-pitch-2026-10-18-R2.pptx). [Canva](https://www.canva.com/d/Cq7FrS1vRYpzrCw) доступна по правам владельца.
-
-R3 использует снимки приложения R2. Архив `Spot_source_2026-10-18_R2.zip` передаётся отдельно без ключей, runtime и весов.
-
-**Видео не записано**: Computer Use не смог подтвердить URL открытого браузера и остановил управление; YouTube `pending_owner_upload`. Deploy отсутствует. Для полной сдачи нужна ссылка на видео.
+- [Documentation overview](docs/README.md)
+- [Architecture](docs/architecture.md)
+- [Data sources and image rights](docs/data-sources.md)
+- [Privacy](docs/privacy.md)
+- [Verification and limitations](docs/verification.md)

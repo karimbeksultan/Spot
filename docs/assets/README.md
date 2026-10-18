@@ -10,7 +10,7 @@ An unchanged copy of the actual local application capture from 18 October 2026. 
 
 - Application: Spot, verified R2 source digest `906ae60d3bf0843f6bc6eb09f5605e4c66dc81e0796bff1baf45099d39e9957b`.
 - Dataset digest: `cb8dcfff85509eb2498bb40b3b5edafb4f3d2995ca92844709da3bc8d4607fe9`.
-- Capture evidence: [`presentation-r3-20261018/report.json`](../../artifacts/verification/presentation-r3-20261018/report.json), which reuses the verified actual R2 captures without new browser or model calls.
+- Screenshot SHA256: `8343e9789432b44bf9cd6c2d140636dbfdbb28d8f83f79b1f5cea7de9ed10236`. The separate [local scenario receipt](../../artifacts/verification/local-compound-r2-20261018/summary.json) records the 43/60-minute calculation. This is a real local application capture; the UI-test screenshots are a different set.
 - Map data and tiles: © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), data under the [Open Database License 1.0](https://opendatacommons.org/licenses/odbl/1-0/). The visible map attribution is preserved. See the [OSM tile policy](https://operations.osmfoundation.org/policies/tiles/) and [data license](../../data/LICENSE.md).
 - No venue photographs, personal GPS location, credentials or private account windows appear in this screenshot.
 

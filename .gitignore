@@ -21,3 +21,11 @@ __pycache__/
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Personal presentation/rehearsal exports are shared separately from the code.
+/docs/*.pptx
+/docs/presentation*
+/docs/screenshots/
+/docs/SPEAKER_SCRIPT*
+/docs/demo-script.md
+/docs/SUBMISSION_CHECKLIST.md

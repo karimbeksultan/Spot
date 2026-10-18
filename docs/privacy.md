@@ -1,64 +1,43 @@
-# Приватность, источники и недостоверные сведения
+# Privacy and data flows
 
-Редакция R2,18.10.2026. Основной путь — локальные данные/индекс и Qwen через loopback Ollama. Карта/фото/включённый routing обращаются к своим провайдерам. Browser и source/bundle proof R2 приведены ниже; R1 не переносится на новый код.
+Spot supports a manually selected start. Browser geolocation is requested only after a user action. Search text, the start and the current plan remain in UI state; the application does not require registration or persist query/movement history in a database or browser storage.
 
-## Что хранит приложение
+Search coordinates are sent to the local server in a bounded POST body, not search URLs. The exact starting point is not included as a dedicated model field. This is data minimisation, not guaranteed anonymisation: personal information typed into a query can reach the selected model, and software or service operators may keep their own technical logs.
 
-Геолокация запрашивается по действию пользователя; доступен ручной старт. Запрос, старт и текущий план живут в состоянии интерфейса. Spot не требует регистрации и по умолчанию не сохраняет историю перемещений, тексты запросов или точные координаты в БД, analytics либо localStorage. Поиск использует ограниченное POST-тело; личный старт не помещается в URL поиска и не включается отдельным полем в контекст генерации.
+## Storage
 
-Это описание кода, не обещание отсутствия любых технических журналов у браузера, сервера или третьих сторон. Если пользователь сам вписал личный адрес/координаты в произвольный текст, этот текст может попасть выбранной модели: автоматическое удаление всех персональных данных из фразы не заявляется.
+- Query embeddings are cached in process memory for up to five minutes, at most 32 entries, under SHA256(query + embedding specification). Raw queries and exact starts are not written to that cache or to disk. An embedding is derived data and is not necessarily anonymous.
+- Optional cloud accounting persists run IDs, dates, request counts and reserved costs under ignored `work/private/`; it does not record queries or coordinates.
+- `.env.local`, model weights, runtime state and local runtime logs are excluded from Git. Never publish private keys, request logs or user location data.
 
-Сервер R2 хранит в памяти процесса до 32 валидированных query-векторов на 5 мин, ключ SHA256(query+embedding spec). Сырой запрос/точный старт не сохраняются в cache и cache не записывается на диск. Сам embedding является производными данными запроса; это не доказательство анонимности при доступе к памяти процесса. Плановые даты остаются в UI/POST контексте, без истории на диске.
+## Recipients
 
-## Кому и когда передаются данные
-
-| Получатель | Данные | Условие |
+| Recipient | Data | When |
 | --- | --- | --- |
-| Локальный Next.js сервер | Текст, стартовые координаты, время и условия | При поиске |
-| Loopback Ollama | Текст для query embedding; ограниченный shortlist/относительные расстояния для Qwen | Только фактический local live путь; demo не вызывает модель |
-| Источник тайлов карты | IP и запросы тайлов видимой области | При загрузке/перемещении карты; это может указывать район |
-| Хост фотографий | IP и URL публичного изображения | При показе удалённого фото |
-| Walking Valhalla | Координаты старта и остановок/возврата | Только при включённой маршрутизации; без неё общий маршрут не подтверждён |
-| Google Maps | Имя/адрес или координаты выбранного **публичного POI**, IP/обычные данные браузерного запроса | Только по нажатию внешней ссылки проверки; личный старт в ссылку не включается |
-| Supabase | Координаты/радиус, параметры поиска/вектор | Только явный optional `RETRIEVAL_PROVIDER=supabase`, не основной локальный путь |
-| OpenAI/NVIDIA | Минимальный shortlist и запрос в соответствующем контракте | Optional live только при ключе, отдельном разрешении, сроке и конечном бюджете; в текущей работе платных calls нет |
-| OSM/Wikimedia и официальные сайты | Запросы отдельного сборщика/исследования, без пользовательского GPS | При отдельном запуске сбора или ручной проверке |
+| Local Next.js server | Query, start coordinates, time and constraints | Search or nearby-place request |
+| Loopback Ollama | Query text for embeddings; a small candidate list and approximate distances for ranking | Local RAG; never the deterministic demo |
+| Map tile provider | IP and tile requests for the visible area, which may reveal a neighbourhood | Map loading or movement |
+| Photo host | IP and the public image URL | Remote image display; image requests use `no-referrer` |
+| Valhalla walking service | Start and stop coordinates, including return points | Only when routing is enabled |
+| Google Maps | Name/address or coordinates of the selected public POI and ordinary browser request data | Clicking the external place link; the personal start is omitted |
+| Supabase | Coordinates/radius, search parameters and a query vector | Only when optional Supabase retrieval is configured |
+| OpenAI or NVIDIA | Minimized query and shortlist | Only with separately authorised cloud configuration, expiry and finite budgets |
+| OSM, Wikimedia or researched websites | Collector or manual research requests without user GPS | Separate collection/research operations |
 
-Google Maps — ручная внешняя проверка, не источник копируемого каталога, reviews/photos, embeddings или обучения. Факты корпуса происходят из OSM; операторские сведения и права на изображения проверяются отдельно. Открытие внешнего источника не доказывает актуальность часов или лицензию фото.
+Local AI does not make the entire application offline. Map, photo and routing providers remain external recipients. Google Maps is a manual place-check link: its listings, reviews and photos are not copied into the corpus or model training.
 
-## Неизвестность и безопасность рекомендаций
+## Untrusted data and unknown facts
 
-Удобства имеют значения true/false/unknown. Unknown не удовлетворяет обязательной розетке или требованию доступности. Неизвестная цена не равна нулю, неизвестные часы не подтверждают «открыто сейчас». FetchedAt — время загрузки, а не независимая проверка факта. Весь перечень OSM не считается полным или одинаково свежим.
+POI and query text are untrusted input. Models have no application shell, SQL, collector or privileged credential tools. The server accepts only retrieved place IDs/indexes and supported evidence; normal React text rendering and HTTPS URL validation constrain display. These measures do not constitute a guarantee against every prompt-injection or security attack.
 
-Qwen ранжирует только ограниченные номера найденных кандидатов. Сервер связывает POI ID/evidence и формирует grounded why/идею/длительность по категории; неподтверждённая выставка или услуга не возникает из свободного текста модели. Ответы с чужими ID/недопустимыми claims отклоняются. POI-текст — недоверенные данные, не команды; у модели нет shell/SQL/сборщика или привилегированного ключа.
+Unknown amenities do not satisfy mandatory requirements. Unknown prices are not zero and unknown hours do not establish that a place is open. A fetch timestamp is not independent operator confirmation. The dataset is partial; missing records do not imply that a neighbourhood has no suitable places.
 
-Без полного walking расчёта расстояние показывается по прямой, а общее время/возврат — неподтверждёнными. Даже рассчитанный маршрут не гарантирует фактическую скорость, состояние проходов, доступность для коляски, безопасность ребёнка/ночной прогулки или прибытие к рейсу. При аэропортовом запросе система уточняет условия и не обещает трансфер.
+Walking estimates do not guarantee safe passages, wheelchair access along the whole route, real travel speed or flight arrival. Restaurant/cuisine tags do not confirm a current menu, booking or dish availability. See [Limitations](limitations.md).
 
-Пять явных source-city mismatches Косшы/Қосшы исключены из runtime выдачи через `data/scope-exclusions.json`. Исходники/векторы сохранены для аудита. Отсутствие addr:city не доказывает административную принадлежность остальных объектов.
+## Secrets and operational boundaries
 
-Составной план проверяется атомарно: неполное соответствие этапам/кухне/часам не маскируется успешным списком. Source cuisine не подтверждает актуальное меню, бронь или наличие блюда.
+Private provider keys belong on the server and must not use a `NEXT_PUBLIC_` name. The app uses a publishable Supabase key for optional public retrieval; privileged ingestion credentials are separate. `npm run local` removes cloud credentials from its child environment and disables cloud failover.
 
-## Секреты и границы проверки
+There is no user-controlled fetch proxy. Provider hosts, input sizes, timeouts and generation attempts are bounded; paid calls require explicit gates. Application code does not deliberately log raw searches or location history. These statements describe the repository's code, not the logging practices of every browser, runtime, hosting platform or external provider.
 
-- `.env.local` не отслеживается и не входит в передачу проекта; `.env.example` содержит только имена/безопасные значения.
-- Серверные keys не должны иметь `NEXT_PUBLIC_` и попадать в browser bundle, screenshots или логи. `npm run local` убирает cloud credentials из дочернего окружения и отключает cloud failover.
-- Привилегированный Supabase key нужен только отдельно разрешённому ingestion, не локальному пользовательскому поиску. Исторические DB/RLS проверки 16 октября не являются новой записью в БД или проверкой текущих 2170 через облако.
-- Source/bundle privacy receipt и актуальная ревизия перечислены в [PROGRESS.md](PROGRESS.md). Pattern scan и unit tests не равны полному pentest или гарантии отсутствия всех утечек.
-- Нет произвольного fetch-прокси пользовательских URL. Endpoint whitelist, размеры, timeout/abort, ограниченные retry/repair и no-spend gate снижают риск; новые загрузчики потребуют отдельного review.
-
-Система не выводит характеристики человека из геолокации и не продаёт историю перемещений; персонализированной рекламы нет. Недостаток данных в районе не означает отсутствие интересных или доступных мест. Независимая оценка полезности и языка людьми ещё нужна. Для записи используются смоделированные публичные старты, скрываются ключи и личные окна; OBS и видео — после завершения проекта/презентации, публикация только владельцем.
-
-
-
-## Доказательства редакции R2
-
-Code digest: `906ae60d3bf0843f6bc6eb09f5605e4c66dc81e0796bff1baf45099d39e9957b`. Core verify R2 PASS: artifacts/verification/2026-10-18T18-12-20-902Z-22916-verify/report.json, все 8 шагов exit0: lint/typecheck/unit/data/snapshot/eval/build/smoke.265 unit в 21 файле, snapshot18/18, обычный eval10/10 (4development+6acceptance), data2170, smoke3 шага. Code digest906ae60d…9957b стабилен до/после; applicationFilesChangedDuringChecks=false. Eval/smoke выполнялись без сети и платных запросов.
-
-Browser R2 PASS: artifacts/verification/browser-r2-summary-20261018.json и raw browser-r2-20261018.json, exit0,38/38,0skipped/unexpected/flaky,356131.285ms; source digest906ae60d…9957b стабилен. Production localhost:3000, APP_MODE=demo;8context+8planned-journey+5data-limits+5photo+12app. Context/photo/planned-journey используют явно отмеченные UI fixtures (включая synthetic walking legs); app suite использует реальный demo snapshot. Ни local, ни cloud generation этим browser прогоном не проверяются.
-
-Фактически выполнены 3 составных local запроса: B40 мин/возврат — no_match за 15.506 с, все 3 полные попытки исключены по time_budget; The Garden → Парк защитников Отечества G90 мин — complete,58 мин за 13.393 с; отдельный разрешённый B60 мин/возврат — Canele → Ботанический сад, complete,43 мин за 11.672 с. Это 2 положительных маршрута и 1 честный отказ; исходный two-case runner завершился exit1 из-за ошибочного ожидания положительного 40 мин ответа, raw ошибка сохранена. Receipt artifacts/verification/local-compound-r2-20261018/summary.json; source/data unchanged. Всего 3 loopback embedding +3 chat +5 Valhalla requests, paid0/training=false. Замеры относятся к actualSearchElapsedMs, без последующих assertions/hash checks; cold model load включён, warm path не измерен.
-
-Doctor R2 PASS: artifacts/verification/2026-10-18T18-16-24-293Z-30204-doctor/report.json, network0; ключи не читались и endpoints не вызывались. Security R2 PASS: artifacts/verification/security-r2-20261018/report.json,5 scoped source/bundle/privacy checks, credential patterns0, тот же 906ae60d…digest; это ограниченный scan, не pentest. WEATHER R2 PASS: artifacts/verification/weather-r2-20261018/report.json, recommendations3 кафе и предупреждение о неподключённой погоде, network0/paid0, тот же digest.
-
-Зафиксированное сравнение: **5/14 BEFORE → 14/14 AFTER** по одним и тем же 14 запросам, публичным точкам, часам и семантическим assertions. AFTER networkAttempts=0, paidRequests=0; sourceUnchanged=true. Receipt: `artifacts/verification/quality-r2-20261018/after.json`, исходный BEFORE: `before.json`, его SHA256 `b7e7defed44af0f08529780a6e761d6629c6318d36fa7163124a100fba0e46af`. Это детерминированная приёмка небольшой выборки, без LLM judge, человеческой оценки, балла 8–9 или гарантии top-10.
-
+Spot does not infer personal characteristics from geolocation, implement personalised advertising or sell movement history. No independent study of privacy, recommendation usefulness or language quality is claimed. For actual checks and the scope of security review, see [Verification](verification.md).
