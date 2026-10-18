@@ -51,6 +51,17 @@ export async function searchPlaces(input: SearchRequest, signal?: AbortSignal): 
   if (context.availableMinutes < 10) return empty(["Указанный бюджет меньше 10 минут. Он сохранён; посещение с запасом и пешим путём подтвердить нельзя."]);
   const explicitCurrentTurn = interpretRequest({ ...input, journeyStages: [], interests: [] });
   if (explicitCurrentTurn.journeyStages.reduce((sum, stage) => sum + ({ cafe: 8, park: 10, restaurant: 25 })[stage.kind], 5) > context.availableMinutes) return empty(["На все обязательные этапы не хватает времени даже без пешего пути. Указанный бюджет сохранён."]);
+  // An impossible hard amenity condition needs neither intent inference nor embeddings.
+  if (!demo && process.env.RETRIEVAL_PROVIDER === "local" && context.requiredFeatures.length) {
+    const possible = (await loadSnapshot()).some((poi) => straightLineMetres(context.origin, poi.location) <= context.maxDistanceMetres
+      && !context.excludedCategories.includes(poi.category) && !context.excludedPoiIds.includes(poi.id)
+      && context.requiredFeatures.every((feature) => poi.features[feature] === true));
+    if (!possible) {
+      const result = empty(["По обязательным условиям подтверждённых вариантов не найдено. Условия сохранены."]);
+      return { ...result, provenance: { ...result.provenance, retrieval: "local-constraints-no-match" },
+        diagnostics: { ...result.diagnostics, retrieval: "local-constraints-no-match", understanding: "not_run" } };
+    }
+  }
   let understanding = demo ? "deterministic-demo" : "not_run";
   let understandingModel: string | undefined;
   if (!demo && context.query.trim()) {
