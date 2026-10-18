@@ -5,10 +5,14 @@ import { searchRequestSchema, type Poi, type WalkingLeg } from "../../src/lib/ty
 import { generateChoices, embedQuery } from "../../src/lib/model";
 import { nearby, hybridRetrieve, supabaseConfigured } from "../../src/lib/retrieval";
 import { walkingRoute } from "../../src/lib/routing";
+import { interpretSemanticIntent } from "../../src/lib/semantic-intent";
 
 vi.mock("../../src/lib/model", () => ({ generateChoices: vi.fn(), embedQuery: vi.fn() }));
 vi.mock("../../src/lib/retrieval", () => ({ nearby: vi.fn(), hybridRetrieve: vi.fn(), supabaseConfigured: vi.fn(), lexicalRank: (pois: Poi[]) => pois }));
 vi.mock("../../src/lib/routing", () => ({ walkingRoute: vi.fn() }));
+vi.mock("../../src/lib/semantic-intent", async (importOriginal) => ({
+  ...await importOriginal<typeof import("../../src/lib/semantic-intent")>(), interpretSemanticIntent: vi.fn(),
+}));
 
 const origin = { longitude: 71.43, latitude: 51.13 };
 function fixture(id: string): Poi {
@@ -39,6 +43,7 @@ beforeEach(() => {
   vi.stubEnv("APP_MODE", "live");
   vi.stubEnv("RETRIEVAL_PROVIDER", "supabase");
   vi.clearAllMocks();
+  vi.mocked(interpretSemanticIntent).mockResolvedValue({ action: "refine", stages: [], interests: [], order: "ordered", discovery: false, issue: "none" });
   vi.mocked(supabaseConfigured).mockReturnValue(false);
   vi.mocked(nearby).mockResolvedValue({ mode: "snapshot", items: fixtures.map((poi) => structuredClone(poi)), warnings: [] });
   vi.mocked(generateChoices).mockRejectedValue(new Error("MODEL_UNAVAILABLE"));
@@ -48,6 +53,40 @@ beforeEach(() => {
 afterEach(() => vi.unstubAllEnvs());
 
 describe("provider-mocked end-to-end search pipeline", () => {
+  it("uses semantic activities for an unfamiliar three-stop request rather than lexical verb matching", async () => {
+    const cafe = fixture("coffee"); cafe.category = "cafe"; cafe.evidence[0].value = "cafe";
+    vi.mocked(nearby).mockResolvedValue({ mode: "snapshot", items: [...mealAndPark(), cafe], warnings: [] });
+    vi.mocked(interpretSemanticIntent).mockResolvedValue({ action: "replace", stages: [{ kind: "restaurant", cuisines: [] }, { kind: "cafe", cuisines: [] }, { kind: "park", cuisines: [] }], interests: [], order: "ordered", discovery: false, issue: "none" });
+    routed();
+    const result = await searchPlaces(request({ query: "Живот урчит, потом чашку бодрящего, а затем в зелень", availableMinutes: 90 }));
+    expect(result.items.map((poi) => poi.id)).toEqual(["meal", "coffee", "park"]);
+    expect(result.journey?.status).toBe("complete"); expect(result.plan.totalMinutes).toBe(51);
+    expect(result.diagnostics.understanding).toBe("ollama-validated");
+  });
+  it("returns food discovery as separate source-backed options, never a joint restaurant itinerary", async () => {
+    const meals = [1, 2, 3].map((index) => { const [meal] = mealAndPark(); meal.id = `meal-${index}`;
+      meal.evidence = meal.evidence.map((evidence) => ({ ...evidence, id: `${evidence.id}-${index}`, poiId: meal.id })); return meal; });
+    vi.mocked(nearby).mockResolvedValue({ mode: "snapshot", items: [...meals, fixture("park")], warnings: [] });
+    vi.mocked(interpretSemanticIntent).mockResolvedValue({ action: "replace", stages: [{ kind: "restaurant", cuisines: [] }], interests: [], order: "any", discovery: true, issue: "none" });
+    routed();
+    const result = await searchPlaces(request({ query: "Где я могу нормально подкрепиться?" }));
+    expect(result.items.length).toBeGreaterThan(0); expect(result.items.every((poi) => poi.sourceFacts?.venueType === "restaurant")).toBe(true);
+    expect(result.resultKind).toBe("alternatives"); expect(result.journey).toBeUndefined();
+    expect(result.plan.totalMinutes).toBeNull(); expect(result.plan.legs).toEqual([]);
+  });
+  it("fails with clarification before retrieval if semantic understanding is unavailable", async () => {
+    vi.mocked(interpretSemanticIntent).mockRejectedValue(new Error("INTENT_UNAVAILABLE"));
+    const result = await searchPlaces(request({ query: "Хочу что-нибудь необычное" }));
+    expect(result.kind).toBe("clarification"); expect(result.diagnostics.understanding).toBe("unavailable");
+    expect(nearby).not.toHaveBeenCalled(); expect(embedQuery).not.toHaveBeenCalled();
+    expect(generateChoices).not.toHaveBeenCalled(); expect(walkingRoute).not.toHaveBeenCalled();
+  });
+  it("clarifies unsupported or excessive requested activities without dropping the remainder", async () => {
+    vi.mocked(interpretSemanticIntent).mockResolvedValue({ action: "clarify", stages: [], interests: [], order: "ordered", discovery: false, issue: "too_many_stops" });
+    const result = await searchPlaces(request({ query: "Сначала еда, потом напиток, потом прогулка, потом ещё еда", availableMinutes: 180 }));
+    expect(result.kind).toBe("clarification"); expect(result.clarification?.code).toBe("intent_too_many_stops");
+    expect(nearby).not.toHaveBeenCalled(); expect(generateChoices).not.toHaveBeenCalled();
+  });
   it("builds a complete meal and walk without named venues, retaining source evidence", async () => {
     vi.mocked(nearby).mockResolvedValue({ mode: "snapshot", items: mealAndPark(), warnings: [] });
     routed();

@@ -57,6 +57,7 @@ export const searchRequestSchema = z.object({
   airportDeadline: z.string().datetime({ offset: true }).nullable().default(null),
   journeyStages: z.array(z.object({ kind: z.enum(["cafe", "park", "restaurant"]), cuisines: z.array(z.string().regex(/^[a-z_]{2,40}$/)).max(6).default([]) }).strict()).max(3).default([]),
   journeyOrder: z.enum(["ordered", "any"]).default("ordered"),
+  searchMode: z.enum(["plan", "discovery"]).default("plan"),
 }).strict();
 export type SearchRequest = z.infer<typeof searchRequestSchema>;
 export type Recommendation = Poi & {
@@ -73,7 +74,7 @@ type SearchResponseBase = {
   warnings: string[];
   provenance: { dataSource: "real_snapshot" | "supabase"; retrieval: string; generation: string; clock: string };
   diagnostics: { candidateCount: number; retrieval: string; generation: string; provider?: string; model?: string; promptVersion?: string;
-    usage?: { inputTokens: number | null; outputTokens: number | null; actualCostUsd: number | null; reservedUsd: number }; exclusions?: Record<string, number>; elapsedMs?: number };
+    usage?: { inputTokens: number | null; outputTokens: number | null; actualCostUsd: number | null; reservedUsd: number }; understanding?: string; understandingModel?: string; understandingPromptVersion?: string; exclusions?: Record<string, number>; elapsedMs?: number };
 };
 export type SearchResponse = SearchResponseBase & (
   { kind: "recommendations" | "no_match" | "degraded"; clarification?: never }

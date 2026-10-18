@@ -15,7 +15,7 @@ Search coordinates are sent to the local server in a bounded POST body, not sear
 | Recipient | Data | When |
 | --- | --- | --- |
 | Local Next.js server | Query, start coordinates, time and constraints | Search or nearby-place request |
-| Loopback Ollama | Query text for embeddings; a small candidate list and approximate distances for ranking | Local RAG; never the deterministic demo |
+| Loopback Ollama | Query and prior activity context for understanding; query text for embeddings; a small candidate list and approximate distances for ranking | Local RAG; never the deterministic demo |
 | Map tile provider | IP and tile requests for the visible area, which may reveal a neighbourhood | Map loading or movement |
 | Photo host | IP and the public image URL | Remote image display; image requests use `no-referrer` |
 | Valhalla walking service | Start and stop coordinates, including return points | Only when routing is enabled |
@@ -28,7 +28,7 @@ Local AI does not make the entire application offline. Map, photo and routing pr
 
 ## Untrusted data and unknown facts
 
-POI and query text are untrusted input. Models have no application shell, SQL, collector or privileged credential tools. The server accepts only retrieved place IDs/indexes and supported evidence; normal React text rendering and HTTPS URL validation constrain display. These measures do not constitute a guarantee against every prompt-injection or security attack.
+POI and query text are untrusted input. Models have no application shell, SQL, collector or privileged credential tools. Intent understanding can return bounded activity codes but cannot author coordinates, budgets, source facts or hard-filter values. The server accepts only retrieved place IDs/indexes and supported evidence; normal React text rendering and HTTPS URL validation constrain display. These measures do not constitute a guarantee against every prompt-injection or security attack.
 
 Unknown amenities do not satisfy mandatory requirements. Unknown prices are not zero and unknown hours do not establish that a place is open. A fetch timestamp is not independent operator confirmation. The dataset is partial; missing records do not imply that a neighbourhood has no suitable places.
 

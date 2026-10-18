@@ -30,6 +30,7 @@ Spot plans one to three nearby places around your start, available time, require
 
 - **Persistent context.** Follow-ups retain time, start and hard constraints; visible controls let you edit them.
 - **Required stops.** Café, park and restaurant stages respect explicit order. Incomplete plans do not become silent partial successes.
+- **Tourist intent.** Local Qwen interprets free-form activities before retrieval. Discovery lists and complete walking plans are handled separately; ambiguous interpretations ask for clarification.
 - **Grounded AI.** Geography, text and vectors feed local Qwen; the server validates source IDs and evidence.
 - **Honest timing.** Walking estimates include visits, reserve and return. Unverified alternatives remain clearly labelled.
 - **Transparent sources.** Facts, unknowns and provider modes appear beside a dedicated data disclosure.
@@ -41,7 +42,7 @@ Spot plans one to three nearby places around your start, available time, require
 | --- | --- |
 | Application | Next.js 16 App Router, React 19, TypeScript 6 |
 | Interface | CSS, Manrope, Lucide, MapLibre GL |
-| Local AI | Ollama, `qwen3:0.6b`, `embeddinggemma` with 768-dimensional vectors |
+| Local AI | Ollama; Qwen3.5 2B Q4 for intent, Qwen3 0.6B for ranking; embeddinggemma vectors |
 | Data and validation | OpenStreetMap snapshot, source provenance, Zod |
 | Checks | Vitest, Playwright, ESLint and an executable verification harness |
 | Optional | Supabase, OpenAI, NVIDIA/GLM; explicit opt-in only |
@@ -51,7 +52,8 @@ Spot plans one to three nearby places around your start, available time, require
 ```mermaid
 flowchart LR
   UI[Map and request] --> API[Validated POST and context]
-  API --> R[Local snapshot and hybrid retrieval]
+  API --> I[Local Qwen interprets activities]
+  I --> R[Local snapshot and hybrid retrieval]
   R --> Q[Local Qwen selects candidates]
   Q --> V[Server checks IDs, evidence and constraints]
   V --> W[Optional walking calculation]
@@ -60,7 +62,7 @@ flowchart LR
   D --> O
 ```
 
-Local Qwen returns shortlist indexes. The server binds facts and validates the full plan. Data indexing is RAG, **not training Qwen's weights**. [Architecture](docs/architecture.md).
+Local Qwen first returns a validated activity structure, then ranks shortlist indexes. The server owns hard constraints, binds facts and validates the full plan. Data indexing and prompt improvements are **not training Qwen's weights**. [Architecture](docs/architecture.md).
 
 ## Getting started
 
@@ -88,6 +90,7 @@ Install and start Ollama separately, then make these models available:
 
 ```bash
 ollama pull qwen3:0.6b
+ollama pull qwen3.5:2b-q4_K_M
 ollama pull embeddinggemma
 npm run build
 npm run local
@@ -113,6 +116,7 @@ Defaults are documented in [`.env.example`](.env.example). Copy it to `.env.loca
 | --- | --- |
 | `OLLAMA_BASE_URL` | Loopback endpoint, default `http://127.0.0.1:11434` |
 | `OLLAMA_CHAT_MODEL` / `OLLAMA_EMBED_MODEL` | Compatible local generation and embedding models |
+| `OLLAMA_INTENT_MODEL` | Local free-form understanding; default `qwen3.5:2b-q4_K_M` |
 | `ROUTING_ENABLED` | `false` disables external routing; total timing remains unverified |
 | `APP_MODE` | `demo` or `live`; launch commands set it explicitly |
 | `ALLOW_LIVE_API` / `ALLOW_PROVIDER_FAILOVER` | Cloud spending and failover gates, both off by default |

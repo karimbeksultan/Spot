@@ -21,6 +21,17 @@ function positiveAction(text: string, pattern: RegExp): { at: number; length: nu
   return undefined;
 }
 
+/** Cuisine tokens remain source constraints independently of how the activity was understood. */
+export function requestedCuisines(text: string): string[] {
+  const cuisines: string[] = [];
+  for (const [pattern, value] of [[/итальян|\bitalian\b/iu, "italian"], [/пицц|\bpizza\b/iu, "pizza"], [/саам|\bsami\b/iu, "sami"], [/япон|\bjapanese\b/iu, "japanese"], [/суши|\bsushi\b/iu, "sushi"], [/грузин|\bgeorgian\b/iu, "georgian"], [/китай|\bchinese\b/iu, "chinese"], [/вьетнам|\bvietnamese\b/iu, "vietnamese"], [/корей|\bkorean\b/iu, "korean"], [/турец|\bturkish\b/iu, "turkish"], [/француз|\bfrench\b/iu, "french"], [/мексикан|\bmexican\b/iu, "mexican"], [/казах|\bkazakh\b/iu, "kazakh"], [/узбек|\buzbek\b/iu, "uzbek"], [/индий|\bindian\b/iu, "indian"]] as const) if (pattern.test(text)) cuisines.push(value);
+  // Unsupported named cuisine is represented as unverified, not silently ignored.
+  const adjective = text.match(/([\p{L}]+ск[\p{L}]*)\s+рестора/iu)?.[1]
+    ?? text.match(/\b([a-z]+)\s+restaurant\b/iu)?.[1];
+  if (!cuisines.length && (/кухн|cuisine/iu.test(text) || (adjective && !["a", "an", "the", "any", "nearby", "good", "nice", "first", "then", "in", "to"].includes(adjective.toLowerCase())))) cuisines.push("unverified");
+  return cuisines;
+}
+
 /** Bounded intent grammar. Ambiguous alternatives remain alternatives, never an implicit AND. */
 export function parseJourney(text: string, previous: JourneyStage[], order: SearchRequest["journeyOrder"]) {
   const patterns: [JourneyStage["kind"], RegExp][] = [
@@ -56,12 +67,7 @@ export function parseJourney(text: string, previous: JourneyStage[], order: Sear
   const only = /(?:^|\s)(?:только|only|тек)\s+(?:парк|кафе|кофе|рестора|park|coffee|caf[eé]|restaurant|саябақ)/iu.test(text);
   // Do not reinterpret an ordinary single park/café query or an exclusion-only follow-up.
   if (!only && !negated.size && !found.some((s) => s.kind === "restaurant") && found.length < 2) return { journeyStages: previous, journeyOrder: order };
-  const cuisines: string[] = [];
-  for (const [pattern, value] of [[/итальян|\bitalian\b/iu, "italian"], [/пицц|\bpizza\b/iu, "pizza"], [/саам|\bsami\b/iu, "sami"], [/япон|\bjapanese\b/iu, "japanese"], [/суши|\bsushi\b/iu, "sushi"], [/грузин|\bgeorgian\b/iu, "georgian"], [/китай|\bchinese\b/iu, "chinese"], [/вьетнам|\bvietnamese\b/iu, "vietnamese"], [/корей|\bkorean\b/iu, "korean"], [/турец|\bturkish\b/iu, "turkish"], [/француз|\bfrench\b/iu, "french"], [/мексикан|\bmexican\b/iu, "mexican"], [/казах|\bkazakh\b/iu, "kazakh"], [/узбек|\buzbek\b/iu, "uzbek"], [/индий|\bindian\b/iu, "indian"]] as const) if (pattern.test(text)) cuisines.push(value);
-  // Unsupported named cuisine is represented as unverified, not silently ignored.
-  const adjective = text.match(/([\p{L}]+ск[\p{L}]*)\s+рестора/iu)?.[1]
-    ?? text.match(/\b([a-z]+)\s+restaurant\b/iu)?.[1];
-  if (!cuisines.length && (/кухн|cuisine/iu.test(text) || (adjective && !["a", "an", "the", "any", "nearby", "good", "nice", "first", "then", "in", "to"].includes(adjective.toLowerCase())))) cuisines.push("unverified");
+  const cuisines = requestedCuisines(text);
   if (inferredRestaurant && !cuisines.length) cuisines.push(...(previous.find((stage) => stage.kind === "restaurant")?.cuisines ?? []));
   return { journeyStages: found.map(({ kind }) => ({ kind, cuisines: kind === "restaurant" ? cuisines : [] })),
     journeyOrder: /сначала|затем|потом|first|then|алдымен|содан/iu.test(text) ? "ordered" as const

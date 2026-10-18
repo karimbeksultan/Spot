@@ -10,6 +10,9 @@ import type { GenerationTelemetry } from "./server/providers";
 import { groundedCopy } from "./grounded-copy";
 import { matchesStage } from "./journey";
 import { searchJourney } from "./journey-search";
+import { interpretSemanticIntent, semanticIntentModel, SEMANTIC_PROMPT_VERSION } from "./semantic-intent";
+import { applySemanticIntent, requestCapabilityIssue } from "./request-understanding";
+import { searchDiscovery } from "./discovery-search";
 
 const activities: Record<Category, string> = { park: "walk", cafe: "coffee", museum: "explore", landmark: "look", playground: "play", other: "look" };
 const visitDuration: Record<Category, number> = { park: 15, cafe: 20, museum: 30, landmark: 10, playground: 20, other: 10 };
@@ -25,7 +28,7 @@ export async function searchPlaces(input: SearchRequest, signal?: AbortSignal): 
   const started = performance.now();
   const deadline = requestSignal(signal, 60_000); deadline.throwIfAborted();
   const demo = appMode() === "demo";
-  const context = interpretRequest(searchRequestSchema.parse(input));
+  let context = interpretRequest(searchRequestSchema.parse(input));
   const startTime = context.startTime ?? (demo ? DEMO_TIME : new Date().toISOString());
   context.startTime = startTime;
   const empty = (warnings: string[]): SearchResponse => ({ kind: "no_match", mode: demo ? "demo" : "degraded", resultKind: "alternatives", items: [], context,
@@ -43,6 +46,37 @@ export async function searchPlaces(input: SearchRequest, signal?: AbortSignal): 
     const result = empty([]);
     return { ...result, kind: "clarification", clarification: { code: "booking_unsupported", fields: ["query"], question: context.language === "en" ? "Booking is not connected. Would you like a walking plan without a reservation?"
       : context.language === "kk" ? "Бронь жасау қосылмаған. Броньсыз серуен жоспарын іздейміз бе?" : "Бронирование не подключено. Найти пеший план без оформления брони?" } };
+  }
+  // Cheap, certain refusals precede any model. Demo remains fully deterministic.
+  if (context.availableMinutes < 10) return empty(["Указанный бюджет меньше 10 минут. Он сохранён; посещение с запасом и пешим путём подтвердить нельзя."]);
+  const explicitCurrentTurn = interpretRequest({ ...input, journeyStages: [], interests: [] });
+  if (explicitCurrentTurn.journeyStages.reduce((sum, stage) => sum + ({ cafe: 8, park: 10, restaurant: 25 })[stage.kind], 5) > context.availableMinutes) return empty(["На все обязательные этапы не хватает времени даже без пешего пути. Указанный бюджет сохранён."]);
+  let understanding = demo ? "deterministic-demo" : "not_run";
+  let understandingModel: string | undefined;
+  if (!demo && context.query.trim()) {
+    let issue: string | undefined = requestCapabilityIssue(context.query);
+    try {
+      if (!issue) {
+        understandingModel = semanticIntentModel();
+        const intent = await interpretSemanticIntent(input, deadline);
+        const understood = applySemanticIntent(input, intent);
+        context = { ...understood.context, startTime };
+        issue = understood.issue;
+        understanding = issue ? "ollama-clarification" : "ollama-validated";
+      } else understanding = "capability-clarification";
+    } catch {
+      deadline.throwIfAborted();
+      issue = "unavailable"; understanding = "unavailable";
+    }
+    if (issue) {
+      const question = context.language === "en" ? "I could not reliably interpret every requested activity. Please clarify the activities and their order (up to three stops); booking and unsupported activities cannot be planned."
+        : context.language === "kk" ? "Барлық сұралған әрекетті сенімді түсіндіре алмадым. Әрекеттерді және ретін нақтылаңыз (үш аялдамаға дейін); бронь жасау мен қолдау көрсетілмейтін әрекеттер жоспарланбайды."
+        : issue === "unavailable" ? "Локальная модель понимания запроса недоступна или её ответ не прошёл проверку. Проверьте Ollama и повторите запрос."
+          : "Не удалось надёжно понять все действия. Уточните, чем хотите заняться и в каком порядке (до трёх остановок). Бронирование и неподдерживаемые действия пока не планируются.";
+      const result = empty([]);
+      return { ...result, kind: "clarification", clarification: { code: `intent_${issue}`, question, fields: ["query"] },
+        diagnostics: { ...result.diagnostics, understanding, understandingModel, understandingPromptVersion: SEMANTIC_PROMPT_VERSION } };
+    }
   }
   if (context.journeyStages.some((s) => context.excludedCategories.includes(s.kind === "restaurant" ? "other" : s.kind))) {
     return { ...empty([]), kind: "clarification", clarification: { code: "conflicting_stages", fields: ["journeyStages", "excludedCategories"], question: context.language === "en" ? "A required stage is also excluded. Which condition should change?" : context.language === "kk" ? "Міндетті кезең сонымен бірге алынып тасталған. Қай шартты өзгертеміз?" : "Обязательный этап одновременно запрещён. Какое условие изменить?" } };
@@ -98,7 +132,7 @@ export async function searchPlaces(input: SearchRequest, signal?: AbortSignal): 
   candidates = candidates.map((poi) => ({ ...poi, hours: hoursFor(poi, startTime) }))
     .filter((poi) => { const result = checkConstraints(poi, context.origin, { ...constraints, confirmedOpen: false }); for (const reason of result.failures) exclusions[reason] = (exclusions[reason] ?? 0) + 1; return result.accepted; })
     .filter((poi) => { if (context.confirmedOpen && !poi.hours) { exclusions.opening_unknown = (exclusions.opening_unknown ?? 0) + 1; return false; } return true; })
-    .filter((poi) => hasQueryMatch(poi, context))
+    .filter((poi) => context.journeyStages.length > 0 || hasQueryMatch(poi, context))
     .filter((poi) => context.journeyStages.length ? context.journeyStages.some((stage) => matchesStage(poi, stage)) : context.interests.length === 0 || context.interests.includes(poi.category))
     .sort((a, b) => {
       const first = context.keepPoiIds.indexOf(a.id); const second = context.keepPoiIds.indexOf(b.id);
@@ -110,7 +144,11 @@ export async function searchPlaces(input: SearchRequest, signal?: AbortSignal): 
           - ((originalRanks.get(b.id) ?? 0) / 3 + straightLineMetres(context.origin, b.location) / 250);
     })
     .slice(0, context.journeyStages.length ? 5000 : 12);
-  if (context.journeyStages.length) return searchJourney(context, candidates, { demo, database, retrieval, warnings, candidateCount, deadline, startTime, started });
+  if (context.searchMode === "discovery" || context.journeyStages.length) {
+    const execute = context.searchMode === "discovery" ? searchDiscovery : searchJourney;
+    const result = await execute(context, candidates, { demo, database, retrieval, warnings, candidateCount, deadline, startTime, started });
+    return { ...result, diagnostics: { ...result.diagnostics, understanding, understandingModel, ...(!demo ? { understandingPromptVersion: SEMANTIC_PROMPT_VERSION } : {}) } };
+  }
   const maximumPlaces = context.availableMinutes >= 55 ? 3 : context.availableMinutes >= 35 ? 2 : 1;
   const perPlace = Math.max(5, Math.floor((context.availableMinutes - 8) / maximumPlaces) - 5);
   const template = (pois = candidates.slice(0, maximumPlaces)) => validateGeneratedChoices(pois.map((poi) => ({
@@ -185,5 +223,5 @@ export async function searchPlaces(input: SearchRequest, signal?: AbortSignal): 
     resultKind: legs && plan.status === "fits_estimate" ? "itinerary" : "alternatives",
     items, context, plan: { ...plan, returnToStart: context.returnToStart, legs: legs ?? [] }, warnings: [...new Set(warnings)],
     provenance: { dataSource: database ? "supabase" : "real_snapshot", retrieval, generation, clock: startTime },
-    diagnostics: { candidateCount, retrieval, generation, ...telemetry, exclusions, elapsedMs: Math.round(performance.now() - started) } };
+    diagnostics: { candidateCount, retrieval, generation, ...telemetry, understanding, understandingModel, ...(!demo ? { understandingPromptVersion: SEMANTIC_PROMPT_VERSION } : {}), exclusions, elapsedMs: Math.round(performance.now() - started) } };
 }

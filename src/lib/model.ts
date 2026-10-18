@@ -3,6 +3,7 @@ import { assertEmbeddingCompatibility, straightLineMetres, validateGeneratedChoi
 import { appMode, primaryProvider, requestSignal } from "./server/config";
 import { boundedPause, cloudCompletion, ProviderError, type GenerationTelemetry } from "./server/providers";
 import { createHash } from "node:crypto";
+import { semanticIntentModel } from "./semantic-intent";
 
 const queryVectors = new Map<string, { until: number; vector: number[] }>();
 // Query text and exact origin are never retained, persisted or logged. Cache only validated vectors.
@@ -134,6 +135,6 @@ export async function ollamaReady(): Promise<boolean> {
     if (!response.ok) return false;
     const data = await response.json();
     const names = (data.models ?? []).map((model: { name?: string }) => model.name);
-    return [embeddingSpec().model, process.env.OLLAMA_CHAT_MODEL || "qwen3:0.6b"].every((wanted) => names.some((name: string) => name === wanted || name === `${wanted}:latest`));
+    return [embeddingSpec().model, process.env.OLLAMA_CHAT_MODEL || "qwen3:0.6b", semanticIntentModel()].every((wanted) => names.some((name: string) => name === wanted || name === `${wanted}:latest`));
   } catch { return false; }
 }

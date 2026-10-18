@@ -11,7 +11,7 @@ if (-not (Test-Path -LiteralPath $spotBinary)) { throw 'Missing portable runtime
 if (-not $AllowHomeKeyCreation -and -not (Test-Path -LiteralPath (Join-Path ([Environment]::GetFolderPath('UserProfile')) '.ollama/id_ed25519'))) { throw 'Ollama creates its standard home-directory key. Review this write and use -AllowHomeKeyCreation to approve it.' }
 if (Get-NetTCPConnection -LocalPort $Port -State Listen -ErrorAction SilentlyContinue) { throw 'The requested port already has a listener. Existing processes will not be replaced.' }
 $spotOs = Get-CimInstance Win32_OperatingSystem
-if ($spotOs.FreePhysicalMemory / 1MB -lt 2) { throw 'At least 2 GiB free physical RAM is required before starting this small-model configuration.' }
+if ($spotOs.FreePhysicalMemory / 1MB -lt 3.5) { throw 'At least 3.5 GiB free physical RAM is required before starting the local understanding model.' }
 New-Item -ItemType Directory -Force -Path $spotModels,$spotLogs | Out-Null
 $spotGuardStop = Join-Path $spotLogs 'guard.stop'
 if (Test-Path -LiteralPath $spotGuardStop) { Remove-Item -LiteralPath $spotGuardStop }
