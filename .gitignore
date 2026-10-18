@@ -11,3 +11,13 @@ supabase/.temp/
 work/
 *.log
 /public/maplibre/
+
+# Local instruction checkouts and developer caches (not application inputs).
+.agents/skills/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.DS_Store
+Thumbs.db
+Desktop.ini

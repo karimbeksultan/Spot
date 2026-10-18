@@ -1,5 +1,5 @@
 {
-  "evaluatedAt": "2026-10-18T18:13:39.277Z",
+  "evaluatedAt": "2026-10-18T19:24:05.449Z",
   "mode": "snapshot; no model; routing deliberately disabled",
   "methodology": "18 synthetic Russian requests against actual collected snapshot, deterministic assertions on hard constraints, known evidence IDs, empty/nonempty expectation and honest route state. Not a live Supabase/model test; top-3 usefulness requires human review.",
   "queries": 18,
@@ -7,8 +7,8 @@
   "hardConstraintsPassed": 18,
   "evidenceChecksPassed": 18,
   "routeHonestyPassed": 18,
-  "p50Ms": 217,
-  "p95Ms": 629,
+  "p50Ms": 144,
+  "p95Ms": 428,
   "usefulnessTop3": "Not evaluated by independent human judges",
   "results": [
     {
@@ -28,7 +28,7 @@
         "Японский сад"
       ],
       "planStatus": "unverified",
-      "latencyMs": 629,
+      "latencyMs": 428,
       "noInventedRoute": true
     },
     {
@@ -42,7 +42,7 @@
       "poiIds": [],
       "names": [],
       "planStatus": "unverified",
-      "latencyMs": 365,
+      "latencyMs": 164,
       "noInventedRoute": true
     },
     {
@@ -64,7 +64,7 @@
         "Детская площадка без названия (OSM way/1461751890)"
       ],
       "planStatus": "unverified",
-      "latencyMs": 434,
+      "latencyMs": 186,
       "noInventedRoute": true
     },
     {
@@ -86,7 +86,7 @@
         "Drinkit"
       ],
       "planStatus": "unverified",
-      "latencyMs": 235,
+      "latencyMs": 120,
       "noInventedRoute": true
     },
     {
@@ -108,7 +108,7 @@
         "Аллея мира и согласия"
       ],
       "planStatus": "unverified",
-      "latencyMs": 220,
+      "latencyMs": 144,
       "noInventedRoute": true
     },
     {
@@ -130,7 +130,7 @@
         "Избушка"
       ],
       "planStatus": "unverified",
-      "latencyMs": 268,
+      "latencyMs": 219,
       "noInventedRoute": true
     },
     {
@@ -144,7 +144,7 @@
       "poiIds": [],
       "names": [],
       "planStatus": "unverified",
-      "latencyMs": 191,
+      "latencyMs": 125,
       "noInventedRoute": true
     },
     {
@@ -158,7 +158,7 @@
       "poiIds": [],
       "names": [],
       "planStatus": "unverified",
-      "latencyMs": 183,
+      "latencyMs": 152,
       "noInventedRoute": true
     },
     {
@@ -176,7 +176,7 @@
         "Ботанический сад"
       ],
       "planStatus": "unverified",
-      "latencyMs": 217,
+      "latencyMs": 235,
       "noInventedRoute": true
     },
     {
@@ -194,7 +194,7 @@
         "Ботанический сад"
       ],
       "planStatus": "unverified",
-      "latencyMs": 162,
+      "latencyMs": 163,
       "noInventedRoute": true
     },
     {
@@ -216,7 +216,7 @@
         "Аскару Забикулину"
       ],
       "planStatus": "unverified",
-      "latencyMs": 170,
+      "latencyMs": 137,
       "noInventedRoute": true
     },
     {
@@ -234,7 +234,7 @@
         "Байтерек"
       ],
       "planStatus": "unverified",
-      "latencyMs": 152,
+      "latencyMs": 127,
       "noInventedRoute": true
     },
     {
@@ -248,7 +248,7 @@
       "poiIds": [],
       "names": [],
       "planStatus": "unverified",
-      "latencyMs": 207,
+      "latencyMs": 117,
       "noInventedRoute": true
     },
     {
@@ -266,7 +266,7 @@
         "Ботанический сад"
       ],
       "planStatus": "unverified",
-      "latencyMs": 226,
+      "latencyMs": 116,
       "noInventedRoute": true
     },
     {
@@ -288,7 +288,7 @@
         "Тайказан"
       ],
       "planStatus": "unverified",
-      "latencyMs": 19,
+      "latencyMs": 10,
       "noInventedRoute": true
     },
     {
@@ -302,7 +302,7 @@
       "poiIds": [],
       "names": [],
       "planStatus": "unverified",
-      "latencyMs": 184,
+      "latencyMs": 114,
       "noInventedRoute": true
     },
     {
@@ -324,7 +324,7 @@
         "Drinkit"
       ],
       "planStatus": "unverified",
-      "latencyMs": 229,
+      "latencyMs": 241,
       "noInventedRoute": true
     },
     {
@@ -338,7 +338,7 @@
       "poiIds": [],
       "names": [],
       "planStatus": "unverified",
-      "latencyMs": 173,
+      "latencyMs": 141,
       "noInventedRoute": true
     }
   ]

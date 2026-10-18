@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-19",
+  "timezone": "Asia/Qyzylorda",
+  "sourceDigest": "d91b9f0c8635b1962f32f55b71474cfb98c552a62e8b783f5520a959974f875e",
+  "applicationInputs": 127,
+  "applicationSourceFilesChanged": false,
+  "deletedFiles": [],
+  "doctor": {
+    "status": "passed",
+    "receiptSha256": "cbd39dc6256cfa0bdad5d6d4035d5a45db666b8138096d5e149d1cd3b6832cc9"
+  },
+  "verify": {
+    "status": "passed",
+    "steps": [
+      {
+        "check": "lint",
+        "status": "passed",
+        "exitCode": 0
+      },
+      {
+        "check": "typecheck",
+        "status": "passed",
+        "exitCode": 0
+      },
+      {
+        "check": "unit",
+        "status": "passed",
+        "exitCode": 0
+      },
+      {
+        "check": "data",
+        "status": "passed",
+        "exitCode": 0
+      },
+      {
+        "check": "snapshot",
+        "status": "passed",
+        "exitCode": 0
+      },
+      {
+        "check": "eval",
+        "status": "passed",
+        "exitCode": 0
+      },
+      {
+        "check": "build",
+        "status": "passed",
+        "exitCode": 0
+      },
+      {
+        "check": "smoke",
+        "status": "passed",
+        "exitCode": 0
+      }
+    ],
+    "unit": {
+      "passed": 267,
+      "total": 267,
+      "files": 22
+    },
+    "snapshot": {
+      "passed": 18,
+      "total": 18
+    },
+    "evaluation": {
+      "passed": 10,
+      "total": 10
+    },
+    "receiptSha256": "1341cde6fc7652a54c12fd3ace8589d8892f5e9f67b6ef6e58e866fc918b2d62",
+    "sourceStableDuringChecks": true
+  },
+  "browser": {
+    "status": "passed",
+    "stats": {
+      "startTime": "2026-10-18T19:25:14.269Z",
+      "duration": 322063.991,
+      "expected": 38,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "rawReportSha256": "d7817a4936189826f573fb01f1e6e0c69f8decc6132dde333c7ad60073aa82a7",
+    "scope": "38 unchanged production-demo browser scenarios. Context/photo/planned-journey include explicit UI fixtures; not a live AI test."
+  },
+  "npmAudit": {
+    "production": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "all": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 5,
+      "critical": 0,
+      "total": 5
+    },
+    "dependencyFilesChanged": false,
+    "remainingAdvisory": "GHSA-vfj7-8cjw-p6xm; no published patched version at audit time"
+  },
+  "protectedArtifacts": {
+    "docs/TEST_SCENARIOS_AND_LIMITATIONS.md": "5d42c6486f19c6695b1500cf774bd841ad17e133fee95210cd93b23d0b0d98a0",
+    "docs/TEST_SCENARIOS_AND_LIMITATIONS.pdf": "b7ec5fa2c70eb9859e288f19e7d81bf74078819e00bc8d504431dd86776f4108",
+    "docs/spot-pitch-2026-10-18-R3.pptx": "dd754aa1c3dc26df0dedd6ba9048b2282c56c85af94770be8aecbadce7f05cd1"
+  },
+  "paidAiRequests": 0,
+  "deployments": 0,
+  "ciScope": "GitHub Actions runs doctor and all 8 verify steps; browser tests are a separate local run, not CI.",
+  "remoteResults": "See GitHub Actions for current commit status; old failed run is retained as historical evidence."
+}

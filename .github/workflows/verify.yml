@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches:
+      - main
       - 'codex/**'
 
 permissions:
@@ -12,7 +13,7 @@ permissions:
 
 jobs:
   offline:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     env:
       APP_MODE: demo
@@ -22,11 +23,11 @@ jobs:
       NEXT_TELEMETRY_DISABLED: '1'
     steps:
       - name: Check out the requested revision
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1, Node 24
         with:
           persist-credentials: false
       - name: Use Node 24
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0, Node 24
         with:
           node-version: '24'
           cache: npm
@@ -38,11 +39,14 @@ jobs:
         run: node scripts/harness/runner.mjs doctor
       - name: Run deterministic checks, build and smoke
         run: node scripts/harness/runner.mjs verify
-      - name: Retain only sanitized verification evidence
+      - name: Collect evidence from this exact CI revision
         if: always()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        run: node scripts/harness/collect-ci-evidence.mjs
+      - name: Retain only current sanitized verification evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2, Node 24
         with:
           name: offline-verification
-          path: artifacts/verification/
+          path: ${{ runner.temp }}/spot-evidence/
           if-no-files-found: warn
           retention-days: 7

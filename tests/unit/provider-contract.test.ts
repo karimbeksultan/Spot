@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, expect, it, vi } from "vitest";
-import { mkdtemp, readFile, rm } from "node:fs/promises";
+import { mkdir, mkdtemp, readFile, rm } from "node:fs/promises";
 import path from "node:path";
 import { cloudReadiness, providerConfig } from "../../src/lib/server/config";
 import { reserveCloudCall } from "../../src/lib/server/budget";
@@ -34,7 +34,9 @@ it("empty rates and expired permission fail closed", () => {
   expect(cloudReadiness("nvidia")).toContain("authorization_expiry_required_max_24h"); expect(cloudReadiness("nvidia")).toContain("nvidia_input_usd_per_million");
 });
 it("persists conservative reservations; parallel requests cannot overspend a run", async () => {
-  authorize(); vi.stubEnv("AI_MAX_REQUESTS_PER_RUN", "1"); const folder = await mkdtemp(path.join(process.cwd(), "work", "spot-cost-test-")); folders.push(folder);
+  authorize(); vi.stubEnv("AI_MAX_REQUESTS_PER_RUN", "1");
+  const temporaryRoot = path.join(process.cwd(), "work"); await mkdir(temporaryRoot, { recursive: true });
+  const folder = await mkdtemp(path.join(temporaryRoot, "spot-cost-test-")); folders.push(folder);
   const results = await Promise.allSettled([actualReserve("openai", 300, 500, folder), actualReserve("openai", 300, 500, folder)]);
   expect(results.filter((r) => r.status === "fulfilled"), results.map((r) => r.status === "rejected" ? String(r.reason) : "ok").join(",")).toHaveLength(1);
   const ledger = JSON.parse(await readFile(path.join(folder, "work/private/cost-ledger.json"), "utf8"));
