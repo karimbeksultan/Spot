@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { interpretSemanticIntent, semanticIntentModel, semanticIntentSchema, type SemanticIntent } from "../../src/lib/semantic-intent";
+import { interpretSemanticIntent, semanticIntentModel, semanticIntentSchema, semanticIntentFailure, type SemanticIntent } from "../../src/lib/semantic-intent";
 import { searchRequestSchema } from "../../src/lib/types";
 
 const valid: SemanticIntent = { action: "replace", stages: [{ kind: "restaurant", cuisines: [] }, { kind: "park", cuisines: [] }],
@@ -225,9 +225,38 @@ describe("local semantic intent boundary, with mocked HTTP only", () => {
     const body = new ReadableStream<Uint8Array>({ start(stream) { stream.enqueue(new TextEncoder().encode('{"done":')); }, cancel });
     const fetch = vi.spyOn(globalThis, "fetch").mockResolvedValue(new Response(body));
     const rejected = expect(interpretSemanticIntent(request)).rejects.toThrow("Timed out");
-    await vi.advanceTimersByTimeAsync(35_000);
+    await vi.advanceTimersByTimeAsync(45_000);
     await rejected;
     expect(cancel).toHaveBeenCalledTimes(1); expect(fetch).toHaveBeenCalledTimes(1);
+  });
+
+  it("allows a cold CPU response after the former 35 second cutoff without retrying", async () => {
+    vi.useFakeTimers({ toFake: ["setTimeout", "clearTimeout"] });
+    const deadline = new AbortController();
+    vi.spyOn(AbortSignal, "timeout").mockImplementation((milliseconds) => {
+      setTimeout(() => deadline.abort(new DOMException("Timed out", "TimeoutError")), milliseconds);
+      return deadline.signal;
+    });
+    const fetch = vi.spyOn(globalThis, "fetch").mockImplementation(() => new Promise((resolve) => {
+      setTimeout(() => resolve(Response.json(envelope())), 39_000);
+    }));
+    const result = interpretSemanticIntent(request);
+    await vi.advanceTimersByTimeAsync(39_000);
+    await expect(result).resolves.toEqual(valid);
+    expect(fetch).toHaveBeenCalledTimes(1);
+  });
+
+  it.each([
+    [new DOMException("private text", "TimeoutError"), "timeout"],
+    [new Error("INTENT_INVALID"), "invalid_output"],
+    [new Error("INTENT_RESPONSE_TOO_LARGE"), "invalid_output"],
+    [new Error("INTENT_INCOMPLETE"), "incomplete_output"],
+    [new Error("OLLAMA_LOCAL_ONLY"), "config"],
+    [new Error("INTENT_LOCAL_QWEN_REQUIRED"), "config"],
+    [new Error("secret raw provider output"), "unavailable"],
+    [null, "unavailable"],
+  ])("returns only an allowlisted failure code", (error, code) => {
+    expect(semanticIntentFailure(error)).toBe(code);
   });
 
   it("rejects an oversized response before parsing, including streaming bodies with no declared size", async () => {

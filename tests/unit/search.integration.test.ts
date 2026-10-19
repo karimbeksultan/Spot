@@ -81,6 +81,19 @@ describe("provider-mocked end-to-end search pipeline", () => {
     expect(nearby).not.toHaveBeenCalled(); expect(embedQuery).not.toHaveBeenCalled();
     expect(generateChoices).not.toHaveBeenCalled(); expect(walkingRoute).not.toHaveBeenCalled();
   });
+  it.each(["ru", "en", "kk"])("distinguishes a slow model from semantic ambiguity in %s without changing the user's conditions", async (language) => {
+    vi.mocked(interpretSemanticIntent).mockRejectedValue(new DOMException("private provider text", "TimeoutError"));
+    const elapsed = vi.spyOn(performance, "now").mockReturnValueOnce(100).mockReturnValue(45_120);
+    try {
+      const result = await searchPlaces(request({ query: "хочу поесть и отдохнуть где нибудь", availableMinutes: 45, language, returnToStart: true }));
+      expect(result.kind).toBe("clarification"); expect(result.clarification?.code).toBe("intent_timeout");
+      expect(result.diagnostics).toMatchObject({ understandingFailure: "timeout", elapsedMs: 45_020 });
+      expect(result.context).toMatchObject({ availableMinutes: 45, returnToStart: true, language, origin });
+      expect(result.clarification?.question).not.toContain("private provider text");
+      expect(result.clarification?.question).toContain(language === "ru" ? "не успела" : language === "en" ? "did not finish" : "үлгермеді");
+      expect(nearby).not.toHaveBeenCalled(); expect(walkingRoute).not.toHaveBeenCalled();
+    } finally { elapsed.mockRestore(); }
+  });
   it("clarifies unsupported or excessive requested activities without dropping the remainder", async () => {
     vi.mocked(interpretSemanticIntent).mockResolvedValue({ action: "clarify", stages: [], interests: [], order: "ordered", discovery: false, issue: "too_many_stops" });
     const result = await searchPlaces(request({ query: "Сначала еда, потом напиток, потом прогулка, потом ещё еда", availableMinutes: 180 }));

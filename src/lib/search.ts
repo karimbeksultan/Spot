@@ -10,7 +10,7 @@ import type { GenerationTelemetry } from "./server/providers";
 import { groundedCopy } from "./grounded-copy";
 import { matchesStage } from "./journey";
 import { searchJourney } from "./journey-search";
-import { interpretSemanticIntent, semanticIntentModel, SEMANTIC_PROMPT_VERSION } from "./semantic-intent";
+import { interpretSemanticIntent, semanticIntentModel, semanticIntentFailure, SEMANTIC_PROMPT_VERSION, type IntentFailure } from "./semantic-intent";
 import { applySemanticIntent, requestCapabilityIssue } from "./request-understanding";
 import { searchDiscovery } from "./discovery-search";
 
@@ -34,7 +34,7 @@ export async function searchPlaces(input: SearchRequest, signal?: AbortSignal): 
   const empty = (warnings: string[]): SearchResponse => ({ kind: "no_match", mode: demo ? "demo" : "degraded", resultKind: "alternatives", items: [], context,
     ...(context.journeyStages.length ? { journey: { status: "incomplete" as const, stages: context.journeyStages.map((stage, index) => ({ index, kind: stage.kind, poiId: null, evidenceIds: [] })) } } : {}),
     plan: { ...assessBudget([], null, { availableMinutes: context.availableMinutes, reserveMinutes: 5, returnToStart: context.returnToStart }), returnToStart: context.returnToStart, legs: [] }, warnings,
-    provenance: { dataSource: "real_snapshot", retrieval: "not_run", generation: "not_run", clock: startTime }, diagnostics: { candidateCount: 0, retrieval: "not_run", generation: "not_run", elapsedMs: 0 } });
+    provenance: { dataSource: "real_snapshot", retrieval: "not_run", generation: "not_run", clock: startTime }, diagnostics: { candidateCount: 0, retrieval: "not_run", generation: "not_run", elapsedMs: Math.round(performance.now() - started) } });
   if (/вылет|аэропорт|airport|flight|әуежай|ұшақ/iu.test(context.query) || context.airportDeadline) {
     const result = empty([]);
     const question = context.language === "en" ? "When must you be back at the airport, and how will you travel? Flight time includes transfer and airport buffers. This prototype cannot verify that transfer."
@@ -64,6 +64,7 @@ export async function searchPlaces(input: SearchRequest, signal?: AbortSignal): 
   }
   let understanding = demo ? "deterministic-demo" : "not_run";
   let understandingModel: string | undefined;
+  let understandingFailure: IntentFailure | undefined;
   if (!demo && context.query.trim()) {
     let issue: string | undefined = requestCapabilityIssue(context.query);
     try {
@@ -75,18 +76,27 @@ export async function searchPlaces(input: SearchRequest, signal?: AbortSignal): 
         issue = understood.issue;
         understanding = issue ? "ollama-clarification" : "ollama-validated";
       } else understanding = "capability-clarification";
-    } catch {
+    } catch (error) {
       deadline.throwIfAborted();
-      issue = "unavailable"; understanding = "unavailable";
+      understandingFailure = semanticIntentFailure(error);
+      issue = understandingFailure === "timeout" ? "timeout" : "unavailable"; understanding = "unavailable";
     }
     if (issue) {
-      const question = context.language === "en" ? "I could not reliably interpret every requested activity. Please clarify the activities and their order (up to three stops); booking and unsupported activities cannot be planned."
+      const failureQuestion = understandingFailure === "timeout" ? {
+        ru: "Локальная модель не успела разобрать запрос за отведённое время. Повторите поиск: холодный запуск на этом устройстве может быть медленным. Ваши условия сохранены.",
+        en: "The local model did not finish in time. Please try the search again; a cold start on this device can be slow. Your conditions are preserved.",
+        kk: "Жергілікті модель сұрауды уақытында талдап үлгермеді. Іздеуді қайталаңыз: осы құрылғыда алғашқы іске қосылу баяу болуы мүмкін. Шарттарыңыз сақталды.",
+      } : {
+        ru: "Не удалось получить проверенный ответ локальной модели. Проверьте Ollama и повторите поиск. Ваши условия сохранены.",
+        en: "A validated response from the local model was not available. Check Ollama and try the search again. Your conditions are preserved.",
+        kk: "Жергілікті модельден тексерілген жауап алынбады. Ollama қызметін тексеріп, іздеуді қайталаңыз. Шарттарыңыз сақталды.",
+      };
+      const question = understandingFailure ? failureQuestion[context.language] : context.language === "en" ? "I could not reliably interpret every requested activity. Please clarify the activities and their order (up to three stops); booking and unsupported activities cannot be planned."
         : context.language === "kk" ? "Барлық сұралған әрекетті сенімді түсіндіре алмадым. Әрекеттерді және ретін нақтылаңыз (үш аялдамаға дейін); бронь жасау мен қолдау көрсетілмейтін әрекеттер жоспарланбайды."
-        : issue === "unavailable" ? "Локальная модель понимания запроса недоступна или её ответ не прошёл проверку. Проверьте Ollama и повторите запрос."
-          : "Не удалось надёжно понять все действия. Уточните, чем хотите заняться и в каком порядке (до трёх остановок). Бронирование и неподдерживаемые действия пока не планируются.";
+        : "Не удалось надёжно понять все действия. Уточните, чем хотите заняться и в каком порядке (до трёх остановок). Бронирование и неподдерживаемые действия пока не планируются.";
       const result = empty([]);
       return { ...result, kind: "clarification", clarification: { code: `intent_${issue}`, question, fields: ["query"] },
-        diagnostics: { ...result.diagnostics, understanding, understandingModel, understandingPromptVersion: SEMANTIC_PROMPT_VERSION } };
+        diagnostics: { ...result.diagnostics, understanding, understandingModel, understandingFailure, understandingPromptVersion: SEMANTIC_PROMPT_VERSION } };
     }
   }
   if (context.journeyStages.some((s) => context.excludedCategories.includes(s.kind === "restaurant" ? "other" : s.kind))) {
