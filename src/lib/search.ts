@@ -5,7 +5,7 @@ import { hybridRetrieve, lexicalRank, loadSnapshot, nearby, supabaseConfigured }
 import { localHybridRetrieve } from "./local-index";
 import { walkingRoute } from "./routing";
 import { interpretRequest, searchRequestSchema, type Category, type Poi, type Recommendation, type SearchRequest, type SearchResponse } from "./types";
-import { appMode, DEMO_TIME, requestSignal } from "./server/config";
+import { appMode, DEMO_TIME, primaryProvider, requestSignal } from "./server/config";
 import type { GenerationTelemetry } from "./server/providers";
 import { groundedCopy } from "./grounded-copy";
 import { matchesStage } from "./journey";
@@ -26,8 +26,9 @@ function hasQueryMatch(poi: Poi, context: SearchRequest): boolean {
 }
 export async function searchPlaces(input: SearchRequest, signal?: AbortSignal): Promise<SearchResponse> {
   const started = performance.now();
-  const deadline = requestSignal(signal, 60_000); deadline.throwIfAborted();
   const demo = appMode() === "demo";
+  // CPU-only local RAG loads three models serially. Cloud and demo retain their existing limit.
+  const deadline = requestSignal(signal, !demo && primaryProvider() === "ollama" ? 90_000 : 60_000); deadline.throwIfAborted();
   let context = interpretRequest(searchRequestSchema.parse(input));
   const startTime = context.startTime ?? (demo ? DEMO_TIME : new Date().toISOString());
   context.startTime = startTime;

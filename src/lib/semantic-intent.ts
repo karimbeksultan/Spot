@@ -32,9 +32,9 @@ const transportSchema = z.object({
 const responseSchema = z.toJSONSchema(transportSchema);
 const MAX_RESPONSE_BYTES = 16_384;
 const MAX_CONTENT_CHARACTERS = 4_000;
-// Cold CPU loading plus prefill exceeded 35 s on the reference laptop.
-// Keep a bounded 45 s inference window inside the unchanged 60 s search deadline.
-const DEADLINE_MS = 45_000;
+// Cold CPU loading plus prefill exceeded 35 s and approached 45 s on the reference laptop.
+// Keep inference bounded; the local pipeline separately allows model switching and routing.
+const DEADLINE_MS = 60_000;
 
 export type IntentFailure = "timeout" | "unavailable" | "invalid_output" | "incomplete_output" | "config";
 /** Safe diagnostic codes only: never expose arbitrary exception text or model output. */

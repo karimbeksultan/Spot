@@ -225,12 +225,12 @@ describe("local semantic intent boundary, with mocked HTTP only", () => {
     const body = new ReadableStream<Uint8Array>({ start(stream) { stream.enqueue(new TextEncoder().encode('{"done":')); }, cancel });
     const fetch = vi.spyOn(globalThis, "fetch").mockResolvedValue(new Response(body));
     const rejected = expect(interpretSemanticIntent(request)).rejects.toThrow("Timed out");
-    await vi.advanceTimersByTimeAsync(45_000);
+    await vi.advanceTimersByTimeAsync(60_000);
     await rejected;
     expect(cancel).toHaveBeenCalledTimes(1); expect(fetch).toHaveBeenCalledTimes(1);
   });
 
-  it("allows a cold CPU response after the former 35 second cutoff without retrying", async () => {
+  it("allows a cold CPU response after the former 35/45 second cutoffs without retrying", async () => {
     vi.useFakeTimers({ toFake: ["setTimeout", "clearTimeout"] });
     const deadline = new AbortController();
     vi.spyOn(AbortSignal, "timeout").mockImplementation((milliseconds) => {
@@ -238,10 +238,10 @@ describe("local semantic intent boundary, with mocked HTTP only", () => {
       return deadline.signal;
     });
     const fetch = vi.spyOn(globalThis, "fetch").mockImplementation(() => new Promise((resolve) => {
-      setTimeout(() => resolve(Response.json(envelope())), 39_000);
+      setTimeout(() => resolve(Response.json(envelope())), 55_000);
     }));
     const result = interpretSemanticIntent(request);
-    await vi.advanceTimersByTimeAsync(39_000);
+    await vi.advanceTimersByTimeAsync(55_000);
     await expect(result).resolves.toEqual(valid);
     expect(fetch).toHaveBeenCalledTimes(1);
   });
