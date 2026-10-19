@@ -13,6 +13,7 @@ import { searchJourney } from "./journey-search";
 import { interpretSemanticIntent, semanticIntentModel, semanticIntentFailure, SEMANTIC_PROMPT_VERSION, type IntentFailure } from "./semantic-intent";
 import { applySemanticIntent, requestCapabilityIssue } from "./request-understanding";
 import { searchDiscovery } from "./discovery-search";
+import { localRuntimeMemoryStop } from "./local-runtime-status";
 
 const activities: Record<Category, string> = { park: "walk", cafe: "coffee", museum: "explore", landmark: "look", playground: "play", other: "look" };
 const visitDuration: Record<Category, number> = { park: 15, cafe: 20, museum: 30, landmark: 10, playground: 20, other: 10 };
@@ -80,10 +81,15 @@ export async function searchPlaces(input: SearchRequest, signal?: AbortSignal): 
     } catch (error) {
       deadline.throwIfAborted();
       understandingFailure = semanticIntentFailure(error);
-      issue = understandingFailure === "timeout" ? "timeout" : "unavailable"; understanding = "unavailable";
+      if (understandingFailure === "unavailable" && await localRuntimeMemoryStop()) understandingFailure = "memory";
+      issue = understandingFailure === "timeout" ? "timeout" : understandingFailure === "memory" ? "memory" : "unavailable"; understanding = "unavailable";
     }
     if (issue) {
-      const failureQuestion = understandingFailure === "timeout" ? {
+      const failureQuestion = understandingFailure === "memory" ? {
+        ru: "Локальная модель остановлена защитой из-за нехватки оперативной памяти. Закройте ненужные приложения, освободите не менее 3,5 ГБ RAM и перезапустите Ollama. Ваши условия сохранены.",
+        en: "The local model was stopped by its low-memory guard. Close unused apps, free at least 3.5 GiB of RAM, and restart Ollama. Your conditions are preserved.",
+        kk: "Жергілікті модель жедел жад жетіспегендіктен қорғаныс арқылы тоқтатылды. Қажетсіз қолданбаларды жауып, кемінде 3,5 ГиБ RAM босатыңыз және Ollama қызметін қайта іске қосыңыз. Шарттарыңыз сақталды.",
+      } : understandingFailure === "timeout" ? {
         ru: "Локальная модель не успела разобрать запрос за отведённое время. Повторите поиск: холодный запуск на этом устройстве может быть медленным. Ваши условия сохранены.",
         en: "The local model did not finish in time. Please try the search again; a cold start on this device can be slow. Your conditions are preserved.",
         kk: "Жергілікті модель сұрауды уақытында талдап үлгермеді. Іздеуді қайталаңыз: осы құрылғыда алғашқы іске қосылу баяу болуы мүмкін. Шарттарыңыз сақталды.",

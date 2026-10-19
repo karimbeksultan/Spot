@@ -74,7 +74,7 @@ type SearchResponseBase = {
   warnings: string[];
   provenance: { dataSource: "real_snapshot" | "supabase"; retrieval: string; generation: string; clock: string };
   diagnostics: { candidateCount: number; retrieval: string; generation: string; provider?: string; model?: string; promptVersion?: string;
-    usage?: { inputTokens: number | null; outputTokens: number | null; actualCostUsd: number | null; reservedUsd: number }; understanding?: string; understandingModel?: string; understandingPromptVersion?: string; understandingFailure?: "timeout" | "unavailable" | "invalid_output" | "incomplete_output" | "config"; exclusions?: Record<string, number>; elapsedMs?: number };
+    usage?: { inputTokens: number | null; outputTokens: number | null; actualCostUsd: number | null; reservedUsd: number }; understanding?: string; understandingModel?: string; understandingPromptVersion?: string; understandingFailure?: "timeout" | "unavailable" | "invalid_output" | "incomplete_output" | "config" | "memory"; exclusions?: Record<string, number>; elapsedMs?: number };
 };
 export type SearchResponse = SearchResponseBase & (
   { kind: "recommendations" | "no_match" | "degraded"; clarification?: never }

@@ -6,10 +6,12 @@ import { generateChoices, embedQuery } from "../../src/lib/model";
 import { nearby, hybridRetrieve, supabaseConfigured } from "../../src/lib/retrieval";
 import { walkingRoute } from "../../src/lib/routing";
 import { interpretSemanticIntent } from "../../src/lib/semantic-intent";
+import { localRuntimeMemoryStop } from "../../src/lib/local-runtime-status";
 
 vi.mock("../../src/lib/model", () => ({ generateChoices: vi.fn(), embedQuery: vi.fn() }));
 vi.mock("../../src/lib/retrieval", () => ({ nearby: vi.fn(), hybridRetrieve: vi.fn(), supabaseConfigured: vi.fn(), lexicalRank: (pois: Poi[]) => pois }));
 vi.mock("../../src/lib/routing", () => ({ walkingRoute: vi.fn() }));
+vi.mock("../../src/lib/local-runtime-status", () => ({ localRuntimeMemoryStop: vi.fn() }));
 vi.mock("../../src/lib/semantic-intent", async (importOriginal) => ({
   ...await importOriginal<typeof import("../../src/lib/semantic-intent")>(), interpretSemanticIntent: vi.fn(),
 }));
@@ -43,6 +45,7 @@ beforeEach(() => {
   vi.stubEnv("APP_MODE", "live");
   vi.stubEnv("RETRIEVAL_PROVIDER", "supabase");
   vi.clearAllMocks();
+  vi.mocked(localRuntimeMemoryStop).mockResolvedValue(false);
   vi.mocked(interpretSemanticIntent).mockResolvedValue({ action: "refine", stages: [], interests: [], order: "ordered", discovery: false, issue: "none" });
   vi.mocked(supabaseConfigured).mockReturnValue(false);
   vi.mocked(nearby).mockResolvedValue({ mode: "snapshot", items: fixtures.map((poi) => structuredClone(poi)), warnings: [] });
@@ -93,6 +96,25 @@ describe("provider-mocked end-to-end search pipeline", () => {
       expect(result.clarification?.question).toContain(language === "ru" ? "не успела" : language === "en" ? "did not finish" : "үлгермеді");
       expect(nearby).not.toHaveBeenCalled(); expect(walkingRoute).not.toHaveBeenCalled();
     } finally { elapsed.mockRestore(); }
+  });
+  it.each(["ru", "en", "kk"])("explains a proven managed memory stop in %s and preserves the request", async (language) => {
+    vi.mocked(interpretSemanticIntent).mockRejectedValue(new TypeError("private socket failure"));
+    vi.mocked(localRuntimeMemoryStop).mockResolvedValue(true);
+    const result = await searchPlaces(request({ query: "я б поел где нибудь", availableMinutes: 60, language, returnToStart: true }));
+    expect(result.kind).toBe("clarification"); expect(result.clarification?.code).toBe("intent_memory");
+    expect(result.diagnostics.understandingFailure).toBe("memory");
+    expect(result.context).toMatchObject({ availableMinutes: 60, returnToStart: true, language, origin });
+    expect(result.clarification?.question).toContain(language === "en" ? "3.5 GiB" : "3,5");
+    expect(result.clarification?.question).not.toContain("private socket failure");
+    expect(nearby).not.toHaveBeenCalled(); expect(walkingRoute).not.toHaveBeenCalled();
+  });
+  it("does not mislabel an invalid model output as memory pressure from an older guard record", async () => {
+    vi.mocked(interpretSemanticIntent).mockRejectedValue(new Error("INTENT_INVALID"));
+    vi.mocked(localRuntimeMemoryStop).mockResolvedValue(true);
+    const result = await searchPlaces(request());
+    expect(result.diagnostics.understandingFailure).toBe("invalid_output");
+    expect(result.clarification?.code).toBe("intent_unavailable");
+    expect(localRuntimeMemoryStop).not.toHaveBeenCalled();
   });
   it("clarifies unsupported or excessive requested activities without dropping the remainder", async () => {
     vi.mocked(interpretSemanticIntent).mockResolvedValue({ action: "clarify", stages: [], interests: [], order: "ordered", discovery: false, issue: "too_many_stops" });

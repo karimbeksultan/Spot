@@ -36,7 +36,7 @@ const MAX_CONTENT_CHARACTERS = 4_000;
 // Keep inference bounded; the local pipeline separately allows model switching and routing.
 const DEADLINE_MS = 60_000;
 
-export type IntentFailure = "timeout" | "unavailable" | "invalid_output" | "incomplete_output" | "config";
+export type IntentFailure = "timeout" | "unavailable" | "invalid_output" | "incomplete_output" | "config" | "memory";
 /** Safe diagnostic codes only: never expose arbitrary exception text or model output. */
 export function semanticIntentFailure(error: unknown): IntentFailure {
   if (!(error instanceof Error)) return "unavailable";
