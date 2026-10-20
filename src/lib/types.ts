@@ -39,6 +39,7 @@ export function parsePoi(raw: unknown) {
 export const searchRequestSchema = z.object({
   query: z.string().trim().max(1200).default(""),
   origin: astanaPointSchema,
+  originChoice: z.object({ poiId: z.string().min(1).max(100), useAsStart: z.boolean() }).strict().optional(),
   availableMinutes: z.number().int().min(1).max(240).default(60),
   returnToStart: z.boolean().default(false),
   requiredFeatures: z.array(z.enum(features)).max(4).default([]),
@@ -65,6 +66,8 @@ export type Recommendation = Poi & {
   distanceMetres: number; openingStatus: OpeningState; warnings: string[];
 };
 type SearchResponseBase = {
+  originCandidates?: { poiId: string; name: string; location: { longitude: number; latitude: number }; sourceUrl: string }[];
+  namedOrigin?: { poiId: string; name: string; usedAsStart: boolean };
   journey?: { status: "complete" | "unverified" | "incomplete"; stages: { index: number; kind: "cafe" | "park" | "restaurant"; poiId: string | null; evidenceIds: string[] }[] };
   mode: "demo" | "live" | "degraded";
   resultKind: "alternatives" | "itinerary";

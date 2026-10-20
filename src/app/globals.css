@@ -65,6 +65,7 @@
 .data-limits a{display:inline-flex;align-items:center;gap:6px;min-height:44px;text-decoration:underline;text-underline-offset:3px;font-size:12px}
 @media(max-width:767px){.main-nav{max-width:calc(100vw - 28px);gap:1px}.main-nav button{padding:0 8px;gap:5px;font-size:9px}.main-nav button svg{height:14px;width:14px}.data-limits h1{font-size:27px}.data-limits p{font-size:13px}.data-limits h2{font-size:17px}.data-counts dt{font-size:12px}}
 .intro h1{max-width:340px;white-space:normal}
+.origin-choice-actions{display:grid;gap:12px;margin-top:18px;min-width:0}.origin-choice-actions:empty{display:none}.origin-choice-actions button{min-height:44px;white-space:normal;overflow-wrap:anywhere}
 @media(max-width:767px){.intro h1{white-space:normal;max-width:100%;font-size:27px}.language-control label{font-size:11px}.time-options button{min-height:44px}.filter-button{min-height:44px}.location-control>button{min-width:44px;min-height:40px}.checkbox-label{min-height:36px}.provenance-labels{font-size:11px}.language-control select{max-width:125px}}
 
 .planned-start{display:grid;gap:7px;margin-top:16px;min-width:0}.planned-start label{font-size:11px;font-weight:700}.planned-start select,.planned-start input{width:100%;min-width:0;min-height:44px;border:1px solid var(--line);border-radius:8px;padding:9px 10px;background:var(--surface);color:var(--ink);font-size:12px}.planned-start p{font-size:10px;line-height:1.6;color:var(--muted)}

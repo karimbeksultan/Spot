@@ -14,6 +14,7 @@ import { interpretSemanticIntent, semanticIntentModel, semanticIntentFailure, SE
 import { applySemanticIntent, requestCapabilityIssue } from "./request-understanding";
 import { searchDiscovery } from "./discovery-search";
 import { localRuntimeMemoryStop } from "./local-runtime-status";
+import { hasNamedOriginStatement, resolveNamedOrigin } from "./named-origin";
 
 const activities: Record<Category, string> = { park: "walk", cafe: "coffee", museum: "explore", landmark: "look", playground: "play", other: "look" };
 const visitDuration: Record<Category, number> = { park: 15, cafe: 20, museum: 30, landmark: 10, playground: 20, other: 10 };
@@ -25,7 +26,50 @@ function hasQueryMatch(poi: Poi, context: SearchRequest): boolean {
   const document = `${poi.name} ${poi.description}`.toLowerCase();
   return terms.some((word) => document.includes(word.slice(0, 5)));
 }
+/** Resolve an explicit named start only from the validated snapshot, before inference. */
 export async function searchPlaces(input: SearchRequest, signal?: AbortSignal): Promise<SearchResponse> {
+  signal?.throwIfAborted();
+  const request = searchRequestSchema.parse(input);
+  if (!hasNamedOriginStatement(request.query)) return searchAtOrigin(request, signal);
+  const named = resolveNamedOrigin(request.query, await loadSnapshot());
+  signal?.throwIfAborted();
+  if (!named) return searchAtOrigin(request, signal);
+  const choice = request.originChoice;
+  const chosen = named.candidates.find((candidate) => candidate.poiId === choice?.poiId);
+  // A source name is location context even while waiting for confirmation.
+  const query = named.nameSpan ? request.query.slice(0, named.nameSpan.start) + "[ориентир]" + request.query.slice(named.nameSpan.end) : request.query;
+  // Existing UI presets may already specify this exact reference point; preserve their coordinates.
+  const alreadySelected = named.candidates.length === 1 && straightLineMetres(request.origin, named.candidates[0].location) <= 1;
+  if (!chosen && !alreadySelected) {
+    const demo = appMode() === "demo";
+    const context = interpretRequest({ ...request, query });
+    context.query = request.query;
+    const clock = context.startTime ?? (demo ? DEMO_TIME : new Date().toISOString());
+    context.startTime = clock;
+    const question = context.language === "en"
+      ? named.candidates.length ? "Use this OSM place as your starting reference? Confirm it or keep the selected start. The point may be the building centre, not its entrance."
+        : "The named starting place was not found exactly in this snapshot. Select a start on the map and remove the location phrase from the query; no coordinates have been guessed."
+      : context.language === "kk"
+        ? named.candidates.length ? "Осы OSM нысанын бастапқы бағдар ретінде қолданамыз ба? Растаңыз немесе таңдалған бастапқы нүктені сақтаңыз. Нүкте кіреберіс емес, ғимарат ортасы болуы мүмкін."
+          : "Аталған бастапқы орын деректерден дәл табылмады. Картадан нүкте таңдап, сұраудан орын туралы тіркесті алып тастаңыз. Координаталар болжанбады."
+        : named.candidates.length ? "Начать у найденного объекта OSM? Подтвердите его или оставьте выбранный старт. Точка может быть центром здания, а не входом."
+          : "Названный старт не найден точно в нашем снимке. Выберите точку на карте и уберите фразу о местоположении из запроса. Координаты не подставлялись.";
+    return { kind: "clarification", mode: demo ? "demo" : "degraded", resultKind: "alternatives", items: [], context,
+      originCandidates: named.candidates, clarification: { code: named.candidates.length ? "origin_confirmation" : "origin_not_found", question, fields: ["origin"] },
+      plan: { ...assessBudget([], null, { availableMinutes: context.availableMinutes, reserveMinutes: 5, returnToStart: context.returnToStart }), returnToStart: context.returnToStart, legs: [] }, warnings: [],
+      provenance: { dataSource: "real_snapshot", retrieval: "not_run", generation: "not_run", clock },
+      diagnostics: { candidateCount: 0, retrieval: "not_run", generation: "not_run", understanding: "not_run" } };
+  }
+  const candidate = chosen ?? named.candidates[0];
+  const useAsStart = chosen ? choice!.useAsStart : true;
+  const origin = chosen && useAsStart ? candidate.location : request.origin;
+  // Mask only the proven name span. Keep every surrounding instruction, time and hard condition.
+  const result = await searchAtOrigin({ ...request, origin, query }, signal);
+  return { ...result, context: { ...result.context, query: request.query },
+    namedOrigin: { poiId: candidate.poiId, name: candidate.name, usedAsStart: useAsStart } };
+}
+
+async function searchAtOrigin(input: SearchRequest, signal?: AbortSignal): Promise<SearchResponse> {
   const started = performance.now();
   const demo = appMode() === "demo";
   // CPU-only local RAG loads three models serially. Cloud and demo retain their existing limit.

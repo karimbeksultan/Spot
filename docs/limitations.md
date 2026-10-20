@@ -23,6 +23,8 @@ The opening-hours parser supports a subset of OSM syntax. Holidays, appointments
 
 ## Routes and accessibility
 
+Explicit current-location phrases at the beginning of RU/EN queries can resolve exact normalised names from the stored snapshot. A different named start requires confirmation; ambiguous names remain choices. Declensions, fuzzy matching, Kazakh location phrases and external geocoding are not implemented. Unresolved names require a manual map start and removal of the location phrase. A resolved point may be a building centre rather than an entrance or the user's actual position.
+
 Without a complete walking calculation, distance is shown in a straight line and total walking/return time remains unverified. A calculated route is still an estimate: POI coordinates may be geometry centres rather than usable entrances, and routing graph snapping does not establish actual access.
 
 Source wheelchair evidence does not certify every route segment. Safe passage, child suitability, nighttime safety, opening access and flight arrival are not guaranteed. Airport requests require clarification; transfers and booking are not implemented. The public walking service has no application SLA.
